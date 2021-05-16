@@ -1,7 +1,7 @@
 import React from "react";
 
 function ProConList({ positives, negatives ,verdict }) {
-
+ console.log("P",positives)
 
 	return (
 		<section class='text-gray-600 body-font'>
@@ -26,7 +26,7 @@ function ProConList({ positives, negatives ,verdict }) {
 								<div className='flex flex-col sm:items-start sm:text-left  items-center -mb-1 space-y-2.5'>
 									<ul>
 										{positives?.map((positive, index) => (
-											<li key={positive._key} className="my-3 leading-relaxed">
+											<li key={index} className="my-3 leading-relaxed">
 												<span class='bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
 													<svg
 														fill='none'
@@ -66,7 +66,7 @@ function ProConList({ positives, negatives ,verdict }) {
 								<div className='flex flex-col sm:items-start sm:text-left  items-center -mb-1 space-y-2.5'>
 									<ul>
 										{negatives?.map((negative, index) => (
-											<li key={negative._key} className="my-3 leading-relaxed">
+											<li key={index} className="my-3 leading-relaxed">
 												<span class='bg-gray-100 text-gray-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
 													<svg
 														xmlns='http://www.w3.org/2000/svg'

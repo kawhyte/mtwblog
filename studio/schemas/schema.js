@@ -11,6 +11,7 @@ import post from './post'
 import author from './author'
 import comment from './comment'
 import verdict from './verdict'
+import rating from './rating'
 // import pros from './pros'
 // import cons from './cons'
 
@@ -27,6 +28,7 @@ export default createSchema({
     author,
     category,
     verdict,
+    rating,
     // pros,
     // cons,
     // When added to this list, object types can be used as

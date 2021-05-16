@@ -5,7 +5,9 @@ import PostTitle from "../components/post-title";
 import { imageBuilder } from "../lib/sanity";
 import StarRating from "./star-rating";
 import post from "../studio/schemas/post";
-export default function PostHeader({ title, coverImage, date, author, webLink, address, ratingOverall, ratingLocation, ratingCleanliness,ratingService, ratingValue }) {
+export default function PostHeader({ title, coverImage, date, author, webLink, address, rating }) {
+
+console.log("RATE", rating)
 
 	return (
 		<>
@@ -78,7 +80,7 @@ export default function PostHeader({ title, coverImage, date, author, webLink, a
 			</div>
 
 			<div className=' block mt-2 text-lg  mb-6 md:mb-12'>
-				<StarRating ratingOverall={ratingOverall}   ratingLocation ={ratingLocation} ratingCleanliness={ratingCleanliness} ratingService ={ratingService}  ratingValue={ratingValue} />
+				<StarRating  rating={rating}  />
 			</div>
 		</>
 	);

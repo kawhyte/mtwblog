@@ -21,7 +21,7 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />
   }
 
-  console.log(post)
+  console.log("POST ",post)
   return (
     <Layout preview={preview}>
       <Container>
@@ -44,11 +44,8 @@ export default function Post({ post, morePosts, preview }) {
                 author={post.author}
                 webLink ={post.webLink}
                 address ={post.address}
-                ratingOverall ={post.ratingOverall}
-                ratingLocation ={post.ratingLocation}
-                ratingCleanliness ={post.ratingCleanliness}
-                ratingService ={post.ratingService}
-                ratingValue ={post.ratingValue}
+                rating= {post.rating}
+                
               />
               <PostBody content={post.body} />
               <ProConList positives ={post.positives} negatives ={post.negatives} verdict ={post.verdict}  />

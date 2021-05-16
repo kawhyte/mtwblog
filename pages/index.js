@@ -12,6 +12,9 @@ import { CMS_NAME } from '../lib/constants'
 export default function Index({ allPosts, preview }) {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
+  console.log("allPosts ", allPosts)
+  // console.log("heroPost ", heroPost)
+  // console.log("morePosts ", morePosts)
   return (
     <>
       <Layout preview={preview}>
