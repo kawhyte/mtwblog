@@ -25,7 +25,7 @@ function ProConList({ pros, cons ,verdict }) {
 
 								<div className='flex flex-col sm:items-start sm:text-left  items-center -mb-1 space-y-2.5'>
 									<ul>
-										{pros.map((pro, index) => (
+										{pros?.map((pro, index) => (
 											<li key={pro._key} className="my-3 leading-relaxed">
 												<span class='bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
 													<svg
@@ -39,7 +39,7 @@ function ProConList({ pros, cons ,verdict }) {
 														<path d='M20 6L9 17l-5-5'></path>
 													</svg>
 												</span>
-												{pro.reviewProText}
+												{pro?.reviewProText}
 											</li>
 										))}
 									</ul>
@@ -65,7 +65,7 @@ function ProConList({ pros, cons ,verdict }) {
 
 								<div className='flex flex-col sm:items-start sm:text-left  items-center -mb-1 space-y-2.5'>
 									<ul>
-										{cons.map((con, index) => (
+										{cons?.map((con, index) => (
 											<li key={con._key} className="my-3 leading-relaxed">
 												<span class='bg-gray-100 text-gray-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
 													<svg
@@ -80,7 +80,7 @@ function ProConList({ pros, cons ,verdict }) {
 														/>
 													</svg>
 												</span>
-												{con.reviewConText}
+												{con?.reviewConText}
 											</li>
 										))}
 									</ul>

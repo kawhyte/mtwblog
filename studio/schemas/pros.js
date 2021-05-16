@@ -1,12 +1,12 @@
 export default {
-	name: "pros",
-	title: "Review",
-	type: "object",
+	name: 'pros',
+	title: 'Positives',
+	type: 'document',
 	fields: [
 		{
-			name: "reviewProText",
-			title: "Pro",
-			type: "string",
+			name: 'reviewProText',
+			title: 'Positives',
+			type: 'string',
 		},
 
 	],

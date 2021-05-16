@@ -87,21 +87,40 @@ export default {
 		},
 
 
-
 {
-			name: "pros",
-			title: "Pros",
-			description:"Add multiple Pros",
+			title: "Positives",
+      name: "positives",
+			
+			description:"Add multiple Positive points",
 			type: "array",
-			of: [{ type: "pros" }],
+			of: [{ type: "string" }],
 		},
+
 		{
-			name: "cons",
-			title: "Cons",
-			description:"Add multiple Cons",
+		
+			title: "Negatives",	
+      name: "negatives",
+			description:"Add multiple Negative points",
 			type: "array",
-			of: [{ type: "cons" }],
+			of: [{ type: "string" }],
 		},
+
+
+
+// {
+// 			name: "pros",
+// 			title: "Pros",
+// 			description:"Add multiple Pros",
+// 			type: "array",
+// 			of: [{ type: "pros" }],
+// 		},
+		// {
+		// 	name: "cons",
+		// 	title: "Cons",
+		// 	description:"Add multiple Cons",
+		// 	type: "array",
+		// 	of: [{ type: "cons" }],
+		// },
 
 
 

@@ -1,13 +1,20 @@
 export default {
-	name: "cons",
-	title: "Review",
-	type: "object",
+	name: 'cons',
+	title: 'Negatives',
+	type: 'document',
 	fields: [
 		{
-			name: "reviewConText",
-			title: "Cons",
-			type: "string",
+			name: 'reviewConText',
+			title: 'Negatives',
+			type: 'string',
 		},
+        {
+            name: 'post',
+            type: 'reference',
+            to: [
+              {type: 'post'}
+            ]
+          }
 		//{
 			// name: "rating",
 			// title: "Rating",
