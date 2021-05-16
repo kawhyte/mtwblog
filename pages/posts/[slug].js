@@ -20,6 +20,8 @@ export default function Post({ post, morePosts, preview }) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
+
+  console.log(post)
   return (
     <Layout preview={preview}>
       <Container>
@@ -49,6 +51,8 @@ export default function Post({ post, morePosts, preview }) {
                 ratingValue ={post.ratingValue}
               />
               <PostBody content={post.body} />
+              <ProConList positives ={post.positives} negatives ={post.negatives} verdict ={post.verdict}  />
+
               
             </article>
 

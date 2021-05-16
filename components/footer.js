@@ -30,9 +30,9 @@ export default function Footer() {
 									/>
 								</svg>
 
-								<a className='hidden text-base font-bold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase text-black'>
+								<p className='hidden text-base font-bold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase text-black'>
 									Meet The Whytes
-								</a>
+								</p>
 							</div>
 						</Link>
 						<span className='ml-3 text-xl'>MTW</span>
