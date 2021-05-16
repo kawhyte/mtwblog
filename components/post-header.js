@@ -7,7 +7,6 @@ import StarRating from "./star-rating";
 import post from "../studio/schemas/post";
 export default function PostHeader({ title, coverImage, date, author, webLink, address, rating }) {
 
-console.log("RATE", rating)
 
 	return (
 		<>

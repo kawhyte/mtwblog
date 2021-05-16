@@ -21,7 +21,6 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />
   }
 
-  console.log("POST ",post)
   return (
     <Layout preview={preview}>
       <Container>
