@@ -88,7 +88,20 @@ export default {
 
 
 
-
+{
+			name: "pros",
+			title: "Pros",
+			description:"Add multiple Pros",
+			type: "array",
+			of: [{ type: "pros" }],
+		},
+		{
+			name: "cons",
+			title: "Cons",
+			description:"Add multiple Cons",
+			type: "array",
+			of: [{ type: "cons" }],
+		},
 
 
 
