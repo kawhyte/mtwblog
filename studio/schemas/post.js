@@ -55,6 +55,12 @@ export default {
 			title: "Business address",
 		},
 
+    {
+			name: "verdict",
+			title: "Verdict",
+			description:"Add your Verdict",
+			type: 'text'
+		},
 
     {
       name: 'body',
