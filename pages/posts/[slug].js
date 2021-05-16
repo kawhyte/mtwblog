@@ -13,6 +13,7 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import Form from '../../components/form'
+import ProConList from '../../components/pro-con-list'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -48,6 +49,7 @@ export default function Post({ post, morePosts, preview }) {
                 ratingValue ={post.ratingValue}
               />
               <PostBody content={post.body} />
+              <ProConList pros ={post.pros} cons ={post.cons} verdict ={post.verdict}  />
             </article>
 
             <Comments comments={post.comments} />
