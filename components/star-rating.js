@@ -19,7 +19,7 @@ const StarRating = ({rating}) => {
 			textRating ="Meh"
 			break;
 		case 2:
-			textRating ="Ok"
+			textRating ="Ok-ish"
 			break;
 		case 3:
 			textRating ="Good"
@@ -56,19 +56,19 @@ const StarRating = ({rating}) => {
           
 			<div className='md:my-5 md:ml-6 pb-4'>
 				<div className='flex flex-row'>
-					<Stars stars={rating?.ratingLocation} />
+					<Stars stars={Math.floor(rating?.ratingLocation)} />
 					<p className='mx-6'>Location</p>
 				</div>
 				<div className='flex flex-row'>
-					<Stars stars={rating?.ratingCleanliness} />
+					<Stars stars={Math.floor(rating?.ratingCleanliness)} />
 					<p className='mx-6'>Cleanliness</p>
 				</div>
 				<div className='flex flex-row'>
-					<Stars stars={rating?.ratingService} />
+					<Stars stars={Math.floor(rating?.ratingService)} />
 					<p className='mx-6'>Service</p>
 				</div>
 				<div className='flex flex-row'>
-					<Stars stars={rating?.ratingValue} />
+					<Stars stars={Math.floor(rating?.ratingValue)} />
 					<p className='mx-6'>Value</p>
 				</div>
 
