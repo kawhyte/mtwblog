@@ -55,6 +55,44 @@ export default {
 			title: "Business address",
 		},
 
+{
+			title: "Overall Rating",
+			name: "ratingOverall",
+			type: "number",
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+		{
+			title: "Location Rating",
+			name: "ratingLocation",
+			type: "number",
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+		{
+			title: "Cleanliness Rating",
+			name: "ratingCleanliness",
+			type: "number",
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+		{
+			title: "Service Rating",
+			name: "ratingService",
+			type: "number",
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+		{
+			title: "Value Rating",
+			name: "ratingValue",
+			type: "number",
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+
+
+
+
+
+
+
+
     {
 			name: "verdict",
 			title: "Verdict",
