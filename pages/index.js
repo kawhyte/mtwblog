@@ -1,4 +1,6 @@
 import Container from '../components/container'
+import Section from '../components/section'
+import Welcome from '../components/welcome'
 import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
@@ -14,7 +16,7 @@ export default function Index({ allPosts, preview }) {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Meet the Whytes by {CMS_NAME}</title>
         </Head>
         <Container>
           <Intro />
@@ -22,14 +24,42 @@ export default function Index({ allPosts, preview }) {
             <HeroPost
               title={heroPost.title}
               coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
+             // date={heroPost.date}
+              //author={heroPost.author}
               slug={heroPost.slug}
               excerpt={heroPost.excerpt}
             />
           )}
+
+          {morePosts.length > 0 && 
+
+            morePosts.map((post) => {
+                  <Section 
+                  
+                  key={post.slug}
+                      title={post.title}
+                      coverImage={post.coverImage}
+                      date={post.date}
+                      author={post.author}
+                      slug={post.slug}
+                      excerpt={post.excerpt}
+                      webLink={post.webLink}
+                  
+                  />  
+                
+                
+                } )}
+
+
+
+
+
+
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
+       
+          <Welcome />
+       
+          </Container>
       </Layout>
     </>
   )

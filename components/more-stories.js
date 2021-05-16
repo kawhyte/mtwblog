@@ -1,14 +1,15 @@
 import PostPreview from '../components/post-preview'
+import Section from './section'
 
 export default function MoreStories({ posts }) {
   return (
     <section>
-      <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
-        More Stories
+      <h2 className="mb-8 text-4xl md:text-6xl font-bold tracking-tighter leading-tight">
+        More Adventures and Reviews
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
+      <div className="grid grid-cols-1 sm:grid-cols-2   md:grid-cols-3 gap-16 px-2 py-2 mx-2 my-1 bg-bgcolor rounded-lg">
         {posts.map((post) => (
-          <PostPreview
+          <Section
             key={post.slug}
             title={post.title}
             coverImage={post.coverImage}
