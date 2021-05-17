@@ -15,7 +15,7 @@ const StarRating = ({ rating }) => {
 			rating?.ratingService +
 			rating?.ratingValue) /4;
 
-	if (average - Math.floor(average) > 0.23) {
+	if (average - Math.floor(average) > 0.24) {
 		isFraction = true;
 	}
 	// console.log("AVG ", average - Math.floor(average));
@@ -26,7 +26,7 @@ const StarRating = ({ rating }) => {
 	// 	.map((_, index) => {
 	// 		return <Heart key={index} />;
 	// 	});
-	switch (Math.floor(rating?.ratingOverall)) {
+	switch (Math.floor(average)) {
 		case 1:
 			textRating = "Meh";
 			break;
