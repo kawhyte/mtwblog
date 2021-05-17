@@ -18,8 +18,8 @@ const StarRating = ({ rating }) => {
 	if (average - Math.floor(average) > 0.23) {
 		isFraction = true;
 	}
-	console.log("AVG ", average - Math.floor(average));
-	console.log("isFraction ", isFraction);
+	// console.log("AVG ", average - Math.floor(average));
+	// console.log("isFraction ", isFraction);
 
 	// const heartIcons = Array(maxHearts)
 	// 	.fill()
@@ -72,7 +72,7 @@ const StarRating = ({ rating }) => {
 					<div className='flex flex-row'>
 						<Stars stars={Math.floor(rating?.ratingCleanliness)} />
 						<p className='mx-6'>
-							Room<span className='italic text-sm'> (Comfort & Size) </span>
+							Room<span className='italic text-sm'> (Comfort, Size & Amenities) </span>
 						</p>
 					</div>
 					<div className='flex flex-row'>
