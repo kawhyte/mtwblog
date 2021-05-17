@@ -41,7 +41,7 @@ export default function Post({ post, morePosts, preview }) {
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
-                webLink ={post.webLink}
+                // webLink ={post.webLink}
                 address ={post.address}
                 rating= {post.rating}
                 

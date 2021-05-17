@@ -39,7 +39,7 @@ export default function PostHeader({ title, coverImage, date, author, webLink, a
 					{address ? address : "No address provided"}
 				</div>
 			</div>
-			<div className='max-w-2xl flex flex-row '>
+		{/* 	<div className='max-w-2xl flex flex-row '>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					className='h-6 w-6'
@@ -55,9 +55,9 @@ export default function PostHeader({ title, coverImage, date, author, webLink, a
 				</svg>
 
 				<div className=' text-gray-500 block ml-2   mb-2  text-lg'>
-				{ webLink ?   <a href={webLink}> Visit Hotel Website</a> :" No adresss provided"  }	
-				</div>
-			</div>
+				webLink ?   <a href={webLink}> Visit Hotel Website</a> :" No adresss provided"  	
+	</div>
+			</div>*/}
 			<div className='max-w-2xl flex flex-row '>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'

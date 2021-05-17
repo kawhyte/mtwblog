@@ -1,7 +1,7 @@
 export default {
 	type: "object",
 	name: "rating",
-	description: "Rate different areas for the Hotel/Food etc.",
+	description: "Rate different areas",
 	fieldsets: [{ name: "social", title: "Give a rating 1-5 for each item" }],
 	options: {
 		collapsible: true, // Makes the whole fieldset collapsible
@@ -11,7 +11,7 @@ export default {
 
 	fields: [
 		{
-			title: "Location Rating",
+			title: "Location",
 			name: "ratingLocation",
 			type: "number",
 			options: {
@@ -33,7 +33,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Cleanliness Rating",
+			title: "Room (Comfort and Size)",
 			name: "ratingCleanliness",
 			type: "number",
 			options: {
@@ -56,7 +56,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Service Rating",
+			title: "Service",
 			name: "ratingService",
 			type: "number",
 			options: {
@@ -79,7 +79,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Value Rating",
+			title: "Price",
 			name: "ratingValue",
 			type: "number",
 			options: {
@@ -103,7 +103,7 @@ export default {
 		},
 
 		{
-			title: "Overall Rating",
+			title: "Overall",
 			name: "ratingOverall",
 			type: "number",
 			options: {

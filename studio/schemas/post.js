@@ -17,12 +17,12 @@ export default {
 				maxLength: 96,
 			},
 		},
-		{
-			name: "author",
-			title: "Author",
-			type: "reference",
-			to: { type: "author" },
-		},
+		// {
+		// 	name: "author",
+		// 	title: "Author",
+		// 	type: "reference",
+		// 	to: { type: "author" },
+		// },
 		{
 			name: "mainImage",
 			title: "Main image",
@@ -43,16 +43,16 @@ export default {
 			type: "datetime",
 		},
 
-		{
-			name: "webLink",
-			type: "string",
-			title: "Website Link",
-			description: "Add the website link for the hotel",
-		},
+		// {
+		// 	name: "webLink",
+		// 	type: "string",
+		// 	title: "Website Link",
+		// 	description: "Add the website link for the hotel",
+		// },
 		{
 			name: "address",
 			type: "string",
-			title: "Business address",
+			title: "Location",
 		},
 
 		{
