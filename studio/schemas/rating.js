@@ -106,6 +106,7 @@ export default {
 			title: "Overall",
 			name: "ratingOverall",
 			type: "number",
+			hidden:true,
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
