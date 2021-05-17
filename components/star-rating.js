@@ -48,6 +48,8 @@ const StarRating = ({ rating }) => {
 			break;
 	}
 
+	
+
 	return (
 		<>
 			<div className='flex flex-col md:flex-row border-b '>
@@ -58,7 +60,7 @@ const StarRating = ({ rating }) => {
 
 					<div className='flex flex-col-reverse ml-3 align-top justify-start '>
 						<div className='flex flex-row justify-start align-middle   items-start '>
-							<Stars stars={Math.floor(rating?.ratingOverall)} />
+							<Stars stars={Math.floor(average)} />
 						</div>
 						<p className='mx-1 text-xl font-bold'> {textRating}</p>
 					</div>
