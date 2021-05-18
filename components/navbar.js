@@ -4,8 +4,8 @@ import Link from "next/link";
 function Navbar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (
-		<div className='sticky top-0 z-50 border-b bg-white'>
-			<nav className='relative flex flex-wrap items-center justify-between  px-2 py-3 bg-white mb-3'>
+		<div className='top-0 z-50 bg-whit absolute left-0 right-0 '>
+			<nav className='relative flex flex-wrap items-center justify-between  px-2 py-3 bg-whit mb-3'>
 				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 					<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
 						<Link href='/' className='cursor-pointer'>
@@ -30,13 +30,13 @@ function Navbar({ fixed }) {
 									/>
 								</svg>
 
-								<p className='hidden text-base font-bold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase text-black'>
+								<p className='hidden text-base font-bold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase text-white'>
 									Meet The Whytes
 								</p>
 							</div>
 						</Link>
 						<button
-							className='text-pink-500 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none'
+							className='text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none'
 							type='button'
 							onClick={() => setNavbarOpen(!navbarOpen)}>
 							<svg
@@ -63,67 +63,60 @@ function Navbar({ fixed }) {
 						<ul className='flex flex-col align-middle justify-center items-center lg:flex-row list-none lg:ml-auto '>
 							<li className='nav-item'>
 								<a
-									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75'
+									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
 									href=''>
-									<i className='fab fa-facebook-square text-lg leading-lg text-black opacity-75'></i>
+									<i className='fab fa-facebook-square text-lg leading-lg text-white opacity-75'></i>
 									<span className='ml-2'>Home</span>
 								</a>
 							</li>
 							<li className='nav-item'>
 								<Link href='/allposts'>
 									<a
-										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75'
+										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
 										href=''>
-										<i className='fab fa-facebook-square text-lg leading-lg text-black opacity-75'></i>
+										<i className='fab fa-facebook-square text-lg leading-lg text-white opacity-75'></i>
 										<span className='ml-2'>All Posts</span>
 									</a>
 								</Link>
 							</li>
 
-							<li className='nav-item text-gray-500  sm:pl-4 sm:border-l-2 sm:border-gray-200'>
-								<a
-									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-pink-500 hover:opacity-75'
-									href=''>
+				
+							<li className='nav-item text-white sm:pl-1 sm:mr-4     sm:border-gray-200'>
+								<button class=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold py-1 px-2 rounded inline-flex items-center'>
 									<svg
-										fill='none'
+										fill='currentColor'
 										stroke='currentColor'
 										strokeLinecap='round'
 										strokeLinejoin='round'
-										strokeWidth='2'
-										className='w-8 h-8'
+										strokeWidth='0'
+										className='w-6 h-6'
 										viewBox='0 0 24 24'>
-										<rect
-											width='20'
-											height='20'
-											x='2'
-											y='2'
-											rx='5'
-											ry='5'></rect>
-										<path d='M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01'></path>
+										<path d='M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z'></path>
+										<circle cx='4' cy='4' r='2' stroke='none'></circle>
 									</svg>
-									<span className='ml-2'>Instagram</span>
-								</a>
+								</button>
 							</li>
-							<li className='nav-item text-gray-500 sm:border-gray-200'>
-								<a
-									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-pink-500 hover:opacity-75'
-									href=''>
-                  <svg
-                  fill='currentColor'
-                  stroke='currentColor'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth='0'
-                  className='w-8 h-8'
-                  viewBox='0 0 24 24'>
-                  <path
-                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
-                  <circle cx='4' cy='4' r='2' stroke='none'></circle>
-                </svg>
-									<span className='ml-2'>Youtube</span>
-								</a>
+							<li className='nav-item text-white ml-2  sm:border-gray-200'>
+								<button class=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold py-1 px-2 rounded inline-flex items-center'>
+								<svg
+								fill='none'
+								stroke='currentColor'
+								strokeLinecap='round'
+								strokeLinejoin='round'
+								strokeWidth='2'
+								className='w-6 h-6'
+								viewBox='0 0 24 24'>
+								<rect
+									width='20'
+									height='20'
+									x='2'
+									y='2'
+									rx='5'
+									ry='5'></rect>
+								<path d='M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01'></path>
+							</svg>
+								</button>
 							</li>
-					
 						</ul>
 					</div>
 				</div>

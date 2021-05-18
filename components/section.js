@@ -29,7 +29,7 @@ function Section({
 	return (
 		<>
 			<div>
-				<section className='text-gray-600 body-font'>
+				<section className='text-gray-600 body-font my-8'>
 					<div className='rounded-lg h-80 overflow-hidden'>
 						{slug ? (
 							<Link as={`/posts/${slug}`} href='/posts/[slug]'>
@@ -48,7 +48,7 @@ function Section({
 
 					<Link as={`/posts/${slug}`} href='/posts/[slug]'>
 						<a className='text-indigo-500 inline-flex items-center mt-1'>
-							Read More
+							View Review
 							<svg
 								fill='none'
 								stroke='currentColor'

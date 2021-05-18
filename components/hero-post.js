@@ -18,7 +18,7 @@ export default function HeroPost({
 				<div className='mb-8 md:mb-10 relative'>
 					<MtwAward />
 
-					<div className=' absolute bottom-0 right-0  mx-2 my-1 '>
+					<div className='absolute bottom-0 right-0 mx-2 my-1 '>
 						<h3 className='mb-2 md:mb-8 text-xl md:text-4xl font-bold tracking-tighter leading-tight bg-white px-3 py-2'>
 							<Link as={`/posts/${slug}`} href='/posts/[slug]'>
 								<a className='hover:underline break-all'>{title}</a>
