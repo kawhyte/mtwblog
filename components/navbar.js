@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
 
-function Navbar({ fixed }) {
+function Navbar({ fixed, color }) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
+ let col = color ? ' text-black': ' text-white'
+
 	return (
 		<div className='top-0 z-50 bg-whit absolute left-0 right-0 '>
 			<nav className='relative flex flex-wrap items-center justify-between  px-2 py-3 bg-whit mb-3'>
@@ -30,14 +32,14 @@ function Navbar({ fixed }) {
 									/>
 								</svg>
 
-								<p className='hidden  text-lg font-semibold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase text-white'>
+								<p className={'hidden  text-lg font-semibold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase  ' + col  }>
 									Meet The Whytes
 								</p>
 							</div>
 						</Link>
 
 						<button
-							className='text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none'
+							className={'cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none '  + col  }
 							type='button'
 							onClick={() => setNavbarOpen(!navbarOpen)}>
 							<svg
@@ -64,7 +66,7 @@ function Navbar({ fixed }) {
 						<ul className='flex flex-col align-middle justify-start items-center lg:flex-row list-none lg:ml-auto '>
 							<li className='nav-item'>
 								<a
-									className='px-3 py-2 flex items-left text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+									className={'px-3 py-2 flex items-left text-xs uppercase font-bold leading-snug hover:opacity-75  ' +  col   }
 									href=''>
 									<span className='text-base'>Home</span>
 								</a>
@@ -72,7 +74,7 @@ function Navbar({ fixed }) {
 							<li className='nav-item'>
 								<Link href='/allposts'>
 									<a
-										className='px-3 py-2 flex items-left text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+										className={'px-3 py-2 flex items-left text-xs uppercase font-bold leading-snug hover:opacity-75 '  + col  }
 										href=''>
 										<span className=' text-base'>All Posts</span>
 									</a>

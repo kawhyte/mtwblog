@@ -19,7 +19,7 @@ function ProConList({ positives, negatives ,verdict }) {
 								</svg>
 							</div>
 							<div className='flex-grow'>
-								<h2 className='text-gray-900 text-lg title-font font-medium mb-3'>
+								<h2 className='font-playfair-display text-gray-900 text-lg title-font font-medium mb-3'>
 									What we loved
 								</h2>
 
@@ -59,7 +59,7 @@ function ProConList({ positives, negatives ,verdict }) {
 								</svg>
 							</div>
 							<div className='flex-grow'>
-								<h2 className='text-gray-900 text-lg title-font font-medium mb-3'>
+								<h2 className='font-playfair-display text-gray-900 text-lg title-font font-medium mb-3'>
 									What we didnt like{" "}
 								</h2>
 
@@ -107,7 +107,7 @@ function ProConList({ positives, negatives ,verdict }) {
 					</svg>
 				</div>
 				<div className='flex-grow'>
-					<h2 className='text-gray-900 text-lg title-font font-medium mb-3'>
+					<h2 className='font-playfair-display text-gray-900 text-lg title-font font-medium mb-3'>
 						Verdict
 					</h2>
 
