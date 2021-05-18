@@ -30,18 +30,12 @@ function Navbar({ fixed }) {
 									/>
 								</svg>
 
-								<p className='hidden text-base font-bold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase text-white'>
+								<p className='hidden  text-lg font-semibold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase text-white'>
 									Meet The Whytes
 								</p>
-								
-								
-							
 							</div>
-
-							
 						</Link>
 
-						
 						<button
 							className='text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none'
 							type='button'
@@ -72,8 +66,7 @@ function Navbar({ fixed }) {
 								<a
 									className='px-3 py-2 flex items-left text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
 									href=''>
-								
-									<span className=''>Home</span>
+									<span className='text-base'>Home</span>
 								</a>
 							</li>
 							<li className='nav-item'>
@@ -81,15 +74,13 @@ function Navbar({ fixed }) {
 									<a
 										className='px-3 py-2 flex items-left text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
 										href=''>
-									
-										<span className=''>All Posts</span>
+										<span className=' text-base'>All Posts</span>
 									</a>
 								</Link>
 							</li>
 
-				
 							<li className='hidden md:block nav-item text-white sm:pl-1 sm:mr-4     sm:border-gray-200'>
-								<button class=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold py-1 px-2  rounded-xl inline-flex items-center'>
+								<button className=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold py-1 px-2  rounded-xl inline-flex items-center'>
 									<svg
 										fill='currentColor'
 										stroke='currentColor'
@@ -104,24 +95,24 @@ function Navbar({ fixed }) {
 								</button>
 							</li>
 							<li className='nav-item hidden md:block text-white  sm:border-gray-200'>
-								<button class=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold py-1 px-2 rounded-xl inline-flex items-center'>
-								<svg
-								fill='none'
-								stroke='currentColor'
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								strokeWidth='2'
-								className='w-6 h-6'
-								viewBox='0 0 24 24'>
-								<rect
-									width='20'
-									height='20'
-									x='2'
-									y='2'
-									rx='5'
-									ry='5'></rect>
-								<path d='M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01'></path>
-							</svg>
+								<button className=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold py-1 px-2 rounded-xl inline-flex items-center'>
+									<svg
+										fill='none'
+										stroke='currentColor'
+										strokeLinecap='round'
+										strokeLinejoin='round'
+										strokeWidth='2'
+										className='w-6 h-6'
+										viewBox='0 0 24 24'>
+										<rect
+											width='20'
+											height='20'
+											x='2'
+											y='2'
+											rx='5'
+											ry='5'></rect>
+										<path d='M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01'></path>
+									</svg>
 								</button>
 							</li>
 						</ul>

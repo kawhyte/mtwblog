@@ -13,15 +13,18 @@ export default function HeroPost({
 	slug,
 }) {
 	return (
-		<section className=''>
+		<section className='mt-20'>
+		<h2 className="font-playfair-display sm:mb-12 text-4xl md:text-6xl  font-medium tracking-tight leading-tight">
+		Recently added reviews
+		</h2>
 			<div className='flex flex-col justify-start items-center'>
-				<div className='mb-8 md:mb-10 relative'>
+				<div className=' relative'>
 					<MtwAward />
 
 					<div className='absolute bottom-0 right-0 mx-2 my-1 '>
-						<h3 className='mb-2 md:mb-8 text-xl md:text-4xl font-bold tracking-tighter leading-tight bg-white px-3 py-2'>
+						<h3 className='mb-2 md:mb-6 text-xl md:text-4xl font-bold tracking-tighter leading-tight bg-white px-3 py-2'>
 							<Link as={`/posts/${slug}`} href='/posts/[slug]'>
-								<a className='hover:underline break-all'>{title}</a>
+								<a className='hover:underline break-all font-playfair-display'>{title}</a>
 							</Link>
 						</h3>
 					</div>
@@ -32,7 +35,7 @@ export default function HeroPost({
 						url={coverImage}
 					/>
 				</div>
-				<div className='md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-16 md:mb-24 '>
+				<div className='md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-16 md:mb-12 '>
 					<div>
 						<p className='text-lg leading-relaxed mb-2'>{excerpt}</p>
 					</div>

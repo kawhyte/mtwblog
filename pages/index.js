@@ -21,10 +21,11 @@ export default function Index({ allPosts, preview }) {
 					<title>Travel and Food Reviews by {CMS_NAME}</title>
 				</Head>
 				<Hero />
+				<Welcome />
 				<Container>
-					<Intro />
+				
 					{heroPost && (
-						<HeroPost
+						<HeroPost 
 							title={heroPost.title}
 							coverImage={heroPost.coverImage}
 							// date={heroPost.date}
@@ -50,7 +51,7 @@ export default function Index({ allPosts, preview }) {
 
 					{morePosts.length > 0 && <MoreStories posts={morePosts} />}
 				</Container>
-				<Welcome />
+				
 			</Layout>
 		</>
 	);

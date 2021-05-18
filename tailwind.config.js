@@ -1,3 +1,6 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
+
 module.exports = {
 
   purge: [
@@ -8,6 +11,11 @@ module.exports = {
 ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: [ 'Source Sans Pro', ...defaultTheme.fontFamily.sans],
+        'playfair-display': ['Playfair Display', ...defaultTheme.fontFamily.sans],
+      },
+
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',

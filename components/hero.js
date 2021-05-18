@@ -18,12 +18,12 @@ function Hero() {
         <span class="font-bold uppercase text-pink-500">
             
         </span>
-        <h1 class="font-bold text-6xl sm:text-7xl text-white leading-tight mt-4">
+        <h1 class="font-playfair-display text-6xl sm:text-7xl text-white leading-tight mt-4">
             Explore And
             <br/>
              Travel
         </h1>
-        <h4 className="text-center text-white md:text-left text-lg mt-5">
+        <h4 className="  text-center text-white md:text-left text-xl mt-5">
         Our journey in discovering and reviewing Food, Hotels and interesting items.
       </h4>
      
