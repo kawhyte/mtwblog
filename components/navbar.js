@@ -82,7 +82,7 @@ function Navbar({ fixed, color }) {
 							</li>
 
 							<li className='hidden md:block nav-item text-white sm:pl-1 sm:mr-4     sm:border-gray-200'>
-								<button className=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold py-1 px-2  rounded-xl inline-flex items-center'>
+								<button className=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold px-1  rounded-lg inline-flex items-center'>
 									<svg
 										fill='currentColor'
 										stroke='currentColor'
@@ -97,7 +97,7 @@ function Navbar({ fixed, color }) {
 								</button>
 							</li>
 							<li className='nav-item hidden md:block text-white  sm:border-gray-200'>
-								<button className=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold py-1 px-2 rounded-xl inline-flex items-center'>
+								<button className=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold px-1 rounded-lg inline-flex items-center'>
 									<svg
 										fill='none'
 										stroke='currentColor'
