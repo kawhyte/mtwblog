@@ -21,7 +21,7 @@ function Hero() {
         <h1 class="font-playfair-display text-6xl sm:text-7xl text-white leading-tight mt-4">
             Travel, 
             <br/>
-             Explore & Eat
+             Explore <span className="text-pink-500"> &</span> Eat
         </h1>
         <h4 className="  text-center text-white md:text-left text-2xl mt-5">
         Our journey in discovering and reviewing food, hotels and interesting items.
