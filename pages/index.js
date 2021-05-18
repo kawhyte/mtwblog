@@ -58,9 +58,9 @@ export default function Index({ allPosts, preview }) {
 
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
        
-          <Welcome />
+          
        
-          </Container>
+          </Container><Welcome />
       </Layout>
     </>
   )

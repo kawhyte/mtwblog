@@ -16,3 +16,16 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+.markdown img {
+
+  @apply w-10/12;
+    @apply h-3/6;
+    @apply rounded-3xl;
+    @apply object-contain;
+}
+
+.markdown li{
+  @apply list-disc
+  
+}
