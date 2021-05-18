@@ -33,8 +33,15 @@ function Navbar({ fixed }) {
 								<p className='hidden text-base font-bold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase text-white'>
 									Meet The Whytes
 								</p>
+								
+								
+							
 							</div>
+
+							
 						</Link>
+
+						
 						<button
 							className='text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none'
 							type='button'
@@ -60,29 +67,29 @@ function Navbar({ fixed }) {
 							(navbarOpen ? " flex" : " hidden")
 						}
 						id='example-navbar-danger'>
-						<ul className='flex flex-col align-middle justify-center items-center lg:flex-row list-none lg:ml-auto '>
+						<ul className='flex flex-col align-middle justify-start items-center lg:flex-row list-none lg:ml-auto '>
 							<li className='nav-item'>
 								<a
-									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+									className='px-3 py-2 flex items-left text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
 									href=''>
-									<i className='fab fa-facebook-square text-lg leading-lg text-white opacity-75'></i>
-									<span className='ml-2'>Home</span>
+								
+									<span className=''>Home</span>
 								</a>
 							</li>
 							<li className='nav-item'>
 								<Link href='/allposts'>
 									<a
-										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+										className='px-3 py-2 flex items-left text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
 										href=''>
-										<i className='fab fa-facebook-square text-lg leading-lg text-white opacity-75'></i>
-										<span className='ml-2'>All Posts</span>
+									
+										<span className=''>All Posts</span>
 									</a>
 								</Link>
 							</li>
 
 				
-							<li className='nav-item text-white sm:pl-1 sm:mr-4     sm:border-gray-200'>
-								<button class=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold py-1 px-2 rounded inline-flex items-center'>
+							<li className='hidden md:block nav-item text-white sm:pl-1 sm:mr-4     sm:border-gray-200'>
+								<button class=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold py-1 px-2  rounded-xl inline-flex items-center'>
 									<svg
 										fill='currentColor'
 										stroke='currentColor'
@@ -96,8 +103,8 @@ function Navbar({ fixed }) {
 									</svg>
 								</button>
 							</li>
-							<li className='nav-item text-white ml-2  sm:border-gray-200'>
-								<button class=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold py-1 px-2 rounded inline-flex items-center'>
+							<li className='nav-item hidden md:block text-white  sm:border-gray-200'>
+								<button class=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold py-1 px-2 rounded-xl inline-flex items-center'>
 								<svg
 								fill='none'
 								stroke='currentColor'
