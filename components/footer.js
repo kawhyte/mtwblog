@@ -38,13 +38,13 @@ export default function Footer() {
 						<span className='ml-3 text-xl'>MTW</span>
 					</a>
 					<p className='text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4'>
-						© 2021 MTW —
+						© 2021 MTW — Created by
 						<a
 							href='https://www.kennywhyte.com'
-							className='text-gray-500 ml-1'
+							className='text-blue-500 ml-1'
 							rel='noopener noreferrer'
 							target='_blank'>
-							kennywhyte.com
+							Kenny 
 						</a>
 					</p>
 					<span className='inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start cursor-pointer'>
