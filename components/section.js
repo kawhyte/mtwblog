@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { imageBuilder } from "../lib/sanity";
 import cn from "classnames";
+import StarRating from "./star-rating";
 
 function Section({
 	title,
@@ -42,6 +43,9 @@ function Section({
 						{title}
 					</h2>
 					<p className='text-base leading-relaxed mt-2'>{excerpt}</p>
+				
+			
+
 					<Link as={`/posts/${slug}`} href='/posts/[slug]'>
 						<a className='text-indigo-500 inline-flex items-center mt-1'>
 							Read More
