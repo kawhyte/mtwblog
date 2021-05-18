@@ -29,7 +29,7 @@ function Section({
 		<>
 			<div>
 				<section className='text-gray-600 body-font'>
-					<div className='rounded-lg h-64 overflow-hidden'>
+					<div className='rounded-lg h-80 overflow-hidden'>
 						{slug ? (
 							<Link as={`/posts/${slug}`} href='/posts/[slug]'>
 								<a aria-label={title}>{image}</a>
@@ -38,12 +38,12 @@ function Section({
 							image
 						)}
 					</div>
-					<h2 className='text-xl font-medium title-font text-gray-900 mt-5'>
+					<h2 className='text-xl font-medium title-font text-gray-900 mt-3'>
 						{title}
 					</h2>
 					<p className='text-base leading-relaxed mt-2'>{excerpt}</p>
 					<Link as={`/posts/${slug}`} href='/posts/[slug]'>
-						<a className='text-indigo-500 inline-flex items-center mt-3'>
+						<a className='text-indigo-500 inline-flex items-center mt-1'>
 							Read More
 							<svg
 								fill='none'
