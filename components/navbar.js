@@ -81,42 +81,7 @@ function Navbar({ fixed, color }) {
 								</Link>
 							</li>
 
-							<li className='hidden md:block nav-item text-white sm:pl-1 sm:mr-4     sm:border-gray-200'>
-								<button className=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold px-1  rounded-lg inline-flex items-center'>
-									<svg
-										fill='currentColor'
-										stroke='currentColor'
-										strokeLinecap='round'
-										strokeLinejoin='round'
-										strokeWidth='0'
-										className='w-6 h-6'
-										viewBox='0 0 24 24'>
-										<path d='M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z'></path>
-										<circle cx='4' cy='4' r='2' stroke='none'></circle>
-									</svg>
-								</button>
-							</li>
-							<li className='nav-item hidden md:block text-white  sm:border-gray-200'>
-								<button className=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold px-1 rounded-lg inline-flex items-center'>
-									<svg
-										fill='none'
-										stroke='currentColor'
-										strokeLinecap='round'
-										strokeLinejoin='round'
-										strokeWidth='2'
-										className='w-6 h-6'
-										viewBox='0 0 24 24'>
-										<rect
-											width='20'
-											height='20'
-											x='2'
-											y='2'
-											rx='5'
-											ry='5'></rect>
-										<path d='M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01'></path>
-									</svg>
-								</button>
-							</li>
+							
 						</ul>
 					</div>
 				</div>
@@ -126,6 +91,52 @@ function Navbar({ fixed, color }) {
 }
 
 export default Navbar;
+
+
+
+// <li className='hidden md:block nav-item text-white sm:pl-1 sm:mr-4     sm:border-gray-200'>
+// 								<button className=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold px-1  rounded-lg inline-flex items-center'>
+// 									<svg
+// 										fill='currentColor'
+// 										stroke='currentColor'
+// 										strokeLinecap='round'
+// 										strokeLinejoin='round'
+// 										strokeWidth='0'
+// 										className='w-6 h-6'
+// 										viewBox='0 0 24 24'>
+// 										<path d='M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z'></path>
+// 										<circle cx='4' cy='4' r='2' stroke='none'></circle>
+// 									</svg>
+// 								</button>
+// 							</li>
+// 							<li className='nav-item hidden md:block text-white  sm:border-gray-200'>
+// 								<button className=' bg-gray-400 hover:bg-grey-200 text-grey-900 font-bold px-1 rounded-lg inline-flex items-center'>
+// 									<svg
+// 										fill='none'
+// 										stroke='currentColor'
+// 										strokeLinecap='round'
+// 										strokeLinejoin='round'
+// 										strokeWidth='2'
+// 										className='w-6 h-6'
+// 										viewBox='0 0 24 24'>
+// 										<rect
+// 											width='20'
+// 											height='20'
+// 											x='2'
+// 											y='2'
+// 											rx='5'
+// 											ry='5'></rect>
+// 										<path d='M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01'></path>
+// 									</svg>
+// 								</button>
+// 							</li>
+
+
+
+
+
+
+
 
 // <nav className='bg-white shadow dark:bg-gray-800'>
 // 				<div className='container px-6 py-3 mx-auto'>

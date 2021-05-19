@@ -28,6 +28,7 @@ function Section({
 	);
 	return (
 		<>
+		
 			<div>
 				<section className='text-gray-600 body-font'>
 					<div className='rounded-lg h-80 overflow-hidden'>

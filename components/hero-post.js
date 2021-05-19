@@ -8,22 +8,27 @@ export default function HeroPost({
 	title,
 	coverImage,
 	date,
+	address,
 	excerpt,
 	author,
 	slug,
 }) {
 	return (
 		<section className='mt-20'>
-		<h2 className="font-playfair-display sm:mb-12 text-4xl md:text-6xl  font-medium tracking-tight leading-tight">
-		Recently added reviews
+		<h2 className="font-playfair-display mb-5 sm:mb-12 text-2xl md:text-3xl  font-medium tracking-tight leading-tight">
+		Featured Review
 		</h2>
+
 			<div className='flex flex-col justify-start items-center'>
 				<div className=' relative'>
 					<MtwAward />
 
-					<div className='absolute bottom-0 right-0 mx-2 my-1 '>
+					<div className='absolute bottom-0 right-0 mx-2 my-1 flex flex-col justify-start items-start align-middle '>
+					<p className="bg-pink-500 text-left text-white break-all pl-4 pr-8 py-1 ">{address}</p>
 						<h3 className='mb-2 md:mb-6 text-xl md:text-4xl font-bold tracking-tighter leading-tight bg-white px-3 py-2'>
-							<Link as={`/posts/${slug}`} href='/posts/[slug]'>
+							
+						
+						<Link as={`/posts/${slug}`} href='/posts/[slug]'>
 								<a className='hover:underline break-all font-playfair-display'>{title}</a>
 							</Link>
 						</h3>
