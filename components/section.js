@@ -31,7 +31,7 @@ function Section({
 		
 			<div>
 				<section className='text-gray-600 body-font'>
-					<div className='rounded-lg h-80 overflow-hidden'>
+					<div className='rounded-xl h-full overflow-hidden'>
 						{slug ? (
 							<Link as={`/posts/${slug}`} href='/posts/[slug]'>
 								<a aria-label={title}>{image}</a>

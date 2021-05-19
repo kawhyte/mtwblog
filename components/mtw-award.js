@@ -5,7 +5,7 @@ function MtwAward() {
         <div>
         <span className='flex flex-row-reverse justify-center items-center px-3  mx-2 my-2  text-base rounded-2xl text-yellow-800  bg-white absolute '>
         <p className='text-gray-800 font-bold text-sm '>
-           Great
+           Awesome
         </p>
         <svg className='h-8 w-8 fill-current text-yellow-400  pt-2 pl-1'>
             <path
