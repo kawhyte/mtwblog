@@ -1,12 +1,25 @@
 import React from 'react'
 import Navbar from './navbar'
 
+import { Player } from 'video-react';
+
 function Hero() {
+   
+
     return (
         <div>
           
 <div class="bg-indigo-900 relative overflow-hidden h-5/6">
-<img src="https://images.pexels.com/photos/1030322/pexels-photo-1030322.png?cs=srgb&dl=pexels-jose-espinal-1030322.jpg&fm=jpg" class="absolute h-full w-full object-cover"/>
+<img src="https://images.pexels.com/photos/1030322/pexels-photo-1030322.png?cs=srgb&dl=pexels-jose-espinal-1030322.jpg&fm=jpg" class=" block absolute md:hidden h-full w-full object-cover"/>
+
+<video autoPlay loop muted class="hidden md:block w-full h-full absolute object-cover">
+<source src="https://res.cloudinary.com/babyhulk/video/upload/v1621433741/Video/Pexels_Videos_1409899.mp4" type="video/mp4" />Your browser does not support the video tag.
+<source src="https://petermedina.com/video/beach.webm" type="video/webm" />Your browser does not support the video tag.
+</video>
+
+
+
+
 <div class="inset-0 bg-black opacity-40  absolute">
 
 </div>
