@@ -41,10 +41,7 @@ export default function Index({ allPosts, preview }) {
 							<h2 className='font-playfair-display sm:my-8 text-2xl md:text-3xl  font-medium tracking-tight leading-tight'>
 								More Reviews
 							</h2>
-<Link href="/allposts"> 
-							<button className='px-2 py-2 font-medium tracking-wide text-xl text-indigo-500 capitalize transition-colors duration-200 transform  rounded-md dark:bg-gray-800 hover:underline dark:hover:bg-gray-700 focus:outline-none '>
-								View All Reviews
-							</button></Link>
+
 						</div>
 					) : (
 						""
@@ -64,7 +61,15 @@ export default function Index({ allPosts, preview }) {
 						})}
 
 					{morePosts.length > 0 && <MoreStories posts={morePosts} />}
-				</Container>
+					
+						
+<div className="bg-red-200 mx-auto container my-12 max-w-xs"> 
+<Link href="/allposts"> 
+<button type="button" className="py-2 px-4   bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+View All Reviews
+</button>
+</Link>
+</div>				</Container>
 			</Layout>
 		</>
 	);
