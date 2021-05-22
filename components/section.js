@@ -30,7 +30,7 @@ function Section({
 		<>
 		
 			<div>
-				<section className='text-gray-600 body-font'>
+				<section className='text-gray-600 body-font mb-6'>
 					<div className='rounded-xl h-full overflow-hidden'>
 						{slug ? (
 							<Link as={`/posts/${slug}`} href='/posts/[slug]'>
