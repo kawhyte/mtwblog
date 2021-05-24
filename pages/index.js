@@ -10,6 +10,7 @@ import { getAllPostsForHome } from "../lib/api";
 import Head from "next/head";
 import { CMS_NAME } from "../lib/constants";
 import Link from "next/link"
+import Categories from "../components/categories";
 
 export default function Index({ allPosts, preview }) {
 	const heroPost = allPosts[0];
@@ -23,6 +24,7 @@ export default function Index({ allPosts, preview }) {
 				</Head>
 				<Hero />
 				<Welcome />
+				<Categories />
 				<Container>
 					{heroPost && (
 						<HeroPost
