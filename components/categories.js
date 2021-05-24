@@ -11,7 +11,7 @@ function Categories() {
               <h1 className="font-playfair-display  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Browse by Category</h1>
               <div className="h-1 w-20 bg-pink-500 rounded"></div>
             </div>
-            <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+            <p className="lg:w-1/2 w-full leading-relaxed text-gray-500 text-lg"> You want to get out and see the world, but you have so many questions. Check out our trips.</p>
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="xl:w-1/4 md:w-1/2 p-4">
