@@ -17,10 +17,11 @@ function Categories() {
             <div className="xl:w-1/4 md:w-1/2 p-4">
             <Link href="/allposts" className=""> 
               <div className="bg-indigo-50 p-6 rounded-lg cursor-pointer">
+             <a> 
                 <img className="h-40 h rounded w-full object-cover object-center mb-6" src="https://res.cloudinary.com/babyhulk/image/upload/v1621896780/project/PXL_20210428_025517322.MP.webp" alt="View of Sunset at a hotel" />
                 
                 <h2 className=" font-playfair-display text-lg text-gray-900 font-medium title-font mb-4">Hotel Reviews</h2>
-              </div>
+              </a></div>
               </Link>
             </div>
             <div className="xl:w-1/4 md:w-1/2 p-4">
