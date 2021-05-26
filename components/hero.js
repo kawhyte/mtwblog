@@ -40,10 +40,10 @@ function Hero() {
 							<br />
 							Explore <span className='text-pink-500'> &</span> Eat
 						</h1>
-						<h4 className='  text-center text-white md:text-left text-2xl mt-5'>
+						<h2 className='text-center text-white md:text-left text-xl mt-5'>
 							Our journey in discovering and reviewing food, hotels and
 							interesting items.
-						</h4>
+						</h2>
 					</div>
 				</div>
 			</div>
