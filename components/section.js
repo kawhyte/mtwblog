@@ -17,13 +17,13 @@ function Section({
 
 	const image = (
 		<img
-			width={1240}
-			height={540}
+			width={392}
+			height={171}
 			alt={`Cover Image for ${title}`}
 			className={cn("shadow-small", {
 				"object-cover object-center h-full w-full": slug,
 			})}
-			src={imageBuilder(coverImage).width(1240).height(540).url()}
+			src={imageBuilder(coverImage).width(392).height(171).url()}
 		/>
 	);
 	return (
