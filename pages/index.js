@@ -63,6 +63,7 @@ export default function Index({ allPosts, preview }) {
 					<div className='bg-red-200 mx-auto container my-12 max-w-xs'>
 						<Link href='/allposts'>
 							<button
+							aria-label= "Justify"
 								type='button'
 								className='py-2 px-4   bg-pink-500 hover:bg-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
 								View All Reviews

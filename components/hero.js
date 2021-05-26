@@ -8,6 +8,7 @@ function Hero() {
 				<img
 					src='https://res.cloudinary.com/babyhulk/image/upload/v1622066371/project/Main.webp'
 					className=' block absolute md:hidden h-full w-full object-cover'
+					aria-label= "Justify"
 				/>
 
 				<video

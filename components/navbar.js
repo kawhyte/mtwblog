@@ -41,6 +41,7 @@ function Navbar({ fixed, color }) {
 						<button
 							className={'cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none '  + col  }
 							type='button'
+							aria-label= "Justify"
 							onClick={() => setNavbarOpen(!navbarOpen)}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'

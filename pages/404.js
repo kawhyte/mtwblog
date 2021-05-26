@@ -14,7 +14,10 @@ export default function FourOhFour() {
 							<h1 className='font-thin text-center text-6xl text-gray-800'>
 								ARE YOU LOST LOST ?
 							</h1>
-							<button className='px-3 py-2 w-32 font-light transition ease-in duration-200 uppercase hover:bg-pink-500 hover:text-white border-b text-2xl border-pink-600 focus:outline-none'>
+							<button
+							aria-label= "Justify"
+							
+							className='px-3 py-2 w-32 font-light transition ease-in duration-200 uppercase hover:bg-pink-500 hover:text-white border-b text-2xl border-pink-600 focus:outline-none'>
 								Help Me
 							</button>
 						</div>

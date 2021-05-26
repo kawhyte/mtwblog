@@ -48,7 +48,7 @@ function Section({
 			
 
 					<Link as={`/posts/${slug}`} href='/posts/[slug]'>
-						<a className='text-indigo-500 inline-flex items-center mt-1'>
+						<a className='text-indigo-500 bg-white inline-flex items-center mt-1'>
 							View Review
 							<svg
 								fill='none'
