@@ -11,7 +11,7 @@ import Head from "next/head";
 import { CMS_NAME } from "../lib/constants";
 import Link from "next/link";
 import Categories from "../components/categories";
-import Navbar from "../components/navbar2";
+import Navbar from "../components/navbar";
 
 export default function Index({ allPosts, preview }) {
 	const heroPost = allPosts[0];
