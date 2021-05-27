@@ -5,7 +5,6 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
-	{ name: "Home", href: "/", current: false },
 	{ name: "Hotel", href: "/hotel", current: false },
 	{ name: "Food", href: "/food", current: false },
 	{ name: "Day Trips", href: "/day-trip", current: false },
@@ -22,7 +21,7 @@ export default function Example({ color }) {
 		<Disclosure as='nav' className='top-0 z-50 bg-whit absolute left-0 right-0      '>
 			{({ open }) => (
 				<>
-					<div className='max-w-8xl  container mx-auto'>
+					<div className='max-w-8xl  container mx-auto cursor-pointer'>
 						<div className='relative flex items-center justify-between h-16'>
 							<div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
 								{/* Mobile menu button*/}
