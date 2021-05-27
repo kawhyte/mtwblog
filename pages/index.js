@@ -11,6 +11,7 @@ import Head from "next/head";
 import { CMS_NAME } from "../lib/constants";
 import Link from "next/link";
 import Categories from "../components/categories";
+import Navbar from "../components/navbar2";
 
 export default function Index({ allPosts, preview }) {
 	const heroPost = allPosts[0];
@@ -22,6 +23,7 @@ export default function Index({ allPosts, preview }) {
 				<Head>
 					<title>Travel and Food Reviews by {CMS_NAME}</title>
 				</Head>
+	
 				<Hero />
 				<Welcome />
 				<Categories />

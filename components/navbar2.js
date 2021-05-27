@@ -16,10 +16,10 @@ function classNames(...classes) {
 export default function Example({ color }) {
 	let col = color ? " text-black" : " text-white";
 	return (
-		<Disclosure as='nav' className='sticky top-0 z-30 mx-auto bg-opacity-50 h-[72px] bg-gray-900 backdrop-filter backdrop-blur max-w-8xl xl:px-8 firefox:bg-opacity-90 '>
+		<Disclosure as='nav' className='top-0 z-50 bg-whit absolute left-0 right-0      '>
 			{({ open }) => (
 				<>
-					<div className='max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-b  xl:px-0 border-gray-800'>
+					<div className='max-w-8xl  container mx-auto'>
 						<div className='relative flex items-center justify-between h-16'>
 							<div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
 								{/* Mobile menu button*/}

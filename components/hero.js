@@ -32,8 +32,8 @@ function Hero() {
 				<header className='absolute top-0 left-0 right-0 z-20'>
 					
 				</header>
-				<div className='container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40'>
-					<div className='lg:w-3/5 xl:w-2/5 flex flex-col items-start relative z-10'>
+				<div className='container mx-auto px-6 sm:px-0 relative z-10 flex items-center py-32   xl:py-40 '>
+					<div className='lg:w-3/5 xl:w-3/5 flex flex-col items-start relative z-10'>
 						<span className='font-bold uppercase text-pink-500'></span>
 						<h1 className='font-playfair-display text-6xl sm:text-7xl text-white leading-tight mt-4'>
 							Travel,
