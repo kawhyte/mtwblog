@@ -51,7 +51,7 @@ const StarRating = ({ rating }) => {
 
 	return (
 		<>
-			<div className='flex flex-col md:flex-row border-b  '>
+			<div className='flex flex-col md:flex-row border-b mx-8  '>
 				<div className='flex  justify-start items-center align-top mb-8 md:border-r '>
 					<h1 className='font-playfair-display text-6xl md:text-7xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
 						{isFraction ? Math.floor(average) + ".5" : average}

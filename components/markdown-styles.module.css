@@ -4,8 +4,7 @@
 
 .markdown p,
 .markdown ul,
-.markdown ol,
-.markdown blockquote {
+.markdown ol {
   @apply my-6;
 }
 
@@ -19,13 +18,26 @@
 
 .markdown img {
 
-  @apply w-6/12;
-    @apply h-3/6;
-    @apply rounded-2xl;
-    @apply object-contain;
+  @apply w-7/12;
+  @apply h-3/6;
+  @apply rounded-2xl;
+  @apply object-contain;
+  
+
 }
 
-.markdown li{
+
+.markdown blockquote {
+  @apply -m-10;
+  @apply px-4;
+  @apply mx-4;
+  @apply text-white;
+
+  @apply absolute;
+  @apply bg-pink-500;
+  @apply break-words
+}
+
+.markdown li {
   @apply list-disc
-  
 }
