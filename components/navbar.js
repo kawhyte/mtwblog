@@ -18,7 +18,7 @@ function classNames(...classes) {
 export default function Example({ color }) {
 	let col = color ? " text-black" : " text-white";
 	return (
-		<Disclosure as='nav' className='top-0 z-50 bg-whit absolute left-0 right-0      '>
+		<Disclosure as='nav' className='sticky top-0 z-30 mx-auto bg-opacity-90 op h-[72px] bg-black backdrop-filter backdrop-blur max-w-8xl xl:px-8 firefox:bg-opacity-90   '>
 			{({ open }) => (
 				<>
 					<div className='max-w-8xl  container mx-auto cursor-pointer'>
