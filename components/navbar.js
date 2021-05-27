@@ -3,12 +3,37 @@ import { Fragment } from "react";
 import Link from "next/link";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import Image from "next/image";
 
 const navigation = [
-	{ name: "Hotel", href: "/hotel", current: false },
-	{ name: "Food", href: "/food", current: false },
-	{ name: "Day Trips", href: "/day-trip", current: false },
-	{ name: "Airport/Airline", href: "/airport", current: false },
+	{
+		name: "Hotel",
+		href: "/hotel",
+		icon: "/icon/hotel.svg",
+		text: "Hotel icon",
+		current: false,
+	},
+	{
+		name: "Food",
+		href: "/food",
+		icon: "/icon/food.svg",
+		text: "Plane icon",
+		current: false,
+	},
+	{
+		name: "Day Trips",
+		href: "/day-trip",
+		icon: "/icon/walk.svg",
+		text: "Walking icon",
+		current: false,
+	},
+	{
+		name: "Airport/Airline",
+		href: "/airport",
+		icon: "/icon/plane.svg",
+		text: "Plane icon",
+		current: false,
+	},
 ];
 
 function classNames(...classes) {
@@ -18,7 +43,9 @@ function classNames(...classes) {
 export default function Example({ color }) {
 	let col = color ? " text-black" : " text-white";
 	return (
-		<Disclosure as='nav' className='sticky top-0 z-30 mx-auto bg-opacity-90 op h-[72px] bg-black backdrop-filter backdrop-blur max-w-8xl xl:px-8 firefox:bg-opacity-90   '>
+		<Disclosure
+			as='nav'
+			className='sticky top-0 z-30 mx-auto bg-opacity-90 op h-[72px] bg-black backdrop-filter backdrop-blur max-w-8xl xl:px-8 firefox:bg-opacity-90   '>
 			{({ open }) => (
 				<>
 					<div className='max-w-8xl  container mx-auto cursor-pointer'>
@@ -67,21 +94,35 @@ export default function Example({ color }) {
 									</div>
 								</Link>
 								<div className='hidden sm:block sm:ml-6'>
-									<div className='flex space-x-4'>
+									<div className='flex flex-row align-middle justify-center items-center  space-x-4'>
 										{navigation.map((item) => (
 											<Link href={item.href}>
-												<a
-													key={item.name}
+												<div className="flex flex-row justify-center align-middle items-center">
+											
+													<button key={item.name}
 													href={item.href}
 													className={classNames(
 														item.current
 															? "bg-gray-900 text-white"
 															: "text-gray-300 hover:bg-pink-500 hover:text-white",
-														"px-3 py-2 rounded-md text-lg font-medium"
-													)}
-													aria-current={item.current ? "page" : undefined}>
-													{item.name}
-												</a>
+														"px-2 py-2 rounded-md text-lg font-medium flex flex-row justify-center align-middle items-center"
+													)}>
+												
+													<Image
+													className=''
+													src={item.icon}
+													alt={item.text}
+													width={25}
+													height={25}
+												/>
+
+
+
+													<span class="mx-1 ">{item.name}</span>
+												</button>
+
+											
+												</div>
 											</Link>
 										))}
 									</div>
