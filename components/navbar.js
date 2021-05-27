@@ -6,10 +6,10 @@ import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
 	{ name: "Home", href: "/", current: false },
-	{ name: "Hotel", href: "/allposts", current: false },
-	{ name: "Food", href: "/allposts", current: false },
-	{ name: "Day Trips", href: "/allposts", current: false },
-	{ name: "Airport/Airline", href: "/allposts", current: false },
+	{ name: "Hotel", href: "/hotel", current: false },
+	{ name: "Food", href: "/food", current: false },
+	{ name: "Day Trips", href: "/day-trip", current: false },
+	{ name: "Airport/Airline", href: "/airport", current: false },
 ];
 
 function classNames(...classes) {
