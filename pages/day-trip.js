@@ -16,7 +16,7 @@ function AllHotels({ allPosts, preview }) {
  
 	return (
 		<>
-			<Layout preview={preview} color={true}>
+			<Layout preview={preview} color={false}>
 				<Head>
 					<title>Travel and Food Reviews by {CMS_NAME}</title>
 				</Head>

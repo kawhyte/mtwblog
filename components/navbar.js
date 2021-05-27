@@ -104,7 +104,7 @@ export default function Example({ color }) {
 													className={classNames(
 														item.current
 															? "bg-gray-900 text-white"
-															: "text-gray-300 hover:bg-pink-500 hover:text-white",
+															: "text-gray-300  hover:text-white",
 														"px-2 py-2 rounded-md text-lg font-medium flex flex-row justify-center align-middle items-center"
 													)}>
 												
@@ -118,7 +118,7 @@ export default function Example({ color }) {
 
 
 
-													<span class="mx-1 ">{item.name}</span>
+													<span class="mx-1  hover:text-pink-500">{item.name}</span>
 												</button>
 
 											
