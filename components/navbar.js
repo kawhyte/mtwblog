@@ -118,7 +118,7 @@ export default function Example({ color }) {
 
 
 
-													<span class="mx-1  hover:text-pink-500">{item.name}</span>
+													<span className="mx-1  hover:text-pink-500">{item.name}</span>
 												</button>
 
 											

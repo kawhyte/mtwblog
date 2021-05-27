@@ -8,6 +8,9 @@ const StarRating = ({ rating }) => {
 	const maxHearts = 3;
 	let textRating = "NR";
 	let isFraction = false;
+	let locationFraction = false;
+	let serviceFraction = false;
+	let roomFraction = false;
 
 	let average =
 		(rating?.ratingLocation +
@@ -15,10 +18,19 @@ const StarRating = ({ rating }) => {
 			rating?.ratingService +
 			rating?.ratingValue) /4;
 
-	if (average - Math.floor(average) > 0.24) {
+	if (average - Math.floor(average) >= 0.24) {
 		isFraction = true;
 	}
 
+	if (rating?.ratingService % 1  >= 0.4) {
+		serviceFraction = true;
+	}
+
+
+//  console.log("Math.floor(average) ", Math.floor(average))
+//  console.log("average ", average)
+//  console.log("isFraction ", isFraction)
+//  console.log("TEST ", rating?.ratingService % 1)
 
 	// const heartIcons = Array(maxHearts)
 	// 	.fill()
@@ -54,35 +66,35 @@ const StarRating = ({ rating }) => {
 			<div className='flex flex-col md:flex-row border-b mx-8  '>
 				<div className='flex  justify-start items-center align-top mb-8 md:border-r '>
 					<h1 className='font-playfair-display text-6xl md:text-7xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
-						{isFraction ? Math.floor(average) + ".5" : average}
+						{isFraction ? Math.floor(average) + ".5" : Math.floor(average)}
 					</h1>
 
-					<div className='flex flex-col-reverse ml-3 align-top justify-start '>
+					<div className='flex flex-col-reverse ml-3 mr-6 align-top justify-start '>
 						<div className='flex flex-row justify-start align-middle   items-start '>
-							<Stars stars={Math.floor(average)} />
+							<Stars stars={Math.floor(average)} isFraction={isFraction} />
 						</div>
-						<p className='font-playfair-display mx-1 text-xl font-bold'> {textRating}</p>
+						<p className='font-playfair-display mx-1 my-2  text-xl font-bold'> {textRating}</p>
 					</div>
 				</div>
 
-				<div className='md:my-5 md:ml-6 pb-4'>
-					<div className='flex flex-row'>
-						<Stars stars={Math.floor(rating?.ratingLocation)} />
-						<p className='mx-6'>Location</p>
+				<div className='md:my-4 md:ml-6 '>
+					<div className='flex flex-row justify-items-center items-center align-middle '>
+						<Stars stars={Math.floor(rating?.ratingLocation)} isFraction={isFraction} />
+						<p className='mx-6 my-1'>Location</p>
 					</div>
-					<div className='flex flex-row'>
-						<Stars stars={Math.floor(rating?.ratingCleanliness)} />
-						<p className='mx-6 '>
+					<div className='flex flex-row justify-items-center items-center align-middle'>
+						<Stars stars={Math.floor(rating?.ratingCleanliness)} isFraction={isFraction} />
+						<p className='mx-6 my-1 '>
 							Room<span className='italic text-sm'> (Comfort, Size & Amenities) </span>
 						</p>
 					</div>
-					<div className='flex flex-row'>
-						<Stars stars={Math.floor(rating?.ratingService)} />
-						<p className='mx-6'>Service</p>
+					<div className='flex flex-row justify-items-center items-center align-middle'>
+						<Stars stars={Math.floor(rating?.ratingService)} isFraction={isFraction} />
+						<p className='mx-6 my-1'>Service</p>
 					</div>
-					<div className='flex flex-row'>
-						<Stars stars={Math.floor(rating?.ratingValue)} />
-						<p className='mx-6'>Price</p>
+					<div className='flex flex-row justify-items-center items-center align-middle'>
+						<Stars stars={Math.floor(rating?.ratingValue)} isFraction={isFraction}/>
+						<p className='mx-6 my-1'>Price</p>
 					</div>
 				</div>
 			</div>
