@@ -7,7 +7,7 @@ function Navbar({ fixed, color }) {
 
 	return (
 		<div className='top-0 z-50 bg-whit absolute left-0 right-0 '>
-			<nav className='relative flex flex-wrap items-center justify-between  px-2 py-3 bg-whit mb-3'>
+			<nav className={'relative flex flex-wrap items-center justify-between  px-2 py-3  mb-3 '  }>
 				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 					<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
 						<Link href='/' className='cursor-pointer'>
@@ -60,8 +60,8 @@ function Navbar({ fixed, color }) {
 					</div>
 					<div
 						className={
-							"lg:flex flex-grow items-center" +
-							(navbarOpen ? " flex" : " hidden")
+							" mt-2 z-20  bg-white lg:flex flex-grow " +
+							(navbarOpen ? " flex items-center justify-start  " : " hidden")
 						}
 						id='example-navbar-danger'>
 						<ul className='flex flex-col align-middle justify-start items-center lg:flex-row list-none lg:ml-auto '>
@@ -69,7 +69,7 @@ function Navbar({ fixed, color }) {
 								<a
 									className={'px-3 py-2 flex items-left text-xs uppercase font-bold leading-snug hover:opacity-75  ' +  col   }
 									href=''>
-									<span className='text-base'>Home</span>
+									<span className='text-base text-black'>Home</span>
 								</a>
 							</li>
 							<li className='nav-item'>
@@ -77,7 +77,7 @@ function Navbar({ fixed, color }) {
 									<a
 										className={'px-3 py-2 flex items-left text-xs uppercase font-bold leading-snug hover:opacity-75 '  + col  }
 										href=''>
-										<span className=' text-base'>All Posts</span>
+										<span className=' text-base text-black'>All Posts</span>
 									</a>
 								</Link>
 							</li>

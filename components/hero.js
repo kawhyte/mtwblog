@@ -30,7 +30,7 @@ function Hero() {
 
 				<div className='inset-0 bg-black opacity-40  absolute'></div>
 				<header className='absolute top-0 left-0 right-0 z-20'>
-					<Navbar />
+					
 				</header>
 				<div className='container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40'>
 					<div className='lg:w-3/5 xl:w-2/5 flex flex-col items-start relative z-10'>
