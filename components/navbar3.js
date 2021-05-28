@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Navbar({ fixed, color }) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
- let col = color ? ' text-black': ' text-white'
+ let col = color ? ' text-white': ' text-white'
 
 	return (
 		<div className='top-0 z-50 bg-whit absolute left-0 right-0 '>

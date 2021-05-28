@@ -4,8 +4,11 @@ import { render } from "react-dom";
 import Stars from "./stars";
 
 const StarRating = ({ rating }) => {
-	const hearts = 3;
-	const maxHearts = 3;
+
+
+
+
+
 	let textRating = "NR";
 	let isFraction = false;
 	let locationFraction = false;
@@ -18,14 +21,21 @@ const StarRating = ({ rating }) => {
 			rating?.ratingService +
 			rating?.ratingValue) /4;
 
-	if (average - Math.floor(average) >= 0.24) {
+	if (average - Math.floor(average) >= 0.5) {
 		isFraction = true;
 	}
 
-	if (rating?.ratingService % 1  >= 0.4) {
+	if (rating.ratingService % 1  >= 0.4) {
 		serviceFraction = true;
 	}
 
+
+
+	// console.log("AVG  ", average)
+	// console.log("rating?.ratingLocation ", rating?.ratingLocation)
+	// console.log("rating?.ratingCleanliness ", rating?.ratingCleanliness)
+	// console.log("rating?.ratingService ", rating?.ratingService%1)
+	// console.log("rating?.ratingValue ", rating?.ratingValue)
 
 //  console.log("Math.floor(average) ", Math.floor(average))
 //  console.log("average ", average)
@@ -68,7 +78,6 @@ const StarRating = ({ rating }) => {
 					<h1 className='font-playfair-display text-6xl md:text-7xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
 						{isFraction ? Math.floor(average) + ".5" : Math.floor(average)}
 					</h1>
-
 					<div className='flex flex-col-reverse ml-3 mr-6 align-top justify-start '>
 						<div className='flex flex-row justify-start align-middle   items-start '>
 							<Stars stars={Math.floor(average)} isFraction={isFraction} />
@@ -79,21 +88,21 @@ const StarRating = ({ rating }) => {
 
 				<div className='md:my-4 md:ml-6 '>
 					<div className='flex flex-row justify-items-center items-center align-middle '>
-						<Stars stars={Math.floor(rating?.ratingLocation)} isFraction={isFraction} />
+						<Stars stars={Math.floor(rating?.ratingLocation)} isFraction={rating?.ratingLocation % 1 > 0 ? true : false} />
 						<p className='mx-6 my-1'>Location</p>
 					</div>
 					<div className='flex flex-row justify-items-center items-center align-middle'>
-						<Stars stars={Math.floor(rating?.ratingCleanliness)} isFraction={isFraction} />
+						<Stars stars={Math.floor(rating?.ratingCleanliness)} isFraction={rating?.ratingCleanliness % 1 > 0 ? true : false} />
 						<p className='mx-6 my-1 '>
 							Room<span className='italic text-sm'> (Comfort, Size & Amenities) </span>
 						</p>
 					</div>
 					<div className='flex flex-row justify-items-center items-center align-middle'>
-						<Stars stars={Math.floor(rating?.ratingService)} isFraction={isFraction} />
+						<Stars stars={Math.floor(rating?.ratingService)} isFraction={rating?.ratingService% 1 > 0 ? true : false} />
 						<p className='mx-6 my-1'>Service</p>
 					</div>
 					<div className='flex flex-row justify-items-center items-center align-middle'>
-						<Stars stars={Math.floor(rating?.ratingValue)} isFraction={isFraction}/>
+						<Stars stars={Math.floor(rating?.ratingValue)} isFraction={rating?.ratingValue% 1 > 0 ? true : false}/>
 						<p className='mx-6 my-1'>Price</p>
 					</div>
 				</div>
@@ -103,8 +112,3 @@ const StarRating = ({ rating }) => {
 };
 
 export default StarRating;
-
-//   <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-//   <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-//   <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-//   <svg class="mx-1 w-4 h-4 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>

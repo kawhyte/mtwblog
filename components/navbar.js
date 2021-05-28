@@ -40,8 +40,8 @@ function classNames(...classes) {
 	return classes.filter(Boolean).join(" ");
 }
 
-export default function Example({ color }) {
-	let col = color ? " text-black" : " text-white";
+export default function Nav({ color }) {
+	let col = color ? " text-white" : " text-white";
 	return (
 		<Disclosure
 			as='nav'
@@ -96,7 +96,7 @@ export default function Example({ color }) {
 								<div className='hidden sm:block sm:ml-6'>
 									<div className='flex flex-row align-middle justify-center items-center  space-x-4'>
 										{navigation.map((item) => (
-											<Link href={item.href}>
+											<Link href={item.href} key={item.name}>
 												<div className="flex flex-row justify-center align-middle items-center">
 											
 													<button key={item.name}
