@@ -25,8 +25,8 @@ export default function Index({ allPosts, preview }) {
 				</Head>
 	
 				<Hero />
-				<Welcome />
 				<Categories />
+				
 				<Container>
 					{heroPost && (
 						<HeroPost
@@ -73,6 +73,7 @@ export default function Index({ allPosts, preview }) {
 						</Link>
 					</div>{" "}
 				</Container>
+				<Welcome />
 			</Layout>
 		</>
 	);

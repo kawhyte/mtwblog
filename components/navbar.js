@@ -45,7 +45,7 @@ export default function Nav({ color }) {
 	return (
 		<Disclosure
 			as='nav'
-			className='sticky top-0 z-30 mx-auto bg-opacity-90 op h-[72px] bg-black backdrop-filter backdrop-blur max-w-8xl xl:px-8 firefox:bg-opacity-90   '>
+			className='sticky top-0 z-30 mx-auto h-[72px] bg-black backdrop-filter backdrop-blur max-w-8xl xl:px-8 firefox:bg-opacity-90   '>
 			{({ open }) => (
 				<>
 					<div className='max-w-8xl  container mx-auto cursor-pointer'>
@@ -105,15 +105,15 @@ export default function Nav({ color }) {
 														item.current
 															? "bg-gray-900 text-white"
 															: "text-gray-300  hover:text-white",
-														"px-2 py-2 rounded-md text-lg font-medium flex flex-row justify-center align-middle items-center"
+														"px-2 py-2 rounded-md text-base font-medium flex flex-row justify-center align-middle items-center"
 													)}>
 												
 													<Image
 													className=''
 													src={item.icon}
 													alt={item.text}
-													width={25}
-													height={25}
+													width={20}
+													height={20}
 												/>
 
 
