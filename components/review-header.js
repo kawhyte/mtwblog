@@ -1,7 +1,7 @@
 import React from 'react'
 
 function ReviewHeader({title,pattern, summary}) {
-    console.log("pattern ", pattern)
+    //console.log("pattern ", pattern)
     return (
         <div className={'bg-indigo-50 ' + pattern }  >
         <section className='text-gray-600 body-font'>
