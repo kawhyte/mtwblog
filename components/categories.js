@@ -1,5 +1,44 @@
 import React from 'react'
 import Link from 'next/link'
+import CategoryItems from './category-items'
+
+
+
+
+// const category = [
+// 	{
+// 		name: "Hotel Review",
+// 		href: "/hotel",
+// 		image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621896780/project/PXL_20210428_025517322.MP.webp",
+// 		text: "Hotel icon",
+//     alt: "View of Sunset at a hotel"
+		
+// 	},
+// 	{
+// 		name: "Food Review",
+// 		href: "/food",
+// 		image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621897187/project/MVIMG_20191203_091517.webp",
+// 		text: "Hotel icon",
+//     alt: "View of Food" 
+		
+// 	},
+// 	{
+// 		name: "Day Trips",
+// 		href: "/day-trip",
+// 		image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621897765/project/PXL_20210222_215622925.MP.webp",
+// 		text: "Hotel icon",
+//     alt:"View of Mountains with snow" 
+		
+// 	},
+// 	{
+// 		name: "Airport/Airline Reviews",
+// 		href: "/airport",
+// 		image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621897965/project/IMG_20180904_001734.webp",
+// 		text: "Hotel icon",
+//     alt: "View of an Airport" 
+		
+// 	}
+// ];
 
 function Categories() {
     return (
@@ -13,7 +52,7 @@ function Categories() {
             </div>
             <p className="lg:w-1/2 w-full leading-relaxed text-gray-500 text-lg"> You want to get out and see the world, but you have so many questions. Check out our trips.</p>
           </div>
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap justify-center -m-4">
             <div className="xl:w-1/4 md:w-1/2 p-4">
             <Link href="/hotel" className=""> 
               <div className="bg-indigo-50 p-6 rounded-lg cursor-pointer">
