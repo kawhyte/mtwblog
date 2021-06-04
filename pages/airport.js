@@ -1,6 +1,6 @@
 import Container from "../components/container";
 import Section from "../components/section";
-import Welcome from "../components/welcome";
+import ReviewHeader from "../components/review-header";
 import MoreStories from "../components/more-stories";
 import Layout from "../components/layout";
 import { getAllPostsForCategory } from "../lib/api";
@@ -18,7 +18,8 @@ function AllHotels({ allPosts, preview }) {
 					<title>Travel and Food Reviews by {CMS_NAME}</title>
 				</Head>
 				
-				<Welcome />
+				<ReviewHeader title ={"Aiport/Airline"} pattern={'airportpattern'} summary={"Planes in the sky"}/>
+
 				<Container>
 				
 				

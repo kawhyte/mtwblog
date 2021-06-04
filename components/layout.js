@@ -8,7 +8,7 @@ export default function Layout({ preview, color, children }) {
     <>
       <Meta />
       <Nav color={color}/>
-      <div className="min-h-screen">
+      <div className="min-h-screen bg-rootBG">
         <main>{children}</main>
       </div>
       <Footer />

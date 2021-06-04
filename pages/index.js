@@ -25,6 +25,7 @@ export default function Index({ allPosts, preview }) {
 				</Head>
 	
 				<Hero />
+			
 				<Categories />
 				
 				<Container>

@@ -41,7 +41,7 @@ export default function Footer() {
 						© 2021 MTW — Created by
 						<a
 							href='https://www.kennywhyte.com'
-							className='text-blue-500 ml-1 bg-white'
+							className='text-green-800 ml-1 bg-white'
 							rel='noopener noreferrer'
 							target='_blank'>
 							Kenny 

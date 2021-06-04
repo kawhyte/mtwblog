@@ -22,6 +22,8 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        rootBG:'#FAFAB',
+        accent:'#FB6E3B'
       },
       spacing: {
         28: '7rem',
