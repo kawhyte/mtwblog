@@ -1,7 +1,10 @@
+import { FaHotel } from "react-icons/fa";
+
 export default {
 	name: "post",
-	title: "Hotel Review",
+	title: "Hotel Reviews",
 	type: "document",
+	icon: FaHotel,
 	fields: [
 		{
 			name: "title",
@@ -31,6 +34,8 @@ export default {
 				hotspot: true,
 			},
 		},
+
+	
 		{
 			name: "categories",
 			title: "Categories",
@@ -54,13 +59,20 @@ export default {
 			type: "string",
 			title: "Location",
 		},
+		{
+			name: "amenities",
+			title: "Hotel property amenities with rating",
+			description: "Add 4 Hotel property amenities with rating.",
+			type: "array",
+			of: [{ type: "amenitiesrating" }],
+		},
 
 		{
-      name:'rating',
-      title:'Ratings',
-      type:'rating'
-
-    },
+			name: "rating",
+			title: "Room features rating",
+			description: "Add Room features rating.",
+			type: "rating",
+		},
 
 		{
 			title: "Positives",

@@ -1,7 +1,10 @@
+import { IoFastFoodSharp } from 'react-icons/io5'
+
 export default {
 	name: "food",
-	title: "Food Review",
+	title: "Food Reviews",
 	type: "document",
+    icon: IoFastFoodSharp,
 	fields: [
 		{
 			name: "title",
