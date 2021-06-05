@@ -1,7 +1,7 @@
 export default {
 	type: "object",
 	name: "rating",
-	description: "Rate different areas",
+	description: "Rating for HOTEL | DAY TRIP | AIRPORT | FOOD ",
 	fieldsets: [{ name: "social", title: "Give a rating 1-5 for each item" }],
 	options: {
 		collapsible: true, // Makes the whole fieldset collapsible
@@ -11,7 +11,7 @@ export default {
 
 	fields: [
 		{
-			title: "Location",
+			title: "Hotel (Location) | Food (Flavor & Taste) | Day Trip() | Airport ()",
 			name: "ratingLocation",
 			type: "number",
 			options: {
