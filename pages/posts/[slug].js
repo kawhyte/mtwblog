@@ -53,8 +53,8 @@ export default function Post({ post, morePosts, preview }) {
                 rating= {post.rating}
                 
               />
-              <PostBody content={post.body} />
               <ProConList positives ={post.positives} negatives ={post.negatives} verdict ={post.verdict}  />
+              <PostBody content={post.body} />
 
               
             </article>

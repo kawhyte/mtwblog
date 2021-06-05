@@ -7,6 +7,14 @@ import CategoryItems from './category-items'
 
 const category = [
 	{
+		name: "All Posts",
+		href: "/allposts",
+		image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621897765/project/PXL_20210222_215622925.MP.webp",
+		text: "Hotel icon",
+    alt: "View of Sunset at a hotel"
+		
+	},
+	{
 		name: "Hotel Review",
 		href: "/hotel",
 		image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621896780/project/PXL_20210428_025517322.MP.webp",
@@ -14,6 +22,7 @@ const category = [
     alt: "View of Sunset at a hotel"
 		
 	},
+
 	{
 		name: "Food Review",
 		href: "/food",
@@ -22,22 +31,22 @@ const category = [
     alt: "View of Food" 
 		
 	},
-	{
-		name: "Day Trips",
-		href: "/day-trip",
-		image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621897765/project/PXL_20210222_215622925.MP.webp",
-		text: "Hotel icon",
-    alt:"View of Mountains with snow" 
+	// {
+	// 	name: "Day Trips",
+	// 	href: "/day-trip",
+	// 	image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621897765/project/PXL_20210222_215622925.MP.webp",
+	// 	text: "Hotel icon",
+  //   alt:"View of Mountains with snow" 
 		
-	},
-	{
-		name: "Airport/Airline Reviews",
-		href: "/airport",
-		image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621897965/project/IMG_20180904_001734.webp",
-		text: "Hotel icon",
-    alt: "View of an Airport" 
+	// },
+	// {
+	// 	name: "Airport/Airline Reviews",
+	// 	href: "/airport",
+	// 	image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621897965/project/IMG_20180904_001734.webp",
+	// 	text: "Hotel icon",
+  //   alt: "View of an Airport" 
 		
-	}
+	// }
 ];
 
 function Categories() {

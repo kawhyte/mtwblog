@@ -4,8 +4,12 @@ function ProConList({ positives, negatives ,verdict }) {
 
 
 	return (
-		<section className='text-gray-600 body-font'>
-			<div className='container px-5 py-24 mx-auto flex flex-wrap'>
+		<section className='text-gray-800 body-font'>
+		<h1 className=""></h1>
+		<h1 className="font-playfair-display text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left">
+		Overview
+	  </h1>
+			<div className='container px-5 py-6 lg:py-12 mx-auto flex flex-wrap'>
 				<div className='flex flex-wrap -m-4'>
 					<div className='p-4 lg:w-1/2 md:w-full'>
 						<div className='flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col'>

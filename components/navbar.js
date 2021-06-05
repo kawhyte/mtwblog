@@ -7,6 +7,13 @@ import Image from "next/image";
 
 const navigation = [
 	{
+		name: "All Posts",
+		href: "/allposts",
+		icon: "/icon/hotel.svg",
+		text: "Hotel icon",
+		current: false,
+	},
+	{
 		name: "Hotel",
 		href: "/hotel",
 		icon: "/icon/hotel.svg",
@@ -20,20 +27,20 @@ const navigation = [
 		text: "Plane icon",
 		current: false,
 	},
-	{
-		name: "Day Trips",
-		href: "/day-trip",
-		icon: "/icon/walk.svg",
-		text: "Walking icon",
-		current: false,
-	},
-	{
-		name: "Airport/Airline",
-		href: "/airport",
-		icon: "/icon/plane.svg",
-		text: "Plane icon",
-		current: false,
-	},
+	// {
+	// 	name: "Day Trips",
+	// 	href: "/day-trip",
+	// 	icon: "/icon/walk.svg",
+	// 	text: "Walking icon",
+	// 	current: false,
+	// },
+	// {
+	// 	name: "Airport/Airline",
+	// 	href: "/airport",
+	// 	icon: "/icon/plane.svg",
+	// 	text: "Plane icon",
+	// 	current: false,
+	// },
 ];
 
 function classNames(...classes) {
