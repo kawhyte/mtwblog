@@ -5,7 +5,7 @@
     "dataset": "production"
   },
   "project": {
-    "name": "Next.js Comment-enabled blog",
+    "name": "Meet the Whytes blog",
     "basePath": "/studio"
   },
   "plugins": [

@@ -1,6 +1,6 @@
 export default {
-	name: "post",
-	title: "Hotel Review",
+	name: "food",
+	title: "Food Review",
 	type: "document",
 	fields: [
 		{

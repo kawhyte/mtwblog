@@ -7,10 +7,8 @@ function ProConList({ positives, negatives ,verdict }) {
 		<section className='text-gray-800 body-font'>
 		
 		<h1 className="font-playfair-display text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left">
-		Overview
+		Bottom Line
 	  </h1>
-
-	  amenities revoew 
 			<div className='container px-5 py-6 lg:py-12 mx-auto flex flex-wrap'>
 				<div className='flex flex-wrap -m-4'>
 					<div className='p-4 lg:w-1/2 md:w-full'>
