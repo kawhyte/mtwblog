@@ -21,7 +21,13 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />
   }
 
+
+
+
+
+
   return (
+    
     <Layout preview={preview} color={true}>
       <Container>
         <Header />
@@ -41,6 +47,7 @@ export default function Post({ post, morePosts, preview }) {
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
+                categories={post.categories}
                 // webLink ={post.webLink}
                 address ={post.address}
                 rating= {post.rating}

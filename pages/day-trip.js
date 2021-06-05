@@ -8,7 +8,7 @@ import MoreStories from "../components/more-stories";
 import Layout from "../components/layout";
 import { getAllPostsForCategory } from "../lib/api";
 import Head from "next/head";
-import { CMS_NAME } from "../lib/constants";
+import { CMS_NAME, DAY_TRIP } from "../lib/constants";
 
 function AllHotels({ allPosts, preview }) {
 
@@ -49,7 +49,7 @@ function AllHotels({ allPosts, preview }) {
 }
 
 export async function getStaticProps({ preview = false   }) {
-	const allPosts = await getAllPostsForCategory(preview, "6f79c83e-b400-4850-afd8-88857c75980a");
+	const allPosts = await getAllPostsForCategory(preview, DAY_TRIP);
 	return {
 		props: { allPosts, preview },
 		revalidate: 1,

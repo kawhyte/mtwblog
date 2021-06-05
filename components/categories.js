@@ -58,7 +58,7 @@ function Categories() {
           {category.map((item) => (
 
 
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div key={item.name} className="xl:w-1/4 md:w-1/2 p-4">
             <Link href={item.href} className=""> 
               <div className="bg-green-50 p-6 rounded-lg cursor-pointer">
              <a> 

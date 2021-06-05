@@ -1,75 +1,13 @@
 import React from "react";
-import { render } from "react-dom";
-
+import { getReviewType } from "../lib/getReviewType";
+import { calculateRating } from "../lib/calculateRating";
 import Stars from "./stars";
 
-const StarRating = ({ rating }) => {
+const StarRating = ({ rating, categories }) => {
 
+	let { value1, value2, value3, value4 } = getReviewType(categories);
 
-
-
-
-	let textRating = "NR";
-	let isFraction = false;
-	let locationFraction = false;
-	let serviceFraction = false;
-	let roomFraction = false;
-
-	let average =
-		(rating?.ratingLocation +
-			rating?.ratingCleanliness +
-			rating?.ratingService +
-			rating?.ratingValue) /4;
-
-	if (average - Math.floor(average) >= 0.5) {
-		isFraction = true;
-	}
-
-	if (rating.ratingService % 1  >= 0.4) {
-		serviceFraction = true;
-	}
-
-
-
-	// console.log("AVG  ", average)
-	// console.log("rating?.ratingLocation ", rating?.ratingLocation)
-	// console.log("rating?.ratingCleanliness ", rating?.ratingCleanliness)
-	// console.log("rating?.ratingService ", rating?.ratingService%1)
-	// console.log("rating?.ratingValue ", rating?.ratingValue)
-
-//  console.log("Math.floor(average) ", Math.floor(average))
-//  console.log("average ", average)
-//  console.log("isFraction ", isFraction)
-//  console.log("TEST ", rating?.ratingService % 1)
-
-	// const heartIcons = Array(maxHearts)
-	// 	.fill()
-	// 	.map((_, index) => {
-	// 		return <Heart key={index} />;
-	// 	});
-	switch (Math.floor(average)) {
-		case 1:
-			textRating = "Meh";
-			break;
-		case 2:
-			textRating = "Ok-ish";
-			break;
-		case 3:
-			textRating = "Good";
-			break;
-		case 4:
-			textRating = "Great";
-			break;
-		case 5:
-			textRating = "Awesome";
-			break;
-
-		default:
-			textRating = "Hmmmm";
-			break;
-	}
-
-	
+	const { isFraction, average, textRating } = calculateRating(rating);
 
 	return (
 		<>
@@ -82,28 +20,51 @@ const StarRating = ({ rating }) => {
 						<div className='flex flex-row justify-start align-middle   items-start '>
 							<Stars stars={Math.floor(average)} isFraction={isFraction} />
 						</div>
-						<p className='font-playfair-display mx-1 my-2  text-xl font-bold'> {textRating}</p>
+						<p className='font-playfair-display mx-1 my-2  text-xl font-bold'>
+							{" "}
+							{textRating}
+						</p>
 					</div>
 				</div>
 
 				<div className='md:my-4 md:ml-6 '>
 					<div className='flex flex-row justify-items-center items-center align-middle '>
-						<Stars stars={Math.floor(rating?.ratingLocation)} isFraction={rating?.ratingLocation % 1 > 0 ? true : false} />
-						<p className='mx-6 my-1'>Location</p>
+						<Stars
+							stars={Math.floor(rating?.ratingLocation)}
+							isFraction={rating?.ratingLocation % 1 > 0 ? true : false}
+						/>
+						<p className='mx-6 my-1'>{value1}</p>
 					</div>
 					<div className='flex flex-row justify-items-center items-center align-middle'>
-						<Stars stars={Math.floor(rating?.ratingCleanliness)} isFraction={rating?.ratingCleanliness % 1 > 0 ? true : false} />
+						<Stars
+							stars={Math.floor(rating?.ratingCleanliness)}
+							isFraction={rating?.ratingCleanliness % 1 > 0 ? true : false}
+						/>
 						<p className='mx-6 my-1 '>
-							Room<span className='italic text-sm'> (Comfort, Size & Amenities) </span>
+							{value2}{" "}
+							{categories[0]._ref === "fef37ecd-188b-4ad6-bf33-5ffa917e59cd" ? (
+								<span className='italic text-sm'>
+									{" "}
+									(Comfort, Size & Amenities){" "}
+								</span>
+							) : (
+								" "
+							)}
 						</p>
 					</div>
 					<div className='flex flex-row justify-items-center items-center align-middle'>
-						<Stars stars={Math.floor(rating?.ratingService)} isFraction={rating?.ratingService% 1 > 0 ? true : false} />
-						<p className='mx-6 my-1'>Service</p>
+						<Stars
+							stars={Math.floor(rating?.ratingService)}
+							isFraction={rating?.ratingService % 1 > 0 ? true : false}
+						/>
+						<p className='mx-6 my-1'>{value3}</p>
 					</div>
 					<div className='flex flex-row justify-items-center items-center align-middle'>
-						<Stars stars={Math.floor(rating?.ratingValue)} isFraction={rating?.ratingValue% 1 > 0 ? true : false}/>
-						<p className='mx-6 my-1'>Price</p>
+						<Stars
+							stars={Math.floor(rating?.ratingValue)}
+							isFraction={rating?.ratingValue % 1 > 0 ? true : false}
+						/>
+						<p className='mx-6 my-1'>{value4}</p>
 					</div>
 				</div>
 			</div>
