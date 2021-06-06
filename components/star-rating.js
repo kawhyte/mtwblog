@@ -28,7 +28,7 @@ const StarRating = ({ rating, categories }) => {
 
 				<div className='md:my-4 md:ml-6 mb-6 '>
 					<p className='font-playfair-display mx-1 my-2  text-xl font-bold'>
-						Property amenities rating{" "}
+						Property rating{" "}
 					</p>
 					<div className='flex flex-row justify-items-center items-center align-middle '>
 						<Stars
@@ -72,7 +72,7 @@ const StarRating = ({ rating, categories }) => {
 
 				<div className='md:my-4 md:ml-6 mb-8 md:mb-0'>
 					<p className='font-playfair-display mx-1 my-2  text-xl font-bold'>
-						Room features rating{" "}
+					Amenities rating{" "}
 					</p>
 					<div className='flex flex-row justify-items-center items-center align-middle '>
 						<Stars

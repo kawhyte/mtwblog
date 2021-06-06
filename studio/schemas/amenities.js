@@ -1,24 +1,24 @@
 export default{
-    name: 'amenitiesrating',
+    name: 'amenities',
     title: 'Amenities rating',
     type:'object',
     fields: [
 
         {
-            name: 'amenitiesRatingTitle',
-            title: 'Amenity Title',
+            name: 'title',
+            title: 'Amenity title',
             type:'string',
 
         },
         {
-            name: 'amenitiesRatingDescription',
-            title: 'Amenities rating Description',
+            name: 'description',
+            title: 'Amenities rating description',
             type:'string',
 
         },
         {
-			title: "Rating",
-			name: "amenitiesratingLocation",
+			title: "rating",
+			name: "amenitiesRating",
 			type: "number",
 			options: {
 				list: [

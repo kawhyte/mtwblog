@@ -13,7 +13,8 @@ import author from './author'
 import comment from './comment'
 import verdict from './verdict'
 import rating from './rating'
-import amenitiesrating from './amenitiesrating'
+import amenities from './amenities'
+import youtube from './youtube'
 // import pros from './pros'
 // import cons from './cons'
 
@@ -32,7 +33,8 @@ export default createSchema({
     category,
     verdict,
     rating,
-    amenitiesrating,
+    amenities,
+    youtube,
     // pros,
     // cons,
     // When added to this list, object types can be used as

@@ -60,11 +60,16 @@ export default {
 			title: "Location",
 		},
 		{
+			name: "tube",
+			type: 'youtube',
+			description: "Add Youtube link",
+		  },
+		{
 			name: "amenities",
 			title: "Hotel property amenities with rating",
 			description: "Add 4 Hotel property amenities with rating.",
 			type: "array",
-			of: [{ type: "amenitiesrating" }],
+			of: [{ type: "amenities" }],
 		},
 
 		{
