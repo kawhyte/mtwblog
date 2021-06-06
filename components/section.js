@@ -10,6 +10,7 @@ function Section({
 	imageObject,
 	date,
 	excerpt,
+	amenities,
 	author,
 	slug,
 }) {

@@ -14,8 +14,10 @@ import Categories from "../components/categories";
 import Navbar from "../components/navbar";
 
 export default function Index({ allPosts, preview }) {
+	console.log("ALL POSTS ",allPosts )
 	const heroPost = allPosts[0];
 	const morePosts = allPosts.slice(1, 7);
+
 
 	return (
 		<>
@@ -59,6 +61,7 @@ export default function Index({ allPosts, preview }) {
 								author={post.author}
 								slug={post.slug}
 								excerpt={post.excerpt}
+								amenities={post.amenities}
 								webLink={post.webLink}
 							/>;
 						})}

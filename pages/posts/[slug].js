@@ -48,7 +48,7 @@ export default function Post({ post, morePosts, preview }) {
                 date={post.date}
                 author={post.author}
                 categories={post.categories}
-                // webLink ={post.webLink}
+                amenities ={post.amenities}
                 address ={post.address}
                 rating= {post.rating}
                 
