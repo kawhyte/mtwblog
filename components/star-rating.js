@@ -74,7 +74,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 
 				{amenities && (
 					<div className='md:mb-4 md:my-4 mb-6'>
-						{amenities.map((item) => (
+						{amenities &&  amenities.map((item) => (
 							<div className='flex flex-row justify-items-center items-center align-middle '>
 								<Stars
 									stars={Math.floor(item?.amenitiesRating)}
