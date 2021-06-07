@@ -60,7 +60,7 @@ export default {
 			title: "Location",
 		},
 		{
-			name: "tube",
+			name: "youtube",
 			type: 'youtube',
 			description: "Add Youtube link",
 		  },
