@@ -62,7 +62,7 @@ export default {
 		{
 			name: "videoUrl",
 			type: 'videoUrl',
-			description: "Add Youtube link",
+			
 		  },
 		{
 			name: "amenities",

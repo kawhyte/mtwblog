@@ -62,6 +62,7 @@ export default function Index({ allPosts, preview }) {
 								slug={post.slug}
 								excerpt={post.excerpt}
 								amenities={post.amenities}
+								videoUrl={post.videoUrl}
 								webLink={post.webLink}
 							/>;
 						})}

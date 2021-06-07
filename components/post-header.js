@@ -5,7 +5,7 @@ import PostTitle from "../components/post-title";
 import { imageBuilder } from "../lib/sanity";
 import StarRating from "./star-rating";
 import post from "../studio/schemas/post";
-export default function PostHeader({ title,categories, coverImage, date, author, amenities, address, rating }) {
+export default function PostHeader({ title,categories, coverImage, date, author, amenities, videoUrl, address, rating }) {
 	
 
 	return (

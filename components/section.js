@@ -13,6 +13,7 @@ function Section({
 	amenities,
 	author,
 	slug,
+	videoUrl
 }) {
 
 

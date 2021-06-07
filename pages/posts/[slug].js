@@ -16,6 +16,10 @@ import Form from "../../components/form";
 import ProConList from "../../components/pro-con-list";
 import ReactPlayer from "react-player/youtube";
 
+
+
+
+
 export default function Post({ post, morePosts, preview }) {
 	const router = useRouter();
 	if (!router.isFallback && !post?.slug) {
@@ -24,7 +28,7 @@ export default function Post({ post, morePosts, preview }) {
 
 	const opts = {
 		height: "390",
-		width: "640",
+		width: "340",
 		playerVars: {
 			// https://developers.google.com/youtube/player_parameters
 			autoplay: 1,
@@ -53,6 +57,7 @@ export default function Post({ post, morePosts, preview }) {
 								author={post.author}
 								categories={post.categories}
 								amenities={post.amenities}
+								videoUrl={post.videoUrl}
 								address={post.address}
 								rating={post.rating}
 							/>
@@ -62,14 +67,18 @@ export default function Post({ post, morePosts, preview }) {
 								verdict={post.verdict}
 							/>
 						
-							<div className=' aspect-w-16 aspect-h-9 mb-16'>
+						{/* post.videoUrl && 	<div className=' aspect-w-16 aspect-h-9 mb-16'>
+						
+						<h1 className="font-playfair-display mb-5 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left">
+						{post.videoUrl.title}
+	  </h1>
 								<ReactPlayer
-									url='https://www.youtube.com/watch?v=vf-bUl35WeE'
+									url={post.videoUrl.url}
 									width={640}
 									height={390}
 									muted
 								/>
-							</div>
+				</div>*/}
 		
 							<PostBody content={post.body} />
 						</article>

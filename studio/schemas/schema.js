@@ -15,6 +15,7 @@ import verdict from './verdict'
 import rating from './rating'
 import amenities from './amenities'
 import youtube from './youtube'
+import youtube2 from './youtube2'
 // import pros from './pros'
 // import cons from './cons'
 
@@ -35,6 +36,7 @@ export default createSchema({
     rating,
     amenities,
     youtube,
+    youtube2,
     // pros,
     // cons,
     // When added to this list, object types can be used as
