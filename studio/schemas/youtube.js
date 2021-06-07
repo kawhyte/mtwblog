@@ -5,7 +5,7 @@ export default {
     fields: [
       {
         name: 'url',
-        type: 'url',
+        type: 'string',
         title: 'YouTube video URL'
         
       }
