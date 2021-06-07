@@ -18,8 +18,7 @@
 
 .markdown img {
 
-  @apply w-7/12;
-  @apply h-3/6;
+
   @apply rounded-2xl;
   @apply object-contain;
   

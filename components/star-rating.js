@@ -4,6 +4,8 @@ import { calculateRating } from "../lib/calculateRating";
 import Stars from "./stars";
 
 const StarRating = ({ rating, categories, amenities }) => {
+
+	console.log(amenities)
 	let { value1, value2, value3, value4 } = getReviewType(categories);
 
 	const { isFraction, average, textRating } = calculateRating(
@@ -33,8 +35,8 @@ const StarRating = ({ rating, categories, amenities }) => {
 				Property & Room rating{" "}
 			</p>
 
-			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 border-b  max-w-5xl'>
-				<div className='md:my-4 mb-6 '>
+			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 border-b  max-w-5xl mb-6'>
+				<div className='md:my-4 '>
 					<div className='flex flex-row justify-items-center items-center align-middle '>
 						<Stars
 							stars={Math.floor(rating?.ratingLocation)}
@@ -73,9 +75,9 @@ const StarRating = ({ rating, categories, amenities }) => {
 				</div>
 
 				{amenities && (
-					<div className='md:mb-4 md:my-4 mb-6'>
+					<div className='md:mb-4 mb-6'>
 						{amenities &&  amenities.map((item) => (
-							<div className='flex flex-row justify-items-center items-center align-middle '>
+							<div key={item._key} className='flex flex-row justify-items-center items-center align-middle '>
 								<Stars
 									stars={Math.floor(item?.amenitiesRating)}
 									isFraction={item?.amenitiesRating % 1 > 0 ? true : false}

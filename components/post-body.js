@@ -8,7 +8,7 @@ const serializers = {
     youtube2: ({node}) => {
       const { url } = node
       const id = getYouTubeId(url)
-      return (<YouTube videoId={id} />)
+      return (<YouTube videoId={id} className="bg-green-200  p-2"/>)
     }
   }
 }
@@ -16,7 +16,7 @@ const serializers = {
 export default function PostBody({ content }) {
   return (
     <div className="max-w-4xl text-center mx-4 sm:text-left">
-      <BlockContent blocks={content} serializers={serializers} projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID} dataset={process.env.NEXT_PUBLIC_SANITY_DATASET} className={markdownStyles.markdown} />
+      <BlockContent blocks={content} serializers={serializers} projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID} dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}  className={markdownStyles.markdown} />
     </div>
   )
 }
