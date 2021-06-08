@@ -4,8 +4,7 @@ import { calculateRating } from "../lib/calculateRating";
 import Stars from "./stars";
 
 const StarRating = ({ rating, categories, amenities }) => {
-
-	console.log(amenities)
+	console.log(amenities);
 	let { value1, value2, value3, value4 } = getReviewType(categories);
 
 	const { isFraction, average, textRating } = calculateRating(
@@ -76,15 +75,18 @@ const StarRating = ({ rating, categories, amenities }) => {
 
 				{amenities && (
 					<div className='md:mb-4 mb-6'>
-						{amenities &&  amenities.map((item) => (
-							<div key={item._key} className='flex flex-row justify-items-center items-center align-middle '>
-								<Stars
-									stars={Math.floor(item?.amenitiesRating)}
-									isFraction={item?.amenitiesRating % 1 > 0 ? true : false}
-								/>
-								<p className='mx-6 my-1'>{item.title}</p>
-							</div>
-						))}
+						{amenities &&
+							amenities.map((item) => (
+								<div
+									key={item._key}
+									className='flex flex-row justify-items-center items-center align-middle '>
+									<Stars
+										stars={Math.floor(item?.amenitiesRating)}
+										isFraction={item?.amenitiesRating % 1 > 0 ? true : false}
+									/>
+									<p className='mx-6 my-1'>{item.title}</p>
+								</div>
+							))}
 					</div>
 				)}
 			</div>
