@@ -36,13 +36,13 @@ function Hero() {
 					<div className='lg:w-3/5 xl:w-3/5 flex flex-col items-start relative z-10'>
 						<span className='font-bold uppercase text-pink-500'></span>
 						<h1 className='font-playfair-display text-6xl sm:text-7xl text-white leading-tight mt-4'>
-							Travel,
+							Travel to <span className='text-pink-500'>Eat</span>,
 							<br />
-							Explore <span className='text-pink-500'> &</span> Eat
+							 <span className='text-pink-500'> Eat</span> to Travel
 						</h1>
 						<h2 className='text-center text-white md:text-left text-xl mt-5'>
 							Our journey in discovering and reviewing food, hotels and
-							interesting items.
+							interesting locations.
 						</h2>
 					</div>
 				</div>
