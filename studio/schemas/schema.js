@@ -29,13 +29,13 @@ export default createSchema({
     // The following are document types which will appear
     // in the studio.
     post,
-    food,
+    // food,
     author,
     category,
     verdict,
     rating,
     amenities,
-    youtube,
+    //youtube,
     youtube2,
     // pros,
     // cons,

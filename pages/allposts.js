@@ -6,6 +6,7 @@ import HeroPost from "../components/hero-post";
 import Hero from "../components/hero";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
+import ReviewHeader from "../components/review-header";
 import { getAllPostsForHome } from "../lib/api";
 import Head from "next/head";
 import { CMS_NAME } from "../lib/constants";
@@ -21,7 +22,8 @@ function AllPosts({ allPosts, preview }) {
 					<title>Travel and Food Reviews by {CMS_NAME}</title>
 				</Head>
 				
-				<Welcome />
+				<ReviewHeader title ={"All"} pattern={'pattern'} summary={"Food & Hotels"}/>
+
 				<Container>
 				
 				

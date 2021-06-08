@@ -11,7 +11,7 @@ export default {
 
 	fields: [
 		{
-			title: "Location",
+			title: "Hotel - Location | Food - Flavor & Taste",
 			name: "ratingLocation",
 			type: "number",
 			options: {
@@ -33,7 +33,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Room (Comfort and Size)",
+			title: "Hotel - Room (Comfort and Size) | Food - Presentation",
 			name: "ratingCleanliness",
 			type: "number",
 			options: {
@@ -56,7 +56,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Service",
+			title: "Service & Setting",
 			name: "ratingService",
 			type: "number",
 			options: {
@@ -79,7 +79,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Price",
+			title: "Price/Value",
 			name: "ratingValue",
 			type: "number",
 			options: {
