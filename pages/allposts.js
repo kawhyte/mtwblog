@@ -23,11 +23,7 @@ function AllPosts({ allPosts, preview }) {
 				</Head>
 				
 				<ReviewHeader title ={"All"} pattern={'pattern'} summary={"Food & Hotels"}/>
-
 				<Container>
-				
-				
-
 					{morePosts.length > 0 &&
 						morePosts.map((post) => {
 							<Section

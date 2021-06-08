@@ -32,7 +32,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 			</div>
 
 			<p className='font-playfair-display mx-1 my-2  text-xl font-bold'>
-				Property & Room rating{" "}
+				Rating by category{" "}
 			</p>
 
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 border-b  max-w-5xl mb-6'>
