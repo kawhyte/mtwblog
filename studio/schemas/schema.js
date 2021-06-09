@@ -14,6 +14,7 @@ import comment from './comment'
 import verdict from './verdict'
 import rating from './rating'
 import amenities from './amenities'
+import gallery from './gallery'
 import youtube from './youtube'
 import youtube2 from './youtube2'
 // import pros from './pros'
@@ -35,6 +36,7 @@ export default createSchema({
     verdict,
     rating,
     amenities,
+    gallery,
     //youtube,
     youtube2,
     // pros,

@@ -15,7 +15,7 @@ const serializers = {
 
 export default function PostBody({ content }) {
   return (
-    <div className="max-w-4xl text-center mx-4 sm:text-left">
+    <div className="max-w-4xl text-center mx-4 my-10 sm:text-left">
       <BlockContent blocks={content} serializers={serializers} projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID} dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}  className={markdownStyles.markdown} />
     </div>
   )

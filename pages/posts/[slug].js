@@ -14,11 +14,8 @@ import Head from "next/head";
 import { CMS_NAME } from "../../lib/constants";
 import Form from "../../components/form";
 import ProConList from "../../components/pro-con-list";
+import Gallery from "../../components/gallery";
 import ReactPlayer from "react-player/youtube";
-
-
-
-
 
 export default function Post({ post, morePosts, preview }) {
 	const router = useRouter();
@@ -66,8 +63,8 @@ export default function Post({ post, morePosts, preview }) {
 								negatives={post.negatives}
 								verdict={post.verdict}
 							/>
-						
-						{/* post.videoUrl && 	<div className=' aspect-w-16 aspect-h-9 mb-16'>
+
+							{/* post.videoUrl && 	<div className=' aspect-w-16 aspect-h-9 mb-16'>
 						
 						<h1 className="font-playfair-display mb-5 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left">
 						{post.videoUrl.title}
@@ -79,10 +76,15 @@ export default function Post({ post, morePosts, preview }) {
 									muted
 								/>
 				</div>*/}
-		
+							{post.gallery ? (
+								<Gallery posts={post} heading={"Birthday"} />
+							) : (
+								" "
+							)}
+
 							<PostBody content={post.body} />
 						</article>
-
+						<SectionSeparator />
 						<Comments comments={post.comments} />
 						<Form _id={post._id} />
 

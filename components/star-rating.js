@@ -4,7 +4,7 @@ import { calculateRating } from "../lib/calculateRating";
 import Stars from "./stars";
 
 const StarRating = ({ rating, categories, amenities }) => {
-	console.log(amenities);
+	//console.log(amenities);
 	let { value1, value2, value3, value4 } = getReviewType(categories);
 
 	const { isFraction, average, textRating } = calculateRating(

@@ -65,6 +65,12 @@ export default {
 			
 			
 		//   },
+		{
+			name: "gallery",
+			type: 'gallery',
+			
+			
+		  },
 		  
 		  {
 			  name: "rating",
