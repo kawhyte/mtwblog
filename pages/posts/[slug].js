@@ -31,7 +31,7 @@ export default function Post({ post, morePosts, preview }) {
 			autoplay: 1,
 		},
 	};
-
+ console.log("******post",post)
 	return (
 		<Layout preview={preview} color={true}>
 			<Container>
@@ -76,6 +76,21 @@ export default function Post({ post, morePosts, preview }) {
 									muted
 								/>
 				</div>*/}
+
+					{ post.videoUrl &&  <div className='mb-12 md:mb-24 -mx-5 sm:mx-0'>
+								<div className='-mx-5 sm:mx-0'>
+									<h1 className='font-playfair-display mb-12 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
+									{post.videoUrl.title ? post.videoUrl.title :  "Video"}
+									</h1>
+									<ReactPlayer
+										url={post.videoUrl.url}
+										width={640}
+										height={390}
+										muted
+									/>
+								</div>
+							</div>
+						}
 							{post.gallery ? (
 								<Gallery posts={post} heading={"Birthday"} />
 							) : (

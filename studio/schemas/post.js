@@ -59,12 +59,12 @@ export default {
 			type: "string",
 			title: "Location",
 		},
-		// {
-		// 	name: "videoUrl",
-		// 	type: 'videoUrl',
+		{
+			name: "videoUrl",
+			type: 'videoUrl',
 			
 			
-		//   },
+		  },
 		{
 			name: "gallery",
 			type: 'gallery',

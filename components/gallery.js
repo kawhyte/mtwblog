@@ -34,9 +34,9 @@ function Gallery({ posts, heading }) {
 	return (
 		<section className='body-font'>
 			<div className='container px-5 mx-auto'>
-				<div className='flex flex-col text-center w-full mb-10 lg:mb-20'>
-					<div className='flex justify-center'>
-						<p className='font-playfair-display text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
+				<div className='flex flex-col text-center w-full mb-10 lg:mb-12'>
+					<div className='flex '>
+						<p className='font-playfair-display text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-left'>
 							Gallery
 						</p>
 					</div>

@@ -39,7 +39,7 @@ export default createSchema({
     rating,
     amenities,
     gallery,
-    //youtube,
+    youtube,
     youtube2,
     // pros,
     // cons,
