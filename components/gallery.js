@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import Masonry from "react-masonry-css";
 import { imageBuilder } from "../lib/sanity";
-import cn from "classnames";
+//import cn from "classnames";
 const breakpointColumnsObj = {
 	default: 3,
 	1100: 2,
@@ -12,25 +12,25 @@ const breakpointColumnsObj = {
 };
 
 function Gallery({ posts, heading }) {
-	let valuesArray = Object.values(posts.gallery.images);
+	//let valuesArray = Object.values(posts.gallery.images);
 
 	// console.log("OBJECT2 ",valuesArray);
-	console.log("Pages2 ", posts.gallery.images[0].asset);
-	const image = (
-		<img
-			width={1240}
-			height={540}
-			alt={`Cover Image for`}
-			className={cn("shadow-small", {
-				"hover:shadow-medium transition-shadow duration-200": "test",
-			})}
-			src={imageBuilder(posts.gallery.images[0])
-				.width(1240)
-				.height(540)
-				.format("webp")
-				.url()}
-		/>
-	);
+	//console.log("Pages2 ", posts.gallery.images[0]);
+	// const image = (
+	// 	<img
+	// 		width={1240}
+	// 		height={540}
+	// 		alt={`Cover Image for`}
+	// 		className={cn("shadow-small", {
+	// 			"hover:shadow-medium transition-shadow duration-200": "test",
+	// 		})}
+	// 		src={imageBuilder(posts.gallery.images[0])
+	// 			.width(1240)
+	// 			.height(540)
+	// 			.format("webp")
+	// 			.url()}
+	// 	/>
+	//);
 	return (
 		<section className='body-font'>
 			<div className='container px-5 mx-auto'>
@@ -46,10 +46,10 @@ function Gallery({ posts, heading }) {
 					className='my-masonry-grid'
 					columnClassName='my-masonry-grid_column'>
 					{posts.gallery.images.map((item, i) => (
-						<>
-							<div key={item._key} className='bg-pink-50 rounded-3xl p-1 '>
+						<div key={i}>
+							<div key={i} className='bg-pink-50 rounded-3xl p-1 '>
 								<Image
-									class=' object-cover rounded-3xl '
+									className=' object-cover rounded-3xl '
 									alt={item?.alt}
 									src={imageBuilder(posts.gallery.images[i])
 										.width(1200)
@@ -63,7 +63,7 @@ function Gallery({ posts, heading }) {
 									{item?.alt}
 								</span>
 							</div>
-						</>
+						</div>
 					))}
 				</Masonry>
 			</div>
