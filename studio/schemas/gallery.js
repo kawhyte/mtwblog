@@ -9,19 +9,10 @@ export default {
         title: 'Images',
         of: [
           {
-            name: 'image',
-            type: 'image',
-            title: 'Image',
-            options: {
-              hotspot: true,
-            },
-            fields: [
-              {
-                name: 'alt',
-                type: 'string',
-                title: 'Alternative text',
-              },
-            ],
+            //name: 'image',
+            type: 'galaryImage',
+            //title: 'Image',
+         
           },
         ],
         options: {

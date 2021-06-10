@@ -17,6 +17,7 @@ import amenities from './amenities'
 import gallery from './gallery'
 import youtube from './youtube'
 import youtube2 from './youtube2'
+import galaryImage from './img'
 // import pros from './pros'
 // import cons from './cons'
 
@@ -32,6 +33,7 @@ export default createSchema({
     post,
     // food,
     author,
+    galaryImage,
     category,
     verdict,
     rating,
