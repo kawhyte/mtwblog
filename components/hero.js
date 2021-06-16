@@ -4,7 +4,7 @@ import Navbar from "./navbar3";
 function Hero() {
 	return (
 		<div>
-			<div className='bg-indigo-900 relative overflow-hidden h-5/6'>
+			<div className='bg-indigo-900 relative overflow-hidden '>
 				<img
 					src='https://res.cloudinary.com/babyhulk/image/upload/v1622066371/project/Main.webp'
 					className=' block absolute md:hidden h-full w-full object-cover'
@@ -36,9 +36,9 @@ function Hero() {
 					<div className='lg:w-3/5 xl:w-3/5 flex flex-col items-start relative z-10'>
 						<span className='font-bold uppercase text-pink-500'></span>
 						<h1 className='font-playfair-display text-6xl sm:text-7xl text-white leading-tight mt-4'>
-							Travel to <span className='text-pink-500'>Eat</span>,
+							Travel to Eat<span className='text-pink-500'></span>,
 							<br />
-							 <span className='text-pink-500'> Eat</span> to Travel
+							 <span className='text-pink-500'> </span>Eat to Travel
 						</h1>
 						<h2 className='text-center text-white md:text-left text-xl mt-5'>
 							Our journey in discovering and reviewing food, hotels and

@@ -13,7 +13,7 @@ function AllHotels({ allPosts, preview }) {
  
 	return (
 		<>
-			<Layout preview={preview} color={false}>
+			<Layout preview={preview} color={true}>
 				<Head>
 					<title>Travel and Food Reviews by {CMS_NAME}</title>
 				</Head>

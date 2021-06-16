@@ -9,7 +9,7 @@ const navigation = [
 	{
 		name: "All Posts",
 		href: "/allposts",
-		icon: "/icon/hotel.svg",
+		icon: "/icon/walk.svg",
 		text: "Hotel icon",
 		current: false,
 	},
@@ -48,11 +48,13 @@ function classNames(...classes) {
 }
 
 export default function Nav({ color }) {
-	let col = color ? " text-white" : " text-white";
+	let col = color ? " text-gray-900" : " text-white";
+
+	console.log("Color is ", col)
 	return (
 		<Disclosure
 			as='nav'
-			className='sticky top-0 z-30 mx-auto h-[72px] bg-black backdrop-filter backdrop-blur max-w-8xl xl:px-8 firefox:bg-opacity-90   '>
+			className=' top-0 z-30 mx-auto h-[72px] w-full absolute   blur-lg backdrop-filter backdrop-blur max-w-8xl xl:px-8 firefox:bg-opacity-90 '>
 			{({ open }) => (
 				<>
 					<div className='max-w-8xl  container mx-auto cursor-pointer'>
@@ -93,7 +95,7 @@ export default function Nav({ color }) {
 
 										<p
 											className={
-												"hidden  text-lg font-semibold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase  " +
+												"hidden text-lg text-white font-bold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase  " +
 												col
 											}>
 											Meet The Whytes
@@ -111,8 +113,8 @@ export default function Nav({ color }) {
 													className={classNames(
 														item.current
 															? "bg-gray-900 text-white"
-															: "text-gray-300  hover:text-white",
-														"px-2 py-2 rounded-md text-base font-medium flex flex-row justify-center align-middle items-center"
+															:  "text-white  hover:text-white " + col ,
+														"px-2 py-2 rounded-md font-semibold text-base flex flex-row justify-center align-middle items-center"
 													)}>
 												
 													<Image
