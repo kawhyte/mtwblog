@@ -50,7 +50,7 @@ function classNames(...classes) {
 export default function Nav({ color }) {
 	let col = color ? " text-gray-900" : " text-white";
 
-	console.log("Color is ", col)
+
 	return (
 		<Disclosure
 			as='nav'

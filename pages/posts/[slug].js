@@ -31,7 +31,7 @@ export default function Post({ post, morePosts, preview }) {
 			autoplay: 1,
 		},
 	};
- console.log("******post",post)
+ 
 	return (
 		<Layout preview={preview} color={true}>
 			<Container>
