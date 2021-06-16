@@ -64,7 +64,7 @@ function ProConList({ positives, negatives ,verdict }) {
 							</div>
 							<div className='flex-grow'>
 								<h2 className='font-playfair-display text-gray-900 text-lg title-font font-medium mb-3'>
-									What we didnt like{" "}
+									What we did not like{" "}
 								</h2>
 
 								<div className='flex flex-col sm:items-start sm:text-left  items-center -mb-1 space-y-2.5'>
