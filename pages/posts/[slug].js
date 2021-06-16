@@ -86,6 +86,8 @@ export default function Post({ post, morePosts, preview }) {
 										url={post.videoUrl.url}
 										width={640}
 										height={390}
+										controls={true}
+										loop
 										muted
 									/>
 								</div>
