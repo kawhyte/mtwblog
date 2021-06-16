@@ -17,7 +17,7 @@ function Hero() {
 					muted
 					className='hidden md:block w-full h-full absolute object-cover'>
 					<source
-						src='https://res.cloudinary.com/babyhulk/video/upload/v1621433741/Video/Pexels_Videos_1409899.mp4'
+						src='https://res.cloudinary.com/babyhulk/video/upload/v1623863403/Video/MTW.mp4'
 						type='video/mp4'
 					/>
 					Your browser does not support the video tag.
