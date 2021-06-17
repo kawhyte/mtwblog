@@ -92,7 +92,7 @@ export default {
 
 			description: "Add multiple Positive points",
 			type: "array",
-			of: [{ type: "string" }],
+			of: [{ type: "text" }],
 		},
 
 		{
@@ -100,7 +100,7 @@ export default {
 			name: "negatives",
 			description: "Add multiple Negative points",
 			type: "array",
-			of: [{ type: "string" }],
+			of: [{ type: "text" }],
 		},
 
 		{
