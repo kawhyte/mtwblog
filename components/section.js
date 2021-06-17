@@ -3,9 +3,11 @@ import Link from "next/link";
 import { imageBuilder } from "../lib/sanity";
 import cn from "classnames";
 import StarRating from "./star-rating";
+import { add } from "date-fns";
 
 function Section({
 	title,
+	address,
 	coverImage,
 	imageObject,
 	date,
@@ -13,10 +15,15 @@ function Section({
 	amenities,
 	author,
 	slug,
-	videoUrl
+	videoUrl,
+	webLink,
+	
+	
+	
 }) {
 
-
+//  console.log("address ", address, title,kenny)
+//  console.log("kenn ",kenny)
 	const image = (
 		<img
 			width={392}
@@ -46,7 +53,9 @@ function Section({
 						{title}
 					</h2>
 					<p className='text-base leading-relaxed mt-2'>{excerpt}</p>
-				
+					<div className=' text-gray-500 block   mb-2  text-lg'>
+					{address ? address : "No address provided"}
+				</div>
 			
 
 					<Link as={`/posts/${slug}`} href='/posts/[slug]'>

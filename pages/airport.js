@@ -35,6 +35,7 @@ function AllHotels({ allPosts, preview }) {
 								slug={post.slug}
 								excerpt={post.excerpt}
 								webLink={post.webLink}
+								address={post.address}
 							/>;
 						})}
 

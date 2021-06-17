@@ -14,10 +14,10 @@ import Categories from "../components/categories";
 import Navbar from "../components/navbar";
 
 export default function Index({ allPosts, preview }) {
-	// console.log("ALL POSTS ",allPosts )
 	const heroPost = allPosts[0];
 	const morePosts = allPosts.slice(1, 7);
-
+	
+	
 
 	return (
 		<>
@@ -53,6 +53,7 @@ export default function Index({ allPosts, preview }) {
 					)}
 					{morePosts.length > 0 &&
 						morePosts.map((post) => {
+						{console.log("PP ", post.address)}
 							<Section
 								key={post.slug}
 								title={post.title}
@@ -63,7 +64,10 @@ export default function Index({ allPosts, preview }) {
 								excerpt={post.excerpt}
 								amenities={post.amenities}
 								videoUrl={post.videoUrl}
+								address={post.address}
 								webLink={post.webLink}
+								kenny={"kenny"}
+								
 							/>;
 						})}
 					{morePosts.length > 0 && <MoreStories posts={morePosts} />}
