@@ -24,22 +24,14 @@ function AllPosts({ allPosts, preview }) {
 				
 				<ReviewHeader title ={"All"} pattern={'pattern'} summary={"Food & Hotels"}/>
 				<Container>
-					{morePosts.length > 0 &&
-						morePosts.map((post) => {
-							<Section
-								key={post.slug}
-								title={post.title}
-								coverImage={post.coverImage}
-								date={post.date}
-								author={post.author}
-								slug={post.slug}
-								excerpt={post.excerpt}
-								webLink={post.webLink}
-								address={post.address}
-							/>;
-						})}
+			
+				{morePosts.length > 0 &&
+					<Section
+					posts ={morePosts}  
+						
+					/>}
 
-					{morePosts.length > 0 && <MoreStories posts={morePosts} />}
+					{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 				</Container>
 				
 			</Layout>

@@ -7,7 +7,7 @@ import { add } from "date-fns";
 
 function Section(props) {
 	//  console.log("address ", address, title,kenny)
-	console.log("New PROPS ", props.posts[0]);
+	//console.log("New PROPS ", props.posts[0]);
 	// const image = (
 	// 	<img
 	// 		width={392}

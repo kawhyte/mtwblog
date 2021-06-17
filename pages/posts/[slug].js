@@ -106,7 +106,7 @@ export default function Post({ post, morePosts, preview }) {
 						<Form _id={post._id} />
 
 						<SectionSeparator />
-						{morePosts.length > 0 && <MoreStories posts={morePosts} />}
+						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 					</>
 				)}
 			</Container>

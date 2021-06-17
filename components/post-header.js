@@ -73,12 +73,12 @@ export default function PostHeader({ title,categories, coverImage, date, author,
 					/>
 				</svg>
 
-				<div className=' text-gray-500 block ml-2   mb-2  text-lg'>
-					<Date dateString={date} />
+				<div className=' text-gray-500 block ml-2 mb-2 text-lg'>
+				Visited on <Date dateString=  {date} />
 				</div>
 			</div>
 
-			<div className=' block mt-2 text-lg  mb-6 md:mb-12'>
+			<div className=' block mt-2 text-lg mb-6 md:mb-12'>
 				<StarRating  rating={rating} amenities={amenities}  categories ={categories} />
 			</div>
 		</>
