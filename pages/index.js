@@ -16,8 +16,6 @@ import Navbar from "../components/navbar";
 export default function Index({ allPosts, preview }) {
 	const heroPost = allPosts[0];
 	const morePosts = allPosts.slice(1, 7);
-	
-	
 
 	return (
 		<>
@@ -25,11 +23,11 @@ export default function Index({ allPosts, preview }) {
 				<Head>
 					<title>Travel and Food Reviews by {CMS_NAME}</title>
 				</Head>
-	
+
 				<Hero />
-			
+
 				<Categories />
-				
+
 				<Container>
 					{heroPost && (
 						<HeroPost
@@ -51,30 +49,12 @@ export default function Index({ allPosts, preview }) {
 					) : (
 						""
 					)}
-					{morePosts.length > 0 &&
-						morePosts.map((post) => {
-						{console.log("PP ", post.address)}
-							<Section
-								key={post.slug}
-								title={post.title}
-								coverImage={post.coverImage}
-								date={post.date}
-								author={post.author}
-								slug={post.slug}
-								excerpt={post.excerpt}
-								amenities={post.amenities}
-								videoUrl={post.videoUrl}
-								address={post.address}
-								webLink={post.webLink}
-								kenny={"kenny"}
-								
-							/>;
-						})}
-					{morePosts.length > 0 && <MoreStories posts={morePosts} />}
+					{morePosts.length > 0 && <Section posts={morePosts} />}
+					{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 					<div className='bg-red-200 mx-auto container my-12 max-w-xs'>
 						<Link href='/allposts'>
 							<button
-							aria-label= "Justify"
+								aria-label='Justify'
 								type='button'
 								className='py-2 px-4   bg-pink-500 hover:bg-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
 								View All Reviews
