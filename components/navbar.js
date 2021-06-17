@@ -54,7 +54,7 @@ export default function Nav({ color }) {
 	return (
 		<Disclosure
 			as='nav'
-			className=' top-0 z-30 mx-auto h-[72px] w-full absolute   blur-lg backdrop-filter backdrop-blur max-w-8xl xl:px-8 firefox:bg-opacity-90 '>
+			className=' top-0 z-30 mx-auto h-[72px] w-full absolute   max-w-8xl xl:px-8 firefox:bg-opacity-90 '>
 			{({ open }) => (
 				<>
 					<div className='max-w-8xl  container mx-auto cursor-pointer'>
