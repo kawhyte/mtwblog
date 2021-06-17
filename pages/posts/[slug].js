@@ -77,21 +77,27 @@ export default function Post({ post, morePosts, preview }) {
 								/>
 				</div>*/}
 
-					{ post.videoUrl &&  <div className='mb-12 md:mb-24 -mx-5 sm:mx-0'>
-								<div className='-mx-5 sm:mx-0'>
+					{ post.videoUrl &&  
+							<>
 									<h1 className='font-playfair-display mb-12 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
 									{post.videoUrl.title ? post.videoUrl.title :  "Video"}
 									</h1>
+
+									<div className='mb-12 md:mb-24 -mx-5 sm:mx-0'>
+									<div className="player-wrapper">
 									<ReactPlayer
+									className="react-player"
 										url={post.videoUrl.url}
-										width={640}
-										height={390}
+										width={"100%"}
+										height={"100%"}
 										controls={true}
 										loop
 										muted
 									/>
-								</div>
+									</div>
+								
 							</div>
+							</>
 						}
 							{post.gallery ? (
 								<Gallery posts={post} heading={"Birthday"} />

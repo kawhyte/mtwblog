@@ -42,7 +42,7 @@ export default function Index({ allPosts, preview }) {
 					)}
 					{morePosts.length > 0 ? (
 						<div className='flex  flex-row justify-between'>
-							<h2 className='font-playfair-display sm:my-8 text-2xl md:text-3xl  font-medium tracking-tight leading-tight'>
+							<h2 className='font-playfair-display mb-8 sm:my-8 text-2xl md:text-3xl  font-medium tracking-tight leading-tight'>
 								More Reviews
 							</h2>
 						</div>

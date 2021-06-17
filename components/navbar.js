@@ -162,8 +162,8 @@ export default function Nav({ color }) {
 									className={classNames(
 										item.current
 											? "bg-gray-900 text-white"
-											: "text-pink-500 hover:bg-gray-700 hover:text-white",
-										"block px-3 py-2 rounded-md text-base font-medium"
+											: "text-black hover:bg-gray-700 hover:text-white",
+										"block px-3 py-2 rounded-md text-base font-medium bg-green-100"
 									)}
 									aria-current={item.current ? "page" : undefined}>
 									{item.name}
