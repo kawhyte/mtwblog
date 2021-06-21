@@ -3,7 +3,7 @@ import React from "react";
 function MtwAward({ address }) {
 	return (
 		<div>
-			<span className='flex flex-row-reverse justify-center items-center px-3  mx-2 my-2  text-base rounded-2xl text-white  bg-pink-500 absolute '>
+			<span className='flex flex-row-reverse justify-center items-center px-3  mx-2 my-2 z-20  text-base rounded-2xl text-white  bg-pink-500 absolute '>
 				<p className='text-white font-normal text-xs md:text-sm p-1  '>
 					{address ? address : "No address provided"}
 				</p>

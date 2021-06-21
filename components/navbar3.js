@@ -10,7 +10,7 @@ function Navbar({ fixed, color }) {
 			<nav className={'relative flex flex-wrap items-center justify-between  px-2 py-3  mb-3 '  }>
 				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 					<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
-						<Link href='/' className='cursor-pointer'>
+						<Link href='/' className='cursor-pointer' passHref>
 							<div className='flex flex-row justify-center align-middle items-center cursor-pointer'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'

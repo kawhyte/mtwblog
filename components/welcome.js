@@ -13,7 +13,7 @@ function Welcome() {
 						</h2>
 
 						<p className='lg:w-2/3 mx-auto leading-relaxed text-2xl'>
-							We're a Husband 👖 and wife 👗 duo.We love to travel & try new
+							We`&apos;`re a Husband 👖 and wife 👗 duo.We love to travel & try new
 							food.
 						</p>
 					</div>

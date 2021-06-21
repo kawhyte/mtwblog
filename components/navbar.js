@@ -71,7 +71,7 @@ export default function Nav({ color }) {
 								</Disclosure.Button>
 							</div>
 							<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
-								<Link href='/' className='cursor-pointer'>
+								<Link href='/' className='cursor-pointer' passHref>
 									<div className='flex-shrink-0 flex items-center'>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
@@ -105,7 +105,7 @@ export default function Nav({ color }) {
 								<div className='hidden sm:block sm:ml-6'>
 									<div className='flex flex-row align-middle justify-center items-center  space-x-4'>
 										{navigation.map((item) => (
-											<Link href={item.href} key={item.name}>
+											<Link href={item.href} key={item.name} passHref>
 												<div className="flex flex-row justify-center align-middle items-center">
 											
 													<button key={item.name}

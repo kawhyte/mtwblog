@@ -16,7 +16,7 @@ export default function HeroPost({
 	return (
 		<section className='mt-20'>
 			<h2 className='font-playfair-display mb-5 sm:mb-12 text-2xl md:text-3xl  font-medium tracking-tight leading-tight'>
-				Featured Review
+				Latest Review
 			</h2>
 
 			<div className='flex flex-col justify-start items-center'>
@@ -28,13 +28,14 @@ export default function HeroPost({
 					<div className='absolute bottom-0 right-0 mx-2 my-1 flex flex-col justify-start items-start align-middle '>
 						
 
-						<h3 className='mb-2 md:mb-6 text-lg sm:text-xl md:text-4xl font-bold tracking-tighter leading-tight bg-white px-3 py-2'>
+						<h3 className='mb-2 z-20 md:mb-6 text-lg sm:text-xl md:text-4xl font-bold tracking-tighter leading-tight bg-white px-3 py-2'>
 							<Link as={`/posts/${slug}`} href='/posts/[slug]'>
 								<a className='hover:underline break-all font-playfair-display'>
 									{title}
 								</a>
 							</Link>
 						</h3>
+						
 					</div>
 					<CoverImage
 						slug={slug}
