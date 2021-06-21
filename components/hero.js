@@ -1,14 +1,16 @@
 import React from "react";
-import Navbar from "./navbar3";
+import Navbar from "./navbar3"
+import Image from 'next/image'
 
 function Hero() {
 	return (
 		<div>
 			<div className='bg-indigo-900 relative overflow-hidden '>
-				<img
+				<Image
 					src='https://res.cloudinary.com/babyhulk/image/upload/v1622066371/project/Main.webp'
 					className=' block absolute md:hidden h-full w-full object-cover'
 					aria-label= "Justify"
+					layout="fill"
 				/>
 
 				<video

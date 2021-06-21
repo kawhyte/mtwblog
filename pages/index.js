@@ -52,7 +52,7 @@ export default function Index({ allPosts, preview }) {
 					{morePosts.length > 0 && <Section posts={morePosts} />}
 					{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 					<div className='bg-red-200 mx-auto container my-12 max-w-xs'>
-						<Link href='/allposts'>
+						<Link href='/allposts' passHref>
 							<button
 								aria-label='Justify'
 								type='button'
