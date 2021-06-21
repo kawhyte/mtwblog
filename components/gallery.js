@@ -3,19 +3,20 @@ import Image from "next/image";
 
 import Masonry from "react-masonry-css";
 import { imageBuilder } from "../lib/sanity";
+import {getImageDimensions} from '@sanity/asset-utils'
 //import cn from "classnames";
 const breakpointColumnsObj = {
 	default: 3,
 	1100: 2,
-	700: 1,
+	700: 2,
 	500: 1,
 };
 
 function Gallery({ posts, heading }) {
 	//let valuesArray = Object.values(posts.gallery.images);
 
-	// console.log("OBJECT2 ",valuesArray);
-	//console.log("Pages2 ", posts.gallery.images[0]);
+	 //console.log("OBJECT2 ",valuesArray);
+	// console.log("Pages2 ",getImageDimensions( posts.gallery.images[0]) );
 	// const image = (
 	// 	<img
 	// 		width={1240}
@@ -54,12 +55,12 @@ function Gallery({ posts, heading }) {
 									placeholder="blur" 
 									alt={item?.alt}
 									src={imageBuilder(posts.gallery.images[i])
-										.width(1200)
-										.height(1000)
+										.width(getImageDimensions( posts.gallery.images[i]).width)
+										.height(getImageDimensions( posts.gallery.images[i]).height)
 										.format("webp")
 										.url()}
-									width={1024}
-									height={976}
+									width={getImageDimensions( posts.gallery.images[i]).width}
+									height={getImageDimensions( posts.gallery.images[i]).height}
 								/>
 							
 								<span className='px-4 my-4 mx-4 text-xs sm:text-sm md:text-base text-black'>
