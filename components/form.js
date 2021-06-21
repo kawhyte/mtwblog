@@ -57,7 +57,7 @@ export default function Form ({_id}) {
       </label>
       {/* errors will return when field validation fails  */}
       {errors.exampleRequired && <span>This field is required</span>}
-      <input type="submit" className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" />
+      <input type="submit" className="shadow bg-pink-500 hover:bg-pink-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" />
     </form>
 )
 }
