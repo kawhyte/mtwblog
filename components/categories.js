@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import CategoryItems from './category-items'
 
 
@@ -66,13 +67,16 @@ function Categories() {
 
 
           {category.map((item) => (
-
-
             <div key={item.name} className="xl:w-1/4 md:w-1/2 p-4">
             <Link href={item.href} className=""> 
               <div className="bg-green-50 p-6 rounded-lg cursor-pointer">
              <a> 
-                <img className="h-40 rounded w-full object-cover object-center mb-6" src={item.image} alt={item.text} />
+                <Image 
+                height={160}
+                width={428}
+                blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+												placeholder="blur" 
+                className="h-40 rounded w-full object-cover object-center mb-6" src={item.image} alt={item.text} />
                 
                 <h2 className=" font-playfair-display text-lg text-gray-900 font-medium title-font mb-4">{item.name}</h2>
               </a>

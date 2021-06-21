@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { imageBuilder } from "../lib/sanity";
 import cn from "classnames";
 import StarRating from "./star-rating";
@@ -31,9 +32,11 @@ function Section(props) {
 								{item.slug ? (
 									<Link as={`/posts/${item.slug}`} href='/posts/[slug]'>
 										<a aria-label={item.title}>
-											<img
+											<Image
 												width={392}
 												height={171}
+												blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+												placeholder="blur" 
 												alt={`Cover Image for ${item.title}`}
 												className={cn("shadow-small", {
 													"object-cover object-center h-full w-full": item.slug,
