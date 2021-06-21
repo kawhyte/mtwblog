@@ -55,8 +55,8 @@ function Gallery({ posts, heading }) {
 									placeholder="blur" 
 									alt={item?.alt}
 									src={imageBuilder(posts.gallery.images[i])
-										.width(getImageDimensions( posts.gallery.images[i]).width)
-										.height(getImageDimensions( posts.gallery.images[i]).height)
+										.width(1000)
+										.height(1000)
 										.format("webp")
 										.url()}
 									width={getImageDimensions( posts.gallery.images[i]).width}
