@@ -50,6 +50,8 @@ function Gallery({ posts, heading }) {
 							<div key={i} className='bg-pink-50 rounded-3xl p-1 '>
 								<Image
 									className=' object-cover rounded-3xl '
+									blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+									placeholder="blur" 
 									alt={item?.alt}
 									src={imageBuilder(posts.gallery.images[i])
 										.width(1200)
@@ -57,12 +59,15 @@ function Gallery({ posts, heading }) {
 										.format("webp")
 										.url()}
 									width={1024}
-									height={876}
+									height={976}
 								/>
+							
 								<span className='px-4 my-4 mx-4 text-xs sm:text-sm md:text-base text-black'>
 									{item?.alt}
 								</span>
 							</div>
+
+						
 						</div>
 					))}
 				</Masonry>
