@@ -6,7 +6,7 @@ import { imageBuilder } from "../lib/sanity";
 import StarRating from "./star-rating";
 import post from "../studio/schemas/post";
 export default function PostHeader({ title,categories, coverImage, date, author, amenities, videoUrl, address, rating }) {
-	 console.log("DATE ",date)
+	 //console.log("DATE ",date)
 
 	return (
 		<>
