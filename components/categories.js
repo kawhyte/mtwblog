@@ -10,7 +10,7 @@ const category = [
 	{
 		name: "All Posts",
 		href: "/allposts",
-		image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621897765/project/PXL_20210222_215622925.MP.webp",
+		image: "https://res.cloudinary.com/babyhulk/image/upload/v1621897765/project/PXL_20210222_215622925.MP.webp",
 		text: "Hotel icon",
     alt: "View of Sunset at a hotel"
 		
@@ -18,7 +18,7 @@ const category = [
 	{
 		name: "Hotel Review",
 		href: "/hotel",
-		image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621896780/project/PXL_20210428_025517322.MP.webp",
+		image: "https://res.cloudinary.com/babyhulk/image/upload/v1621896780/project/PXL_20210428_025517322.MP.webp",
 		text: "Hotel icon",
     alt: "View of Sunset at a hotel"
 		
@@ -27,7 +27,7 @@ const category = [
 	{
 		name: "Food Review",
 		href: "/food",
-		image: "https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621897187/project/MVIMG_20191203_091517.webp",
+		image: "https://res.cloudinary.com/babyhulk/image/upload/v1621897187/project/MVIMG_20191203_091517.webp",
 		text: "Hotel icon",
     alt: "View of Food" 
 		
