@@ -42,4 +42,6 @@
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^2.1.2"
   }
+
+  
 }

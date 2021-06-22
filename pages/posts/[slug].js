@@ -76,8 +76,8 @@ export default function Post({ post, morePosts, preview }) {
 									muted
 								/>
 				</div>*/}
-
-					{ post.videoUrl &&  
+ 
+					{ post.videoUrl?.url?.match(/^(http(s)?:\/\/)?((w){3}.)?youtu(be|.be)?(\.com)?\/.+/gm) &&  
 							<>
 									<h1 className='font-playfair-display mb-12 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
 									{post.videoUrl.title ? post.videoUrl.title :  "Video"}
