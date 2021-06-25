@@ -7,9 +7,8 @@ function Hero() {
 		<div>
 			<div className='bg-indigo-900 relative overflow-hidden '>
 				<Image
-					blurDataURL='data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=='
-					placeholder='blur'
-					src='https://res.cloudinary.com/babyhulk/image/upload/v1622066371/project/Main.webp'
+				
+					src='https://res.cloudinary.com/babyhulk/image/upload/v1624648198/hero-image/PXL_20210613_032035183.MP.webp'
 					className=' block absolute md:hidden h-full w-full object-cover'
 					aria-label='Justify'
 					layout='fill'
@@ -22,14 +21,14 @@ function Hero() {
 					className='hidden md:block w-full h-full absolute object-cover'>
 					Your browser does not support the video tag.
 					<source
-						src='https://drive.google.com/uc?export=view&id=1mURfk2iTfQaMevo0SPcWoW7DfIlPDJti'
-						type='video/mp4'
+					src='https://mtw2-bucket.s3.us-west-1.amazonaws.com/MTW.mp4'
+					type='video/mp4'
 					/>
-					Your browser does not support the video tag.
 					<source
-						src='https://drive.google.com/uc?export=download&id=1opEIAAZ3BpmZ-TcabeyByxA5JgZ0qLu1'
+						src='https://mtw2-bucket.s3.us-west-1.amazonaws.com/MTW.webm'
 						type='video/webm'
 					/>
+					Your browser does not support the video tag.
 				</video>
 
 				<div className='inset-0 bg-black opacity-40  absolute'></div>
