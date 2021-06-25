@@ -10,11 +10,13 @@ export default {
 			name: "title",
 			title: "Title",
 			type: "string",
+			validation: Rule => Rule.required().max(100).warning('Shorter titles are usually better')
 		},
 		{
 			name: "slug",
 			title: "Slug",
 			type: "slug",
+			validation: Rule => Rule.required(),
 			options: {
 				source: "title",
 				maxLength: 96,
@@ -30,6 +32,7 @@ export default {
 			name: "mainImage",
 			title: "Main image",
 			type: "image",
+			validation: Rule => Rule.required(),
 			options: {
 				hotspot: true,
 			},
@@ -40,12 +43,19 @@ export default {
 			name: "categories",
 			title: "Categories",
 			type: "array",
+			validation: Rule => Rule.required(),
 			of: [{ type: "reference", to: { type: "category" } }],
 		},
 		{
 			name: "publishedAt",
 			title: "Published at",
 			type: "datetime",
+			validation: Rule => Rule.required(),
+			options: {
+				
+				calendarTodayLabel: 'Today'
+			  }
+			
 		},
 
 		// {
@@ -58,6 +68,7 @@ export default {
 			name: "address",
 			type: "string",
 			title: "Location",
+			validation: Rule => Rule.required(),
 		},
 		{
 			name: "videoUrl",
@@ -77,6 +88,7 @@ export default {
 			  title: "Rating",
 			  description: "Add a rating for each section.",
 			  type: "rating",
+		
 			},
 			{
 				name: "amenities",
@@ -91,6 +103,7 @@ export default {
 			name: "positives",
 
 			description: "Add multiple Positive points",
+			validation: Rule => Rule.required(),
 			type: "array",
 			of: [{ type: "text" }],
 		},
@@ -99,6 +112,7 @@ export default {
 			title: "Negatives",
 			name: "negatives",
 			description: "Add multiple Negative points",
+			validation: Rule => Rule.required(),
 			type: "array",
 			of: [{ type: "text" }],
 		},
@@ -107,6 +121,7 @@ export default {
 			name: "verdict",
 			title: "Verdict",
 			description: "Add your Verdict",
+			validation: Rule => Rule.required(),
 			type: "text",
 		},
 

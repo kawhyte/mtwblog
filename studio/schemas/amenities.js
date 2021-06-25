@@ -20,6 +20,7 @@ export default{
 			title: "rating",
 			name: "amenitiesRating",
 			type: "number",
+			
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },

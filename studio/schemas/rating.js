@@ -2,6 +2,8 @@ export default {
 	type: "object",
 	name: "rating",
 	description: "Rating for HOTEL",
+
+
 	fieldsets: [{ name: "social", title: "Give a rating 1-5 for each item" }],
 	options: {
 		collapsible: true, // Makes the whole fieldset collapsible
@@ -14,6 +16,7 @@ export default {
 			title: "Hotel - Location | Food - Flavor & Taste",
 			name: "ratingLocation",
 			type: "number",
+		
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -36,6 +39,7 @@ export default {
 			title: "Hotel - Room (Comfort and Size) | Food - Presentation",
 			name: "ratingCleanliness",
 			type: "number",
+			
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -59,6 +63,7 @@ export default {
 			title: "Service & Setting",
 			name: "ratingService",
 			type: "number",
+			
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -82,6 +87,7 @@ export default {
 			title: "Price/Value",
 			name: "ratingValue",
 			type: "number",
+			
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -107,6 +113,7 @@ export default {
 			name: "ratingOverall",
 			type: "number",
 			hidden:true,
+			
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
