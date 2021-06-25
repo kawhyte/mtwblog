@@ -19,13 +19,13 @@ function Hero() {
 					muted
 					className='hidden md:block w-full h-full absolute object-cover'>
 					<source
-						src='https://drive.google.com/uc?export=view&id=1mURfk2iTfQaMevo0SPcWoW7DfIlPDJti'
-						type='video/mp4'
+						src='https://drive.google.com/uc?export=download&id=1opEIAAZ3BpmZ-TcabeyByxA5JgZ0qLu1'
+						type='video/webm'
 					/>
 					Your browser does not support the video tag.
 					<source
-						src='https://petermedina.com/video/beach.webm'
-						type='video/webm'
+						src='https://drive.google.com/uc?export=view&id=1mURfk2iTfQaMevo0SPcWoW7DfIlPDJti'
+						type='video/mp4'
 					/>
 					Your browser does not support the video tag.
 				</video>
