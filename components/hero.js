@@ -6,28 +6,28 @@ function Hero() {
 	return (
 		<div>
 			<div className='bg-indigo-900 relative overflow-hidden '>
-				<Image
+				{/*<Image
 					src='https://res.cloudinary.com/babyhulk/image/upload/v1622066371/project/Main.webp'
 					className=' block absolute md:hidden h-full w-full object-cover'
 					aria-label= "Justify"
 					layout="fill"
-				/>
+				/>*/}
 
 				<video
 					autoPlay
 					loop
 					muted
-					className='hidden md:block w-full h-full absolute object-cover'>
+					className=' md:block w-full h-full absolute object-cover'>
+					Your browser does not support the video tag.
+					<source
+					src='https://drive.google.com/uc?export=view&id=1mURfk2iTfQaMevo0SPcWoW7DfIlPDJti'
+					type='video/mp4'
+					/>
+					Your browser does not support the video tag.
 					<source
 						src='https://drive.google.com/uc?export=download&id=1opEIAAZ3BpmZ-TcabeyByxA5JgZ0qLu1'
 						type='video/webm'
 					/>
-					Your browser does not support the video tag.
-					<source
-						src='https://drive.google.com/uc?export=view&id=1mURfk2iTfQaMevo0SPcWoW7DfIlPDJti'
-						type='video/mp4'
-					/>
-					Your browser does not support the video tag.
 				</video>
 
 				<div className='inset-0 bg-black opacity-40  absolute'></div>
