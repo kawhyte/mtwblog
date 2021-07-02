@@ -10,7 +10,7 @@ export default {
           {
             name: 'alt',
             type: 'string',
-            title: 'Alternative text',
+            title: 'Image Caption',
           },
         ],
       }
