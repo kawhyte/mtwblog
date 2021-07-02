@@ -48,7 +48,7 @@ export default {
 		},
 		{
 			name: "publishedAt",
-			title: "Published at",
+			title: "Visited on",
 			type: "datetime",
 			validation: Rule => Rule.required(),
 			options: {
