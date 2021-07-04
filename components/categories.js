@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-
 const category = [
 	{
 		name: "All Posts",
@@ -65,34 +64,40 @@ function Categories() {
 							questions. Check out our trips.
 						</p>
 					</div>
+
 					<div className='   '>
-						<div className='grid md:grid-cols-2   lg:grid-cols-3 gap-10 relative '>
+						<div className='grid md:grid-cols-2  place-items-center lg:grid-cols-3 gap-10 relative '>
 							{category.map((item) => (
-							<>	<Link
-									key={item.name}
-									href={item.href}
-									className='relative cursor-pointer'
-									passHref>
-									
-										<div className='relative flex cursor-pointer hover:opacity-80  '>
-                    <div className="z-10 absolute flex flex-col mt-4  ml-4 bg-white  my-auto   rounded-2xl"> 
-											<h2 className=' font-playfair-display text-lg text-pink-500 font-medium title-font m-2'>
-												{item.name}
-											</h2>
-                      
-                      </div>
-											<Image
-												height={300}
-												width={479}
-												blurDataURL='data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=='
-												placeholder='blur'
-												className='h-40 rounded-xl w-full object-cover object-center mb-6'
-												src={item.image}
-												alt={item.text}
-											/>
-										</div>
-									
-								</Link></>
+								<>
+									<Link
+										key={item.name}
+										href={item.href}
+										className='relative cursor-pointer'
+										passHref>
+										<>
+										<div className='relative group rounded-xl overflow-hidden'>
+										<div className='z-10  absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0'>
+										<div className='absolute w-full h-full shadow-2xl bg-black opacity-20 '></div>
+										<div className='absolute w-full flex place-content-center'>
+										<p className='capitalize font-playfair-display font-bold text-3xl text-center shadow-2xl text-white'>
+										{item.name}
+										</p>
+												</div>
+											</div>
+												<Image
+													height={300}
+													width={479}
+													blurDataURL='data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=='
+													placeholder='blur'
+													className='h-40 rounded-xl w-full object-cover object-center mb-6'
+													src={item.image}
+													alt={item.text}
+												/>
+
+											</div>
+										</>
+									</Link>
+								</>
 							))}
 						</div>
 					</div>
