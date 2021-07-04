@@ -74,7 +74,7 @@ export default function PostHeader({ title,categories, coverImage, date, author,
 				</svg>
 
 				<div className=' text-gray-500 block ml-2 mb-2 text-lg'>
-				Visited on <Date dateString=  {date} />
+				Visited <Date dateString=  {date} />
 				</div>
 			</div>
 

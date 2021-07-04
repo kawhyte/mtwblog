@@ -69,23 +69,26 @@ function Categories() {
 						<div className='grid md:grid-cols-2  place-items-center lg:grid-cols-3 gap-10 relative '>
 							{category.map((item) => (
 								<>
-									<Link
-										key={item.name}
-										href={item.href}
-										className='relative cursor-pointer'
-										passHref>
+									
 										<>
 										<div className='relative group rounded-xl overflow-hidden'>
 										<div className='z-10  absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0'>
 										<div className='absolute w-full h-full shadow-2xl bg-black opacity-20 '></div>
 										<div className='absolute w-full flex place-content-center'>
-										<p className='capitalize font-playfair-display font-bold text-3xl text-center shadow-2xl text-white'>
+										
+										<Link
+										key={item.name}
+										href={item.href}
+										className='relative cursor-pointer'
+										passHref>
+										<p className='capitalize font-playfair-display font-bold text-3xl text-center shadow-2xl text-white hover:underline hover:text-gray-200 transition-shadow duration-200 cursor-pointer '>
 										{item.name}
 										</p>
+</Link>
 												</div>
 											</div>
 												<Image
-													height={300}
+													height={240}
 													width={479}
 													blurDataURL='data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=='
 													placeholder='blur'
@@ -96,7 +99,7 @@ function Categories() {
 
 											</div>
 										</>
-									</Link>
+									
 								</>
 							))}
 						</div>
