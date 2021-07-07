@@ -6,31 +6,26 @@ function Hero() {
 	return (
 		<div>
 			<div className='bg-indigo-900 relative overflow-hidden '>
-				<Image
-				
-					src='https://res.cloudinary.com/babyhulk/image/upload/v1624648198/hero-image/PXL_20210613_032035183.MP.webp'
-					className=' block absolute md:hidden h-full w-full object-cover'
-					aria-label='Justify'
-					layout='fill'
+			
+
+			<video
+				autoPlay
+				loop
+				muted
+				className=' block absolute h-full w-full object-cover'>
+				Your browser does not support the video tag.
+			
+				<source
+				src='https://mtw2-bucket.s3.us-west-1.amazonaws.com/MTW.mp4'
+				type='video/mp4'
 				/>
-
-				<video
-					autoPlay
-					loop
-					muted
-					className='hidden md:block w-full h-full absolute object-cover'>
-					Your browser does not support the video tag.
-					<source
-					src='https://mtw2-bucket.s3.us-west-1.amazonaws.com/MTW.mp4'
-					type='video/mp4'
-					/>
-					<source
-						src='https://mtw2-bucket.s3.us-west-1.amazonaws.com/MTW.webm'
-						type='video/webm'
-					/>
-					Your browser does not support the video tag.
-				</video>
-
+				<source
+					src='https://mtw2-bucket.s3.us-west-1.amazonaws.com/MTW.webm'
+					type='video/webm'
+				/>
+				Your browser does not support the video tag.
+			</video>
+		
 				<div className='inset-0 bg-black opacity-40  absolute'></div>
 				<header className='absolute top-0 left-0 right-0 z-20'></header>
 				<div className='container mx-auto px-6 sm:px-0 relative z-10 flex items-center py-32   xl:py-40 '>
@@ -53,3 +48,12 @@ function Hero() {
 }
 
 export default Hero;
+
+
+// <Image
+				
+// src='https://res.cloudinary.com/babyhulk/image/upload/v1624648198/hero-image/PXL_20210613_032035183.MP.webp'
+// className=' block absolute md:hidden h-full w-full object-cover'
+// aria-label='Justify'
+// layout='fill'
+// />
