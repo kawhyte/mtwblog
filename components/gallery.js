@@ -4,6 +4,8 @@ import Image from "next/image";
 import Masonry from "react-masonry-css";
 import { imageBuilder } from "../lib/sanity";
 import {getImageDimensions} from '@sanity/asset-utils'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 //import cn from "classnames";
 const breakpointColumnsObj = {
 	default: 3,
@@ -49,6 +51,7 @@ function Gallery({ posts, heading }) {
 					{posts.gallery.images.map((item, i) => (
 						<div key={i}>
 							<div key={i} className='bg-pink-50 rounded-3xl p-1 '>
+							<Zoom>
 								<Image
 									className=' object-cover rounded-3xl '
 									blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
@@ -61,7 +64,7 @@ function Gallery({ posts, heading }) {
 										.url()}
 									width={getImageDimensions( posts.gallery.images[i]).width}
 									height={getImageDimensions( posts.gallery.images[i]).height}
-								/>
+								/></Zoom>
 							
 								<span className='px-4 my-4 mx-4 text-xs sm:text-sm md:text-base text-black'>
 									{item?.alt}
