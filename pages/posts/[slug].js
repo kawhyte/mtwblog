@@ -83,7 +83,7 @@ export default function Post({ post, morePosts, preview }) {
 									{post.videoUrl.title ? post.videoUrl.title :  "Video"}
 									</h1>
 
-									<div className='mb-12 md:mb-24 -mx-5 sm:mx-0'>
+									<div className='mb-12 md:mb-24 -mx-5 sm:mx-0 max-w-5xl'>
 									<div className="player-wrapper">
 									<ReactPlayer
 									className="react-player"
