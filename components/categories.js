@@ -68,8 +68,8 @@ function Categories() {
 					<div className='   '>
 						<div className='grid md:grid-cols-2  place-items-center lg:grid-cols-3 gap-10 relative '>
 							{category.map((item) => (
-								<>
-									<>
+								<div key={item.href}>
+									
 										<div className='relative group rounded-xl overflow-hidden'>
 											<div className='z-10  absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0'>
 												<div className='absolute w-full h-full shadow-2xl bg-black opacity-20 '></div>
@@ -102,8 +102,8 @@ function Categories() {
 												/>
 											</Link>
 										</div>
-									</>
-								</>
+									
+								</div>
 							))}
 						</div>
 					</div>
