@@ -13,14 +13,10 @@ function Hero() {
 					className=' block absolute h-full w-full object-cover'>
 					Your browser does not support the video tag.
 					<source
-						src='https://mtw2-bucket.s3.us-west-1.amazonaws.com/MTW.mp4'
+						src='http://dl.dropboxusercontent.com/s/0c76v5mrs9duv12/MTW-video.mp4'
 						type='video/mp4'
 					/>
-					<source
-						src='https://mtw2-bucket.s3.us-west-1.amazonaws.com/MTW.webm'
-						type='video/webm'
-					/>
-					Your browser does not support the video tag.
+				
 				</video>
 
 				<div className='inset-0 bg-black opacity-40  absolute'></div>
