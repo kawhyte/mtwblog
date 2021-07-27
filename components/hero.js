@@ -7,7 +7,7 @@ function Hero() {
 		<div>
 			<div className='bg-indigo-900 relative overflow-hidden '>
 				<Image
-					blurDataURL='https://res.cloudinary.com/babyhulk/image/upload/e_pixelate:33,q_10/v1627353251/hero-image/PXL_20210613_032035183.MP_1.webp'
+					blurDataURL='https://res.cloudinary.com/babyhulk/image/upload/e_pixelate:200,q_30/v1627353251/hero-image/PXL_20210613_032035183.MP_1.webp'
 					placeholder='blur'
 					src='https://res.cloudinary.com/babyhulk/image/upload/v1627353251/hero-image/PXL_20210613_032035183.MP_1.webp'
 					className=' block absolute md:hidden h-full w-full object-cover'
