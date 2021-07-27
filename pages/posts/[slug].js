@@ -58,6 +58,10 @@ export default function Post({ post, morePosts, preview }) {
 								address={post.address}
 								rating={post.rating}
 							/>
+
+
+
+							<PostBody content={post.body} />
 							<ProConList
 								positives={post.positives}
 								negatives={post.negatives}
@@ -99,13 +103,16 @@ export default function Post({ post, morePosts, preview }) {
 							</div>
 							</>
 						}
+
+						
+
 							{post.gallery ? (
 								<Gallery posts={post} heading={"Birthday"} />
 							) : (
 								" "
 							)}
 
-							<PostBody content={post.body} />
+						
 						</article>
 						<SectionSeparator />
 						<Comments comments={post.comments} />
