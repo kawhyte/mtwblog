@@ -6,14 +6,22 @@ function Hero() {
 	return (
 		<div>
 			<div className='bg-indigo-900 relative overflow-hidden '>
+				<Image
+					blurDataURL='https://res.cloudinary.com/babyhulk/image/upload/e_pixelate:33,q_10/v1627353251/hero-image/PXL_20210613_032035183.MP_1.webp'
+					placeholder='blur'
+					src='https://res.cloudinary.com/babyhulk/image/upload/v1627353251/hero-image/PXL_20210613_032035183.MP_1.webp'
+					className=' block absolute md:hidden h-full w-full object-cover'
+					aria-label='Justify'
+					layout='fill'
+				/>
 				<video
 					autoPlay
 					loop
 					muted
-					className=' block absolute h-full w-full object-cover'>
+					className=' hidden md:block absolute h-full w-full object-cover'>
 					Your browser does not support the video tag.
 					<source
-					src='https://dl.dropboxusercontent.com/s/0c76v5mrs9duv12/MTW-video.mp4'
+						src='https://dl.dropboxusercontent.com/s/0c76v5mrs9duv12/MTW-video.mp4'
 						type='video/mp4'
 					/>
 					<source
