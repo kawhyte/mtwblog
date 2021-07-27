@@ -13,6 +13,7 @@ function Hero() {
 					className=' block absolute md:hidden h-full w-full object-cover'
 					aria-label='Justify'
 					layout='fill'
+					alt="poster photo"
 				/>
 				<video
 					autoPlay
