@@ -39,7 +39,7 @@ function Gallery({ posts, heading }) {
 			<div className='container px-5 mx-auto'>
 				<div className='flex flex-col text-center w-full mb-10 lg:mb-12'>
 					<div className='flex '>
-						<p className='font-playfair-display text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-left'>
+						<p className='font-playfair-display text-5xl md:text-5xl lg:text-5xl font-semibold tracking-tighter leading-tight md:leading-none text-left'>
 							Gallery
 						</p>
 					</div>
@@ -54,7 +54,12 @@ function Gallery({ posts, heading }) {
 							<Zoom>
 								<Image
 									className=' object-cover rounded-3xl '
-									blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+									blurDataURL={imageBuilder(posts.gallery.images[i])
+										.width(1000)
+										.height(1000)
+										.quality(1)
+										.format("webp")
+										.url()}
 									placeholder="blur" 
 									alt={item?.alt}
 									src={imageBuilder(posts.gallery.images[i])
