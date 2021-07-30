@@ -30,7 +30,7 @@ function ProConList({ positives, negatives ,verdict }) {
 								<div className='flex flex-col sm:items-start sm:text-left  items-center -mb-1 space-y-2.5'>
 									<ul>
 										{positives?.map((positive, index) => (
-											<li key={index} className="my-3 leading-relaxed">
+											<li key={index} className="my-3 leading-relaxed text-sm">
 												<span className='bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
 													<svg
 														fill='none'
@@ -70,7 +70,7 @@ function ProConList({ positives, negatives ,verdict }) {
 								<div className='flex flex-col sm:items-start sm:text-left  items-center -mb-1 space-y-2.5'>
 									<ul>
 										{negatives?.map((negative, index) => (
-											<li key={index} className="my-3 leading-relaxed">
+											<li key={index} className="my-3 leading-relaxed text-sm">
 												<span className='bg-gray-100 text-gray-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
 													<svg
 														xmlns='http://www.w3.org/2000/svg'
@@ -116,7 +116,7 @@ function ProConList({ positives, negatives ,verdict }) {
 					</h2>
 
 					<div className='flex flex-col sm:items-start sm:text-left leading-relaxed  items-center -mb-1 space-y-2.5'>
-						<p className="font-sans">
+						<p className="font-sans text-sm">
 						{verdict}
 						</p>
 					</div>
