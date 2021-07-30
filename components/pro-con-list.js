@@ -1,14 +1,11 @@
 import React from "react";
 
-function ProConList({ positives, negatives ,verdict }) {
-
-
+function ProConList({ positives, negatives, verdict }) {
 	return (
 		<section className='text-gray-800 body-font'>
-		
-		<h1 className="font-playfair-display text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left">
-		Bottom Line
-	  </h1>
+			<h1 className='font-playfair-display text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
+				Bottom Line
+			</h1>
 			<div className='container px-5 py-6 lg:py-12 mx-auto flex flex-wrap'>
 				<div className='flex flex-wrap -m-4'>
 					<div className='p-4 lg:w-1/2 md:w-full'>
@@ -30,7 +27,7 @@ function ProConList({ positives, negatives ,verdict }) {
 								<div className='flex flex-col sm:items-start sm:text-left  items-center -mb-1 space-y-2.5'>
 									<ul>
 										{positives?.map((positive, index) => (
-											<li key={index} className="my-3 leading-relaxed">
+											<li key={index} className='my-3 leading-relaxed'>
 												<span className='bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
 													<svg
 														fill='none'
@@ -53,7 +50,7 @@ function ProConList({ positives, negatives ,verdict }) {
 					</div>
 					<div className='p-4 lg:w-1/2 md:w-full'>
 						<div className='flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col'>
-							<div className='w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-100 text-gray-500 flex-shrink-0'>
+							<div className='w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 flex-shrink-0'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									className='h-8 w-8'
@@ -70,18 +67,16 @@ function ProConList({ positives, negatives ,verdict }) {
 								<div className='flex flex-col sm:items-start sm:text-left  items-center -mb-1 space-y-2.5'>
 									<ul>
 										{negatives?.map((negative, index) => (
-											<li key={index} className="my-3 leading-relaxed">
-												<span className='bg-gray-100 text-gray-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
+											<li key={index} className='my-3 leading-relaxed'>
+												<span className='bg-gray-100 text-red-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
 													<svg
 														xmlns='http://www.w3.org/2000/svg'
-														className='h-3 w-3'
-														viewBox='0 0 20 20'
-														fill='currentColor'>
-														<path
-															fillRule='evenodd'
-															d='M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z'
-															clipRule='evenodd'
-														/>
+														fill='currentColor'
+														className='h-4 w-4'
+														width='24'
+														height='24'
+														viewBox='0 0 24 24'>
+														<path d='M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.151 17.943l-4.143-4.102-4.117 4.159-1.833-1.833 4.104-4.157-4.162-4.119 1.833-1.833 4.155 4.102 4.106-4.16 1.849 1.849-4.1 4.141 4.157 4.104-1.849 1.849z' />
 													</svg>
 												</span>
 												{negative}
@@ -93,37 +88,34 @@ function ProConList({ positives, negatives ,verdict }) {
 						</div>
 					</div>
 				</div>
-		
-			<div className='flex border-2 my-12 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col'>
-				<div className='w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 flex-shrink-0'>
-					<svg
-						xmlns='http://www.w3.org/2000/svg'
-						className='h-8 w-8'
-						fill='none'
-						viewBox='0 0 24 24'
-						stroke='currentColor'>
-						<path
-							strokeLinecap='round'
-							strokeLinejoin='round'
-							strokeWidth={2}
-							d='M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z'
-						/>
-					</svg>
-				</div>
-				<div className='flex-grow'>
-					<h2 className='font-playfair-display text-gray-900 text-lg title-font font-medium mb-3'>
-						Verdict
-					</h2>
 
-					<div className='flex flex-col sm:items-start sm:text-left leading-relaxed  items-center -mb-1 space-y-2.5'>
-						<p className="font-sans">
-						{verdict}
-						</p>
+				<div className='flex border-2 my-12 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col'>
+					<div className='w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 flex-shrink-0'>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							className='h-8 w-8'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke='currentColor'>
+							<path
+								strokeLinecap='round'
+								strokeLinejoin='round'
+								strokeWidth={2}
+								d='M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z'
+							/>
+						</svg>
+					</div>
+					<div className='flex-grow'>
+						<h2 className='font-playfair-display text-gray-900 text-lg title-font font-medium mb-3'>
+							Verdict
+						</h2>
+
+						<div className='flex flex-col sm:items-start sm:text-left leading-relaxed  items-center -mb-1 space-y-2.5'>
+							<p className='font-sans'>{verdict}</p>
+						</div>
 					</div>
 				</div>
 			</div>
-            </div>
-
 		</section>
 	);
 }
