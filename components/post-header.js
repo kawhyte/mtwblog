@@ -19,10 +19,10 @@ export default function PostHeader({
 
 	return (
 		<>
-			<div className='mb-8 md:mb-16 -mx-5 sm:mx-0'>
-				<CoverImage title={title} imageObject={coverImage} url={coverImage} />
+			<div className='mb-8 md:mb-8 -mx-5 sm:mx-0'>
+			<PostTitle className="">{title}</PostTitle>
+			<CoverImage className="" title={title} imageObject={coverImage} url={coverImage} />
 			</div>
-			<PostTitle>{title}</PostTitle>
 
 			<div className=" flex">
 			
@@ -71,7 +71,7 @@ export default function PostHeader({
 				</div>
 			</div>
 			</div>
-			<div className=' block mt-2 text-base mb-6 md:mb-12'>
+			<div className=' block mt-4 text-base mb-6 md:mb-12'>
 				<StarRating
 					rating={rating}
 					amenities={amenities}
