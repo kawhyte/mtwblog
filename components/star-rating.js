@@ -41,14 +41,14 @@ const StarRating = ({ rating, categories, amenities }) => {
 							stars={Math.floor(rating?.ratingLocation)}
 							isFraction={rating?.ratingLocation % 1 > 0 ? true : false}
 						/>
-						<p className='mx-4 my-1 text-base'>{value1}</p>
+						<p className='mx-4 my-1 text-base md:text-lg'>{value1}</p>
 					</div>
 					<div className='flex flex-row justify-items-center items-center align-middle'>
 						<Stars
 							stars={Math.floor(rating?.ratingCleanliness)}
 							isFraction={rating?.ratingCleanliness % 1 > 0 ? true : false}
 						/>
-						<p className='mx-4 my-1 text-base'>
+						<p className='mx-4 my-1 text-base md:text-lg'>
 							{value2}{" "}
 							{categories[0]._ref === "fef37ecd-188b-4ad6-bf33-5ffa917e59cd" ? (
 								<span className='italic text-sm'> (Comfort & Amenities) </span>
@@ -62,14 +62,14 @@ const StarRating = ({ rating, categories, amenities }) => {
 							stars={Math.floor(rating?.ratingService)}
 							isFraction={rating?.ratingService % 1 > 0 ? true : false}
 						/>
-						<p className='mx-4 my-1 text-base'>{value3}</p>
+						<p className='mx-4 my-1 text-base md:text-lg'>{value3}</p>
 					</div>
 					<div className='flex flex-row justify-items-center items-center align-middle'>
 						<Stars
 							stars={Math.floor(rating?.ratingValue)}
 							isFraction={rating?.ratingValue % 1 > 0 ? true : false}
 						/>
-						<p className='mx-4 my-1 text-base'>{value4}</p>
+						<p className='mx-4 my-1 text-base md:text-lg'>{value4}</p>
 					</div>
 				</div>
 
