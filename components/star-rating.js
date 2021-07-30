@@ -31,7 +31,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 			</div>
 
 			<p className='font-playfair-display mx-1 mt-2  text-lg font-bold'>
-				Rating by category{" "}
+				Rating breakdown {" "}
 			</p>
 
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 border-b  max-w-5xl mb-6'>
