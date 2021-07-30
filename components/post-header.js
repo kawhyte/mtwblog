@@ -71,7 +71,7 @@ export default function PostHeader({
 				</div>
 			</div>
 			</div>
-			<div className=' block mt-2 text-lg mb-6 md:mb-12'>
+			<div className=' block mt-2 text-base mb-6 md:mb-12'>
 				<StarRating
 					rating={rating}
 					amenities={amenities}
