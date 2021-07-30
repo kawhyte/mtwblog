@@ -5,8 +5,17 @@ import PostTitle from "../components/post-title";
 import { imageBuilder } from "../lib/sanity";
 import StarRating from "./star-rating";
 import post from "../studio/schemas/post";
-export default function PostHeader({ title,categories, coverImage, date, author, amenities, videoUrl, address, rating }) {
-	 //console.log("DATE ",date)
+export default function PostHeader({
+	title,
+	categories,
+	coverImage,
+	date,
+	author,
+	amenities,
+	videoUrl,
+	address,
+	rating,
+}) {
 
 	return (
 		<>
@@ -15,7 +24,9 @@ export default function PostHeader({ title,categories, coverImage, date, author,
 			</div>
 			<PostTitle>{title}</PostTitle>
 
-			<div className='max-w-2xl flex flex-row mx-8 '>
+			<div className=" flex">
+			
+			<div className='max-w-2xl flex flex-row'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					className='h-6 w-6'
@@ -35,29 +46,11 @@ export default function PostHeader({ title,categories, coverImage, date, author,
 						d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
 					/>
 				</svg>
-				<div className=' text-gray-500 block   mb-2 ml-2 text-lg'>
+				<div className=' text-gray-500 block text-base  mb-2 ml-2'>
 					{address ? address : "No address provided"}
 				</div>
 			</div>
-		{/* 	<div className='max-w-2xl flex flex-row '>
-				<svg
-					xmlns='http://www.w3.org/2000/svg'
-					className='h-6 w-6'
-					fill='none'
-					viewBox='0 0 24 24'
-					stroke='currentColor'>
-					<path
-						strokeLinecap='round'
-						strokeLinejoin='round'
-						strokeWidth={2}
-						d='M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9'
-					/>
-				</svg>
-
-				<div className=' text-gray-500 block ml-2   mb-2  text-lg'>
-				webLink ?   <a href={webLink}> Visit Hotel Website</a> :" No adresss provided"  	
-	</div>
-			</div>*/}
+			
 			<div className='max-w-2xl flex flex-row mx-8'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
@@ -73,13 +66,17 @@ export default function PostHeader({ title,categories, coverImage, date, author,
 					/>
 				</svg>
 
-				<div className=' text-gray-500 block ml-2 mb-2 text-lg'>
-				Visited <Date dateString=  {date} />
+				<div className=' text-gray-500 block ml-2 mb-2 text-base'>
+					Visited <Date dateString={date} />
 				</div>
 			</div>
-
+			</div>
 			<div className=' block mt-2 text-lg mb-6 md:mb-12'>
-				<StarRating  rating={rating} amenities={amenities}  categories ={categories} />
+				<StarRating
+					rating={rating}
+					amenities={amenities}
+					categories={categories}
+				/>
 			</div>
 		</>
 	);

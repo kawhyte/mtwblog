@@ -15,7 +15,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 	return (
 		<>
 			<div className='flex  justify-start items-center align-top mb-8   '>
-				<h1 className='font-playfair-display text-6xl md:text-7xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
+				<h1 className='font-playfair-display text-5xl md:text-6xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
 					{/*isFraction ? Math.floor(average) + ".5" : Math.floor(average)*/}
 					{average.toFixed(2)}
 				</h1>
