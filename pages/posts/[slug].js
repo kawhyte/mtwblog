@@ -31,7 +31,7 @@ export default function Post({ post, morePosts, preview }) {
 			autoplay: 1,
 		},
 	};
- 
+
 	return (
 		<Layout preview={preview} color={true}>
 			<Container>
@@ -59,8 +59,6 @@ export default function Post({ post, morePosts, preview }) {
 								rating={post.rating}
 							/>
 
-
-
 							<PostBody content={post.body} />
 							<ProConList
 								positives={post.positives}
@@ -80,39 +78,36 @@ export default function Post({ post, morePosts, preview }) {
 									muted
 								/>
 				</div>*/}
- 
-					{ post.videoUrl?.url?.match(/^(http(s)?:\/\/)?((w){3}.)?youtu(be|.be)?(\.com)?\/.+/gm) &&  
-							<>
+
+							{post.videoUrl?.url?.match(
+								/^(http(s)?:\/\/)?((w){3}.)?youtu(be|.be)?(\.com)?\/.+/gm
+							) && (
+								<>
 									<h1 className='font-playfair-display mb-12 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
-									{post.videoUrl.title ? post.videoUrl.title :  "Video"}
+										{post.videoUrl.title ? post.videoUrl.title : "Video"}
 									</h1>
 
 									<div className='mb-12 md:mb-24 -mx-5 sm:mx-0 max-w-5xl'>
-									<div className="player-wrapper">
-									<ReactPlayer
-									className="react-player"
-										url={post.videoUrl.url}
-										width={"100%"}
-										height={"100%"}
-										controls={true}
-										loop
-										muted
-									/>
+										<div className='player-wrapper'>
+											<ReactPlayer
+												className='react-player'
+												url={post.videoUrl.url}
+												width={"100%"}
+												height={"100%"}
+												controls={true}
+												loop
+												muted
+											/>
+										</div>
 									</div>
-								
-							</div>
-							</>
-						}
-
-						
+								</>
+							)}
 
 							{post.gallery ? (
 								<Gallery posts={post} heading={"Birthday"} />
 							) : (
 								" "
 							)}
-
-						
 						</article>
 						<SectionSeparator />
 						<Comments comments={post.comments} />
