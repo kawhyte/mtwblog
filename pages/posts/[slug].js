@@ -45,7 +45,11 @@ export default function Post({ post, morePosts, preview }) {
 								<title>
 									{post.title} | {CMS_NAME}
 								</title>
-								{/* <meta property="og:image" content={post.ogImage.url} /> */}
+								<meta
+								name="description"
+								content={post.title  } 
+							  />
+
 							</Head>
 							<PostHeader
 								title={post.title}
