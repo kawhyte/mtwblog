@@ -73,7 +73,16 @@ export default function Nav({ color }) {
 							<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
 								<Link href='/' className='cursor-pointer' passHref>
 									<div className='flex-shrink-0 flex items-center'>
-										<svg
+									<div className="mx-4">
+									<Image
+									className='rounded-xl '
+									src='/icon/icon.jpg'
+									alt='MTW icon'
+									width={40}
+									height={40}
+								/>
+								</div>
+										{/*<svg
 											xmlns='http://www.w3.org/2000/svg'
 											className='h-11 w-11 md:h-8 md:w-8 md:mr-2 fill-current text-pink-500'
 											fill='none'
@@ -91,15 +100,15 @@ export default function Nav({ color }) {
 												strokeWidth={2}
 												d='M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z'
 											/>
-										</svg>
+										</svg>*/}
 
-										<p
+										{/*<p
 											className={
-												"hidden text-lg text-white font-bold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase  " +
+												"hidden text-sm text-white font-bold leading-relaxed md:inline-block mr-4 py-2 whitespace-nowrap uppercase  " +
 												col
 											}>
 											Meet The Whytes
-										</p>
+										</p>*/}
 									</div>
 								</Link>
 								<div className='hidden sm:block sm:ml-6'>
