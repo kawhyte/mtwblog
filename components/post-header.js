@@ -20,8 +20,8 @@ export default function PostHeader({
 	return (
 		<>
 			<div className='mb-8 md:mb-8 -mx-5 sm:mx-0'>
-			<PostTitle className="">{title}</PostTitle>
-			<CoverImage className="" title={title} imageObject={coverImage} url={coverImage} />
+			<PostTitle >{title}</PostTitle>
+			<CoverImage  title={title} imageObject={coverImage} url={coverImage} />
 			</div>
 
 			<div className=" flex">
