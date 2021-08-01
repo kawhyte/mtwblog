@@ -49,6 +49,7 @@ export default function Post({ post, morePosts, preview }) {
 								name="description"
 								content={post.title  } 
 							  />
+							  <meta property="og:title" content={post.title  } key="title" />
 
 							</Head>
 							<PostHeader
