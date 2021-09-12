@@ -19,11 +19,13 @@
 .markdown img {
 
 
-  @apply rounded-2xl;
+  @apply rounded-2xl py-2;
   @apply object-contain;
+
   
 
 }
+
 
 
 .markdown blockquote {
@@ -38,5 +40,5 @@
 }
 
 .markdown li {
-  @apply list-disc
+  @apply list-disc ml-10 ;
 }
