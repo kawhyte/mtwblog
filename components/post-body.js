@@ -18,8 +18,9 @@ const serializers = {
 							url={node.url}
 							width={"100%"}
 							height={"100%"}
-							controls={true}
+							controls={false}
 							loop
+              playing={true}
 							muted
 						/>
 					</div>
