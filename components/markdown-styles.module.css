@@ -26,7 +26,10 @@
 
 }
 
+.markdown figure{
 
+  @apply p-2 inline-block
+}
 
 .markdown blockquote {
   @apply -m-10;
