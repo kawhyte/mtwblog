@@ -22,11 +22,11 @@
   @apply rounded-2xl py-2;
   @apply object-contain;
 
-  
+
 
 }
 
-.markdown figure{
+.markdown figure {
 
   @apply p-2 inline-block
 }
@@ -43,5 +43,5 @@
 }
 
 .markdown li {
-  @apply list-disc ml-10 ;
+  @apply list-disc ml-10;
 }
