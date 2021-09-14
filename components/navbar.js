@@ -14,14 +14,14 @@ const navigation = [
 		current: false,
 	},
 	{
-		name: "Hotel",
+		name: "Hotel Reviews",
 		href: "/hotel",
 		icon: "/icon/hotel.svg",
 		text: "Hotel icon",
 		current: false,
 	},
 	{
-		name: "Food",
+		name: "Food Reviews",
 		href: "/food",
 		icon: "/icon/food.svg",
 		text: "Plane icon",
