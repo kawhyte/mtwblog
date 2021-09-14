@@ -34,7 +34,7 @@ export default function Index({ allPosts, preview }) {
 						<HeroPost
 							title={heroPost.title}
 							coverImage={heroPost.coverImage}
-							// date={heroPost.date}
+							 date={heroPost.date}
 							//author={heroPost.author}
 							address={heroPost.address}
 							slug={heroPost.slug}

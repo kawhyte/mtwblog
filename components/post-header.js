@@ -27,7 +27,19 @@ export default function PostHeader({
 			
 			</div>
 
-			<div className=" flex">
+			
+			<div className=' block mt-4 text-base mb-6 md:mb-12'>
+				<StarRating
+					rating={rating}
+					amenities={amenities}
+					categories={categories}
+				/>
+			</div>
+
+
+			{/*Amenities*/}
+
+			{/*<div className=" flex">
 			
 			<div className='max-w-2xl flex flex-row'>
 				<svg
@@ -54,6 +66,7 @@ export default function PostHeader({
 				</div>
 			</div>
 			
+			
 			<div className='max-w-2xl flex flex-row mx-8'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
@@ -73,14 +86,7 @@ export default function PostHeader({
 					Visited <Date dateString={date} />
 				</div>
 			</div>
-			</div>
-			<div className=' block mt-4 text-base mb-6 md:mb-12'>
-				<StarRating
-					rating={rating}
-					amenities={amenities}
-					categories={categories}
-				/>
-			</div>
+			</div>*/}
 		</>
 	);
 }

@@ -12,7 +12,10 @@ export default function HeroPost({
 	excerpt,
 	author,
 	slug,
-}) {
+}) 
+ 
+{
+	console.log(date)
 	return (
 		<section className='mt-20'>
 			<h2 className='font-playfair-display mb-5 sm:mb-12 text-2xl md:text-3xl  font-medium tracking-tight leading-tight '>
@@ -21,7 +24,7 @@ export default function HeroPost({
 
 			<div className='flex flex-col justify-start items-center '>
 				<div className=' relative '>
-					<MtwAward address={address} />
+					<MtwAward address={address} date={date}/>
 
 					
 
