@@ -7,28 +7,15 @@ import StarRating from "./star-rating";
 import { add } from "date-fns";
 
 function Section(props) {
-	//  console.log("address ", address, title,kenny)
-	//console.log("New PROPS ", props.posts[0]);
-	// const image = (
-	// 	<img
-	// 		width={392}
-	// 		height={171}
-	// 		alt={`Cover Image for ${title}`}
-	// 		className={cn("shadow-small", {
-	// 			"object-cover object-center h-full w-full": slug,
-	// 		})}
-	// 		src={imageBuilder(coverImage).width(392).height(171).url()}
-	// 	/>
-	// );
-	// className="grid grid-row-1 md:grid-row-2 lg:grid-row-2 gap-1 max-w-5xl mb-6
+
 	return (
-		<div className="grid grid-cols-1  sm:grid-cols-2 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3  gap-6  ">
+		<div className="grid grid-cols-1  sm:grid-cols-2 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3   ">
 			{props.posts.map((item) => {
 			
 				return (
 					<div key={item.slug} >
-						<section className='text-gray-600 body-font mb-6'>
-							<div className='rounded-xl h-full overflow-hidden'>
+						<section className='text-gray-600 body-font mb-10'>
+							<div className='rounded-xl h-full'>
 								{item.slug ? (
 									<Link as={`/posts/${item.slug}`} href='/posts/[slug]'>
 										<a aria-label={item.title}>
@@ -61,10 +48,9 @@ function Section(props) {
 							</h2>
 							<p className='text-base leading-relaxed mt-2'>{item.excerpt}</p>
 							<div className=' text-gray-500 block   mb-2  text-lg'>
-								{item.address ? item.address : "No address provided"}
-							</div>
+								{item.address ? item.address : "No address provided"} <span className="p-2">|</span> 
 
-							<Link as={`/posts/${item.slug}`} href='/posts/[slug]'>
+								<Link as={`/posts/${item.slug}`} href='/posts/[slug]'>
 								<a className='text-green-800 bg-white inline-flex items-center mt-1'>
 									View Review
 									<svg
@@ -79,6 +65,9 @@ function Section(props) {
 									</svg>
 								</a>
 							</Link>
+							</div>
+
+						
 						</section>
 					</div>
 				);
