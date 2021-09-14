@@ -4,6 +4,7 @@ import CoverImage from "../components/cover-image";
 import PostTitle from "../components/post-title";
 import { imageBuilder } from "../lib/sanity";
 import StarRating from "./star-rating";
+import Awards from "./mtw-award";
 import post from "../studio/schemas/post";
 export default function PostHeader({
 	title,
@@ -21,7 +22,9 @@ export default function PostHeader({
 		<>
 			<div className='mb-8 md:mb-8 -mx-5 sm:mx-0'>
 			<PostTitle >{title}</PostTitle>
+			<Awards address={address} date= {date}/>
 			<CoverImage  title={title} imageObject={coverImage} url={coverImage} />
+			
 			</div>
 
 			<div className=" flex">

@@ -1,14 +1,19 @@
 import React from "react";
+import Date from "../components/date";
 
-function MtwAward({ address }) {
+function MtwAward({ address, date }) {
 	return (
 		<div>
-			<span className='flex flex-row-reverse justify-center items-center px-3 mx-4  md:mx-2 my-2 z-20  text-base rounded-2xl text-white  bg-pink-500 absolute '>
+			<span className='flex flex-row-reverse justify-center items-center px-3 ml-6  md:mx-3 my-4 z-20  text-base rounded-lg  text-white  bg-pink-500 absolute '>
 				<p className='text-white font-normal text-xs md:text-sm p-1  '>
-					{address ? address : "No address provided"}
+					<span className='mr-1'>
+						{" "}
+						{address ? address : "No address provided"}{" "}
+					</span>
+					| <span className='ml-1'></span> Visited <Date dateString={date} />
 				</p>
 
-				<svg
+				{/*<svg
 					xmlns='http://www.w3.org/2000/svg'
 					className='h-4 w-4 sm:h-5 sm:w-5 text-white'
 					fill='none'
@@ -26,7 +31,7 @@ function MtwAward({ address }) {
 						strokeWidth={2}
 						d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
 					/>
-				</svg>
+				</svg>*/}
 			</span>
 		</div>
 	);
