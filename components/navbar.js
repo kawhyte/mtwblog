@@ -47,14 +47,15 @@ function classNames(...classes) {
 	return classes.filter(Boolean).join(" ");
 }
 
-export default function Nav({ color }) {
+export default function Nav({ color, bgColor }) {
 	let col = color ? " text-gray-900" : " text-white";
+	let bg = bgColor ? " bg-white  shadow-lg" : " ";
 
 
 	return (
 		<Disclosure
 			as='nav'
-			className=' top-0 z-30 mx-auto h-[72px] w-full absolute    backdrop-blur-sm max-w-8xl xl:px-8 firefox:bg-opacity-90 '>
+			className={' top-0 z-30 mx-auto h-[72px] w-full absolute  mt-5  backdrop-blur-sm max-w-8xl xl:px-8 firefox:bg-opacity-90  '+ bg} >
 			{({ open }) => (
 				<>
 					<div className='max-w-8xl  container mx-auto cursor-pointer'>
@@ -70,7 +71,7 @@ export default function Nav({ color }) {
 									)}
 								</Disclosure.Button>
 							</div>
-							<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
+							<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start '>
 								<Link href='/' className='cursor-pointer' passHref>
 									<div className='flex-shrink-0 flex items-center'>
 									<div className="mx-4">
