@@ -4,7 +4,7 @@ import Date from "../components/date";
 function MtwAward({ address, date }) {
 	return (
 		<div>
-			<span className='flex flex-row-reverse justify-center items-center px-3 ml-6  md:mx-3 my-4 z-20  text-base rounded-lg  text-white  bg-pink-500 absolute '>
+			<span className='flex flex-row-reverse justify-center items-center px-3 ml-6  md:mx-3 my-4 z-20  text-base rounded-lg  text-white  bg-pink-500 shadow-lg absolute '>
 				<p className='text-white font-normal text-xs md:text-sm p-1  '>
 					<span className='mr-1'>
 						{" "}
