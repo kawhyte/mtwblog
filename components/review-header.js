@@ -26,11 +26,19 @@ function ReviewHeader({ title, pattern, summary }) {
 						<p className='mb-8 leading-relaxed text-2xl'>{summary}</p>
 					</div>
 					<div className='lg:max-w-4xl lg:w-full md:w-1/2 w-5/6 hidden md:block'>
-						<img
+						{/*<img
 							className='object-cover object-center rounded'
 							alt='Photo collage'
 							src='/allposts.webp'
-						/>
+                        />*/}
+                        <Image 
+                        src='/allposts.webp'
+                        width={896}
+                        height={645}
+                        alt="Photo Collage"
+                        blurDataURL ='/allposts.webp'
+                        placeholder='blur'
+                        /> 
 					</div>
 				</div>
 			</section>

@@ -51,18 +51,20 @@ export default function Nav({ color, bgColor }) {
 	let col = color ? " text-gray-900" : " text-white";
 	let bg = bgColor ? " bg-white  shadow-lg" : " ";
 
-
 	return (
 		<Disclosure
 			as='nav'
-			className={' top-0 z-30 mx-auto h-[72px] w-full absolute  mt-5  backdrop-blur-sm max-w-8xl xl:px-8 firefox:bg-opacity-90  '+ bg} >
+			className={
+				" top-0 z-30 mx-auto h-[72px] w-full absolute  mt-5  backdrop-blur-sm max-w-8xl xl:px-8 firefox:bg-opacity-90  " +
+				bg
+			}>
 			{({ open }) => (
 				<>
 					<div className='max-w-8xl  container mx-auto cursor-pointer'>
 						<div className='relative flex items-center justify-between h-16'>
 							<div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
 								{/* Mobile menu button*/}
-								<Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-gray-200 bg-gray-700 ml-2 hover:text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
+								<Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-gray-200 bg-gray-700 ml-2  hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
 									<span className='sr-only'>Open main menu</span>
 									{open ? (
 										<XIcon className='block h-6 w-6' aria-hidden='true' />
@@ -74,15 +76,15 @@ export default function Nav({ color, bgColor }) {
 							<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start '>
 								<Link href='/' className='cursor-pointer' passHref>
 									<div className='flex-shrink-0 flex items-center'>
-									<div className="mx-4">
-									<Image
-									className='rounded-xl '
-									src='/icon/icon.jpg'
-									alt='MTW icon'
-									width={40}
-									height={40}
-								/>
-								</div>
+										<div className='mx-4'>
+											<Image
+												className='rounded-xl '
+												src='/icon/icon.jpg'
+												alt='MTW icon'
+												width={40}
+												height={40}
+											/>
+										</div>
 										{/*<svg
 											xmlns='http://www.w3.org/2000/svg'
 											className='h-11 w-11 md:h-8 md:w-8 md:mr-2 fill-current text-pink-500'
@@ -116,31 +118,28 @@ export default function Nav({ color, bgColor }) {
 									<div className='flex flex-row align-middle justify-center items-center  space-x-4'>
 										{navigation.map((item) => (
 											<Link href={item.href} key={item.name} passHref>
-												<div className="flex flex-row justify-center align-middle items-center">
-											
-													<button key={item.name}
-													href={item.href}
-													className={classNames(
-														item.current
-															? "bg-gray-900 text-white"
-															:  "text-white  hover:text-white " + col ,
-														"px-2 py-2 rounded-md font-semibold text-base flex flex-row justify-center align-middle items-center"
-													)}>
-												
-													<Image
-													className=''
-													src={item.icon}
-													alt={item.text}
-													width={20}
-													height={20}
-												/>
+												<div className='flex flex-row justify-center align-middle items-center'>
+													<button
+														key={item.name}
+														href={item.href}
+														className={classNames(
+															item.current
+																? "bg-gray-900 text-white"
+																: "text-white   " + col,
+															"px-2 py-2 rounded-md font-semibold text-base flex flex-row justify-center align-middle items-center"
+														)}>
+														<Image
+															className=''
+															src={item.icon}
+															alt={item.text}
+															width={20}
+															height={20}
+														/>
 
-
-
-													<span className="mx-1  hover:text-pink-500">{item.name}</span>
-												</button>
-
-											
+														<span className='mx-1  hover:text-pink-500'>
+															{item.name}
+														</span>
+													</button>
 												</div>
 											</Link>
 										))}

@@ -5,35 +5,28 @@ import MoreStories from "../components/more-stories";
 import Layout from "../components/layout";
 import { getAllFoodForHome, getAllPostsForCategory } from "../lib/api";
 import Head from "next/head";
-import { CMS_NAME,FOOD } from "../lib/constants";
+import { CMS_NAME, FOOD } from "../lib/constants";
 
 function AllHotels({ allPosts, preview }) {
-
 	const morePosts = allPosts.slice(0);
- 
+
 	return (
 		<>
-			<Layout preview={preview} color={true}>
+			<Layout preview={preview} color={true} bgColor={true}>
 				<Head>
 					<title>Travel and Food Reviews by {CMS_NAME}</title>
 				</Head>
-			
-				<ReviewHeader title ={"Food"} pattern={'foodpattern'} summary={"Everything food, drink & restaurants"}/>
-				<Container>
-				
-				
 
-				{morePosts.length > 0 &&
-						
-					<Section
-					posts ={morePosts}  
-						
-					/>
-				}
+				<ReviewHeader
+					title={"Food"}
+					pattern={"foodpattern"}
+					summary={"Everything food, drink & restaurants"}
+				/>
+				<Container>
+					{morePosts.length > 0 && <Section posts={morePosts} />}
 
 					{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 				</Container>
-				
 			</Layout>
 		</>
 	);
@@ -47,5 +40,4 @@ export async function getStaticProps({ preview = false }) {
 	};
 }
 
-
-export default AllHotels
+export default AllHotels;

@@ -12,7 +12,7 @@ const category = [
 		alt: "View of Sunset at a hotel",
 	},
 	{
-		name: "Hotel Review",
+		name: "Hotel Reviews",
 		href: "/hotel",
 		image:
 			"https://res.cloudinary.com/babyhulk/image/upload/v1621896780/project/PXL_20210428_025517322.MP.webp",
@@ -21,7 +21,7 @@ const category = [
 	},
 
 	{
-		name: "Food Review",
+		name: "Food Reviews",
 		href: "/food",
 		image:
 			"https://res.cloudinary.com/babyhulk/image/upload/v1621897187/project/MVIMG_20191203_091517.webp",
@@ -49,42 +49,27 @@ const category = [
 function Categories() {
 	return (
 		<>
-			<section className='text-gray-600 bg-green-50 mt-12 '>
+			<section className='text-gray-600  mt-2 '>
 				<div className='container px-5 py-10 mx-auto '>
-					<div className='flex flex-wrap w-full mb-20'>
+					<div className='flex flex-wrap w-full mb-10'>
 						<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
 							<h1 className='font-playfair-display  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
-								Browse by Category
+								Browse 
 							</h1>
 							<div className='h-1 w-20 bg-pink-500 rounded'></div>
 						</div>
-						<p className='lg:w-1/2 w-full leading-relaxed text-gray-500 text-lg'>
-							{" "}
-							You want to get out and see the world, but you have so many
-							questions. Check out our trips.
-						</p>
+					
 					</div>
 
+		
+
 					<div className='   '>
-						<div className='grid md:grid-cols-2  place-items-center lg:grid-cols-3 gap-10 relative '>
+						<div className='grid md:grid-cols-2  place-items-center lg:grid-cols-3 relative '>
 							{category.map((item) => (
 								<div key={item.href}>
 									
 										<div className='relative group rounded-xl overflow-hidden'>
-											<div className='z-10  absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0'>
-												<div className='absolute w-full h-full shadow-2xl bg-black opacity-20 '></div>
-												<div className='absolute w-full flex place-content-center'>
-													<Link
-														key={item.name}
-														href={item.href}
-														className='relative cursor-pointer'
-														passHref>
-														<p className='capitalize font-playfair-display font-bold text-3xl text-center shadow-2xl text-white hover:underline hover:text-gray-200 transition-shadow duration-200 cursor-pointer '>
-															{item.name}
-														</p>
-													</Link>
-												</div>
-											</div>
+					
 
 											<Link
 												key={item.name}
@@ -92,8 +77,8 @@ function Categories() {
 												className='relative cursor-pointer'
 												passHref>
 												<Image
-													height={240}
-													width={479}
+												height={386}
+												width={386}
 													blurDataURL={item.image}
 													placeholder='blur'
 													className='h-40 cursor-pointer rounded-xl w-full object-cover object-center mb-6'
@@ -101,8 +86,19 @@ function Categories() {
 													alt={item.text}
 												/>
 											</Link>
+
+											
 										</div>
-									
+
+										<Link
+														key={item.name}
+														href={item.href}
+														className='relative cursor-pointer'
+														passHref>
+														<p className='capitalize  text-black text-xl cursor-pointer '>
+															{item.name}
+														</p>
+													</Link>
 								</div>
 							))}
 						</div>
