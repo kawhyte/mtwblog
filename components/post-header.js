@@ -26,28 +26,7 @@ export default function PostHeader({
 
 {
 	//console.log(gallery)
-	const image = (
-		<Image
-			width={1240}
-			height={540}
-			blurDataURL={imageBuilder(coverImage)
-				.width(1240)
-				.height(540)
-				.quality(1)
-				.format("webp")
-				.url()}
-			placeholder='blur'
-			alt={`Cover Image for ${title}`}
-			className={cn("shadow-small", {
-				"hover:shadow-medium transition-shadow duration-200 rounded-2xl": "",
-			})}
-			src={imageBuilder(coverImage)
-				.width(1240)
-				.height(540)
-				.format("webp")
-				.url()}
-		/>
-	);
+
 	return (
 		<>
 			<div className='mb-8 md:mb-4 -mx-5 sm:mx-0 z-50'>
