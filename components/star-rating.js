@@ -41,6 +41,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 							stars={Math.floor(rating?.ratingLocation)}
 							isFraction={rating?.ratingLocation % 1 > 0 ? true : false}
 						/>
+						
 						<p className='mx-4 my-1 text-base md:text-lg'>{value1}</p>
 					</div>
 					<div className='flex flex-row justify-items-center items-center align-middle'>
