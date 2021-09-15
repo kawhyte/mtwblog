@@ -50,7 +50,7 @@ function Gallery({ posts, heading }) {
 					columnClassName='my-masonry-grid_column'>
 					{posts.gallery.images.map((item, i) => (
 						<div key={i}>
-							<div key={i} className='bg-pink-50 rounded-3xl p-1 '>
+							<div key={i} className=' rounded-3xl p-1 '>
 							<Zoom>
 								<Image
 									className=' object-cover rounded-3xl '
