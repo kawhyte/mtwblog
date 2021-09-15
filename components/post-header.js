@@ -1,7 +1,10 @@
 import Avatar from "../components/avatar";
 import Date from "../components/date";
+import Link from "next/link";
 import CoverImage from "../components/cover-image";
+import cn from "classnames";
 import PostTitle from "../components/post-title";
+import Image from "next/image";
 import { imageBuilder } from "../lib/sanity";
 import StarRating from "./star-rating";
 import Awards from "./mtw-award";
@@ -16,10 +19,176 @@ export default function PostHeader({
 	videoUrl,
 	address,
 	rating,
-}) {
+	gallery
+}) 
 
+
+
+{
+	console.log(gallery)
+	const image = (
+		<Image
+			width={1240}
+			height={540}
+			blurDataURL={imageBuilder(coverImage)
+				.width(1240)
+				.height(540)
+				.quality(1)
+				.format("webp")
+				.url()}
+			placeholder='blur'
+			alt={`Cover Image for ${title}`}
+			className={cn("shadow-small", {
+				"hover:shadow-medium transition-shadow duration-200 rounded-2xl": "",
+			})}
+			src={imageBuilder(coverImage)
+				.width(1240)
+				.height(540)
+				.format("webp")
+				.url()}
+		/>
+	);
 	return (
 		<>
+			<div className='mb-8 md:mb-4 -mx-5 sm:mx-0 z-50'>
+				<PostTitle>{title}</PostTitle>
+
+				<p className='text-gray-700 font-normal  md:text-sm p-1 text-center md:text-left '>
+					<span className='mr-1 text-lg'>
+						{address ? address : "No address provided"}{" "}
+					</span>
+					|{" "}
+					<span className='ml-1 text-gray-700 text-lg'>
+						Visited <Date dateString={date} />
+					</span>
+				</p>
+			</div>
+
+			{/*<CoverImage title={title} imageObject={coverImage} url={coverImage} />*/}
+
+			<section className='text-gray-600 body-font'>
+				<div className='container py-2 mx-auto flex flex-wrap'>
+					<div className='flex flex-wrap '>
+						<div className='flex flex-wrap md:w-1/2 w-full pt-2'>
+							<div className=' w-full '>
+								<Image
+									width={1240}
+									height={770}
+									blurDataURL={imageBuilder(coverImage)
+										.width(1240)
+										.height(744)
+										.quality(1)
+										.format("webp")
+										.url()}
+									placeholder='blur'
+									alt={`Cover Image for ${title}`}
+									className='w-full h-full object-cover object-center block  md:rounded-l-2xl'
+									src={imageBuilder(coverImage)
+										.width(1240)
+										.height(744)
+										.format("webp")
+										.url()}
+								/>
+							</div>
+						</div>
+						<div className='md:flex flex-wrap md:w-1/2 hidden'>
+							<div className='md:p-2 p-1 md:w-1/2  '>
+							
+							<Image
+							width={1240}
+							height={770}
+							blurDataURL={imageBuilder(gallery[3])
+								.width(1240)
+								.height(740)
+								.quality(1)
+								.format("webp")
+								.url()}
+							placeholder='blur'
+							alt={`Cover Image for ${title}`}
+							className='w-full h-full object-cover object-center block '
+							src={imageBuilder(gallery[3])
+								.width(1240)
+								.height(740)
+								.format("webp")
+								.url()}
+						/>
+							</div>
+							<div className='md:p-2 p-1 w-1/2'>
+
+							<Image
+							width={1240}
+							height={770}
+							blurDataURL={imageBuilder(gallery[2])
+								.width(1240)
+								.height(740)
+								.quality(1)
+								.format("webp")
+								.url()}
+							placeholder='blur'
+							alt={`Cover Image for ${title}`}
+							className='w-full h-full object-cover object-center block rounded-tr-2xl'
+							src={imageBuilder(gallery[2])
+								.width(1240)
+								.height(740)
+								.format("webp")
+								.url()}
+						/>
+								
+							</div>
+							<div className='md:p-2 p-1 w-1/2'>
+							<Image
+							width={1240}
+							height={770}
+							blurDataURL={imageBuilder(gallery[1])
+								.width(1240)
+								.height(740)
+								.quality(1)
+								.format("webp")
+								.url()}
+							placeholder='blur'
+							alt={`Cover Image for ${title}`}
+							className='w-full h-full object-cover object-center block '
+							src={imageBuilder(gallery[1])
+								.width(1240)
+								.height(740)
+								.format("webp")
+								.url()}
+						/>
+							</div>
+							<div className='md:p-2 p-1 w-1/2 relative'>
+							
+							{/*<span className='  px-3 ml-6  md:mx-3 my-4 z-20  text-base rounded-lg flex   bg-white border-black border-2 shadow-lg absolute bottom-0 right-0  mb-6 mr-6 '>
+							<a href="gallery" className='text-black font-normal text-xs md:text-sm p-1  '>
+							View all photos
+								
+							</a>
+							</span>*/}
+							<Image
+							width={1240}
+							height={770}
+							blurDataURL={imageBuilder(gallery[0])
+								.width(1240)
+								.height(740)
+								.quality(1)
+								.format("webp")
+								.url()}
+							placeholder='blur'
+							alt={`Cover Image for ${title}`}
+							className='w-full h-full object-cover object-center block rounded-br-2xl'
+							src={imageBuilder(gallery[0])
+								.width(1240)
+								.height(740)
+								.format("webp")
+								.url()}
+						/>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/*<div className="flex">
 			<div className='mb-8 md:mb-8 -mx-5 sm:mx-0'>
 			<PostTitle >{title}</PostTitle>
 			<Awards address={address} date= {date}/>
@@ -27,7 +196,11 @@ export default function PostHeader({
 			
 			</div>
 
-			
+
+			<div>More pics</div>
+
+	</div>*/}
+
 			<div className=' block mt-4 text-base mb-6 md:mb-12'>
 				<StarRating
 					rating={rating}
@@ -35,7 +208,6 @@ export default function PostHeader({
 					categories={categories}
 				/>
 			</div>
-
 
 			{/*Amenities*/}
 
@@ -90,6 +262,5 @@ export default function PostHeader({
 		</>
 	);
 }
-// <div className='block mb-6 md:mb-12'>
-// 	<Avatar name={author?.name} picture={author?.picture} />
-// </div>
+
+

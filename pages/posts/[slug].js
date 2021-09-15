@@ -33,7 +33,7 @@ export default function Post({ post, morePosts, preview }) {
 	};
 
 	return (
-		<Layout preview={preview} color={true}>
+		<Layout preview={preview} color={true} bgColor={true}>
 			<Container>
 				<Header />
 				{router.isFallback ? (
@@ -62,6 +62,7 @@ export default function Post({ post, morePosts, preview }) {
 								videoUrl={post.videoUrl}
 								address={post.address}
 								rating={post.rating}
+								gallery={post.gallery.images}
 							/>
 
 							<PostBody content={post.body} />

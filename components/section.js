@@ -9,7 +9,7 @@ import { add } from "date-fns";
 function Section(props) {
 
 	return (
-		<div className="grid grid-cols-1  sm:grid-cols-2 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3   ">
+		<div className="grid grid-cols-1 gap-4 lg:gap-8  sm:grid-cols-2 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3   ">
 			{props.posts.map((item) => {
 			
 				return (
