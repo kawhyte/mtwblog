@@ -30,7 +30,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 				</div>
 			</div>
 
-			<p className='font-playfair-display mx-1 mt-2  text-lg font-bold'>
+			<p className=' font-Montserrat mx-1 mt-2  text-lg '>
 				Rating breakdown {" "}
 			</p>
 
@@ -42,7 +42,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 							isFraction={rating?.ratingLocation % 1 > 0 ? true : false}
 						/>
 						
-						<p className='mx-4 my-1 text-base md:text-lg'>{value1}</p>
+						<p className='mx-4 my-1 text-base font-Montserrat  md:text-lg'>{value1}</p>
 					</div>
 					<div className='flex flex-row justify-items-center items-center align-middle'>
 						<Stars

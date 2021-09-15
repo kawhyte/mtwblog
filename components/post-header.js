@@ -19,12 +19,8 @@ export default function PostHeader({
 	videoUrl,
 	address,
 	rating,
-	gallery
-}) 
-
-
-
-{
+	gallery,
+}) {
 	//console.log(gallery)
 
 	return (
@@ -32,7 +28,7 @@ export default function PostHeader({
 			<div className='mb-8 md:mb-4 -mx-5 sm:mx-0 z-50'>
 				<PostTitle>{title}</PostTitle>
 
-				<p className='text-gray-700 font-normal  md:text-sm p-1 text-center md:text-left '>
+				<p className='text-gray-900 font-light  md:text-sm p-1 text-center md:text-left '>
 					<span className='mr-1 text-lg'>
 						{address ? address : "No address provided"}{" "}
 					</span>
@@ -61,7 +57,7 @@ export default function PostHeader({
 										.url()}
 									placeholder='blur'
 									alt={`Cover Image for ${title}`}
-									className='w-full h-full object-cover object-center block  md:rounded-l-2xl'
+									className=' object-cover object-center block  md:rounded-l-2xl'
 									src={imageBuilder(coverImage)
 										.width(1240)
 										.height(744)
@@ -70,97 +66,92 @@ export default function PostHeader({
 								/>
 							</div>
 						</div>
-						<div className='md:flex flex-wrap md:w-1/2 hidden'>
-							<div className='md:p-2 p-1 md:w-1/2  '>
-							
-							<Image
-							width={1240}
-							height={770}
-							blurDataURL={imageBuilder(gallery[3])
-								.width(1240)
-								.height(740)
-								.quality(1)
-								.format("webp")
-								.url()}
-							placeholder='blur'
-							alt={`Cover Image for ${title}`}
-							className='w-full h-full object-cover object-center block '
-							src={imageBuilder(gallery[3])
-								.width(1240)
-								.height(740)
-								.format("webp")
-								.url()}
-						/>
+						<div className=' md:flex flex-wrap md:w-1/2 hidden '>
+							<div className=' md:w-1/2  pl-2 pt-2  '>
+								<Image
+									width={1240}
+									height={770}
+									blurDataURL={imageBuilder(gallery[3])
+										.width(1240)
+										.height(740)
+										.quality(1)
+										.format("webp")
+										.url()}
+									placeholder='blur'
+									alt={`Cover Image for ${title}`}
+									className=' block '
+									src={imageBuilder(gallery[3])
+										.width(1240)
+										.height(740)
+										.format("webp")
+										.url()}
+								/>
 							</div>
-							<div className='md:p-2 p-1 w-1/2'>
-
-							<Image
-							width={1240}
-							height={770}
-							blurDataURL={imageBuilder(gallery[2])
-								.width(1240)
-								.height(740)
-								.quality(1)
-								.format("webp")
-								.url()}
-							placeholder='blur'
-							alt={`Cover Image for ${title}`}
-							className='w-full h-full object-cover object-center block rounded-tr-2xl'
-							src={imageBuilder(gallery[2])
-								.width(1240)
-								.height(740)
-								.format("webp")
-								.url()}
-						/>
-								
+							<div className='pl-2 pt-2 w-1/2  '>
+								<Image
+									width={1240}
+									height={770}
+									blurDataURL={imageBuilder(gallery[2])
+										.width(1240)
+										.height(740)
+										.quality(1)
+										.format("webp")
+										.url()}
+									placeholder='blur'
+									alt={`Cover Image for ${title}`}
+									className='  block rounded-tr-2xl'
+									src={imageBuilder(gallery[2])
+										.width(1240)
+										.height(740)
+										.format("webp")
+										.url()}
+								/>
 							</div>
-							<div className='md:p-2 p-1 w-1/2'>
-							<Image
-							width={1240}
-							height={770}
-							blurDataURL={imageBuilder(gallery[1])
-								.width(1240)
-								.height(740)
-								.quality(1)
-								.format("webp")
-								.url()}
-							placeholder='blur'
-							alt={`Cover Image for ${title}`}
-							className='w-full h-full object-cover object-center block '
-							src={imageBuilder(gallery[1])
-								.width(1240)
-								.height(740)
-								.format("webp")
-								.url()}
-						/>
+							<div className=' pl-2   w-1/2'>
+								<Image
+									width={1240}
+									height={770}
+									blurDataURL={imageBuilder(gallery[1])
+										.width(1240)
+										.height(740)
+										.quality(1)
+										.format("webp")
+										.url()}
+									placeholder='blur'
+									alt={`Cover Image for ${title}`}
+									className=' block '
+									src={imageBuilder(gallery[1])
+										.width(1240)
+										.height(740)
+										.format("webp")
+										.url()}
+								/>
 							</div>
-							<div className='md:p-2 p-1 w-1/2 relative'>
-							
-							{/*<span className='  px-3 ml-6  md:mx-3 my-4 z-20  text-base rounded-lg flex   bg-white border-black border-2 shadow-lg absolute bottom-0 right-0  mb-6 mr-6 '>
+							<div className='pl-2 pt-  w-1/2 relative'>
+								{/*<span className='  px-3 ml-6  md:mx-3 my-4 z-20  text-base rounded-lg flex   bg-white border-black border-2 shadow-lg absolute bottom-0 right-0  mb-6 mr-6 '>
 							<a href="gallery" className='text-black font-normal text-xs md:text-sm p-1  '>
 							View all photos
 								
 							</a>
 							</span>*/}
-							<Image
-							width={1240}
-							height={770}
-							blurDataURL={imageBuilder(gallery[0])
-								.width(1240)
-								.height(740)
-								.quality(1)
-								.format("webp")
-								.url()}
-							placeholder='blur'
-							alt={`Cover Image for ${title}`}
-							className='w-full h-full object-cover object-center block rounded-br-2xl'
-							src={imageBuilder(gallery[0])
-								.width(1240)
-								.height(740)
-								.format("webp")
-								.url()}
-						/>
-							
+								<Image
+									width={1240}
+									height={770}
+									blurDataURL={imageBuilder(gallery[0])
+										.width(1240)
+										.height(740)
+										.quality(1)
+										.format("webp")
+										.url()}
+									placeholder='blur'
+									alt={`Cover Image for ${title}`}
+									className='  block rounded-br-2xl'
+									src={imageBuilder(gallery[0])
+										.width(1240)
+										.height(740)
+										.format("webp")
+										.url()}
+								/>
 							</div>
 						</div>
 					</div>
@@ -241,5 +232,3 @@ export default function PostHeader({
 		</>
 	);
 }
-
-
