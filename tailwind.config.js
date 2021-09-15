@@ -12,8 +12,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [ 'Source Sans Pro', ...defaultTheme.fontFamily.sans],
+        'Montserrat': ['Montserrat', ...defaultTheme.fontFamily.sans],
         'playfair-display': ['Playfair Display', ...defaultTheme.fontFamily.sans],
+        sans: [ 'Source Sans Pro', ...defaultTheme.fontFamily.sans],
       },
 
       colors: {

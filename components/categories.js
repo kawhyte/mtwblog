@@ -54,51 +54,60 @@ function Categories() {
 					<div className='flex flex-wrap w-full mb-10'>
 						<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
 							<h1 className='font-playfair-display  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
-								Browse 
+								Browse
 							</h1>
 							<div className='h-1 w-20 bg-pink-500 rounded'></div>
 						</div>
-					
 					</div>
 
-		
-
 					<div className='   '>
-						<div className='grid md:grid-cols-2  place-items-center lg:grid-cols-3 relative '>
+						<div className='grid  grid-cols-3 md:grid-cols-3 gap-5  place-items-center lg:grid-cols-3 relative  '>
 							{category.map((item) => (
 								<div key={item.href}>
-									
-										<div className='relative group rounded-xl overflow-hidden'>
-					
-
-											<Link
-												key={item.name}
-												href={item.href}
-												className='relative cursor-pointer'
-												passHref>
-												<Image
-												height={386}
-												width={386}
-													blurDataURL={item.image}
-													placeholder='blur'
-													className='h-40 cursor-pointer rounded-xl w-full object-cover object-center mb-6'
-													src={item.image}
-													alt={item.text}
-												/>
-											</Link>
-
-											
-										</div>
-
+									<div className='relative group rounded-xl overflow-hidden hidden md:block'>
 										<Link
-														key={item.name}
-														href={item.href}
-														className='relative cursor-pointer'
-														passHref>
-														<p className='capitalize  text-black text-xl cursor-pointer '>
-															{item.name}
-														</p>
-													</Link>
+											key={item.name}
+											href={item.href}
+											className='relative cursor-pointer'
+											passHref>
+											<Image
+												height={286}
+												width={286}
+												blurDataURL={item.image}
+												placeholder='blur'
+												className='h-40 cursor-pointer rounded-xl w-full  object-cover object-center mb-6'
+												src={item.image}
+												alt={item.text}
+											/>
+										</Link>
+									</div>
+									<div className='relative group rounded-xl overflow-hidden  md:hidden'>
+										<Link
+											key={item.name}
+											href={item.href}
+											className='relative cursor-pointer'
+											passHref>
+											<Image
+												height={196}
+												width={196}
+												blurDataURL={item.image}
+												placeholder='blur'
+												className='h-40 cursor-pointer rounded-xl w-full  object-cover object-center mb-6'
+												src={item.image}
+												alt={item.text}
+											/>
+										</Link>
+									</div>
+
+									<Link
+										key={item.name}
+										href={item.href}
+										className='relative cursor-pointer'
+										passHref>
+										<p className='  text-gray-700 text-xl cursor-pointer '>
+											{item.name}
+										</p>
+									</Link>
 								</div>
 							))}
 						</div>
