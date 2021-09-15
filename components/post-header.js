@@ -25,7 +25,7 @@ export default function PostHeader({
 
 
 {
-	console.log(gallery)
+	//console.log(gallery)
 	const image = (
 		<Image
 			width={1240}

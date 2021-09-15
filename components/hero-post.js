@@ -13,7 +13,7 @@ export default function HeroPost({
 	author,
 	slug,
 }) {
-	console.log(date);
+	//console.log(date);
 	return (
 		<section className='mt-20'>
 			<div className='flex flex-wrap w-full mb-10'>
