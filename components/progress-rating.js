@@ -7,7 +7,7 @@ function ProgressRating({progress }) {
     return (
         <div className="flex flex-row justify-center items-center rounded-lg w-52 ">
             <div className="w-full h-2 bg-gray-200 rounded-full">
-                <div className={ value } > Test dataiiiiiiiiiiiiiiiiiii
+                <div className={ value } >
                 </div>
                 </div>
                 <span className='text-sm ml-3 '>{progress} </span>
