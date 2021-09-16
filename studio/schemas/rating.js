@@ -60,7 +60,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Service & Setting",
+			title: "Service",
 			name: "ratingService",
 			type: "number",
 			
@@ -83,6 +83,128 @@ export default {
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
+		
+		{
+			title: "Bed Comfort",
+			name: "ratingBed",
+			type: "number",
+			
+			options: {
+				list: [
+					{ title: "5 stars", value: 5 },
+					{ title: "4.5 stars", value: 4.5 },
+					{ title: "4 stars", value: 4 },
+					{ title: "3.5 stars", value: 3.5 },
+					{ title: "3 stars", value: 3 },
+					{ title: "2.5 stars", value: 2.5 },
+					{ title: "2 stars", value: 2 },
+					{ title: "1.5 stars", value: 1.5 },
+					{ title: "1 stars", value: 1 },
+				],
+				layout: "radio",
+			},
+
+			fieldset: "social",
+
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+		{
+			title: "Internet Speed",
+			name: "ratingInternet",
+			type: "number",
+			
+			options: {
+				list: [
+					{ title: "5 stars", value: 5 },
+					{ title: "4.5 stars", value: 4.5 },
+					{ title: "4 stars", value: 4 },
+					{ title: "3.5 stars", value: 3.5 },
+					{ title: "3 stars", value: 3 },
+					{ title: "2.5 stars", value: 2.5 },
+					{ title: "2 stars", value: 2 },
+					{ title: "1.5 stars", value: 1.5 },
+					{ title: "1 stars", value: 1 },
+				],
+				layout: "radio",
+			},
+
+			fieldset: "social",
+
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+		{
+			title: "Room Amenities",
+			name: "ratingAmenities",
+			type: "number",
+			
+			options: {
+				list: [
+					{ title: "5 stars", value: 5 },
+					{ title: "4.5 stars", value: 4.5 },
+					{ title: "4 stars", value: 4 },
+					{ title: "3.5 stars", value: 3.5 },
+					{ title: "3 stars", value: 3 },
+					{ title: "2.5 stars", value: 2.5 },
+					{ title: "2 stars", value: 2 },
+					{ title: "1.5 stars", value: 1.5 },
+					{ title: "1 stars", value: 1 },
+				],
+				layout: "radio",
+			},
+
+			fieldset: "social",
+
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+		{
+			title: "Gym",
+			name: "ratingGym",
+			type: "number",
+			
+			options: {
+				list: [
+					{ title: "5 stars", value: 5 },
+					{ title: "4.5 stars", value: 4.5 },
+					{ title: "4 stars", value: 4 },
+					{ title: "3.5 stars", value: 3.5 },
+					{ title: "3 stars", value: 3 },
+					{ title: "2.5 stars", value: 2.5 },
+					{ title: "2 stars", value: 2 },
+					{ title: "1.5 stars", value: 1.5 },
+					{ title: "1 stars", value: 1 },
+				],
+				layout: "radio",
+			},
+
+			fieldset: "social",
+
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+		{
+			title: "Pool",
+			name: "ratingPool",
+			type: "number",
+			
+			options: {
+				list: [
+					{ title: "5 stars", value: 5 },
+					{ title: "4.5 stars", value: 4.5 },
+					{ title: "4 stars", value: 4 },
+					{ title: "3.5 stars", value: 3.5 },
+					{ title: "3 stars", value: 3 },
+					{ title: "2.5 stars", value: 2.5 },
+					{ title: "2 stars", value: 2 },
+					{ title: "1.5 stars", value: 1.5 },
+					{ title: "1 stars", value: 1 },
+				],
+				layout: "radio",
+			},
+
+			fieldset: "social",
+
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+
 		{
 			title: "Price/Value",
 			name: "ratingValue",
