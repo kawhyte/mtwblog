@@ -5,7 +5,18 @@ import Stars from "./stars";
 import ProgressRating from "./progress-rating";
 
 const StarRating = ({ rating, categories, amenities }) => {
-	//console.log(amenities);
+	 console.log(rating);
+	// const seasons = {
+	// 	SUMMER: "summer",
+	// 	WINTER: "winter",
+	// 	SPRING: "spring",
+	// 	AUTUMN: "autumn",
+	// }
+
+	// console.log(seasons.AUTUMN)
+
+	const propertyNames = Object.entries(rating);
+	console.log(propertyNames);
 	let {
 		value1,
 		value2,
@@ -25,9 +36,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 	// <div className='flex flex-col md:flex-row border-b mx-8  '>
 	return (
 		<>
-			<p className=' font-Montserrat mx-1 my-5 mt-2  text-lg '>
-				Rating breakdown{" "}
-			</p>
+			
 			<div className='flex  justify-start items-center align-top mb-4   '>
 				<svg
 					className='h-5 w-5 ml-1 fill-current text-pink-500'
@@ -43,28 +52,24 @@ const StarRating = ({ rating, categories, amenities }) => {
 					{average.toFixed(2)}
 				</h1>
 
-				<p className='font-playfair-display mx-1  text-xl font-bold'>
+				<p className='font-playfair-display mx-1 text-xl font-bold'>
 					{textRating}
 				</p>
 			</div>
-
+			<p className=' font-Montserrat mx-1 my-3 mt-2  text-lg '>
+			Rating breakdown{" "}
+		</p>
 			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl mr-52 '>
 				<div className='grid grid-cols-1 gap-x-3 md:grid-cols-3 lg:grid-cols-3 '>
 					<div className='flex align-middle items-center'>
-						{/*<Stars
-							stars={Math.floor(rating?.ratingLocation)}
-							isFraction={rating?.ratingLocation % 1 > 0 ? true : false}
-						/>*/}
+					
 						<p className='mr-4 my-1 text-base font-light md:text-lg'>
 							{value1}
 						</p>
 						<ProgressRating progress={rating?.ratingLocation} />
 					</div>
 					<div className='flex align-middle items-center'>
-						{/*<Stars
-							stars={Math.floor(rating?.ratingCleanliness)}
-							isFraction={rating?.ratingCleanliness % 1 > 0 ? true : false}
-						/>*/}
+					
 
 						<p className='mr-4 my-1 text-base font-light md:text-lg '>
 							{value2}{" "}
@@ -104,7 +109,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 						<p className='mr-4 my-1 text-base font-light md:text-lg'>
 							{value5}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingValue)} />
+						<ProgressRating progress={Math.floor(rating?.ratingBed)} />
 					</div>
 					<div className='flex align-middle items-center'>
 						{/*<Stars
@@ -114,7 +119,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 						<p className='mr-4 my-1 text-base font-light md:text-lg'>
 							{value6}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingValue)} />
+						<ProgressRating progress={Math.floor(rating?.ratingInternet)} />
 					</div>
 					<div className='flex align-middle items-center'>
 						{/*<Stars
@@ -124,7 +129,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 						<p className='mr-4 my-1 text-base font-light md:text-lg'>
 							{value7}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingValue)} />
+						<ProgressRating progress={Math.floor(rating?.ratingAmenities)} />
 					</div>
 					<div className='flex align-middle items-center'>
 						{/*<Stars
@@ -134,7 +139,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 						<p className='mr-4 my-1 text-base font-light md:text-lg'>
 							{value8}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingValue)} />
+						<ProgressRating progress={Math.floor(rating?.ratingGym)} />
 					</div>
 					<div className='flex align-middle items-center'>
 						{/*<Stars
@@ -144,7 +149,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 						<p className='mr-4 my-1 text-base font-light md:text-lg'>
 							{value9}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingValue)} />
+						<ProgressRating progress={Math.floor(rating?.ratingPool)} />
 					</div>
 				</div>
 

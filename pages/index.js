@@ -18,6 +18,8 @@ export default function Index({ allPosts, preview }) {
 	const heroPost = allPosts[0];
 	const morePosts = allPosts.slice(1, 7);
 
+	//console.log(allPosts)
+
 	return (
 		<>
 			<Layout preview={preview} color={false} bgColor={false}>
