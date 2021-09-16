@@ -7,6 +7,7 @@ import Header from "../../components/header";
 import PostHeader from "../../components/post-header";
 import Comments from "../../components/comments";
 import SectionSeparator from "../../components/section-separator";
+import BodySectionSeparator from "../../components/body-section-separator";
 import Layout from "../../components/layout";
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
@@ -64,7 +65,8 @@ export default function Post({ post, morePosts, preview }) {
 								rating={post.rating}
 								gallery={post.gallery.images}
 							/>
-
+							<BodySectionSeparator /> 
+							
 							<PostBody content={post.body} />
 							<ProConList
 								positives={post.positives}
