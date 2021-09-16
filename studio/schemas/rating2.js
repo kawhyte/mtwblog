@@ -3,20 +3,30 @@ export default {
 	name: "rating2",
 	description: "Rating for HOTEL",
 
-
 	fieldsets: [{ name: "social", title: "Give a rating 1-5 for each item" }],
 	options: {
 		collapsible: true, // Makes the whole fieldset collapsible
 		collapsed: false, // Defines if the fieldset should be collapsed by default or not
 		columns: 2, // Defines a grid for the fields and how many columns it should have
 	},
+	initialValue: {
+		ratingAmenities: 1,
+		ratingBed: 1,
+		ratingCleanliness: 1,
+		ratingGym: 1,
+		ratingInternet: 1,
+		ratingLocation: 1,
+		ratingPool: 1,
+		ratingService: 1,
+		ratingValue: 1,
+	},
 
 	fields: [
 		{
-			title: "Food - Flavor & Taste",
+			title: "Food - Flavor & Tast",
 			name: "ratingLocation",
 			type: "number",
-		
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -39,7 +49,7 @@ export default {
 			title: "Food - Presentation",
 			name: "ratingCleanliness",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -63,7 +73,7 @@ export default {
 			title: "Food - Service/Staff",
 			name: "ratingService",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -83,12 +93,12 @@ export default {
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
-		
+
 		{
 			title: "Food - Ambiance",
 			name: "ratingBed",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -112,7 +122,7 @@ export default {
 			title: "Food - Cleanliness",
 			name: "ratingInternet",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -136,7 +146,7 @@ export default {
 			title: "Food - Bathroom",
 			name: "ratingAmenities",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -160,7 +170,7 @@ export default {
 			title: "Food - Location ",
 			name: "ratingGym",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -184,7 +194,7 @@ export default {
 			title: "Food - Memorability ",
 			name: "ratingPool",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -209,7 +219,7 @@ export default {
 			title: "Hotel and Food - Price/Value",
 			name: "ratingValue",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -234,8 +244,8 @@ export default {
 			title: "Overall",
 			name: "ratingOverall",
 			type: "number",
-			hidden:true,
-			
+			hidden: true,
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },

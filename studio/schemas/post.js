@@ -1,11 +1,32 @@
 import { FaHotel } from "react-icons/fa";
 
+
 export default {
 	name: "post",
 	title: "Reviews",
 	type: "document",
 	icon: FaHotel,
+	initialValue: {
+		linkType: "hotel",
+		
+	},
+	
 	fields: [
+		{
+			title: "Select the type of review below (Hotel or Food)",
+			description:
+			  "",
+			name: "linkType",
+			type: "string",
+			validation: Rule => Rule.required(),
+			options: {
+			  list: [
+				{ title: "Hotel", value: "hotel" },
+				{ title: "Food", value: "food" },
+			  ],
+			  layout: "radio",
+			},
+		  },
 		{
 			name: "title",
 			title: "Title",
@@ -86,35 +107,22 @@ export default {
 
 
 
-		  {
-			title: "Select the type of link",
-			description:
-			  "External links go to other websites using the format `https://www.google.com`. Internal links are restricted to other pages in the SANITY database.",
-			name: "linkType",
-			type: "string",
-			options: {
-			  list: [
-				{ title: "Hotel", value: "external" },
-				{ title: "Food", value: "internal" },
-			  ],
-			  layout: "radio",
-			},
-		  },
+
 
 		  {
 			  name: "rating",
-			  title: "Rating",
-			  description: "Add a rating for each section.",
+			  title: "Rating for Hotels",
+			  description: "Add a rating for each Hotel section.",
 			  type: "rating",
-			  hidden: ({ parent }) => parent?.linkType !== "external",
+			  hidden: ({ parent }) => parent?.linkType !== "hotel",
 		
 			},
 		  {
 			  name: "rating2",
-			  title: "Rating",
-			  description: "Add a rating for each section.",
+			  title: "Rating for Food",
+			  description: "Add a rating for each Food section.",
 			  type: "rating2",
-			  hidden: ({ parent }) => parent?.linkType !== "internal",
+			  hidden: ({ parent }) => parent?.linkType !== "food",
 		
 			},
 			{

@@ -10,6 +10,17 @@ export default {
 		collapsed: false, // Defines if the fieldset should be collapsed by default or not
 		columns: 2, // Defines a grid for the fields and how many columns it should have
 	},
+	initialValue: {
+		ratingAmenities: 1,
+		ratingBed: 1,
+		ratingCleanliness: 1,
+		ratingGym: 1,
+		ratingInternet: 1,
+		ratingLocation: 1,
+		ratingPool: 1,
+		ratingService: 1,
+		ratingValue: 1,
+	},
 
 	fields: [
 		{
