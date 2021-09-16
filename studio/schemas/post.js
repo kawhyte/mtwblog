@@ -118,10 +118,10 @@ export default {
 		
 			},
 		  {
-			  name: "rating2",
+			  name: "foodRating",
 			  title: "Rating for Food",
 			  description: "Add a rating for each Food section.",
-			  type: "rating2",
+			  type: "foodRating",
 			  hidden: ({ parent }) => parent?.linkType !== "food",
 		
 			},

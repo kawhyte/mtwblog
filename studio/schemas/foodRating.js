@@ -1,6 +1,6 @@
 export default {
 	type: "object",
-	name: "rating2",
+	name: "foodRating",
 	description: "Rating for HOTEL",
 
 	fieldsets: [{ name: "social", title: "Give a rating 1-5 for each item" }],
