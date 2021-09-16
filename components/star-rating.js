@@ -5,7 +5,7 @@ import Stars from "./stars";
 import ProgressRating from "./progress-rating";
 
 const StarRating = ({ rating, categories, amenities }) => {
-	 console.log(rating);
+	 //console.log(rating);
 	// const seasons = {
 	// 	SUMMER: "summer",
 	// 	WINTER: "winter",
@@ -15,8 +15,8 @@ const StarRating = ({ rating, categories, amenities }) => {
 
 	// console.log(seasons.AUTUMN)
 
-	const propertyNames = Object.entries(rating);
-	console.log(propertyNames);
+	//const propertyNames = Object.entries(rating);
+	//console.log(propertyNames);
 	let {
 		value1,
 		value2,
@@ -29,10 +29,12 @@ const StarRating = ({ rating, categories, amenities }) => {
 		value9,
 	} = getReviewType(categories);
 
-	const { isFraction, average, textRating } = calculateRating(
+	const { isFraction, average, textRating} = calculateRating(
 		rating,
 		amenities
 	);
+
+
 	// <div className='flex flex-col md:flex-row border-b mx-8  '>
 	return (
 		<>
@@ -60,18 +62,18 @@ const StarRating = ({ rating, categories, amenities }) => {
 			Rating breakdown{" "}
 		</p>
 			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl mr-52 '>
-				<div className='grid grid-cols-1 gap-x-3 md:grid-cols-3 lg:grid-cols-3 '>
+				<div className='grid grid-cols-1  gap-x-20 md:grid-cols-3 lg:grid-cols-3 '>
 					<div className='flex align-middle items-center'>
 					
-						<p className='mr-4 my-1 text-base font-light md:text-lg'>
+						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
 							{value1}
 						</p>
-						<ProgressRating progress={rating?.ratingLocation} />
+						<ProgressRating progress={rating?.ratingLocation}  />
 					</div>
 					<div className='flex align-middle items-center'>
 					
 
-						<p className='mr-4 my-1 text-base font-light md:text-lg '>
+						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
 							{value2}{" "}
 							{categories[0]._ref === "fef37ecd-188b-4ad6-bf33-5ffa917e59cd" ? (
 								<span className='italic text-sm'> </span>
@@ -79,77 +81,77 @@ const StarRating = ({ rating, categories, amenities }) => {
 								" "
 							)}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingCleanliness)} />
+						<ProgressRating progress={Math.floor(rating?.ratingCleanliness)}  />
 					</div>
 					<div className='flex align-middle items-center'>
 						{/*<Stars
 							stars={Math.floor(rating?.ratingService)}
 							isFraction={rating?.ratingService % 1 > 0 ? true : false}
 						/>*/}
-						<p className='mr-4 my-1 text-base font-light md:text-lg'>
+						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
 							{value3}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingService)} />
+						<ProgressRating progress={Math.floor(rating?.ratingService)}  />
 					</div>
 					<div className='flex align-middle items-center'>
 						{/*<Stars
 							stars={Math.floor(rating?.ratingValue)}
 							isFraction={rating?.ratingValue % 1 > 0 ? true : false}
 						/>*/}
-						<p className='mr-4 my-1 text-base font-light md:text-lg'>
+						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
 							{value4}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingValue)} />
+						<ProgressRating progress={Math.floor(rating?.ratingValue)}  />
 					</div>
 					<div className='flex align-middle items-center'>
 						{/*<Stars
 							stars={Math.floor(rating?.ratingValue)}
 							isFraction={rating?.ratingValue % 1 > 0 ? true : false}
 						/>*/}
-						<p className='mr-4 my-1 text-base font-light md:text-lg'>
+						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
 							{value5}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingBed)} />
+						<ProgressRating progress={Math.floor(rating?.ratingBed)}  />
 					</div>
 					<div className='flex align-middle items-center'>
 						{/*<Stars
 							stars={Math.floor(rating?.ratingValue)}
 							isFraction={rating?.ratingValue % 1 > 0 ? true : false}
 						/>*/}
-						<p className='mr-4 my-1 text-base font-light md:text-lg'>
+						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
 							{value6}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingInternet)} />
+						<ProgressRating progress={Math.floor(rating?.ratingInternet)}  />
 					</div>
 					<div className='flex align-middle items-center'>
 						{/*<Stars
 							stars={Math.floor(rating?.ratingValue)}
 							isFraction={rating?.ratingValue % 1 > 0 ? true : false}
 						/>*/}
-						<p className='mr-4 my-1 text-base font-light md:text-lg'>
+						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
 							{value7}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingAmenities)} />
+						<ProgressRating progress={Math.floor(rating?.ratingAmenities)}  />
 					</div>
 					<div className='flex align-middle items-center'>
 						{/*<Stars
 							stars={Math.floor(rating?.ratingValue)}
 							isFraction={rating?.ratingValue % 1 > 0 ? true : false}
 						/>*/}
-						<p className='mr-4 my-1 text-base font-light md:text-lg'>
+						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
 							{value8}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingGym)} />
+						<ProgressRating progress={Math.floor(rating?.ratingGym)}  />
 					</div>
 					<div className='flex align-middle items-center'>
 						{/*<Stars
 							stars={Math.floor(rating?.ratingValue)}
 							isFraction={rating?.ratingValue % 1 > 0 ? true : false}
 						/>*/}
-						<p className='mr-4 my-1 text-base font-light md:text-lg'>
+						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
 							{value9}
 						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingPool)} />
+						<ProgressRating progress={Math.floor(rating?.ratingPool)}  />
 					</div>
 				</div>
 
