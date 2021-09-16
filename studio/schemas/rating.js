@@ -36,7 +36,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Hotel - Room (Comfort and Size) | Food - Presentation",
+			title: "Hotel - Room (Cleanliness) | Food - Presentation",
 			name: "ratingCleanliness",
 			type: "number",
 			
@@ -60,7 +60,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Service",
+			title: "Hotel - Service | Food - Service/Staff",
 			name: "ratingService",
 			type: "number",
 			
@@ -85,7 +85,7 @@ export default {
 		},
 		
 		{
-			title: "Bed Comfort",
+			title: "Hotel - Bed Comfort | Food - Ambiance",
 			name: "ratingBed",
 			type: "number",
 			
@@ -109,7 +109,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Internet Speed",
+			title: "Hotel  - Internet Speed | Food - Cleanliness",
 			name: "ratingInternet",
 			type: "number",
 			
@@ -133,7 +133,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Room Amenities",
+			title: "Hotel - Room Amenities | Food - Bathroom",
 			name: "ratingAmenities",
 			type: "number",
 			
@@ -157,7 +157,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Gym",
+			title: "Hotel - Gym | Food - Location ",
 			name: "ratingGym",
 			type: "number",
 			
@@ -181,7 +181,7 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Pool",
+			title: "Hotel - Pool | Food - Memorability ",
 			name: "ratingPool",
 			type: "number",
 			
@@ -206,7 +206,7 @@ export default {
 		},
 
 		{
-			title: "Price/Value",
+			title: "Hotel and Food - Price/Value",
 			name: "ratingValue",
 			type: "number",
 			
