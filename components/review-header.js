@@ -18,7 +18,7 @@ function ReviewHeader({ title, pattern, summary }) {
                 </div>
     </div>*/}
 
-				<div className='container mx-auto flex px-5 py-24 md:flex-row flex-col items-center mb-12'>
+				<div className='container mx-auto flex px-5 pt-24 md:my-16 py md:flex-row flex-col items-center md:mb-20'>
 					<div className=' lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 '>
 						<h1 className='font-playfair-display mb-3 py-2 text-4xl md:text-6xl font-bold tracking-tighter leading-tight bg-white '>
 							{title} <span className='text-pink-500'>Reviews. </span>
