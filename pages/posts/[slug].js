@@ -33,7 +33,7 @@ export default function Post({ post, morePosts, preview }) {
 		},
 	};
 
-	console.log("POST ",post)
+	
 	return (
 		<Layout preview={preview} color={true} bgColor={true}>
 			<Container>
