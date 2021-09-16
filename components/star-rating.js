@@ -61,7 +61,7 @@ const StarRating = ({ rating, categories, amenities }) => {
 			<p className=' font-Montserrat mx-1 my-3 mt-2  text-lg '>
 			Rating breakdown{" "}
 		</p>
-			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl mr-52 '>
+			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl'>
 				<div className='grid grid-cols-1  gap-x-20 md:grid-cols-3 lg:grid-cols-3 '>
 					<div className='flex align-middle items-center'>
 					
