@@ -49,12 +49,12 @@ const StarRating = ({ rating, categories, amenities }) => {
 					<path d='M20.83,9.15l-6-.52L12.46,3.08h-.92L9.18,8.63l-6,.52L2.89,10l4.55,4L6.08,19.85l.75.55L12,17.3l5.17,3.1.75-.55L16.56,14l4.55-4Z'></path>
 				</svg>
 
-				<h1 className='font-playfair-display mx-2 text-4xl md:text-6xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
+				<h1 className='font-extrabold mx-2 text-4xl md:text-6xl lg:text-6xl tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
 					{/*isFraction ? Math.floor(average) + ".5" : Math.floor(average)*/}
 					{average.toFixed(2)}
 				</h1>
 
-				<p className='font-playfair-display mx-1 text-xl font-bold'>
+				<p className=' mx-1 text-xl font-bold'>
 					{textRating}
 				</p>
 			</div>
