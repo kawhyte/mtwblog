@@ -32,7 +32,7 @@ export default function Post({ post, morePosts, preview }) {
 			autoplay: 1,
 		},
 	};
-
+ console.log("SLUG ",post)
 	
 	return (
 		<Layout preview={preview} color={true} bgColor={true}>

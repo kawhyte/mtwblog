@@ -13,6 +13,7 @@ import author from './author'
 import comment from './comment'
 import verdict from './verdict'
 import rating from './rating'
+import rating2 from './rating2'
 import amenities from './amenities'
 import gallery from './gallery'
 import youtube from './youtube'
@@ -37,6 +38,7 @@ export default createSchema({
     category,
     verdict,
     rating,
+    rating2,
     amenities,
     gallery,
     youtube,

@@ -37,7 +37,7 @@ export default {
 				hotspot: true,
 			},
 		},
-
+	
 	
 		{
 			name: "categories",
@@ -83,11 +83,38 @@ export default {
 			
 		  },
 		  
+
+
+
+		  {
+			title: "Select the type of link",
+			description:
+			  "External links go to other websites using the format `https://www.google.com`. Internal links are restricted to other pages in the SANITY database.",
+			name: "linkType",
+			type: "string",
+			options: {
+			  list: [
+				{ title: "Hotel", value: "external" },
+				{ title: "Food", value: "internal" },
+			  ],
+			  layout: "radio",
+			},
+		  },
+
 		  {
 			  name: "rating",
 			  title: "Rating",
 			  description: "Add a rating for each section.",
 			  type: "rating",
+			  hidden: ({ parent }) => parent?.linkType !== "external",
+		
+			},
+		  {
+			  name: "rating2",
+			  title: "Rating",
+			  description: "Add a rating for each section.",
+			  type: "rating2",
+			  hidden: ({ parent }) => parent?.linkType !== "internal",
 		
 			},
 			{
