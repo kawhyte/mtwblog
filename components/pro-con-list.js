@@ -4,7 +4,7 @@ function ProConList({ positives, negatives, verdict }) {
 	return (
 		<>
 			<section className='text-gray-800 body-font'>
-				<h1 className='font-playfair-display text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
+				<h1 className='font-fancy text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
 					Bottom Line
 				</h1>
 				<div className='container px-5 py-6 lg:py-12 mx-auto flex flex-wrap'>
@@ -21,7 +21,7 @@ function ProConList({ positives, negatives, verdict }) {
 									</svg>
 								</div>
 								<div className='flex-grow'>
-									<h2 className='font-playfair-display text-gray-900 text-lg md:text-2xl title-font font-medium mb-3'>
+									<h2 className='font-fancy text-gray-900 text-lg md:text-2xl title-font font-bold mb-3'>
 										What we loved
 									</h2>
 
@@ -63,7 +63,7 @@ function ProConList({ positives, negatives, verdict }) {
 									</svg>
 								</div>
 								<div className='flex-grow'>
-									<h2 className='font-playfair-display text-gray-900 text-lg md:text-2xl title-font font-medium mb-3'>
+									<h2 className='font-fancy text-gray-900 text-lg md:text-2xl title-font font-bold mb-3'>
 										What we did not like{" "}
 									</h2>
 
@@ -111,7 +111,7 @@ function ProConList({ positives, negatives, verdict }) {
 							</svg>
 						</div>
 						<div className='flex-grow'>
-							<h2 className='font-playfair-display text-gray-900 text-lg md:text-2xl title-font font-medium mb-3'>
+							<h2 className=' font-fancy text-gray-900 text-lg md:text-2xl title-font font-bold mb-3'>
 								Verdict
 							</h2>
 
