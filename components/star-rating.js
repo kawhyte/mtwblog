@@ -4,7 +4,7 @@ import { calculateRating } from "../lib/calculateRating";
 import Stars from "./stars";
 import ProgressRating from "./progress-rating";
 
-const StarRating = ({ rating }) => {
+const StarRating = ({ rating, linkType }) => {
 	//console.log(rating);
 	//console.log(categories);
 	// const seasons = {
@@ -15,6 +15,7 @@ const StarRating = ({ rating }) => {
 	// }
 
 	// console.log(seasons.AUTUMN)
+	 console.log("Linkedy", linkType)
 
 	
 
@@ -44,12 +45,15 @@ const StarRating = ({ rating }) => {
 				</h1>
 
 				<p className=' mx-1 text-xl font-bold'>{textRating}</p>
+
+
 			</div>
-			<p className=' font-Montserrat  my-3 mt-2  text-lg '>Rating breakdown </p>
+
+			<p className=' font-Montserrat  my-3 mt-2  text-lg '>{linkType ==="food" ? "Restaurant/Food": "Hotel"} rating breakdown </p>
 			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl'>
 				<div className='grid grid-cols-1  gap-x-8  lg:gap-x-20 md:grid-cols-1 lg:grid-cols-3 '>
 					{propertyNames.map((item) => {
-						console.log(item);
+						//console.log(item);
 
 						return (
 							<div key={item[0]} className='flex align-middle items-center'>

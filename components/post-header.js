@@ -20,6 +20,7 @@ export default function PostHeader({
 	address,
 	rating,
 	gallery,
+	linkType,
 }) {
 	//console.log(gallery)
 
@@ -36,6 +37,9 @@ export default function PostHeader({
 					<span className='ml-1 text-gray-700 text-lg'>
 						Visited <Date dateString={date} />
 					</span>
+				</p>
+				<p className=' text-gray-900 font-light  md:text-lg  text-center md:text-left'>
+					{linkType === "hotel" ? ` 1 King Bed Lagoon Access` : ""}{" "}
 				</p>
 			</div>
 
@@ -176,6 +180,7 @@ export default function PostHeader({
 					rating={rating}
 					amenities={amenities}
 					categories={categories}
+					linkType={linkType}
 				/>
 			</div>
 

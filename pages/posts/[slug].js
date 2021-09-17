@@ -27,6 +27,7 @@ export default function Post({ post, morePosts, preview }) {
 	let ratingType = post?.rating;
 
 	console.log("SLUG ", post);
+	console.log("lik ", post.linkType);
 
 	if (post?.linkType === "food") {
 		ratingType = post?.foodRating;
