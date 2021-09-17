@@ -63,7 +63,7 @@ export default function Post({ post, morePosts, preview }) {
 								address={post.address}
 								rating={ratingType}
 								roomType={post.roomType}
-								//linkType={post.linkType}
+								linkType={post.linkType}
 								gallery={post.gallery.images}
 							/>
 							<BodySectionSeparator />

@@ -21,8 +21,8 @@ export default function PostHeader({
 	rating,
 	//ratingType,
 	gallery,
-	//linkType,
-	roomType ="1 bedroom"
+	linkType,
+	roomType ="1 bedroom standard room"
 }) {
 
 	 //ratingType = post?.rating;
@@ -49,9 +49,9 @@ export default function PostHeader({
 						Visited <Date dateString={date} />
 					</span>
 				</p>
-			{/* roomType &&	<p className=' text-gray-900 font-light  md:text-lg  text-center md:text-left'>
+			{ roomType &&	<p className=' text-gray-900 font-light  md:text-lg  text-center md:text-left'>
 					{linkType === "hotel" ? `${roomType || "test"}` : ""}{" "}
-	</p>*/}
+	</p>}
 			</div>
 
 			{/*<CoverImage title={title} imageObject={coverImage} url={coverImage} />*/}
