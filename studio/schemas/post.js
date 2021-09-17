@@ -41,7 +41,7 @@ const Post = {
 		},
 
 		{
-			title: "Select the type of review below (Hotel or Food)",
+			title: "Select the type of review (Hotel or Food)",
 			description: "",
 			name: "linkType",
 			type: "string",
@@ -76,6 +76,14 @@ const Post = {
 			type: "string",
 			title: "Location",
 			validation: (Rule) => Rule.required(),
+		},
+		{
+			name: "roomType",
+			type: "string",
+			title: "Room Type",
+			description:"eg. 1 King Bed Lagoon Access (optional)",
+			hidden: ({ parent }) => parent?.linkType !== "hotel",
+			//validation: (Rule) => Rule.required(),
 		},
 		{
 			name: "videoUrl",

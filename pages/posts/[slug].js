@@ -59,6 +59,7 @@ export default function Post({ post, morePosts, preview }) {
 								videoUrl={post.videoUrl}
 								address={post.address}
 								rating={ratingType}
+								roomType={post.roomType}
 								linkType={post.linkType}
 								gallery={post.gallery.images}
 							/>
