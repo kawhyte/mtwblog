@@ -19,19 +19,21 @@ export default function PostHeader({
 	videoUrl,
 	address,
 	rating,
+	//ratingType,
 	gallery,
-	linkType,
+	//linkType,
 	roomType ="1 bedroom"
 }) {
 
-	let ratingType = post?.rating;
-	console.log("roomType",roomType)
+	 //ratingType = post?.rating;
+	// console.log("roomType",roomType)
 
-	console.log("lik ", post.linkType);
+	 console.log("Post-head ratingType ", rating);
+	// console.log("Post-head linkType ", post.linkType);
 
-	if (post?.linkType === "food") {
-		ratingType = post?.foodRating;
-	}
+	// if (post?.linkType === "food") {
+	// 	ratingType = post?.foodRating;
+	// }
 
 	return (
 		<>
@@ -47,9 +49,9 @@ export default function PostHeader({
 						Visited <Date dateString={date} />
 					</span>
 				</p>
-			{ roomType &&	<p className=' text-gray-900 font-light  md:text-lg  text-center md:text-left'>
+			{/* roomType &&	<p className=' text-gray-900 font-light  md:text-lg  text-center md:text-left'>
 					{linkType === "hotel" ? `${roomType || "test"}` : ""}{" "}
-				</p>}
+	</p>*/}
 			</div>
 
 			{/*<CoverImage title={title} imageObject={coverImage} url={coverImage} />*/}
@@ -186,10 +188,10 @@ export default function PostHeader({
 
 			<div className=' block mt-4 text-base mb-6 md:mb-12'>
 				<StarRating
-					rating={ratingType}
+					rating={rating}
 					amenities={amenities}
 					categories={categories}
-					linkType={linkType}
+					//linkType={linkType}
 				/>
 			</div>
 

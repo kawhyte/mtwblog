@@ -15,8 +15,8 @@ const StarRating = ({ rating, linkType }) => {
 	// }
 
 	// console.log(seasons.AUTUMN)
-	 console.log("Linkedy", linkType)
-	 console.log("Linkedy", rating)
+	 //console.log("Linkedy", linkType)
+	 //console.log("Linkedy", rating)
 
 	const propertyNames = Object.entries(rating);
 	propertyNames.pop();
