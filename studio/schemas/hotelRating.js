@@ -1,6 +1,6 @@
-export default {
+const HotelRating = {
 	type: "object",
-	name: "rating",
+	name: "hotelRating",
 	description: "Rating for HOTEL",
 	title:"hotelRating",
 
@@ -269,3 +269,6 @@ export default {
 		},
 	],
 };
+
+
+export default HotelRating

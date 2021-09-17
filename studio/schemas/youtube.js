@@ -1,4 +1,4 @@
-export default {
+const Youtube  = {
 	title: "Video URL",
 	name: "videoUrl",
 	type: "object",
@@ -30,3 +30,6 @@ export default {
 		},
 	],
 };
+
+
+export default Youtube

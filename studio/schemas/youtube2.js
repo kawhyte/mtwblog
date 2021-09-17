@@ -10,7 +10,7 @@ const Preview = ({value}) => {
 }
 
 
-export default {
+const Youtube2 = {
     name: 'youtube2',
     type: 'object',
     title: 'YouTube Embed',
@@ -28,3 +28,5 @@ export default {
         component: Preview
     }
   }
+
+  export default Youtube2

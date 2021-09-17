@@ -1,26 +1,23 @@
-export default{
-    name: 'amenities',
-    title: 'Amenities rating',
-    type:'object',
-    fields: [
-
-        {
-            name: 'title',
-            title: 'Amenity title',
-            type:'string',
-
-        },
-        {
-            name: 'description',
-            title: 'Amenities rating description',
-            type:'string',
-
-        },
-        {
+const Amenities = {
+	name: "amenities",
+	title: "Amenities rating",
+	type: "object",
+	fields: [
+		{
+			name: "title",
+			title: "Amenity title",
+			type: "string",
+		},
+		{
+			name: "description",
+			title: "Amenities rating description",
+			type: "string",
+		},
+		{
 			title: "rating",
 			name: "amenitiesRating",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -36,10 +33,9 @@ export default{
 				layout: "radio",
 			},
 
-			
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
+	],
+};
 
-        
-    ]
-}
+export default Amenities;

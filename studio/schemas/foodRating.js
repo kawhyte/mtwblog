@@ -1,4 +1,4 @@
-export default {
+const FoodRating = {
 	type: "object",
 	name: "foodRating",
 	description: "Rating for Food",
@@ -23,7 +23,6 @@ export default {
 	},
 
 	fields: [
-
 		{
 			title: "Location",
 			name: "Location",
@@ -193,7 +192,7 @@ export default {
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
-		
+
 		{
 			title: "Memorability",
 			name: "Memorability",
@@ -271,3 +270,5 @@ export default {
 		},
 	],
 };
+
+export default FoodRating;

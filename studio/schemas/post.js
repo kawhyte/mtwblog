@@ -1,25 +1,24 @@
 import { FaHotel } from "react-icons/fa";
 
-
-export default {
+const Post = {
 	name: "post",
 	title: "Reviews",
 	type: "document",
 	icon: FaHotel,
-	
+
 	fields: [
-	
 		{
 			name: "title",
 			title: "Title",
 			type: "string",
-			validation: Rule => Rule.required().max(100).warning('Shorter titles are usually better')
+			validation: (Rule) =>
+				Rule.required().max(100).warning("Shorter titles are usually better"),
 		},
 		{
 			name: "slug",
 			title: "Slug",
 			type: "slug",
-			validation: Rule => Rule.required(),
+			validation: (Rule) => Rule.required(),
 			options: {
 				source: "title",
 				maxLength: 96,
@@ -35,106 +34,86 @@ export default {
 			name: "mainImage",
 			title: "Main image",
 			type: "image",
-			validation: Rule => Rule.required(),
+			validation: (Rule) => Rule.required(),
 			options: {
 				hotspot: true,
 			},
 		},
-	
+
 		{
 			title: "Select the type of review below (Hotel or Food)",
-			description:
-			  "",
+			description: "",
 			name: "linkType",
 			type: "string",
-			validation: Rule => Rule.required(),
+			validation: (Rule) => Rule.required(),
 			options: {
-			  list: [
-				{ title: "Hotel", value: "hotel" },
-				{ title: "Food", value: "food" },
-			  ],
-			  layout: "radio",
+				list: [
+					{ title: "Hotel", value: "hotel" },
+					{ title: "Food", value: "food" },
+				],
+				layout: "radio",
 			},
-		  },
-		{
-			name: "categories",
-			title: "Categories",
-			type: "array",
-			validation: Rule => Rule.required(),
-			of: [{ type: "reference", to: { type: "category" } }],
 		},
+		// {
+		// 	name: "categories",
+		// 	title: "Categories",
+		// 	type: "array",
+		// 	validation: (Rule) => Rule.required(),
+		// 	of: [{ type: "reference", to: { type: "category" } }],
+		// },
 		{
 			name: "publishedAt",
 			title: "Visited Date",
 			type: "datetime",
-			validation: Rule => Rule.required(),
+			validation: (Rule) => Rule.required(),
 			options: {
-				
-				calendarTodayLabel: 'Today'
-			  }
-			
+				calendarTodayLabel: "Today",
+			},
 		},
 
-		// {
-		// 	name: "webLink",
-		// 	type: "string",
-		// 	title: "Website Link",
-		// 	description: "Add the website link for the hotel",
-		// },
 		{
 			name: "address",
 			type: "string",
 			title: "Location",
-			validation: Rule => Rule.required(),
+			validation: (Rule) => Rule.required(),
 		},
 		{
 			name: "videoUrl",
-			type: 'videoUrl',
-			
-			
-		  },
+			type: "videoUrl",
+		},
 		{
 			name: "gallery",
-			type: 'gallery',
-			
-			
-		  },
-		  
+			type: "gallery",
+		},
 
-
-
-
-
-		  {
-			  name: "rating",
-			  title: "Rating for Hotels",
-			  description: "Add a rating for each Hotel section.",
-			  type: "rating",
-			  hidden: ({ parent }) => parent?.linkType !== "hotel",
-		
-			},
-		  {
-			  name: "foodRating",
-			  title: "Rating for Food",
-			  description: "Add a rating for each Food section.",
-			  type: "foodRating",
-			  hidden: ({ parent }) => parent?.linkType !== "food",
-		
-			},
-			{
-				name: "amenities",
-				title: "Additional rating",
-				description: "Add additional rating ctaegory.",
-				type: "array",
-				of: [{ type: "amenities" }],
-			},
+		{
+			name: "hotelRating",
+			title: "Rating for Hotels",
+			description: "Add a rating for each Hotel section.",
+			type: "hotelRating",
+			hidden: ({ parent }) => parent?.linkType !== "hotel",
+		},
+		{
+			name: "foodRating",
+			title: "Rating for Food",
+			description: "Add a rating for each Food section.",
+			type: "foodRating",
+			hidden: ({ parent }) => parent?.linkType !== "food",
+		},
+		// {
+		// 	name: "amenities",
+		// 	title: "Additional rating",
+		// 	description: "Add additional rating ctaegory.",
+		// 	type: "array",
+		// 	of: [{ type: "amenities" }],
+		// },
 
 		{
 			title: "Positives",
 			name: "positives",
 
 			description: "Add multiple Positive points",
-			validation: Rule => Rule.required(),
+			validation: (Rule) => Rule.required(),
 			type: "array",
 			of: [{ type: "text" }],
 		},
@@ -143,7 +122,7 @@ export default {
 			title: "Negatives",
 			name: "negatives",
 			description: "Add multiple Negative points",
-			validation: Rule => Rule.required(),
+			validation: (Rule) => Rule.required(),
 			type: "array",
 			of: [{ type: "text" }],
 		},
@@ -152,7 +131,7 @@ export default {
 			name: "verdict",
 			title: "Verdict",
 			description: "Add your Verdict",
-			validation: Rule => Rule.required(),
+			validation: (Rule) => Rule.required(),
 			type: "text",
 		},
 
@@ -177,3 +156,5 @@ export default {
 		},
 	},
 };
+
+export default Post;

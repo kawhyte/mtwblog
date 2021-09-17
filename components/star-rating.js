@@ -4,7 +4,7 @@ import { calculateRating } from "../lib/calculateRating";
 import Stars from "./stars";
 import ProgressRating from "./progress-rating";
 
-const StarRating = ({ rating, categories, amenities, linkType }) => {
+const StarRating = ({ rating, amenities }) => {
 	//console.log(rating);
 	//console.log(categories);
 	// const seasons = {
@@ -20,19 +20,6 @@ const StarRating = ({ rating, categories, amenities, linkType }) => {
 
 	const propertyNames = Object.entries(rating);
 	propertyNames.pop();
-
-	console.log("P ", propertyNames);
-	let {
-		value1,
-		value2,
-		value3,
-		value4,
-		value5,
-		value6,
-		value7,
-		value8,
-		value9,
-	} = getReviewType(categories);
 
 	const { isFraction, average, textRating } = calculateRating(
 		propertyNames,

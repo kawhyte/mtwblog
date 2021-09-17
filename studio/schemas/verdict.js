@@ -1,4 +1,4 @@
-export default {
+const Verdict =  {
 	name: "verdict",
 	title: "Review",
 	type: "object",
@@ -10,3 +10,6 @@ export default {
 		},
 	],
 };
+
+
+export default Verdict

@@ -1,14 +1,14 @@
-export default {
-	name: 'pros',
-	title: 'Positives',
-	type: 'document',
+const Pros = {
+	name: "pros",
+	title: "Positives",
+	type: "document",
 	fields: [
 		{
-			name: 'reviewProText',
-			title: 'Positives',
-			type: 'string',
+			name: "reviewProText",
+			title: "Positives",
+			type: "string",
 		},
-
 	],
-
 };
+
+export default Pros;
