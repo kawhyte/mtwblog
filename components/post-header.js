@@ -28,7 +28,7 @@ export default function PostHeader({
 	 //ratingType = post?.rating;
 	// console.log("roomType",roomType)
 
-	 console.log("Post-head ratingType ", rating);
+	 //console.log("Post-head ratingType ", rating);
 	// console.log("Post-head linkType ", post.linkType);
 
 	// if (post?.linkType === "food") {

@@ -9,7 +9,7 @@ import { CMS_NAME, FOOD } from "../lib/constants";
 
 function AllHotels({ allPosts, preview }) {
 
- console.log("FOOOOOD ",allPosts)	
+ //console.log("FOOOOOD ",allPosts)	
 	const morePosts = allPosts.slice(0);
 
 	return (

@@ -27,10 +27,10 @@ export default function Post({ post, morePosts, preview }) {
 	let ratingType = post?.hotelRating;
 
 	//console.log("SLUG Post", post);
-	console.log("SLUG post.title ", post.title);
-	console.log("SLUD linkType ", post.linkType);
-	console.log("SLUD post?.foodRating ", post?.foodRating);
-	console.log("SLUD post?.hotelRating ", post?.hotelRating);
+	// console.log("SLUG post.title ", post.title);
+	// console.log("SLUD linkType ", post.linkType);
+	// console.log("SLUD post?.foodRating ", post?.foodRating);
+	// console.log("SLUD post?.hotelRating ", post?.hotelRating);
 
 	if (post?.linkType === "food") {
 		ratingType = post?.foodRating;
