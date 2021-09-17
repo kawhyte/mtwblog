@@ -2,8 +2,7 @@ const HotelRating = {
 	type: "object",
 	name: "hotelRating",
 	description: "Rating for HOTEL",
-	title:"hotelRating",
-
+	title: "hotelRating",
 
 	fieldsets: [{ name: "social", title: "Give a rating 1-5 for each item" }],
 	options: {
@@ -12,15 +11,15 @@ const HotelRating = {
 		columns: 2, // Defines a grid for the fields and how many columns it should have
 	},
 	initialValue: {
-		ratingAmenities: 1,
-		ratingBed: 1,
-		ratingCleanliness: 1,
-		ratingGym: 1,
-		ratingInternet: 1,
-		ratingLocation: 1,
-		ratingPool: 1,
-		ratingService: 1,
-		ratingValue: 1,
+		Bed_Comfort: 1,
+		Gym: 1,
+		Internet_Speed: 1,
+		Location: 1,
+		Pool: 1,
+		Room_Amenities: 1,
+		Room_Cleanliness: 1,
+		Service: 1,
+		Value: 1,
 	},
 
 	fields: [
@@ -28,7 +27,7 @@ const HotelRating = {
 			title: "Location",
 			name: "Location",
 			type: "number",
-		
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -51,7 +50,7 @@ const HotelRating = {
 			title: "Room (Cleanliness)",
 			name: "Room_Cleanliness",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -75,7 +74,7 @@ const HotelRating = {
 			title: "Service",
 			name: "Service",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -95,12 +94,12 @@ const HotelRating = {
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
-		
+
 		{
 			title: "Bed Comfort",
 			name: "Bed_Comfort",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -124,7 +123,7 @@ const HotelRating = {
 			title: "Internet Speed",
 			name: "Internet_Speed",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -148,7 +147,7 @@ const HotelRating = {
 			title: "Room Amenities",
 			name: "Room_Amenities",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -172,7 +171,7 @@ const HotelRating = {
 			title: "Gym",
 			name: "Gym",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -196,7 +195,7 @@ const HotelRating = {
 			title: "Pool",
 			name: "Pool",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -221,7 +220,7 @@ const HotelRating = {
 			title: "Price/Value",
 			name: "Value",
 			type: "number",
-			
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -246,8 +245,8 @@ const HotelRating = {
 			title: "Overall",
 			name: "ratingOverall",
 			type: "number",
-			hidden:true,
-			
+			hidden: true,
+
 			options: {
 				list: [
 					{ title: "5 stars", value: 5 },
@@ -270,5 +269,4 @@ const HotelRating = {
 	],
 };
 
-
-export default HotelRating
+export default HotelRating;

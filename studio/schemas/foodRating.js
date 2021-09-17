@@ -11,15 +11,15 @@ const FoodRating = {
 		columns: 2, // Defines a grid for the fields and how many columns it should have
 	},
 	initialValue: {
-		ratingAmenities: 1,
-		ratingBed: 1,
-		ratingCleanliness: 1,
-		ratingGym: 1,
-		ratingInternet: 1,
-		ratingLocation: 1,
-		ratingPool: 1,
-		ratingService: 1,
-		ratingValue: 1,
+		Ambiance: 1,
+		Bathroom: 1,
+		Cleanliness: 1,
+		Flavor_and_Taste: 1,
+		Location: 1,
+		Memorability: 1,
+		Presentation_on_Plate: 1,
+		Service: 1,
+		Value: 1,
 	},
 
 	fields: [
