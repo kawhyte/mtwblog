@@ -4,7 +4,7 @@ import { calculateRating } from "../lib/calculateRating";
 import Stars from "./stars";
 import ProgressRating from "./progress-rating";
 
-const StarRating = ({ rating, amenities }) => {
+const StarRating = ({ rating }) => {
 	//console.log(rating);
 	//console.log(categories);
 	// const seasons = {
@@ -21,9 +21,9 @@ const StarRating = ({ rating, amenities }) => {
 	const propertyNames = Object.entries(rating);
 	propertyNames.pop();
 
-	const { isFraction, average, textRating } = calculateRating(
-		propertyNames,
-		amenities
+	const { average, textRating } = calculateRating(
+		propertyNames
+		
 	);
 
 	return (
@@ -47,13 +47,13 @@ const StarRating = ({ rating, amenities }) => {
 			</div>
 			<p className=' font-Montserrat  my-3 mt-2  text-lg '>Rating breakdown </p>
 			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl'>
-				<div className='grid grid-cols-1  gap-x-20 md:grid-cols-3 lg:grid-cols-3 '>
+				<div className='grid grid-cols-1  gap-x-8  lg:gap-x-20 md:grid-cols-1 lg:grid-cols-3 '>
 					{propertyNames.map((item) => {
 						console.log(item);
 
 						return (
 							<div key={item[0]} className='flex align-middle items-center'>
-								<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
+								<p className='mr-2 my-1 text-base font-light md:text-lg flex-1'>
 									{item[0].replace(/_/g, " ")}
 								</p>
 								<ProgressRating progress={item[1]} />
@@ -61,80 +61,9 @@ const StarRating = ({ rating, amenities }) => {
 						);
 					})}
 
-					{/*<div className='flex align-middle items-center'>
-					
-						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
-							{value1}
-						</p>
-						<ProgressRating progress={rating?.Location}  />
-					</div>
-
-
-					<div className='flex align-middle items-center'>
 					
 
-						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
-							{value2}{" "}
-							{categories[0]._ref === "fef37ecd-188b-4ad6-bf33-5ffa917e59cd" ? (
-								<span className='italic text-sm'> </span>
-							) : (
-								" "
-							)}
-						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingCleanliness)}  />
-					</div>
-					<div className='flex align-middle items-center'>
-					
-						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
-							{value3}
-						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingService)}  />
-					</div>
-					<div className='flex align-middle items-center'>
-					
-						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
-							{value4}
-						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingValue)}  />
-					</div>
-					<div className='flex align-middle items-center'>
-					
-						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
-							{value5}
-						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingBed)}  />
-					</div>
-					<div className='flex align-middle items-center'>
-				
-						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
-							{value6}
-						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingInternet)}  />
-					</div>
-					<div className='flex align-middle items-center'>
-				
-						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
-							{value7}
-						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingAmenities)}  />
-					</div>
-					<div className='flex align-middle items-center'>
-				
-						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
-							{value8}
-						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingGym)}  />
-					</div>
-					<div className='flex align-middle items-center'>
-					
-						<p className='mr-4 my-1 text-base font-light md:text-lg flex-1'>
-							{value9}
-						</p>
-						<ProgressRating progress={Math.floor(rating?.ratingPool)}  />
-					</div>
-					</div>*/}
-
-					{amenities && (
+					{/*amenities && (
 						<div className='md:mb-4 mb-6'>
 							{amenities &&
 								amenities.map((item) => (
@@ -149,7 +78,7 @@ const StarRating = ({ rating, amenities }) => {
 									</div>
 								))}
 						</div>
-					)}
+								)*/}
 				</div>
 			</div>
 		</>
