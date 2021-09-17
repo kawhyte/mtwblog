@@ -1,7 +1,8 @@
 export default {
 	type: "object",
 	name: "foodRating",
-	description: "Rating for HOTEL",
+	description: "Rating for Food",
+	title: "foodRating",
 
 	fieldsets: [{ name: "social", title: "Give a rating 1-5 for each item" }],
 	options: {
@@ -22,56 +23,10 @@ export default {
 	},
 
 	fields: [
+
 		{
-			title: "Food - Flavor & Tast",
-			name: "ratingLocation",
-			type: "number",
-
-			options: {
-				list: [
-					{ title: "5 stars", value: 5 },
-					{ title: "4.5 stars", value: 4.5 },
-					{ title: "4 stars", value: 4 },
-					{ title: "3.5 stars", value: 3.5 },
-					{ title: "3 stars", value: 3 },
-					{ title: "2.5 stars", value: 2.5 },
-					{ title: "2 stars", value: 2 },
-					{ title: "1.5 stars", value: 1.5 },
-					{ title: "1 stars", value: 1 },
-				],
-				layout: "radio",
-			},
-
-			fieldset: "social",
-			//validation: (Rule) => Rule.required().min(1).max(5),
-		},
-		{
-			title: "Food - Presentation",
-			name: "ratingCleanliness",
-			type: "number",
-
-			options: {
-				list: [
-					{ title: "5 stars", value: 5 },
-					{ title: "4.5 stars", value: 4.5 },
-					{ title: "4 stars", value: 4 },
-					{ title: "3.5 stars", value: 3.5 },
-					{ title: "3 stars", value: 3 },
-					{ title: "2.5 stars", value: 2.5 },
-					{ title: "2 stars", value: 2 },
-					{ title: "1.5 stars", value: 1.5 },
-					{ title: "1 stars", value: 1 },
-				],
-				layout: "radio",
-			},
-
-			fieldset: "social",
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
-		},
-		{
-			title: "Food - Service/Staff",
-			name: "ratingService",
+			title: "Location",
+			name: "Location",
 			type: "number",
 
 			options: {
@@ -95,8 +50,31 @@ export default {
 		},
 
 		{
-			title: "Food - Ambiance",
-			name: "ratingBed",
+			title: "Flavor & Taste",
+			name: "Flavor_and_Taste",
+			type: "number",
+
+			options: {
+				list: [
+					{ title: "5 stars", value: 5 },
+					{ title: "4.5 stars", value: 4.5 },
+					{ title: "4 stars", value: 4 },
+					{ title: "3.5 stars", value: 3.5 },
+					{ title: "3 stars", value: 3 },
+					{ title: "2.5 stars", value: 2.5 },
+					{ title: "2 stars", value: 2 },
+					{ title: "1.5 stars", value: 1.5 },
+					{ title: "1 stars", value: 1 },
+				],
+				layout: "radio",
+			},
+
+			fieldset: "social",
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+		{
+			title: "Presentation",
+			name: "Presentation_on_Plate",
 			type: "number",
 
 			options: {
@@ -119,80 +97,8 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Food - Cleanliness",
-			name: "ratingInternet",
-			type: "number",
-
-			options: {
-				list: [
-					{ title: "5 stars", value: 5 },
-					{ title: "4.5 stars", value: 4.5 },
-					{ title: "4 stars", value: 4 },
-					{ title: "3.5 stars", value: 3.5 },
-					{ title: "3 stars", value: 3 },
-					{ title: "2.5 stars", value: 2.5 },
-					{ title: "2 stars", value: 2 },
-					{ title: "1.5 stars", value: 1.5 },
-					{ title: "1 stars", value: 1 },
-				],
-				layout: "radio",
-			},
-
-			fieldset: "social",
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
-		},
-		{
-			title: "Food - Bathroom",
-			name: "ratingAmenities",
-			type: "number",
-
-			options: {
-				list: [
-					{ title: "5 stars", value: 5 },
-					{ title: "4.5 stars", value: 4.5 },
-					{ title: "4 stars", value: 4 },
-					{ title: "3.5 stars", value: 3.5 },
-					{ title: "3 stars", value: 3 },
-					{ title: "2.5 stars", value: 2.5 },
-					{ title: "2 stars", value: 2 },
-					{ title: "1.5 stars", value: 1.5 },
-					{ title: "1 stars", value: 1 },
-				],
-				layout: "radio",
-			},
-
-			fieldset: "social",
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
-		},
-		{
-			title: "Food - Location ",
-			name: "ratingGym",
-			type: "number",
-
-			options: {
-				list: [
-					{ title: "5 stars", value: 5 },
-					{ title: "4.5 stars", value: 4.5 },
-					{ title: "4 stars", value: 4 },
-					{ title: "3.5 stars", value: 3.5 },
-					{ title: "3 stars", value: 3 },
-					{ title: "2.5 stars", value: 2.5 },
-					{ title: "2 stars", value: 2 },
-					{ title: "1.5 stars", value: 1.5 },
-					{ title: "1 stars", value: 1 },
-				],
-				layout: "radio",
-			},
-
-			fieldset: "social",
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
-		},
-		{
-			title: "Food - Memorability ",
-			name: "ratingPool",
+			title: "Service/Staff",
+			name: "Service",
 			type: "number",
 
 			options: {
@@ -216,8 +122,106 @@ export default {
 		},
 
 		{
-			title: "Hotel and Food - Price/Value",
-			name: "ratingValue",
+			title: "Ambiance",
+			name: "Ambiance",
+			type: "number",
+
+			options: {
+				list: [
+					{ title: "5 stars", value: 5 },
+					{ title: "4.5 stars", value: 4.5 },
+					{ title: "4 stars", value: 4 },
+					{ title: "3.5 stars", value: 3.5 },
+					{ title: "3 stars", value: 3 },
+					{ title: "2.5 stars", value: 2.5 },
+					{ title: "2 stars", value: 2 },
+					{ title: "1.5 stars", value: 1.5 },
+					{ title: "1 stars", value: 1 },
+				],
+				layout: "radio",
+			},
+
+			fieldset: "social",
+
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+		{
+			title: "Cleanliness",
+			name: "Cleanliness",
+			type: "number",
+
+			options: {
+				list: [
+					{ title: "5 stars", value: 5 },
+					{ title: "4.5 stars", value: 4.5 },
+					{ title: "4 stars", value: 4 },
+					{ title: "3.5 stars", value: 3.5 },
+					{ title: "3 stars", value: 3 },
+					{ title: "2.5 stars", value: 2.5 },
+					{ title: "2 stars", value: 2 },
+					{ title: "1.5 stars", value: 1.5 },
+					{ title: "1 stars", value: 1 },
+				],
+				layout: "radio",
+			},
+
+			fieldset: "social",
+
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+		{
+			title: "Bathroom",
+			name: "Bathroom",
+			type: "number",
+
+			options: {
+				list: [
+					{ title: "5 stars", value: 5 },
+					{ title: "4.5 stars", value: 4.5 },
+					{ title: "4 stars", value: 4 },
+					{ title: "3.5 stars", value: 3.5 },
+					{ title: "3 stars", value: 3 },
+					{ title: "2.5 stars", value: 2.5 },
+					{ title: "2 stars", value: 2 },
+					{ title: "1.5 stars", value: 1.5 },
+					{ title: "1 stars", value: 1 },
+				],
+				layout: "radio",
+			},
+
+			fieldset: "social",
+
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+		
+		{
+			title: "Memorability",
+			name: "Memorability",
+			type: "number",
+
+			options: {
+				list: [
+					{ title: "5 stars", value: 5 },
+					{ title: "4.5 stars", value: 4.5 },
+					{ title: "4 stars", value: 4 },
+					{ title: "3.5 stars", value: 3.5 },
+					{ title: "3 stars", value: 3 },
+					{ title: "2.5 stars", value: 2.5 },
+					{ title: "2 stars", value: 2 },
+					{ title: "1.5 stars", value: 1.5 },
+					{ title: "1 stars", value: 1 },
+				],
+				layout: "radio",
+			},
+
+			fieldset: "social",
+
+			//validation: (Rule) => Rule.required().min(1).max(5),
+		},
+
+		{
+			title: "Value",
+			name: "Value",
 			type: "number",
 
 			options: {

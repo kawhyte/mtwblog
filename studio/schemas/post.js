@@ -6,27 +6,9 @@ export default {
 	title: "Reviews",
 	type: "document",
 	icon: FaHotel,
-	initialValue: {
-		linkType: "hotel",
-		
-	},
 	
 	fields: [
-		{
-			title: "Select the type of review below (Hotel or Food)",
-			description:
-			  "",
-			name: "linkType",
-			type: "string",
-			validation: Rule => Rule.required(),
-			options: {
-			  list: [
-				{ title: "Hotel", value: "hotel" },
-				{ title: "Food", value: "food" },
-			  ],
-			  layout: "radio",
-			},
-		  },
+	
 		{
 			name: "title",
 			title: "Title",
@@ -59,7 +41,21 @@ export default {
 			},
 		},
 	
-	
+		{
+			title: "Select the type of review below (Hotel or Food)",
+			description:
+			  "",
+			name: "linkType",
+			type: "string",
+			validation: Rule => Rule.required(),
+			options: {
+			  list: [
+				{ title: "Hotel", value: "hotel" },
+				{ title: "Food", value: "food" },
+			  ],
+			  layout: "radio",
+			},
+		  },
 		{
 			name: "categories",
 			title: "Categories",

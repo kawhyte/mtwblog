@@ -24,16 +24,14 @@ export default function Post({ post, morePosts, preview }) {
 		return <ErrorPage statusCode={404} />;
 	}
 
-	const opts = {
-		height: "390",
-		width: "340",
-		playerVars: {
-			// https://developers.google.com/youtube/player_parameters
-			autoplay: 1,
-		},
-	};
- console.log("SLUG ",post)
-	
+	let ratingType = post?.rating;
+
+	console.log("SLUG ", post);
+
+	if (post?.linkType === "food") {
+		ratingType = post?.foodRating;
+	}
+
 	return (
 		<Layout preview={preview} color={true} bgColor={true}>
 			<Container>
@@ -47,12 +45,8 @@ export default function Post({ post, morePosts, preview }) {
 								<title>
 									{post.title} | {CMS_NAME}
 								</title>
-								<meta
-								name="description"
-								content={post.title  } 
-							  />
-							  <meta property="og:title" content={post.title  } key="title" />
-
+								<meta name='description' content={post.title} />
+								<meta property='og:title' content={post.title} key='title' />
 							</Head>
 							<PostHeader
 								title={post.title}
@@ -63,11 +57,12 @@ export default function Post({ post, morePosts, preview }) {
 								amenities={post.amenities}
 								videoUrl={post.videoUrl}
 								address={post.address}
-								rating={post.rating}
+								rating={ratingType}
+								linkType={post.linkType}
 								gallery={post.gallery.images}
 							/>
-							<BodySectionSeparator /> 
-							
+							<BodySectionSeparator />
+
 							<PostBody content={post.body} />
 							<ProConList
 								positives={post.positives}

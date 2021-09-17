@@ -2,6 +2,7 @@ export default {
 	type: "object",
 	name: "rating",
 	description: "Rating for HOTEL",
+	title:"hotelRating",
 
 
 	fieldsets: [{ name: "social", title: "Give a rating 1-5 for each item" }],
@@ -24,8 +25,8 @@ export default {
 
 	fields: [
 		{
-			title: "Hotel - Location | Food - Flavor & Taste",
-			name: "ratingLocation",
+			title: "Location",
+			name: "Location",
 			type: "number",
 		
 			options: {
@@ -47,8 +48,8 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Hotel - Room (Cleanliness) | Food - Presentation",
-			name: "ratingCleanliness",
+			title: "Room (Cleanliness)",
+			name: "Room_Cleanliness",
 			type: "number",
 			
 			options: {
@@ -71,8 +72,8 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Hotel - Service | Food - Service/Staff",
-			name: "ratingService",
+			title: "Service",
+			name: "Service",
 			type: "number",
 			
 			options: {
@@ -96,8 +97,8 @@ export default {
 		},
 		
 		{
-			title: "Hotel - Bed Comfort | Food - Ambiance",
-			name: "ratingBed",
+			title: "Bed Comfort",
+			name: "Bed_Comfort",
 			type: "number",
 			
 			options: {
@@ -120,8 +121,8 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Hotel  - Internet Speed | Food - Cleanliness",
-			name: "ratingInternet",
+			title: "Internet Speed",
+			name: "Internet_Speed",
 			type: "number",
 			
 			options: {
@@ -144,8 +145,8 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Hotel - Room Amenities | Food - Bathroom",
-			name: "ratingAmenities",
+			title: "Room Amenities",
+			name: "Room_Amenities",
 			type: "number",
 			
 			options: {
@@ -168,8 +169,8 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Hotel - Gym | Food - Location ",
-			name: "ratingGym",
+			title: "Gym",
+			name: "Gym",
 			type: "number",
 			
 			options: {
@@ -192,8 +193,8 @@ export default {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Hotel - Pool | Food - Memorability ",
-			name: "ratingPool",
+			title: "Pool",
+			name: "Pool",
 			type: "number",
 			
 			options: {
@@ -217,8 +218,8 @@ export default {
 		},
 
 		{
-			title: "Hotel and Food - Price/Value",
-			name: "ratingValue",
+			title: "Price/Value",
+			name: "Value",
 			type: "number",
 			
 			options: {
