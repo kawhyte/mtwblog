@@ -108,13 +108,13 @@ const Post = {
 			type: "foodRating",
 			hidden: ({ parent }) => parent?.linkType !== "food",
 		},
-		// {
-		// 	name: "amenities",
-		// 	title: "Additional rating",
-		// 	description: "Add additional rating ctaegory.",
-		// 	type: "array",
-		// 	of: [{ type: "amenities" }],
-		// },
+		{
+			name: "amenities",
+			title: "Additional rating",
+			description: "Add additional rating ctaegory.",
+			type: "array",
+			of: [{ type: "amenities" }],
+		},
 
 		{
 			title: "Positives",

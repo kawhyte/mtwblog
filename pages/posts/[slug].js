@@ -24,9 +24,10 @@ export default function Post({ post, morePosts, preview }) {
 		return <ErrorPage statusCode={404} />;
 	}
 
-	let ratingType = post?.rating;
+	let ratingType = post?.hotelRating;
 
 	console.log("SLUG ", post);
+	console.log("SLUG post.title ", post.title);
 	console.log("lik ", post.linkType);
 
 	if (post?.linkType === "food") {
