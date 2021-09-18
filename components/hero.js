@@ -6,18 +6,17 @@ function Hero() {
 	return (
 		<div>
 			<div className=' bg-gradient-to-r from-green-400 to-blue-500 relative overflow-hidden '>
-			<div className="md:hidden">
-				<Image
-					blurDataURL='https://res.cloudinary.com/babyhulk/image/upload/e_pixelate:200,q_30/v1627353251/hero-image/PXL_20210613_032035183.MP_1.webp'
-					
-					src='https://res.cloudinary.com/babyhulk/image/upload/v1627353251/hero-image/PXL_20210613_032035183.MP_1.webp'
-					className='block absolute  h-full w-full object-cover'
-					aria-label='Justify'
-					layout='fill'
-					alt="poster photo"
-				/>
+				<div className='md:hidden'>
+					<Image
+						blurDataURL='https://res.cloudinary.com/babyhulk/image/upload/e_pixelate:200,q_30/v1627353251/hero-image/PXL_20210613_032035183.MP_1.webp'
+						src='https://res.cloudinary.com/babyhulk/image/upload/v1627353251/hero-image/PXL_20210613_032035183.MP_1.webp'
+						className='block absolute  h-full w-full object-cover'
+						aria-label='Justify'
+						layout='fill'
+						alt='poster photo'
+					/>
 				</div>
-			<video
+				<video
 					autoPlay
 					loop
 					muted
@@ -32,7 +31,7 @@ function Hero() {
 						type='video/webm'
 					/>
 					Your browser does not support the video tag.
-			</video>
+				</video>
 
 				<div className='inset-0 bg-black opacity-40  absolute'></div>
 				<header className='absolute top-0 left-0 right-0 z-20'></header>
@@ -44,7 +43,7 @@ function Hero() {
 							<br />
 							<span className='text-pink-500'> </span>Eat to Travel
 						</h1>
-						<h2 className='text-center font-normal text-white md:text-left text-xl mt-5'>
+						<h2 className='text-center font-medium text-white md:text-left text-xl mt-5'>
 							Our journey in discovering and reviewing food, hotels and
 							interesting locations.
 						</h2>

@@ -15,16 +15,13 @@ const StarRating = ({ rating, linkType }) => {
 	// }
 
 	// console.log(seasons.AUTUMN)
-	 //console.log("Linkedy", linkType)
-	 //console.log("Linkedy", rating)
+	//console.log("Linkedy", linkType)
+	//console.log("Linkedy", rating)
 
 	const propertyNames = Object.entries(rating);
 	propertyNames.pop();
 
-	const { average, textRating } = calculateRating(
-		propertyNames
-		
-	);
+	const { average, textRating } = calculateRating(propertyNames);
 
 	return (
 		<>
@@ -44,11 +41,11 @@ const StarRating = ({ rating, linkType }) => {
 				</h1>
 
 				<p className=' mx-1 text-xl font-black'>{textRating}</p>
-
-
 			</div>
 
-			<p className=' font-Montserrat font-normal  my-3 mt-2  text-lg '>{linkType ==="food" ? "Restaurant/Food": "Hotel"} rating breakdown </p>
+			<p className=' font-Montserrat font-medium  my-3 mt-2  text-lg '>
+				{linkType === "food" ? "Restaurant/Food" : "Hotel"} rating breakdown{" "}
+			</p>
 			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl'>
 				<div className='grid grid-cols-1  gap-x-8  lg:gap-x-20 md:grid-cols-1 lg:grid-cols-3 '>
 					{propertyNames.map((item) => {
@@ -56,15 +53,13 @@ const StarRating = ({ rating, linkType }) => {
 
 						return (
 							<div key={item[0]} className='flex align-middle items-center'>
-								<p className='mr-2 my-1 text-base font-normal md:text-lg flex-1'>
+								<p className='mr-2 my-1 text-base font-medium md:text-lg flex-1'>
 									{item[0].replace(/_/g, " ")}
 								</p>
 								<ProgressRating progress={item[1]} />
 							</div>
 						);
 					})}
-
-					
 
 					{/*amenities && (
 						<div className='md:mb-4 mb-6'>
