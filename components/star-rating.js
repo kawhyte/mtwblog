@@ -53,6 +53,10 @@ const StarRating = ({ rating, linkType }) => {
 
 						return (
 							<div key={item[0]} className='flex align-middle items-center'>
+
+
+
+
 								<p className='mr-2 my-1 text-base font-medium md:text-lg flex-1'>
 									{item[0].replace(/_/g, " ")}
 								</p>
