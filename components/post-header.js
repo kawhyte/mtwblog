@@ -40,7 +40,7 @@ export default function PostHeader({
 				<PostTitle>{title}</PostTitle>
 
 				<p className='text-gray-900 font-medium md:text-sm p-1 text-center md:text-left '>
-					<span className='mr-1 text-lg'>
+					<span className='text-lg'>
 						{address ? address : "No address provided"}{" "}
 					</span>
 					|{" "}
