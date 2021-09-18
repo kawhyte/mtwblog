@@ -22,13 +22,12 @@ export default function PostHeader({
 	//ratingType,
 	gallery,
 	linkType,
-	roomType ="1 bedroom standard room"
+	roomType = "King bedroom",
 }) {
-
-	 //ratingType = post?.rating;
+	//ratingType = post?.rating;
 	// console.log("roomType",roomType)
 
-	 //console.log("Post-head ratingType ", rating);
+	//console.log("Post-head ratingType ", rating);
 	// console.log("Post-head linkType ", post.linkType);
 
 	// if (post?.linkType === "food") {
@@ -40,18 +39,20 @@ export default function PostHeader({
 			<div className='mb-8 md:mb-4 -mx-5 sm:mx-0 z-50'>
 				<PostTitle>{title}</PostTitle>
 
-				<p className='text-gray-900 font-light  md:text-sm p-1 text-center md:text-left '>
-					<span className='mr-1 text-lg'>
+				<p className='text-gray-900 font-medium md:text-sm p-1 text-center md:text-left '>
+					<span className='text-lg'>
 						{address ? address : "No address provided"}{" "}
 					</span>
 					|{" "}
-					<span className='ml-1 text-gray-700 text-lg'>
+					<span className='ml-1 text-gray-700 font-medium text-lg'>
 						Visited <Date dateString={date} />
 					</span>
 				</p>
-			{ roomType &&	<p className=' text-gray-900 font-light  md:text-lg  text-center md:text-left'>
-					{linkType === "hotel" ? `${roomType || "test"}` : ""}{" "}
-	</p>}
+				{roomType && (
+					<p className=' text-gray-900 font-medium  md:text-lg  text-center md:text-left'>
+						{linkType === "hotel" ? `${roomType || "test"}` : ""}{" "}
+					</p>
+				)}
 			</div>
 
 			{/*<CoverImage title={title} imageObject={coverImage} url={coverImage} />*/}
@@ -144,7 +145,7 @@ export default function PostHeader({
 							</div>
 							<div className='pl-2 pt-  w-1/2 relative'>
 								{/*<span className='  px-3 ml-6  md:mx-3 my-4 z-20  text-base rounded-lg flex   bg-white border-black border-2 shadow-lg absolute bottom-0 right-0  mb-6 mr-6 '>
-							<a href="gallery" className='text-black font-normal text-xs md:text-sm p-1  '>
+							<a href="gallery" className='text-black font-medium text-xs md:text-sm p-1  '>
 							View all photos
 								
 							</a>

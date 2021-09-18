@@ -19,18 +19,18 @@ class MyDocument extends Document {
         <link
           rel="preload"
           as="style"
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
         />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
           media="print"
           onLoad="this.media='all'"
         />
         <noscript>
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
           />
         </noscript>
       </Head>

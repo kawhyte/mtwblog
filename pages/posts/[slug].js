@@ -77,7 +77,7 @@ export default function Post({ post, morePosts, preview }) {
 
 							{/* post.videoUrl && 	<div className=' aspect-w-16 aspect-h-9 mb-16'>
 						
-						<h1 className="font-playfair-display mb-5 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left">
+						<h1 className="font-fancy mb-5 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left">
 						{post.videoUrl.title}
 	  </h1>
 								<ReactPlayer
@@ -92,7 +92,7 @@ export default function Post({ post, morePosts, preview }) {
 								/^(http(s)?:\/\/)?((w){3}.)?youtu(be|.be)?(\.com)?\/.+/gm
 							) && (
 								<>
-									<h1 className='font-playfair-display mb-12 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
+									<h1 className='font-fancy mb-12 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
 										{post.videoUrl.title ? post.videoUrl.title : "Video"}
 									</h1>
 

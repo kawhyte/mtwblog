@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg leading-relaxed;
+  @apply text-lg font-medium leading-relaxed;
 }
 
 .markdown p,
@@ -38,7 +38,7 @@
   @apply text-white;
 
   @apply absolute;
-  
+
   @apply break-words
 }
 

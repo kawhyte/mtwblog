@@ -10,7 +10,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+				sans: ["Roboto", ...defaultTheme.fontFamily.sans],
 				fancy: ["Playfair Display"],
 				//'Montserrat': ['Montserrat', ...defaultTheme.fontFamily.sans],
 				// 'playfair-display': ['Playfair Display', ...defaultTheme.fontFamily.sans],
