@@ -44,7 +44,7 @@ function Hero() {
 							<br />
 							<span className='text-pink-500'> </span>Eat to Travel
 						</h1>
-						<h2 className='text-center text-white md:text-left text-xl mt-5'>
+						<h2 className='text-center font-normal text-white md:text-left text-xl mt-5'>
 							Our journey in discovering and reviewing food, hotels and
 							interesting locations.
 						</h2>

@@ -7,8 +7,8 @@ import Image from "next/image";
 
 const navigation = [
 	{
-		name: "All Posts",
-		href: "/allposts",
+		name: "All Reviews",
+		href: "/allreviews",
 		icon: "/icon/walk.svg",
 		text: "Hotel icon",
 		current: false,

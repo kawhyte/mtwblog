@@ -40,16 +40,16 @@ export default function PostHeader({
 			<div className='mb-8 md:mb-4 -mx-5 sm:mx-0 z-50'>
 				<PostTitle>{title}</PostTitle>
 
-				<p className='text-gray-900 font-light  md:text-sm p-1 text-center md:text-left '>
+				<p className='text-gray-900 font-normal md:text-sm p-1 text-center md:text-left '>
 					<span className='mr-1 text-lg'>
 						{address ? address : "No address provided"}{" "}
 					</span>
 					|{" "}
-					<span className='ml-1 text-gray-700 text-lg'>
+					<span className='ml-1 text-gray-700 font-normal text-lg'>
 						Visited <Date dateString={date} />
 					</span>
 				</p>
-			{ roomType &&	<p className=' text-gray-900 font-light  md:text-lg  text-center md:text-left'>
+			{ roomType &&	<p className=' text-gray-900 font-normal  md:text-lg  text-center md:text-left'>
 					{linkType === "hotel" ? `${roomType || "test"}` : ""}{" "}
 	</p>}
 			</div>

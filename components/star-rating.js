@@ -38,17 +38,17 @@ const StarRating = ({ rating, linkType }) => {
 					<path d='M20.83,9.15l-6-.52L12.46,3.08h-.92L9.18,8.63l-6,.52L2.89,10l4.55,4L6.08,19.85l.75.55L12,17.3l5.17,3.1.75-.55L16.56,14l4.55-4Z'></path>
 				</svg>
 
-				<h1 className='font-extrabold mx-2 text-4xl md:text-6xl lg:text-6xl tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
+				<h1 className='font-black mx-2 text-4xl md:text-6xl lg:text-6xl tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
 					{/*isFraction ? Math.floor(average) + ".5" : Math.floor(average)*/}
 					{average.toFixed(2)}
 				</h1>
 
-				<p className=' mx-1 text-xl font-bold'>{textRating}</p>
+				<p className=' mx-1 text-xl font-black'>{textRating}</p>
 
 
 			</div>
 
-			<p className=' font-Montserrat  my-3 mt-2  text-lg '>{linkType ==="food" ? "Restaurant/Food": "Hotel"} rating breakdown </p>
+			<p className=' font-Montserrat font-normal  my-3 mt-2  text-lg '>{linkType ==="food" ? "Restaurant/Food": "Hotel"} rating breakdown </p>
 			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl'>
 				<div className='grid grid-cols-1  gap-x-8  lg:gap-x-20 md:grid-cols-1 lg:grid-cols-3 '>
 					{propertyNames.map((item) => {
@@ -56,7 +56,7 @@ const StarRating = ({ rating, linkType }) => {
 
 						return (
 							<div key={item[0]} className='flex align-middle items-center'>
-								<p className='mr-2 my-1 text-base font-light md:text-lg flex-1'>
+								<p className='mr-2 my-1 text-base font-normal md:text-lg flex-1'>
 									{item[0].replace(/_/g, " ")}
 								</p>
 								<ProgressRating progress={item[1]} />

@@ -7,13 +7,11 @@ import StarRating from "./star-rating";
 import { add } from "date-fns";
 
 function Section(props) {
-
 	return (
-		<div className="grid grid-cols-1 gap-4 lg:gap-8  sm:grid-cols-2 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3   ">
+		<div className='grid grid-cols-1 gap-4 lg:gap-8  sm:grid-cols-2 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3   '>
 			{props.posts.map((item) => {
-			
 				return (
-					<div key={item.slug} >
+					<div key={item.slug}>
 						<section className='text-gray-600 body-font mb-10'>
 							<div className='rounded-xl h-full'>
 								{item.slug ? (
@@ -27,7 +25,7 @@ function Section(props) {
 													.height(171)
 													.quality(1)
 													.url()}
-												placeholder="blur" 
+												placeholder='blur'
 												alt={`Cover Image for ${item.title}`}
 												className={cn("shadow-small", {
 													"object-cover object-center h-full w-full": item.slug,
@@ -48,26 +46,24 @@ function Section(props) {
 							</h2>
 							<p className='text-base leading-relaxed mt-2'>{item.excerpt}</p>
 							<div className=' text-gray-500 block   mb-2  text-lg'>
-								{item.address ? item.address : "No address provided"} <span className="p-2">|</span> 
-
+								{item.address ? item.address : "No address provided"}{" "}
+								<span className='p-2'>|</span>
 								<Link as={`/posts/${item.slug}`} href='/posts/[slug]'>
-								<a className='text-green-800 bg-white inline-flex items-center mt-1'>
-									View Review
-									<svg
-										fill='none'
-										stroke='currentColor'
-										strokeLinecap='round'
-										strokeLinejoin='round'
-										strokeWidth='2'
-										className='w-4 h-4 ml-2'
-										viewBox='0 0 24 24'>
-										<path d='M5 12h14M12 5l7 7-7 7'></path>
-									</svg>
-								</a>
-							</Link>
+									<a className='text-green-800 bg-white inline-flex items-center mt-1'>
+										View Review
+										<svg
+											fill='none'
+											stroke='currentColor'
+											strokeLinecap='round'
+											strokeLinejoin='round'
+											strokeWidth='2'
+											className='w-4 h-4 ml-2'
+											viewBox='0 0 24 24'>
+											<path d='M5 12h14M12 5l7 7-7 7'></path>
+										</svg>
+									</a>
+								</Link>
 							</div>
-
-						
 						</section>
 					</div>
 				);
@@ -87,7 +83,7 @@ function Section(props) {
 							image
 						)}
 					</div>
-					<h2 className='font-playfair-display text-xl font-medium title-font text-gray-900 mt-3'>
+					<h2 className='font-fancy text-xl font-medium title-font text-gray-900 mt-3'>
 						{title}
 					</h2>
 					<p className='text-base leading-relaxed mt-2'>{excerpt}</p>
