@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const category = [
 	{
-		name: "All Reviews",
+		name: "All",
 		href: "/allposts",
 		image:
 			"https://res.cloudinary.com/babyhulk/image/upload/v1621897765/project/PXL_20210222_215622925.MP.webp",
@@ -12,7 +12,7 @@ const category = [
 		alt: "View of Sunset at a hotel",
 	},
 	{
-		name: "Hotel Reviews",
+		name: "Hotel",
 		href: "/hotel",
 		image:
 			"https://res.cloudinary.com/babyhulk/image/upload/v1621896780/project/PXL_20210428_025517322.MP.webp",
@@ -21,7 +21,7 @@ const category = [
 	},
 
 	{
-		name: "Food Reviews",
+		name: "Food",
 		href: "/food",
 		image:
 			"https://res.cloudinary.com/babyhulk/image/upload/v1621897187/project/MVIMG_20191203_091517.webp",
@@ -54,7 +54,7 @@ function Categories() {
 					<div className='flex flex-wrap w-full mb-10'>
 						<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
 							<h1 className='font-fancy  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
-								Browse
+								Browse Reviews
 							</h1>
 							<div className='h-1 w-20 bg-pink-500 rounded'></div>
 						</div>
