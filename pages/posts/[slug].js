@@ -28,7 +28,7 @@ export default function Post({ post, morePosts, preview }) {
 
 	//console.log("SLUG Post", post);
 	// console.log("SLUG post.title ", post.title);
-	// console.log("SLUD linkType ", post.linkType);
+	 //console.log("SLUD linkType ", post.linkType);
 	// console.log("SLUD post?.foodRating ", post?.foodRating);
 	// console.log("SLUD post?.hotelRating ", post?.hotelRating);
 
@@ -63,7 +63,7 @@ export default function Post({ post, morePosts, preview }) {
 								address={post.address}
 								rating={ratingType}
 								roomType={post.roomType}
-								linkType={post.linkType}
+								linkType={post.linkType} 
 								gallery={post.gallery.images}
 							/>
 							<BodySectionSeparator />

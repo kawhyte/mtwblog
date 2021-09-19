@@ -7,8 +7,7 @@ import PostTitle from "../components/post-title";
 import Image from "next/image";
 import { imageBuilder } from "../lib/sanity";
 import StarRating from "./star-rating";
-import Awards from "./mtw-award";
-import post from "../studio/schemas/post";
+
 export default function PostHeader({
 	title,
 	categories,
@@ -28,7 +27,7 @@ export default function PostHeader({
 	// console.log("roomType",roomType)
 
 	//console.log("Post-head ratingType ", rating);
-	// console.log("Post-head linkType ", post.linkType);
+	// console.log("Post-head linkType ", linkType);
 
 	// if (post?.linkType === "food") {
 	// 	ratingType = post?.foodRating;
@@ -192,7 +191,7 @@ export default function PostHeader({
 					rating={rating}
 					amenities={amenities}
 					categories={categories}
-					//linkType={linkType}
+					linkType={linkType}
 				/>
 			</div>
 

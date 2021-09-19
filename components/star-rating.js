@@ -15,7 +15,7 @@ const StarRating = ({ rating, linkType }) => {
 	// }
 
 	// console.log(seasons.AUTUMN)
-	//console.log("Linkedy", linkType)
+	//console.log("Star LinkTYPE", linkType)
 	//const { average, textRating } = calculateRating(propertyNames);
 	// console.log("getReviewType", ratingItem["Bed_Comfort"].name);
 
@@ -45,15 +45,14 @@ const StarRating = ({ rating, linkType }) => {
 			</div>
 
 			<p className=' font-Montserrat font-medium  my-3 mt-2  text-lg '>
-				{linkType === "food" ? "Restaurant/Food" : "Hotel"} rating breakdown{" "}
+				{linkType === "hotel" ? "Hotel" : "Restaurant/Food"} rating breakdown{" "}
 			</p>
 			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl'>
 				<div className='grid grid-cols-1  gap-x-8  lg:gap-x-20 md:grid-cols-1 lg:grid-cols-3 '>
 					{propertyNames.map((item) => {
 						let text = item[0];
 
-					
-						{console.log(ratingItem[text].name)}
+
 						return (
 							<div key={item[0]} className='flex align-middle items-center'>
 								<p className='mr-2 my-1 text-base font-medium md:text-lg flex-1'>
