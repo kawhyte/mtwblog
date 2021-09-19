@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const category = [
 	{
-		name: "All Posts",
+		name: "All Reviews",
 		href: "/allposts",
 		image:
 			"https://res.cloudinary.com/babyhulk/image/upload/v1621897765/project/PXL_20210222_215622925.MP.webp",

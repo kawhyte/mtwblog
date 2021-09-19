@@ -17,7 +17,7 @@ const StarRating = ({ rating, linkType }) => {
 	// console.log(seasons.AUTUMN)
 	//console.log("Linkedy", linkType)
 	//const { average, textRating } = calculateRating(propertyNames);
-	console.log("getReviewType", ratingItem.Bed_Comfort.name);
+	// console.log("getReviewType", ratingItem["Bed_Comfort"].name);
 
 	const propertyNames = Object.entries(rating);
 	propertyNames.pop();
@@ -52,10 +52,13 @@ const StarRating = ({ rating, linkType }) => {
 					{propertyNames.map((item) => {
 						let text = item[0];
 
+					
+						{console.log(ratingItem[text].name)}
 						return (
 							<div key={item[0]} className='flex align-middle items-center'>
 								<p className='mr-2 my-1 text-base font-medium md:text-lg flex-1'>
-									{item[0].replace(/_/g, " ")}
+									{/*item[0].replace(/_/g, " ")*/}
+									{ratingItem[text].name}
 								</p>
 								<ProgressRating progress={item[1]} />
 							</div>
