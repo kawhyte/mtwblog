@@ -49,7 +49,7 @@ const StarRating = ({ rating, linkType }) => {
 				{linkType === "hotel" ? "Hotel" : "Restaurant/Food"} rating breakdown{" "}
 			</p>
 			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl'>
-				<div className='grid grid-cols-1  gap-x-8  lg:gap-x-20 md:grid-cols-1 lg:grid-cols-3 '>
+				<div className='grid grid-cols-1  gap-x-8 gap-y-1 lg:gap-y-3  lg:gap-x-20 md:grid-cols-1 lg:grid-cols-3 '>
 					{propertyNames.map((item) => {
 						let text = item[0];
 
@@ -61,8 +61,8 @@ const StarRating = ({ rating, linkType }) => {
 							className=""
 							src={ratingItem[text].icon}
 							alt={"icon"}
-							width={22}
-							height={22}
+							width={25}
+							height={25}
 						/>
 							
 					
