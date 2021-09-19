@@ -24,7 +24,7 @@ const HotelRating = {
 
 	fields: [
 		{
-			title: "Location",
+			title: "Location of Hotel",
 			name: "Location",
 			type: "number",
 
@@ -47,7 +47,7 @@ const HotelRating = {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Room (Cleanliness)",
+			title: "Room Cleanliness",
 			name: "Room_Cleanliness",
 			type: "number",
 
@@ -71,7 +71,7 @@ const HotelRating = {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Service",
+			title: "Hotel Service",
 			name: "Service",
 			type: "number",
 
@@ -168,7 +168,7 @@ const HotelRating = {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Gym",
+			title: "Hotel Gym",
 			name: "Gym",
 			type: "number",
 
@@ -192,7 +192,7 @@ const HotelRating = {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Pool",
+			title: " Hotel Pool",
 			name: "Pool",
 			type: "number",
 
@@ -217,7 +217,7 @@ const HotelRating = {
 		},
 
 		{
-			title: "Price/Value",
+			title: "Hotel Value",
 			name: "Value",
 			type: "number",
 

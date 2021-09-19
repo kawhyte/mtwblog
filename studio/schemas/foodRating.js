@@ -24,7 +24,7 @@ const FoodRating = {
 
 	fields: [
 		{
-			title: "Location",
+			title: "Restaurant Location",
 			name: "Location",
 			type: "number",
 
@@ -49,7 +49,7 @@ const FoodRating = {
 		},
 
 		{
-			title: "Flavor & Taste",
+			title: "Food Flavor & Taste",
 			name: "Flavor_and_Taste",
 			type: "number",
 
@@ -72,7 +72,7 @@ const FoodRating = {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Presentation",
+			title: "Presentation of food on Plate",
 			name: "Presentation_on_Plate",
 			type: "number",
 
@@ -96,7 +96,7 @@ const FoodRating = {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Service/Staff",
+			title: "Restaurant Service/Staff",
 			name: "Service",
 			type: "number",
 
@@ -121,7 +121,7 @@ const FoodRating = {
 		},
 
 		{
-			title: "Ambiance",
+			title: "Restaurant Ambiance",
 			name: "Ambiance",
 			type: "number",
 
@@ -145,7 +145,7 @@ const FoodRating = {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Cleanliness",
+			title: "Restaurant Cleanliness",
 			name: "Cleanliness",
 			type: "number",
 
@@ -169,7 +169,7 @@ const FoodRating = {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Bathroom",
+			title: "Restaurant Bathroom Cleanliness",
 			name: "Bathroom",
 			type: "number",
 
@@ -194,7 +194,7 @@ const FoodRating = {
 		},
 
 		{
-			title: "Memorability",
+			title: "Restaurant Memorability",
 			name: "Memorability",
 			type: "number",
 
@@ -219,7 +219,7 @@ const FoodRating = {
 		},
 
 		{
-			title: "Value",
+			title: "Food Value",
 			name: "Value",
 			type: "number",
 
