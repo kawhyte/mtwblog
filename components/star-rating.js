@@ -1,5 +1,5 @@
 import React from "react";
-import { getReviewType } from "../lib/getReviewType";
+import { ratingItem } from "../lib/getReviewType";
 import { calculateRating } from "../lib/calculateRating";
 import Stars from "./stars";
 import ProgressRating from "./progress-rating";
@@ -16,7 +16,8 @@ const StarRating = ({ rating, linkType }) => {
 
 	// console.log(seasons.AUTUMN)
 	//console.log("Linkedy", linkType)
-	//console.log("Linkedy", rating)
+	//const { average, textRating } = calculateRating(propertyNames);
+	console.log("getReviewType", ratingItem.Bed_Comfort.name);
 
 	const propertyNames = Object.entries(rating);
 	propertyNames.pop();
@@ -49,14 +50,10 @@ const StarRating = ({ rating, linkType }) => {
 			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl'>
 				<div className='grid grid-cols-1  gap-x-8  lg:gap-x-20 md:grid-cols-1 lg:grid-cols-3 '>
 					{propertyNames.map((item) => {
-						//console.log(item);
+						let text = item[0];
 
 						return (
 							<div key={item[0]} className='flex align-middle items-center'>
-
-
-
-
 								<p className='mr-2 my-1 text-base font-medium md:text-lg flex-1'>
 									{item[0].replace(/_/g, " ")}
 								</p>
