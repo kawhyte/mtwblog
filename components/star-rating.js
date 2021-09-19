@@ -60,7 +60,9 @@ const StarRating = ({ rating, linkType }) => {
 							<Image
 							className=""
 							src={ratingItem[text].icon}
-							alt={item.text}
+							blurDataURL={ratingItem[text].icon}
+							placeholder='blur'
+							alt={"icon"}
 							width={25}
 							height={25}
 						/>
