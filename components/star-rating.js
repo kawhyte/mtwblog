@@ -55,25 +55,21 @@ const StarRating = ({ rating, linkType }) => {
 
 						return (
 							<div key={item[0]} className=' flex align-middle items-center'>
-							
-							<span className=" pr-4">
-							<Image
-							className=""
-							src={ratingItem[text].icon}
-							alt={"icon"}
-							width={25}
-							height={25}
-						/>
-							
-					
-							
-							</span>
-							<div className=" flex-1 flex flex-row align-middle items-center"> 
-							<p className='mr-2 my-1 text-base font-medium md:text-lg '>
-							{/*item[0].replace(/_/g, " ")*/}
-							{ratingItem[text].name}
-							</p>
-								<ProgressRating progress={item[1]} />
+								<span className=' pr-4'>
+									<Image
+										className=''
+										src={ratingItem[text].icon}
+										alt={"icon"}
+										width={25}
+										height={25}
+									/>
+								</span>
+								<div className=' flex-1 flex flex-row align-middle items-center'>
+									<p className='mr-2 my-1 text-base font-medium md:text-lg '>
+										{/*item[0].replace(/_/g, " ")*/}
+										{ratingItem[text].name}
+									</p>
+									<ProgressRating progress={item[1]} />
 								</div>
 							</div>
 						);
