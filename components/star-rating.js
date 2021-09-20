@@ -54,7 +54,7 @@ const StarRating = ({ rating, linkType }) => {
 						let text = item[0];
 
 						return (
-							<div key={item[0]} className=' flex align-middle items-center'>
+							<div key={item[0]} className=' flex align-middle  items-center'>
 								<span className=' pr-4'>
 									<Image
 										className=''
