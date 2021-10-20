@@ -47,7 +47,7 @@ const Story = {
         {
 			name: "address",
 			type: "string",
-			title: "Location",
+			title: "Category or Type (Story/Guide)",
 			validation: (Rule) => Rule.required(),
 		},
 		{

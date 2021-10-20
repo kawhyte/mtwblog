@@ -61,7 +61,7 @@ export default function Post({ post, morePosts, preview }) {
 								//categories={post.categories}
 								//amenities={post.amenities}
 								//videoUrl={post.videoUrl}
-								//address={post.address}
+								address={post.address}
 								
 								
 								gallery={post.gallery.images}
