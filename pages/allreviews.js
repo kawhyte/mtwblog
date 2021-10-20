@@ -22,7 +22,7 @@ function AllReviews({ allPosts, preview }) {
 					<title>Travel and Food Reviews by {CMS_NAME}</title>
 				</Head>
 				
-				<ReviewHeader title ={"All "} pattern={'pattern'} summary={"You want to get out and see the world, but you have so many questions. Check out our trips."}/>
+				<ReviewHeader title ={"All Reviews"} pattern={'pattern'} summary={"You want to get out and see the world, but you have so many questions. Check out our trips."}/>
 				<Container>
 			
 				{morePosts.length > 0 &&

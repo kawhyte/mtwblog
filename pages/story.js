@@ -19,9 +19,9 @@ function AllStories({ allStories, preview }) {
 				</Head>
 
 				<ReviewHeader
-					title={"Story/Guide"}
+					title={"Stories & Guides"}
 					pattern={"hotelpattern"}
-					summary={"Rooms, Amenities Service and Price"}
+					summary={"Its all about the Adventure"}
 				/>
 
 				<Container>

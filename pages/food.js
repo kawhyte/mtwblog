@@ -20,7 +20,7 @@ function AllHotels({ allPosts, preview }) {
 				</Head>
 
 				<ReviewHeader
-					title={"Food"}
+					title={"Food Reviews"}
 					pattern={"foodpattern"}
 					summary={"Everything food, drink & restaurants"}
 				/>
