@@ -7,18 +7,18 @@ import Hero from "../components/hero";
 import Info from "../components/info-section";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
-import { getAllPostsForHome } from "../lib/api";
+import { getAllPostsForHome, getAllStoriesForHome } from "../lib/api";
 import Head from "next/head";
 import { CMS_NAME } from "../lib/constants";
 import Link from "next/link";
 import Categories from "../components/categories";
 import Navbar from "../components/navbar";
 
-export default function Index({ allPosts, preview }) {
+export default function Index({ allPosts, allStories, preview }) {
 	const heroPost = allPosts[0];
 	const morePosts = allPosts.slice(1, 7);
 
-	//console.log("ALL POSTS ", allPosts)
+	console.log("ALL allStories ", allStories)
 
 	return (
 		<>
@@ -79,8 +79,10 @@ export default function Index({ allPosts, preview }) {
 
 export async function getStaticProps({ preview = false }) {
 	const allPosts = await getAllPostsForHome(preview);
+	const allStories = await getAllStoriesForHome(preview);
 	return {
-		props: { allPosts, preview },
+		props: { allPosts,allStories, preview },
 		revalidate: 1,
 	};
 }
+
