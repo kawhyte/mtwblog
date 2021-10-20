@@ -15,7 +15,7 @@ function StorySection(props) {
 						<section className='text-gray-600 body-font mb-10'>
 							<div className='rounded-xl h-full'>
 								{item.slug ? (
-									<Link as={`/posts/${item.slug}`} href='/posts/[slug]'>
+									<Link as={`/stories/${item.slug}`} href='/stories/[slug]'>
 										<a aria-label={item.title}>
 											<Image
 												width={392}
@@ -46,8 +46,9 @@ function StorySection(props) {
 							</h2>
 							<p className='text-base leading-relaxed mt-2'>{item.excerpt}</p>
 							<div className=' text-gray-500 block   mb-2  text-lg'>
-								
-								<Link as={`/posts/${item.slug}`} href='/posts/[slug]'>
+                            {item.address ? item.address : "No category provided"}{" "}
+                            <span className='p-2'>|</span>
+								<Link as={`/stories/${item.slug}`} href='/stories/[slug]'>
 									<a className='text-green-800 bg-white inline-flex items-center mt-1'>
 										View Story
 										<svg

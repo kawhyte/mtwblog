@@ -44,6 +44,12 @@ const Story = {
 				calendarTodayLabel: "Today",
 			},
 		},
+        {
+			name: "address",
+			type: "string",
+			title: "Location",
+			validation: (Rule) => Rule.required(),
+		},
 		{
 			name: "body",
 			title: "Body",

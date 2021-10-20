@@ -186,14 +186,14 @@ export default function PostHeader({
 
 	</div>*/}
 
-			<div className=' block mt-4 text-base mb-6 md:mb-12'>
+		{ rating &&	<div className=' block mt-4 text-base mb-6 md:mb-12'>
 				<StarRating
 					rating={rating}
 					amenities={amenities}
 					categories={categories}
 					linkType={linkType}
 				/>
-			</div>
+			</div>}
 
 			{/*Amenities*/}
 

@@ -20,8 +20,8 @@ export default function Index({ allPosts, allStories, preview }) {
 	const morePosts = allPosts.slice(1, 7);
 	const moreStories = allStories.slice(0, 7);
 
-	console.log("ALL allStories ", allStories)
-	console.log("ALL moreStories ", moreStories)
+	// console.log("ALL allStories ", allStories)
+	// console.log("ALL moreStories ", moreStories)
 
 	return (
 		<>
@@ -51,7 +51,7 @@ export default function Index({ allPosts, allStories, preview }) {
 						<div className='flex flex-wrap w-full mb-10'>
 						<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
 							<h1 className='font-fancy  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
-							More Reviews
+							Reviews
 							</h1>
 							<div className='h-1 w-20 bg-pink-500 rounded'></div>
 						</div>
@@ -77,7 +77,7 @@ export default function Index({ allPosts, allStories, preview }) {
 						<div className='flex flex-wrap w-full mb-10'>
 						<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
 							<h1 className='font-fancy  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
-							More Stories
+							Stories
 							</h1>
 							<div className='h-1 w-20 bg-pink-500 rounded'></div>
 						</div>
