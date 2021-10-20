@@ -19,7 +19,7 @@ import Gallery from "../../components/gallery";
 import ReactPlayer from "react-player/youtube";
 
 export default function Post({ post, morePosts, preview }) {
-    console.log("SLUG Stories ", post);
+    //console.log("SLUG Stories ", post);
 	const router = useRouter();
 	if (!router.isFallback && !post?.slug) {
 		return <ErrorPage statusCode={404} />;
