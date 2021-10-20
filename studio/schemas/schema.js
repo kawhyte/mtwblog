@@ -8,6 +8,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import blockContent from "./blockContent";
 import category from "./category";
 import post from "./post";
+import story from "./story";
 import author from "./author";
 import comment from "./comment";
 import verdict from "./verdict";
@@ -30,6 +31,7 @@ export default createSchema({
 		// The following are document types which will appear
 		// in the studio.
 		post,
+		story,
 	
 		author,
 		galaryImage,

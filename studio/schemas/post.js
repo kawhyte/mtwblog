@@ -1,10 +1,10 @@
-import { FaHotel } from "react-icons/fa";
+import { FaPencilAlt } from "react-icons/fa";
 
 const Post = {
 	name: "post",
 	title: "Reviews",
 	type: "document",
-	icon: FaHotel,
+	icon: FaPencilAlt,
 
 	fields: [
 		{
