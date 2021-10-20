@@ -30,7 +30,7 @@ const category = [
 	},
 	{
 		name: "Stories and Guides",
-		href: "/food",
+		href: "/story",
 		image:
 			"https://res.cloudinary.com/babyhulk/image/upload/v1621896780/project/PXL_20210428_025517322.MP.webp",
 		text: "Sunset",
