@@ -16,7 +16,7 @@ const category = [
 		href: "/hotel",
 		image:
 			"https://res.cloudinary.com/babyhulk/image/upload/v1622066371/project/Main.webp ",
-		text: "Hotel icon",
+		text: "City skyline",
 		alt: "City skyline",
 	},
 
