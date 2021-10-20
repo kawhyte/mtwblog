@@ -49,31 +49,27 @@ const StarRating = ({ rating, linkType }) => {
 				{linkType === "hotel" ? "Hotel" : "Restaurant/Food"} rating breakdown{" "}
 			</p>
 			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl'>
-				<div className='grid grid-cols-1  gap-x-8 gap-y-1 lg:gap-y-3  lg:gap-x-20 md:grid-cols-1 lg:grid-cols-3 '>
+				<div className='grid grid-cols-1  gap-x-8 gap-y-3 lg:gap-y-3  lg:gap-x-20 md:grid-cols-1 lg:grid-cols-3 '>
 					{propertyNames.map((item) => {
 						let text = item[0];
 
 						return (
-							<div key={item[0]} className=' flex align-middle items-center'>
-							
-							<span className=" pr-4">
-							<Image
-							className=""
-							src={ratingItem[text].icon}
-							alt={"icon"}
-							width={25}
-							height={25}
-						/>
-							
-					
-							
-							</span>
-							<div className=" flex-1 flex flex-row align-middle items-center"> 
-							<p className='mr-2 my-1 text-base font-medium md:text-lg '>
-							{/*item[0].replace(/_/g, " ")*/}
-							{ratingItem[text].name}
-							</p>
-								<ProgressRating progress={item[1]} />
+							<div key={item[0]} className=' flex align-middle  items-center'>
+								<span className=' pr-4'>
+									<Image
+										className=''
+										src={ratingItem[text].icon}
+										alt={"icon"}
+										width={25}
+										height={25}
+									/>
+								</span>
+								<div className=' flex-1 flex flex-row align-middle items-center'>
+									<p className='mr-2 my-1 text-base font-medium md:text-lg '>
+										{/*item[0].replace(/_/g, " ")*/}
+										{ratingItem[text].name}
+									</p>
+									<ProgressRating progress={item[1]} />
 								</div>
 							</div>
 						);
