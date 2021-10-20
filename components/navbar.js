@@ -27,13 +27,13 @@ const navigation = [
 		text: "Plane icon",
 		current: false,
 	},
-	// {
-	// 	name: "Day Trips",
-	// 	href: "/day-trip",
-	// 	icon: "/icon/walk.svg",
-	// 	text: "Walking icon",
-	// 	current: false,
-	// },
+	{
+		name: "Stories/Guides",
+		href: "/story",
+		icon: "/icon/book.svg",
+		text: "Walking icon",
+		current: false,
+	},
 	// {
 	// 	name: "Airport/Airline",
 	// 	href: "/airport",
@@ -84,6 +84,7 @@ export default function Nav({ color, bgColor }) {
 												width={40}
 												height={40}
 											/>
+											
 										</div>
 										{/*<svg
 											xmlns='http://www.w3.org/2000/svg'
