@@ -88,7 +88,7 @@ export default function Index({ allPosts, allStories, preview }) {
 					{moreStories.length > 0 && <StorySection stories={moreStories} />}
 					{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 					<div className=' mx-auto container my-12 max-w-xs'>
-						<Link href='/allposts' passHref>
+						<Link href='/story' passHref>
 							<button
 								aria-label='Justify'
 								type='button'
@@ -96,7 +96,7 @@ export default function Index({ allPosts, allStories, preview }) {
 								All Stories
 							</button>
 						</Link>
-					</div>{" "}
+					</div>
 
 				
 				</Container>
