@@ -4,29 +4,37 @@ import Image from "next/image";
 
 const category = [
 	{
-		name: "All",
+		name: "All Reviews",
 		href: "/allreviews",
 		image:
 			"https://res.cloudinary.com/babyhulk/image/upload/v1621897765/project/PXL_20210222_215622925.MP.webp",
 		text: "Hotel icon",
-		alt: "View of Sunset at a hotel",
+		alt: "View of mountains",
 	},
 	{
-		name: "Hotel",
+		name: "Hotel Reviews",
 		href: "/hotel",
 		image:
-			"https://res.cloudinary.com/babyhulk/image/upload/v1621896780/project/PXL_20210428_025517322.MP.webp",
+			"https://res.cloudinary.com/babyhulk/image/upload/v1622066371/project/Main.webp ",
 		text: "Hotel icon",
-		alt: "View of Sunset at a hotel",
+		alt: "City skyline",
 	},
 
 	{
-		name: "Food",
+		name: "Food Reviews",
 		href: "/food",
 		image:
 			"https://res.cloudinary.com/babyhulk/image/upload/v1621897187/project/MVIMG_20191203_091517.webp",
 		text: "Hotel icon",
 		alt: "View of Food",
+	},
+	{
+		name: "Stories and Guides",
+		href: "/food",
+		image:
+			"https://res.cloudinary.com/babyhulk/image/upload/v1621896780/project/PXL_20210428_025517322.MP.webp",
+		text: "Sunset",
+		alt: "View of Sunset at a hotel",
 	},
 	// {
 	// 	name: "Day Trips",
@@ -61,7 +69,7 @@ function Categories() {
 					</div>
 
 					<div className='   '>
-						<div className='grid  grid-cols-3 md:grid-cols-3 gap-5  place-items-center lg:grid-cols-3 relative  '>
+						<div className='grid  grid-cols-2 md:grid-cols-2 gap-5  place-items-center lg:grid-cols-4 relative  '>
 							{category.map((item) => (
 								<div key={item.href}>
 									<div className='relative group rounded-xl overflow-hidden hidden md:block'>
