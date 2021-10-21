@@ -17,7 +17,7 @@ function CategoryItems({ image }) {
 						/>
 
 						<h2 className=' font-fancy text-lg text-gray-900 font-medium title-font mb-4'>
-							Hotel Reviewss
+							Hotel Reviews
 						</h2>
 					</a>
 				</div>
