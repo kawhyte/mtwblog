@@ -79,7 +79,7 @@ export default function Index({ allPosts, allStories, preview }) {
 					</div>
 				</div>
 
-				<div className='bg-gray-50 py-8'>
+				<div className='bg-white py-8'>
 					<div className='container mx-auto'>
 						{moreStories.length > 0 ? (
 							<div className='flex flex-wrap w-full mb-10 mx-4 '>
