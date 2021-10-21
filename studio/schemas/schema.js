@@ -16,6 +16,7 @@ import hotelRating from "./hotelRating";
 import foodRating from "./foodRating";
 import amenities from "./amenities";
 import gallery from "./gallery";
+import mainImageGallery  from "./mainImageGallery"
 import youtube from "./youtube";
 import youtube2 from "./youtube2";
 import galaryImage from "./img";
@@ -35,6 +36,7 @@ export default createSchema({
 	
 		author,
 		galaryImage,
+		mainImageGallery,
 		category,
 		verdict,
 		hotelRating,

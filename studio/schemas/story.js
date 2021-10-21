@@ -14,6 +14,7 @@ const Story = {
 			validation: (Rule) =>
 				Rule.required().max(100).warning("Shorter titles are usually better"),
 		},
+		
 		{
 			name: "slug",
 			title: "Slug",
@@ -34,6 +35,12 @@ const Story = {
 				hotspot: true,
 			},
 		},
+		{
+			name: "mainImageGallery",
+			title: "Main image Gallery",
+			description:"These images will appear beside the made image (4 images required)",
+			type: "mainImageGallery",
+		},
 
 		{
 			name: "publishedAt",
@@ -44,7 +51,7 @@ const Story = {
 				calendarTodayLabel: "Today",
 			},
 		},
-        {
+		{
 			name: "address",
 			type: "string",
 			title: "Category or Type (Story/Guide)",
@@ -59,6 +66,7 @@ const Story = {
 		{
 			name: "gallery",
 			type: "gallery",
+			description:"Add photos for the gallery (optional)"
 		},
 	],
 
