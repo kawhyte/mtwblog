@@ -3,8 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { imageBuilder } from "../lib/sanity";
 import cn from "classnames";
-import StarRating from "./star-rating";
-import { add } from "date-fns";
 
 function StorySection(props) {
 	return (
