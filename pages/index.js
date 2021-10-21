@@ -1,20 +1,16 @@
-import Container from "../components/container";
 import Section from "../components/section";
 import StorySection from "../components/story-section";
 import Welcome from "../components/welcome";
-import MoreStories from "../components/more-stories";
+
 import HeroPost from "../components/hero-post";
 import Hero from "../components/hero";
-import Info from "../components/info-section";
-import Intro from "../components/intro";
+
 import Layout from "../components/layout";
 import { getAllPostsForHome, getAllStoriesForHome } from "../lib/api";
 import Head from "next/head";
 import { CMS_NAME } from "../lib/constants";
 import Link from "next/link";
 import Categories from "../components/categories";
-import Navbar from "../components/navbar";
-import SectionSeparator from "../components/section-separator";
 
 export default function Index({ allPosts, allStories, preview }) {
 	const mergedArray = [...allPosts, ...allStories];
@@ -29,7 +25,7 @@ export default function Index({ allPosts, allStories, preview }) {
 	const morePosts = allPosts.slice(1, 7);
 	const moreStories = allStories.slice(0, 7);
 
-	console.log("ALL mergedArray[0] ", mergedArray);
+	//console.log("ALL mergedArray[0] ", mergedArray);
 	// console.log("ALL moreStories ", moreStories)
 
 	return (
