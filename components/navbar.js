@@ -23,8 +23,8 @@ const navigation = [
 	{
 		name: "Food Reviews",
 		href: "/food",
-		icon: "/icon/food.svg",
-		text: "Plane icon",
+		icon: "/icon/food2.svg",
+		text: "Food icon",
 		current: false,
 	},
 	{
@@ -81,8 +81,8 @@ export default function Nav({ color, bgColor }) {
 												className='rounded-xl '
 												src='/icon/icon.jpg'
 												alt='MTW icon'
-												width={40}
-												height={40}
+												width={45}
+												height={45}
 											/>
 											
 										</div>
@@ -133,11 +133,11 @@ export default function Nav({ color, bgColor }) {
 															className=''
 															src={item.icon}
 															alt={item.text}
-															width={20}
-															height={20}
+															width={25}
+															height={25}
 														/>
 
-														<span className='mx-1  hover:text-pink-500'>
+														<span className='mx-1 ml-2  hover:text-pink-500'>
 															{item.name}
 														</span>
 													</button>
