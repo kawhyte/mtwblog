@@ -57,9 +57,9 @@ const category = [
 function Categories() {
 	return (
 		<>
-			<section className='text-gray-600  mt-2 '>
+			<section className='text-gray-600  mt-2 bg-green-50 '>
 				<div className='container px-5 py-10 mx-auto '>
-					<div className='flex flex-wrap w-full mb-10'>
+					<div className='flex flex-wrap w-full mb-10 '>
 						<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
 							<h1 className='font-fancy  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
 								Browse by Category

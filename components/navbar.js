@@ -10,7 +10,7 @@ const navigation = [
 		name: "All Reviews",
 		href: "/allreviews",
 		icon: "/icon/walk.svg",
-		text: "Hotel icon",
+		text: "Man walking",
 		current: false,
 	},
 	{
@@ -31,7 +31,7 @@ const navigation = [
 		name: "Stories/Guides",
 		href: "/story",
 		icon: "/icon/book.svg",
-		text: "Walking icon",
+		text: "Book icon",
 		current: false,
 	},
 	// {
@@ -55,7 +55,7 @@ export default function Nav({ color, bgColor }) {
 		<Disclosure
 			as='nav'
 			className={
-				" top-0 z-30 mx-auto h-[72px] w-full absolute  mt-5 backdrop-blur-sm max-w-8xl xl:px-8 firefox:bg-opacity-90  " +
+				" top-0 z-30 mx-auto h-[72px] bg-transparent w-full absolute  mt-5 backdrop-blur-sm max-w-8xl xl:px-8 firefox:bg-opacity-90  " +
 				bg
 			}>
 			{({ open }) => (

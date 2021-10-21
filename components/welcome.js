@@ -4,7 +4,7 @@ import React from "react";
 function Welcome() {
 	return (
 		<div className=''>
-			<section className='text-gray-600 body-font bg-green-50'>
+			<section className='text-gray-600 body-font '>
 				<div className='container px-5 py-2 md:py-6 mx-auto'>
 					<div className=' flex flex-col py-12 text-center w-full '>
 					
