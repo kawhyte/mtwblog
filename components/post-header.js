@@ -24,7 +24,7 @@ export default function PostHeader({
 	roomType = "King bedroom",
 }) {
 	//ratingType = post?.rating;
-	 console.log("Gallery",gallery[2])
+	 //console.log("Gallery",gallery[2])
 
 	//console.log("Post-head ratingType ", rating);
 	// console.log("Post-head linkType ", linkType);
