@@ -67,7 +67,7 @@ export default function Index({ allPosts, allStories, preview }) {
 											aria-label='Justify'
 											type='button'
 											className='py-2 px-4 cursor-pointer hover:text-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-pink-600 w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
-											All Reviews <span className="ml-2"> &gt;</span> 
+											All Reviews 
 										</div>
 									</Link>
 								</div>
@@ -97,7 +97,7 @@ export default function Index({ allPosts, allStories, preview }) {
 										aria-label='Justify'
 										type='button'
 										className='py-2 px-4 cursor-pointer hover:text-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-pink-600 w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
-										All Stories & Guides<span className="ml-2"> &gt;</span>
+										All Stories & Guides
 									</div>
 									
 								</Link>
