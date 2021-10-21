@@ -39,6 +39,13 @@ const Post = {
 				hotspot: true,
 			},
 		},
+		{
+			name: "mainImageGallery",
+			title: "Main image Gallery",
+			description:"These images will appear beside the main image (4 images suggested)",
+			type: "mainImageGallery",
+			
+		},
 
 		{
 			title: "Select the type of review (Hotel or Food)",

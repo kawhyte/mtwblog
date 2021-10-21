@@ -24,7 +24,7 @@ export default function PostHeader({
 	roomType = "King bedroom",
 }) {
 	//ratingType = post?.rating;
-	// console.log("roomType",roomType)
+	 console.log("Gallery",gallery[2])
 
 	//console.log("Post-head ratingType ", rating);
 	// console.log("Post-head linkType ", linkType);
@@ -32,6 +32,15 @@ export default function PostHeader({
 	// if (post?.linkType === "food") {
 	// 	ratingType = post?.foodRating;
 	// }
+
+	const photodefault= {
+		"_key": "d6dfccca542b",
+		"_type": "galaryImage",
+		"asset": {
+			"_ref": "image-6221448f03b5658a07088aa0af23b8e75ad2e8e6-3024x4032-jpg",
+			"_type": "reference"
+		}
+	}
 
 	return (
 		<>
@@ -86,7 +95,7 @@ export default function PostHeader({
 								<Image
 									width={1240}
 									height={770}
-									blurDataURL={imageBuilder(gallery[3])
+									blurDataURL={imageBuilder(gallery[3] ? gallery[3]:photodefault)
 										.width(1240)
 										.height(740)
 										.quality(1)
@@ -95,7 +104,7 @@ export default function PostHeader({
 									placeholder='blur'
 									alt={`Cover Image for ${title}`}
 									className=' block '
-									src={imageBuilder(gallery[3])
+									src={imageBuilder(gallery[3] ? gallery[3]:photodefault)
 										.width(1240)
 										.height(740)
 										.format("webp")
@@ -106,7 +115,7 @@ export default function PostHeader({
 								<Image
 									width={1240}
 									height={770}
-									blurDataURL={imageBuilder(gallery[2])
+									blurDataURL={imageBuilder(gallery[2] ? gallery[2]:photodefault)
 										.width(1240)
 										.height(740)
 										.quality(1)
@@ -115,7 +124,7 @@ export default function PostHeader({
 									placeholder='blur'
 									alt={`Cover Image for ${title}`}
 									className='  block rounded-tr-2xl'
-									src={imageBuilder(gallery[2])
+									src={imageBuilder(gallery[2] ? gallery[2]:photodefault)
 										.width(1240)
 										.height(740)
 										.format("webp")
@@ -126,7 +135,7 @@ export default function PostHeader({
 								<Image
 									width={1240}
 									height={770}
-									blurDataURL={imageBuilder(gallery[1])
+									blurDataURL={imageBuilder(gallery[1] ? gallery[1]:photodefault)
 										.width(1240)
 										.height(740)
 										.quality(1)
@@ -135,7 +144,7 @@ export default function PostHeader({
 									placeholder='blur'
 									alt={`Cover Image for ${title}`}
 									className=' block '
-									src={imageBuilder(gallery[1])
+									src={imageBuilder(gallery[1] ? gallery[1]:photodefault)
 										.width(1240)
 										.height(740)
 										.format("webp")
@@ -152,7 +161,7 @@ export default function PostHeader({
 								<Image
 									width={1240}
 									height={770}
-									blurDataURL={imageBuilder(gallery[0])
+									blurDataURL={imageBuilder(gallery[0]? gallery[0]:photodefault)
 										.width(1240)
 										.height(740)
 										.quality(1)
@@ -161,7 +170,7 @@ export default function PostHeader({
 									placeholder='blur'
 									alt={`Cover Image for ${title}`}
 									className='  block rounded-br-2xl'
-									src={imageBuilder(gallery[0])
+									src={imageBuilder(gallery[0] ? gallery[0]:photodefault)
 										.width(1240)
 										.height(740)
 										.format("webp")

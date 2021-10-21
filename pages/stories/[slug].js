@@ -64,7 +64,8 @@ export default function Post({ post, morePosts, preview }) {
 								address={post.address}
 								
 								
-								gallery={post.gallery.images}
+								//gallery={post.gallery.images}
+								gallery={post.mainImageGallery.images}
 							/>
 							<BodySectionSeparator />
 

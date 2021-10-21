@@ -38,8 +38,9 @@ const Story = {
 		{
 			name: "mainImageGallery",
 			title: "Main image Gallery",
-			description:"These images will appear beside the made image (4 images required)",
+			description:"These images will appear beside the main image (4 images suggested)",
 			type: "mainImageGallery",
+			
 		},
 
 		{
