@@ -15,7 +15,7 @@ const category = [
 		name: "Hotel Reviews",
 		href: "/hotel",
 		image:
-			"https://res.cloudinary.com/babyhulk/image/upload/v1622066371/project/Main.webp ",
+			"https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_238/v1621897965/project/IMG_20180904_001734.webp",
 		text: "City skyline",
 		alt: "City skyline",
 	},
