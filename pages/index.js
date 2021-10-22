@@ -53,7 +53,7 @@ export default function Index({ allPosts, allStories, preview }) {
 					/>
 				)}
 				<div className='bg-gray-100 py-8'>
-					<div className='container mx-auto'>
+				
 						{morePosts.length > 0 ? (
 							<div className='mx-4 flex  justify-between    w-full mb-10'>
 								<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
@@ -68,7 +68,7 @@ export default function Index({ allPosts, allStories, preview }) {
 										<div
 											aria-label='Justify'
 											type='button'
-											className='py-2 px-4 cursor-pointer hover:text-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-pink-600 w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
+											className='py-2 px-4 cursor-pointer hover:text-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-blue-500 w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
 											All Reviews 
 										</div>
 									</Link>
@@ -80,10 +80,10 @@ export default function Index({ allPosts, allStories, preview }) {
 						{morePosts.length > 0 && <Section posts={morePosts} />}
 						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 					</div>
-				</div>
+				
 
 				<div className='bg-green-50 py-8 my-4'>
-					<div className='container mx-auto'>
+				
 						{moreStories.length > 0 ? (
 							<div className='mx-4 flex justify-between   w-full mb-10 '>
 								<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
@@ -98,7 +98,7 @@ export default function Index({ allPosts, allStories, preview }) {
 									<div
 										aria-label='Justify'
 										type='button'
-										className='py-2 px-4 cursor-pointer hover:text-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-pink-600 w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
+										className='py-2 px-4 cursor-pointer hover:text-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-blue-500 w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
 										All Stories & Guides
 									</div>
 									
@@ -113,7 +113,7 @@ export default function Index({ allPosts, allStories, preview }) {
 						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 				
 					</div>
-				</div>
+				
 				</Container>
 			</Layout>
 		</>

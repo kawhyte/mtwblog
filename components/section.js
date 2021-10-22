@@ -50,7 +50,7 @@ function Section(props) {
 								{item.address ? item.address : "No address provided"}{" "}
 								<span className='p-2'>|</span>
 								<Link as={`/posts/${item.slug}`} href='/posts/[slug]'>
-									<a className='text-green-800 bg-white inline-flex items-center mt-1'>
+									<a className='text-blue-500  inline-flex items-center mt-1'>
 										View Review
 										<svg
 											fill='none'
