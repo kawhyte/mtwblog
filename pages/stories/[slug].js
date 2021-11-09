@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
 import PostBody from "../../components/post-body";
+import ShareButtons from "../../components/share-buttons";
 import MoreStories from "../../components/more-stories";
 import Header from "../../components/header";
 import PostHeader from "../../components/post-header";
@@ -25,6 +26,7 @@ export default function Post({ post, morePosts, preview }) {
 		return <ErrorPage statusCode={404} />;
 	}
 
+	let shareURL = `https://www.meetthewhytes.com/stories/${post.slug}`
 	//let ratingType = post?.hotelRating;
 
 
@@ -68,7 +70,7 @@ export default function Post({ post, morePosts, preview }) {
 								gallery={post.mainImageGallery.images}
 							/>
 							<BodySectionSeparator />
-
+							<ShareButtons shareURL ={shareURL}></ShareButtons>
 							<PostBody content={post.body} />
 					
 

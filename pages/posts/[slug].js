@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
 import PostBody from "../../components/post-body";
+import ShareButtons from "../../components/share-buttons";
 import MoreStories from "../../components/more-stories";
 import Header from "../../components/header";
 import PostHeader from "../../components/post-header";
@@ -18,6 +19,21 @@ import ProConList from "../../components/pro-con-list";
 import Gallery from "../../components/gallery";
 import ReactPlayer from "react-player/youtube";
 
+import {
+	EmailShareButton,
+	EmailIcon,
+	FacebookShareButton,
+	FacebookIcon,
+
+	PinterestShareButton,
+	PinterestIcon,
+
+	TwitterShareButton,
+	TwitterIcon,
+
+  } from "react-share";
+
+
 export default function Post({ post, morePosts, preview }) {
 	const router = useRouter();
 	if (!router.isFallback && !post?.slug) {
@@ -25,8 +41,8 @@ export default function Post({ post, morePosts, preview }) {
 	}
 
 	let ratingType = post?.hotelRating;
-
-	//console.log("SLUG Post", post);
+let shareURL = `https://www.meetthewhytes.com/posts/${post.slug}`
+	// console.log("SLUG Post", post);
 	// console.log("SLUG post.title ", post.title);
 	 //console.log("SLUD linkType ", post.linkType);
 	// console.log("SLUD post?.foodRating ", post?.foodRating);
@@ -52,6 +68,7 @@ export default function Post({ post, morePosts, preview }) {
 								<meta name='description' content={post.title} />
 								<meta property='og:title' content={post.title} key='title' />
 							</Head>
+							
 							<PostHeader
 								title={post.title}
 								coverImage={post.coverImage}
@@ -68,6 +85,8 @@ export default function Post({ post, morePosts, preview }) {
 								//gallery={post.mainImageGallery.images}
 							/>
 							<BodySectionSeparator />
+
+							<ShareButtons shareURL ={shareURL}></ShareButtons>
 
 							<PostBody content={post.body} />
 							<ProConList
@@ -120,6 +139,8 @@ export default function Post({ post, morePosts, preview }) {
 							)}
 						</article>
 						<SectionSeparator />
+
+					
 						<Comments comments={post.comments} />
 						<Form _id={post._id} />
 
