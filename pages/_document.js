@@ -11,6 +11,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
       <Head>
+      <link rel="manifest" href="/manifest.json" />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
