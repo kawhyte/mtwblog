@@ -8,12 +8,12 @@ import { add } from "date-fns";
 
 function Section(props) {
 	return (
-	
-		<div className='mx-20 grid grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3'>
+	<div className="flex justify-center px-4"> 
+		<div className=' grid grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 '>
 			{props.posts.map((item) => {
 				return (
 					<div key={item.slug}>
-						<section className='text-gray-600 body-font mb-10'>
+						<section className='text-gray-600 body-font mb-10 '>
 							<div className='rounded-xl h-full'>
 								{item.slug ? (
 									<Link as={`/posts/${item.slug}`} href='/posts/[slug]'>
@@ -70,7 +70,7 @@ function Section(props) {
 				);
 			})}
 		</div>
-		
+		</div>
 	);
 
 	{

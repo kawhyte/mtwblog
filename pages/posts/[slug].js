@@ -19,19 +19,7 @@ import ProConList from "../../components/pro-con-list";
 import Gallery from "../../components/gallery";
 import ReactPlayer from "react-player/youtube";
 
-import {
-	EmailShareButton,
-	EmailIcon,
-	FacebookShareButton,
-	FacebookIcon,
 
-	PinterestShareButton,
-	PinterestIcon,
-
-	TwitterShareButton,
-	TwitterIcon,
-
-  } from "react-share";
 
 
 export default function Post({ post, morePosts, preview }) {

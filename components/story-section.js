@@ -6,7 +6,8 @@ import cn from "classnames";
 
 function StorySection(props) {
 	return (
-		<div className='mx-20 grid grid-cols-1 gap-4 lg:gap-8  sm:grid-cols-2 grid-rows-1 md:grid-cols-2  lg:grid-cols-3   '>
+		<div className="flex justify-center px-4"> 
+		<div className='grid grid-cols-1 gap-4 lg:gap-8  sm:grid-cols-2 grid-rows-1 md:grid-cols-2  lg:grid-cols-3   '>
 			{props.stories.map((item) => {
 				return (
 					<div key={item.slug}>
@@ -66,6 +67,7 @@ function StorySection(props) {
 					</div>
 				);
 			})}
+		</div>
 		</div>
 	);
 
