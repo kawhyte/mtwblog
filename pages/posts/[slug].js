@@ -41,7 +41,7 @@ export default function Post({ post, morePosts, preview }) {
 	}
 
 	let ratingType = post?.hotelRating;
-let shareURL = `https://www.meetthewhytes.com/posts/${post.slug}`
+let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`
 	// console.log("SLUG Post", post);
 	// console.log("SLUG post.title ", post.title);
 	 //console.log("SLUD linkType ", post.linkType);
