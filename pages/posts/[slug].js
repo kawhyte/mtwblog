@@ -72,9 +72,9 @@ let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`
 								gallery={post?.mainImageGallery?.images || post.gallery.images}
 								//gallery={post.mainImageGallery.images}
 							/>
+							<ShareButtons shareURL ={shareURL}></ShareButtons>
 							<BodySectionSeparator />
 
-							<ShareButtons shareURL ={shareURL}></ShareButtons>
 
 							<PostBody content={post.body} />
 							<ProConList

@@ -20,24 +20,14 @@ import Gallery from "../../components/gallery";
 import ReactPlayer from "react-player/youtube";
 
 export default function Post({ post, morePosts, preview }) {
-    //console.log("SLUG Stories ", post);
+	//console.log("SLUG Stories ", post);
 	const router = useRouter();
 	if (!router.isFallback && !post?.slug) {
 		return <ErrorPage statusCode={404} />;
 	}
 
 	let shareURL = `https://www.meetthewhytes.com/stories/${post?.slug}`
-	//let ratingType = post?.hotelRating;
-
-
-	// console.log("SLUG post.title ", post.title);
-	 //console.log("SLUD linkType ", post.linkType);
-	// console.log("SLUD post?.foodRating ", post?.foodRating);
-	// console.log("SLUD post?.hotelRating ", post?.hotelRating);
-
-	// if (post?.linkType === "food") {
-	// 	ratingType = post?.foodRating;
-	// }
+	
 
 	return (
 		<Layout preview={preview} color={true} bgColor={true}>
@@ -64,15 +54,12 @@ export default function Post({ post, morePosts, preview }) {
 								//amenities={post.amenities}
 								//videoUrl={post.videoUrl}
 								address={post.address}
-								
-								
 								//gallery={post.gallery.images}
 								gallery={post.mainImageGallery.images}
 							/>
+							<ShareButtons shareURL={shareURL}></ShareButtons>
 							<BodySectionSeparator />
-							<ShareButtons shareURL ={shareURL}></ShareButtons>
 							<PostBody content={post.body} />
-					
 
 							{/* post.videoUrl && 	<div className=' aspect-w-16 aspect-h-9 mb-16'>
 						
