@@ -44,6 +44,7 @@ export default function PostHeader({
 
 	return (
 		<>
+		<div className="flex md:flex-col flex-col-reverse"> 
 			<div className='mb-8 md:mb-4 -mx-5 sm:mx-0 z-50'>
 				<PostTitle>{title}</PostTitle>
 
@@ -181,6 +182,7 @@ export default function PostHeader({
 					</div>
 				</div>
 			</section>
+			</div>
 
 			{/*<div className="flex">
 			<div className='mb-8 md:mb-8 -mx-5 sm:mx-0'>
