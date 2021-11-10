@@ -14,7 +14,6 @@ Travel blog reviewing food, hotels and interesting locations.
 This blog with created with [Next.js](https://nextjs.org), [Sanity.io](https://www.sanity.io), and [Vercel](https://vercel.com).
 
 
-
 ## Demo
 
 https://www.meetthewhytes.com/
