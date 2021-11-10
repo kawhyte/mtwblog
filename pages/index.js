@@ -20,6 +20,7 @@ export default function Index({ allPosts, allStories, preview }) {
 
 	// 	return new Date(b.date) - new Date(a.date);
 	//   });
+	
 
 	//const heroPost = allPosts[0];
 	const heroPost = mergedArray[0];
@@ -82,7 +83,7 @@ export default function Index({ allPosts, allStories, preview }) {
 					</div>
 				
 
-				<div className='bg-green-50 py-8 '>
+				<div className='py-8 '>
 				
 						{moreStories.length > 0 ? (
 							<div className='mx-4 flex flex-col md:flex-row  justify-between  w-full mb-10 '>
