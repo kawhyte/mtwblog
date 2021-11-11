@@ -16,17 +16,18 @@ function Hero() {
 						alt='poster photo'
 					/>
 				</div>
-				{/*<video
+				<video
 					autoPlay
 					loop
 					muted
 					className=' hidden md:block absolute h-full w-full object-cover'>
 					Your browser does not support the video tag.
 					<source
-						src='https://dl.dropboxusercontent.com/s/0c76v5mrs9duv12/MTW-video.mp4'
+						// src='https://dl.dropboxusercontent.com/s/0c76v5mrs9duv12/MTW-video.mp4'
+						src='/hero_720p.mp4'
 						type='video/mp4'
 					/>
-				</video>*/}
+				</video>
 
 				<div className='inset-0 bg-black opacity-40  absolute'></div>
 				<header className='absolute top-0 left-0 right-0 z-20'></header>
