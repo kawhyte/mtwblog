@@ -19,9 +19,6 @@ import ProConList from "../../components/pro-con-list";
 import Gallery from "../../components/gallery";
 import ReactPlayer from "react-player/youtube";
 
-
-
-
 export default function Post({ post, morePosts, preview }) {
 	const router = useRouter();
 	if (!router.isFallback && !post?.slug) {
@@ -29,10 +26,10 @@ export default function Post({ post, morePosts, preview }) {
 	}
 
 	let ratingType = post?.hotelRating;
-let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`
+	let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`;
 	// console.log("SLUG Post", post);
 	// console.log("SLUG post.title ", post.title);
-	 //console.log("SLUD linkType ", post.linkType);
+	//console.log("SLUD linkType ", post.linkType);
 	// console.log("SLUD post?.foodRating ", post?.foodRating);
 	// console.log("SLUD post?.hotelRating ", post?.hotelRating);
 
@@ -56,7 +53,7 @@ let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`
 								<meta name='description' content={post.title} />
 								<meta property='og:title' content={post.title} key='title' />
 							</Head>
-							
+
 							<PostHeader
 								title={post.title}
 								coverImage={post.coverImage}
@@ -68,13 +65,12 @@ let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`
 								address={post.address}
 								rating={ratingType}
 								roomType={post.roomType}
-								linkType={post.linkType} 
+								linkType={post.linkType}
 								gallery={post?.mainImageGallery?.images || post.gallery.images}
 								//gallery={post.mainImageGallery.images}
 							/>
-							<ShareButtons shareURL ={shareURL}></ShareButtons>
+							<ShareButtons shareURL={shareURL}></ShareButtons>
 							<BodySectionSeparator />
-
 
 							<PostBody content={post.body} />
 							<ProConList
@@ -128,7 +124,6 @@ let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`
 						</article>
 						<SectionSeparator />
 
-					
 						<Comments comments={post.comments} />
 						<Form _id={post._id} />
 
@@ -149,7 +144,7 @@ export async function getStaticProps({ params, preview = false }) {
 			post: data?.post || null,
 			morePosts: data?.morePosts || null,
 		},
-		revalidate: 1,
+		revalidate: 10,
 	};
 }
 

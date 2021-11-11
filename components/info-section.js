@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./navbar3";
 import Image from "next/image";
 
 function Hero() {

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
 import Masonry from "react-masonry-css";
 import { imageBuilder } from "../lib/sanity";
 import { getImageDimensions } from "@sanity/asset-utils";
@@ -15,25 +14,7 @@ const breakpointColumnsObj = {
 };
 
 function Gallery({ posts, heading }) {
-	//let valuesArray = Object.values(posts.gallery.images);
 
-	//console.log("OBJECT2 ",valuesArray);
-	// console.log("Pages2 ",getImageDimensions( posts.gallery.images[0]) );
-	// const image = (
-	// 	<img
-	// 		width={1240}
-	// 		height={540}
-	// 		alt={`Cover Image for`}
-	// 		className={cn("shadow-small", {
-	// 			"hover:shadow-medium transition-shadow duration-200": "test",
-	// 		})}
-	// 		src={imageBuilder(posts.gallery.images[0])
-	// 			.width(1240)
-	// 			.height(540)
-	// 			.format("webp")
-	// 			.url()}
-	// 	/>
-	//);
 	return (
 		<section className='body-font'>
 			<div className='container px-5 mx-auto'>

@@ -3,7 +3,7 @@ import Section from "../components/section";
 import ReviewHeader from "../components/review-header";
 import MoreStories from "../components/more-stories";
 import Layout from "../components/layout";
-import { getAllPostsForHome,getAllPostsForCategory,getAllPostsForNewCategory } from "../lib/api";
+import { getAllPostsForNewCategory } from "../lib/api";
 import Head from "next/head";
 import { CMS_NAME, HOTEL } from "../lib/constants";
 
@@ -42,7 +42,7 @@ export async function getStaticProps({ preview = false }) {
 	const allPosts = await getAllPostsForNewCategory(preview, "hotel");
 	return {
 		props: { allPosts, preview },
-		revalidate: 1,
+		revalidate: 10,
 	};
 }
 

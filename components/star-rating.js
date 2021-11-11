@@ -1,7 +1,6 @@
 import React from "react";
 import { ratingItem } from "../lib/getReviewType";
 import { calculateRating } from "../lib/calculateRating";
-import Stars from "./stars";
 import Image from "next/image";
 import ProgressRating from "./progress-rating";
 
@@ -75,22 +74,7 @@ const StarRating = ({ rating, linkType }) => {
 						);
 					})}
 
-					{/*amenities && (
-						<div className='md:mb-4 mb-6'>
-							{amenities &&
-								amenities.map((item) => (
-									<div
-										key={item._key}
-										className='flex flex-row justify-items-center items-center align-middle '>
-										<Stars
-											stars={Math.floor(item?.amenitiesRating)}
-											isFraction={item?.amenitiesRating % 1 > 0 ? true : false}
-										/>
-										<p className='mx-6 my-1'>{item.title}</p>
-									</div>
-								))}
-						</div>
-								)*/}
+			
 				</div>
 			</div>
 		</>

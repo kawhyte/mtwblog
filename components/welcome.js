@@ -1,6 +1,6 @@
 import React from "react";
 
-// #3aa141
+
 function Welcome() {
 	return (
 		<div className=''>

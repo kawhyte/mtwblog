@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./navbar3";
 import Image from "next/image";
 
 function Hero() {
@@ -14,7 +13,6 @@ function Hero() {
 						aria-label='Justify'
 						layout='fill'
 						alt='poster photo'
-						
 					/>
 				</div>
 				<video
@@ -27,7 +25,6 @@ function Hero() {
 						src='https://dl.dropboxusercontent.com/s/0c76v5mrs9duv12/MTW-video.mp4'
 						type='video/mp4'
 					/>
-				
 				</video>
 
 				<div className='inset-0 bg-black opacity-40  absolute'></div>
@@ -52,11 +49,3 @@ function Hero() {
 }
 
 export default Hero;
-
-// <Image
-
-// src='https://res.cloudinary.com/babyhulk/image/upload/v1624648198/hero-image/PXL_20210613_032035183.MP.webp'
-// className=' block absolute md:hidden h-full w-full object-cover'
-// aria-label='Justify'
-// layout='fill'
-// />

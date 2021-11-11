@@ -21,7 +21,6 @@ export default function CoverImage({ title, url, imageObject, slug }) {
     />
   )
 
-  //console.log("imageObject ", imageObject)
 
   return (
     <div className="mx-2 sm:mx-0 ">

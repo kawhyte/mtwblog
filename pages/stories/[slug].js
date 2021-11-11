@@ -15,7 +15,6 @@ import PostTitle from "../../components/post-title";
 import Head from "next/head";
 import { CMS_NAME } from "../../lib/constants";
 import Form from "../../components/form";
-import ProConList from "../../components/pro-con-list";
 import Gallery from "../../components/gallery";
 import ReactPlayer from "react-player/youtube";
 
@@ -125,7 +124,7 @@ export async function getStaticProps({ params, preview = false }) {
 			post: data?.post || null,
 			morePosts: data?.morePosts || null,
 		},
-		revalidate: 1,
+		revalidate: 10,
 	};
 }
 

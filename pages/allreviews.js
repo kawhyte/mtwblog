@@ -1,10 +1,5 @@
 import Container from "../components/container";
 import Section from "../components/section";
-import Welcome from "../components/welcome";
-import MoreStories from "../components/more-stories";
-import HeroPost from "../components/hero-post";
-import Hero from "../components/hero";
-import Intro from "../components/intro";
 import Layout from "../components/layout";
 import ReviewHeader from "../components/review-header";
 import { getAllPostsForHome } from "../lib/api";
@@ -43,7 +38,7 @@ export async function getStaticProps({ preview = false }) {
 	const allPosts = await getAllPostsForHome(preview);
 	return {
 		props: { allPosts, preview },
-		revalidate: 1,
+		revalidate: 10,
 	};
 }
 
