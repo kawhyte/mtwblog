@@ -46,7 +46,7 @@ function Section(props) {
 								{item.title}
 							</h2>
 							<p className='text-base leading-relaxed mt-2'>{item.excerpt}</p>
-							<div className=' text-gray-500 block   mb-2  text-lg'>
+							<div className=' text-pink-500 block   mb-2  text-lg'>
 								{item.address ? item.address : "No address provided"}{" "}
 								<span className='p-2'>|</span>
 								<Link as={`/posts/${item.slug}`} href='/posts/[slug]'>

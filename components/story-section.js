@@ -44,7 +44,7 @@ function StorySection(props) {
 								{item.title}
 							</h2>
 							<p className='text-base leading-relaxed mt-2'>{item.excerpt}</p>
-							<div className=' text-gray-500 block   mb-2  text-lg'>
+							<div className=' text-pink-500 block   mb-2  text-lg'>
                             {item.address ? item.address : "No category provided"}{" "}
                             <span className='p-2'>|</span>
 								<Link as={`/stories/${item.slug}`} href='/stories/[slug]'>
