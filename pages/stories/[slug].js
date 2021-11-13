@@ -46,6 +46,7 @@ export default function Post({ post, morePosts, preview }) {
 							</Head>
 							<PostHeader
 								title={post.title}
+								shareURL = {shareURL}
 								coverImage={post.coverImage}
 								date={post.date}
 								//author={post.author}

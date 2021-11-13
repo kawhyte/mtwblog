@@ -1,29 +1,40 @@
 import React from "react";
 import {
 	EmailShareButton,
-	EmailIcon,
 	FacebookShareButton,
-	FacebookIcon,
-	PinterestShareButton,
-	PinterestIcon,
+	LinkedinShareButton,
 	TwitterShareButton,
-	TwitterIcon,
 } from "react-share";
 
+import {
+	FaTwitter,
+	FaLinkedin,
+	FaFacebook,
+	FaEnvelopeOpenText,
+	
+} from "react-icons/fa";
+
+const iconCSS = "text-pink-500 h-8 w-7 hover:text-blue-600 fill-current";
+const buttonCSS = "mr-5 bg-red-200 p-10 ";
 function shareButtons({ shareURL }) {
 	return (
-		<div className='flex flex-row  '>
-			<FacebookShareButton url={shareURL} className='mx-4'>
-				<FacebookIcon round size={40}></FacebookIcon>
-			</FacebookShareButton>
+		<div className='flex flex-col my-6 mx-6   '>
 
-			<TwitterShareButton url={shareURL} className='mx-4'>
-				<TwitterIcon round size={40}></TwitterIcon>
-			</TwitterShareButton>
+			<div className='  mx-4  flex align-middle justify-center md:justify-start'>
+				<TwitterShareButton url={shareURL} className={buttonCSS}>
+					<FaTwitter className={iconCSS} />
+				</TwitterShareButton>
+				<LinkedinShareButton url={shareURL} className={buttonCSS}>
+					<FaLinkedin className={iconCSS} />
+				</LinkedinShareButton>
+				<FacebookShareButton url={shareURL} className={buttonCSS}>
+					<FaFacebook className={iconCSS} />
+				</FacebookShareButton>
 
-			<EmailShareButton url={shareURL} className='mx-4'>
-				<EmailIcon round size={40}></EmailIcon>
-			</EmailShareButton>
+				<EmailShareButton url={shareURL} className={buttonCSS}>
+					<FaEnvelopeOpenText className={iconCSS} />
+				</EmailShareButton>
+			</div>
 		</div>
 	);
 }

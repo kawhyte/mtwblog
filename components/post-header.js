@@ -3,9 +3,11 @@ import PostTitle from "../components/post-title";
 import Image from "next/image";
 import { imageBuilder } from "../lib/sanity";
 import StarRating from "./star-rating";
+import ShareButtons from "../components/share-buttons";
 
 export default function PostHeader({
 	title,
+	shareURL,
 	categories,
 	coverImage,
 	date,
@@ -40,24 +42,30 @@ export default function PostHeader({
 
 	return (
 		<>
-			<div className='flex md:flex-col flex-col-reverse'>
-				<div className='mb-8 md:mb-4 -mx-5 sm:mx-0 z-50'>
+			<div className='flex md:flex-col flex-col'>
+				<div className='md:mb-4 -mx-5 sm:mx-0 z-50'>
 					<PostTitle>{title}</PostTitle>
 
-					<p className='text-gray-900 font-medium md:text-sm p-1 text-center md:text-left '>
-						<span className='text-lg'>
-							{address ? address : "No address provided"}{" "}
-						</span>
-						|{" "}
-						<span className='ml-1 text-gray-700 font-medium text-lg'>
-							Visited <Date dateString={date} />
-						</span>
-					</p>
-					{roomType && (
-						<p className=' text-gray-900 font-medium  md:text-lg  text-center md:text-left'>
-							{linkType === "hotel" ? `${roomType || "test"}` : ""}{" "}
-						</p>
-					)}
+					<div className='flex flex-col justify-start align-middle md:flex-row'>
+						<div>
+							<p className='text-gray-900 font-medium md:text-sm p-1 text-center md:text-left '>
+								<span className='text-lg'>
+									{address ? address : "No address provided"}{" "}
+								</span>
+								|{" "}
+								<span className='ml-1 text-gray-900 font-medium text-lg'>
+									Visited <Date dateString={date} />
+								</span>
+							</p>
+							{roomType && (
+								<p className=' text-gray-900 font-medium  md:text-lg  text-center md:text-left'>
+									{linkType === "hotel" ? `${roomType || "test"}` : ""}{" "}
+								</p>
+							)}
+						</div>
+
+						<ShareButtons shareURL={shareURL}></ShareButtons>
+					</div>
 				</div>
 
 				{/*<CoverImage title={title} imageObject={coverImage} url={coverImage} />*/}

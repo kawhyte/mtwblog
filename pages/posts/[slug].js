@@ -56,6 +56,7 @@ export default function Post({ post, morePosts, preview }) {
 
 							<PostHeader
 								title={post.title}
+								shareURL = {shareURL}
 								coverImage={post.coverImage}
 								date={post.date}
 								author={post.author}
@@ -69,15 +70,17 @@ export default function Post({ post, morePosts, preview }) {
 								gallery={post?.mainImageGallery?.images || post.gallery.images}
 								//gallery={post.mainImageGallery.images}
 							/>
-							<ShareButtons shareURL={shareURL}></ShareButtons>
-							<BodySectionSeparator />
-
-							<PostBody content={post.body} />
-							<ProConList
+							
+							
+								<ProConList
 								positives={post.positives}
 								negatives={post.negatives}
 								verdict={post.verdict}
 							/>
+							<BodySectionSeparator />
+
+							<PostBody content={post.body} />
+						
 
 							{/* post.videoUrl && 	<div className=' aspect-w-16 aspect-h-9 mb-16'>
 						
