@@ -25,8 +25,7 @@ export default function Post({ post, morePosts, preview }) {
 		return <ErrorPage statusCode={404} />;
 	}
 
-	let shareURL = `https://www.meetthewhytes.com/stories/${post?.slug}`
-	
+	let shareURL = `https://www.meetthewhytes.com/stories/${post?.slug}`;
 
 	return (
 		<Layout preview={preview} color={true} bgColor={true}>
@@ -46,7 +45,7 @@ export default function Post({ post, morePosts, preview }) {
 							</Head>
 							<PostHeader
 								title={post.title}
-								shareURL = {shareURL}
+								shareURL={shareURL}
 								coverImage={post.coverImage}
 								date={post.date}
 								//author={post.author}
