@@ -25,6 +25,8 @@ export default function Post({ post, morePosts, preview }) {
 		return <ErrorPage statusCode={404} />;
 	}
 
+console.log("post", post)
+
 	let ratingType = post?.hotelRating;
 	let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`;
 	// console.log("SLUG Post", post);
@@ -32,7 +34,7 @@ export default function Post({ post, morePosts, preview }) {
 	//console.log("SLUD linkType ", post.linkType);
 	// console.log("SLUD post?.foodRating ", post?.foodRating);
 	// console.log("SLUD post?.hotelRating ", post?.hotelRating);
-
+	
 	if (post?.linkType === "food") {
 		ratingType = post?.foodRating;
 	}
@@ -56,6 +58,7 @@ export default function Post({ post, morePosts, preview }) {
 
 							<PostHeader
 								title={post.title}
+								blurb={post.blurb}
 								shareURL = {shareURL}
 								coverImage={post.coverImage}
 								date={post.date}
@@ -70,6 +73,7 @@ export default function Post({ post, morePosts, preview }) {
 								gallery={post?.mainImageGallery?.images || post.gallery.images}
 								//gallery={post.mainImageGallery.images}
 							/>
+
 							
 							
 								<ProConList

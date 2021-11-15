@@ -4,6 +4,7 @@ import Image from "next/image";
 import { imageBuilder } from "../lib/sanity";
 import StarRating from "./star-rating";
 import ShareButtons from "../components/share-buttons";
+import BodySectionSeparator from "./body-section-separator";
 
 export default function PostHeader({
 	title,
@@ -11,6 +12,7 @@ export default function PostHeader({
 	categories,
 	coverImage,
 	date,
+	blurb,
 	author,
 	amenities,
 	videoUrl,
@@ -195,6 +197,16 @@ export default function PostHeader({
 					</div>
 				</section>
 			</div>
+			{blurb && (
+				<>
+					<div>
+						<p className='max-w-4xl text-justify lg:text-lg mx-4 my-8'>
+							{blurb}
+						</p>
+					</div>
+					<BodySectionSeparator />
+				</>
+			)}
 
 			{rating && (
 				<div className=' block mt-4 text-base mb-6 md:mb-12'>

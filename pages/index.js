@@ -13,7 +13,7 @@ import Container from "../components/container";
 
 export default function Index({ allPosts, allStories, preview }) {
 	const mergedArray = [...allPosts, ...allStories];
-
+ 
 	// .sort(function(a,b){
 
 	// 	return new Date(b.date) - new Date(a.date);
