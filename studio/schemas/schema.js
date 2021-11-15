@@ -12,6 +12,7 @@ import story from "./story";
 import author from "./author";
 import comment from "./comment";
 import verdict from "./verdict";
+import blurb from "./blurb";
 import hotelRating from "./hotelRating";
 import foodRating from "./foodRating";
 import amenities from "./amenities";
@@ -33,12 +34,12 @@ export default createSchema({
 		// in the studio.
 		post,
 		story,
-	
 		author,
 		galaryImage,
 		mainImageGallery,
 		category,
 		verdict,
+		blurb,
 		hotelRating,
 		foodRating,
 		amenities,

@@ -39,6 +39,14 @@ const Post = {
 				hotspot: true,
 			},
 		},
+
+		{
+			name: "blurb",
+			title: "Post Blurb",
+			description: "Add your Blurb/Summary (optional)",
+			//validation: (Rule) => Rule.required(),
+			type: "text",
+		},
 		{
 			name: "mainImageGallery",
 			title: "Main image Gallery",
@@ -149,6 +157,7 @@ const Post = {
 			validation: (Rule) => Rule.required(),
 			type: "text",
 		},
+	
 
 		{
 			name: "body",
