@@ -27,7 +27,7 @@ export default function HeroPost({
 				<div className=' relative '>
 					<MtwAward address={address} date={date} />
 
-					<div className='absolute bottom-0 right-0 mx-2 my-1 flex flex-col justify-start items-start align-middle '>
+					<div className='absolute bottom-0 right-0  mx-6 -my-8 flex flex-col justify-start items-start align-middle '>
 						<p className='mb-2 z-20 md:mb-6 text-lg sm:text-xl md:text-4xl font-bold tracking-tighter leading-tight bg-white px-3 py-2 mx-3 md:mx-0 rounded-lg'>
 							<Link as={`/posts/${slug}`} href='/posts/[slug]'>
 								<a className='hover:underline break-words'>

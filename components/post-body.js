@@ -7,9 +7,7 @@ import ReactPlayer from "react-player/youtube";
 const serializers = {
 	types: {
 		youtube2: ({ node }) => {
-			// console.log(node);
-			// const { url } = node;
-			// const id = getYouTubeId(url);
+			
 			return (
 				<div className='mb-12 md:mb-24 -mx-5 sm:mx-0  bg-indigo-300'>
 					<div className='player-wrapper'>

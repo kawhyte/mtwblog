@@ -2,7 +2,7 @@ import React from "react";
 
 function ProgressRating({ progress }) {
 	
-	//console.log(" value", (progress / 5) * 100);
+	
 	let progressPercentage = (Math.floor(progress) / 5) * 100;
 
 	return (
