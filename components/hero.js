@@ -11,9 +11,11 @@ function Hero() {
 						// src='https://res.cloudinary.com/babyhulk/image/upload/f_auto,q_auto/v1627353251/hero-image/PXL_20210613_032035183.MP_1.webp'
 						src='/hero.webp'
 						className='block absolute  h-full w-full object-cover'
-						aria-label='Justify'
-						layout='fill'
+						
+						layout="fill"
+						sizes="50vw"
 						alt='poster photo'
+						quality={50}
 					/>
 				</div>
 				<video
