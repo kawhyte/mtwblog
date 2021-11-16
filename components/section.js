@@ -34,13 +34,21 @@ function Section(props) {
 													.height(171)
 													.url()}
 											/>
+											<h2 className=' text-xl font-medium title-font text-gray-700 mt-3'>
+											{item.title}
+										</h2>
+										<p className='text-base leading-relaxed mt-2'>{item.excerpt}</p>
+										<div className=' text-pink-500 block   mb-2  text-lg'>
+											{item.address ? item.address : "No address provided"}{" "}
+										</div>
 										</a>
 									</Link>
 								) : (
 									image
 								)}
 							</div>
-							<h2 className=' text-xl font-medium title-font text-gray-700 mt-3'>
+							
+							{/*<h2 className=' text-xl font-medium title-font text-gray-700 mt-3'>
 								{item.title}
 							</h2>
 							<p className='text-base leading-relaxed mt-2'>{item.excerpt}</p>
@@ -62,7 +70,7 @@ function Section(props) {
 										</svg>
 									</a>
 								</Link>
-							</div>
+								</div>*/}
 						</section>
 					</div>
 				);

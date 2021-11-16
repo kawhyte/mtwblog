@@ -44,12 +44,12 @@ export default function Index({ allPosts, allStories, preview }) {
 							excerpt={heroPost.excerpt}
 						/>
 					)}
-					<div className='bg-gray-100 py-8'>
+					<div className='bg-gray-100 rounded-3xl py-8'>
 						{morePosts.length > 0 ? (
 							<div className='mx-4 flex flex-col md:flex-row  justify-between  w-full mb-10'>
 								<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
 									<h1 className='font-fancy  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
-										Reviews
+										Recent Reviews
 									</h1>
 									<div className='h-1 w-20 bg-pink-500 rounded'></div>
 								</div>
@@ -59,7 +59,7 @@ export default function Index({ allPosts, allStories, preview }) {
 										<div
 											aria-label='Justify'
 											type='button'
-											className='py-2 px-4 cursor-pointer bg-white border-2 border-blue-400   hover:text-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-blue-500 md:w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
+											className='py-2 px-4 cursor-pointer bg-pink-500   hover:bg-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-white  md:w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
 											All Reviews
 										</div>
 									</Link>
@@ -72,12 +72,12 @@ export default function Index({ allPosts, allStories, preview }) {
 						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 					</div>
 
-					<div className='py-8 '>
+					<div className=' bg-yellow-50 rounded-3xl py-8 my-10 '>
 						{moreStories.length > 0 ? (
 							<div className='mx-4 flex flex-col md:flex-row  justify-between  w-full mb-10 '>
 								<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
 									<h1 className='font-fancy  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
-										Stories & Guides
+										Recent Stories & Guides
 									</h1>
 									<div className='h-1 w-20 bg-pink-500 rounded'></div>
 								</div>
@@ -87,7 +87,7 @@ export default function Index({ allPosts, allStories, preview }) {
 										<div
 											aria-label='Justify'
 											type='button'
-											className='py-2 px-4 cursor-pointer bg-white border-2 border-blue-400   hover:text-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-blue-500 md:w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
+											className='py-2 px-4 cursor-pointer bg-pink-500   hover:bg-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-white  md:w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
 											All Stories & Guides
 										</div>
 									</Link>
