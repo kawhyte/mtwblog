@@ -83,6 +83,7 @@ function Categories() {
 												className='h-40 cursor-pointer rounded-xl w-full  object-cover object-center mb-6'
 												src={item.image}
 												alt={item.text}
+												quality={50}
 											/>
 										</Link>
 									</div>
