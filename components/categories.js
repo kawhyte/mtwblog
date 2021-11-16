@@ -12,6 +12,7 @@ const category = [
 		// 	"https://res.cloudinary.com/babyhulk/image/upload/v1621897765/project/PXL_20210222_215622925.MP.webp",
 		text: "Hotel icon",
 		alt: "View of mountains",
+		bgcolor :"bg-yellow-50 p-5"
 	},
 	{
 		name: "Hotel Reviews",
@@ -22,6 +23,7 @@ const category = [
 		// 	"https://res.cloudinary.com/babyhulk/image/upload/c_scale,w_880/v1634776268/project/PXL_20210905_004151576.MP.webp",
 		text: "City skyline",
 		alt: "City skyline",
+		bgcolor :"bg-pink-50 p-5"
 	},
 
 	{
@@ -33,6 +35,7 @@ const category = [
 		// 	"https://res.cloudinary.com/babyhulk/image/upload/v1621897187/project/MVIMG_20191203_091517.webp",
 		text: "Hotel icon",
 		alt: "View of Food",
+		bgcolor :"bg-green-50 p-5"
 	},
 	{
 		name: "Stories and Guides",
@@ -43,6 +46,7 @@ const category = [
 		// 	"https://res.cloudinary.com/babyhulk/image/upload/v1621896780/project/PXL_20210428_025517322.MP.webp",
 		text: "Sunset",
 		alt: "View of Sunset at a hotel",
+		bgcolor :"bg-blue-50 p-5"
 	},
 
 ];
@@ -50,7 +54,7 @@ const category = [
 function Categories() {
 	return (
 		<>
-			<section className='text-gray-600  mt-2 bg-green-50 '>
+			<section className='text-gray-600  mt-2 '>
 				<div className='container px-5 py-10 mx-auto '>
 					<div className='flex flex-wrap w-full mb-10 '>
 						<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
@@ -62,10 +66,10 @@ function Categories() {
 					</div>
 
 					<div className='   '>
-						<div className='grid  grid-cols-2 md:grid-cols-2 gap-5  place-items-center lg:grid-cols-4 relative  '>
+						<div className='grid  grid-cols-2 md:grid-cols-2 place-items-center   lg:grid-cols-4 relative  '>
 							{category.map((item) => (
-								<div key={item.href}>
-									<div className='relative group rounded-xl overflow-hidden hidden md:block'>
+								<div className={item.bgcolor} key={item.href} >
+									<div className='relative   rounded-xl overflow-hidden  block'>
 										<Link
 											key={item.name}
 											href={item.href}
@@ -82,23 +86,7 @@ function Categories() {
 											/>
 										</Link>
 									</div>
-									<div className='relative group rounded-xl overflow-hidden  md:hidden'>
-										<Link
-											key={item.name}
-											href={item.href}
-											className='relative cursor-pointer'
-											passHref>
-											<Image
-												height={196}
-												width={196}
-												blurDataURL={item.image}
-												placeholder='blur'
-												className='h-40 cursor-pointer rounded-xl w-full  object-cover object-center mb-6'
-												src={item.image}
-												alt={item.text}
-											/>
-										</Link>
-									</div>
+									
 
 									<Link
 										key={item.name}

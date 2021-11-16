@@ -13,7 +13,7 @@ import Container from "../components/container";
 
 export default function Index({ allPosts, allStories, preview }) {
 	const mergedArray = [...allPosts, ...allStories];
- 
+
 	// .sort(function(a,b){
 
 	// 	return new Date(b.date) - new Date(a.date);
@@ -44,7 +44,7 @@ export default function Index({ allPosts, allStories, preview }) {
 							excerpt={heroPost.excerpt}
 						/>
 					)}
-					<div className='bg-gray-100 rounded-3xl py-8'>
+					<div className='bg-green-50 rounded-3xl py-8'>
 						{morePosts.length > 0 ? (
 							<div className='mx-4 flex flex-col md:flex-row  justify-between  w-full mb-10'>
 								<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
