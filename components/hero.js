@@ -1,7 +1,19 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/image"
+import { useRef, useEffect } from "react";
 
 function Hero() {
+
+const videoRef = useRef(null);
+  useEffect(() => {
+    if(videoRef){
+      videoRef.current.play();
+    }
+  }, []);
+
+
+
+
 	return (
 		<div>
 			<div className=' bg-gradient-to-r from-green-400 to-blue-500 relative overflow-hidden '>
@@ -18,8 +30,11 @@ function Hero() {
 						quality={50}
 					/>
 				</div>
+
+				
 				<video
 					autoPlay
+					ref={videoRef}
 					loop
 					muted
 					className=' hidden md:block absolute h-full w-full object-cover'>
