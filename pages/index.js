@@ -10,6 +10,7 @@ import { CMS_NAME } from "../lib/constants";
 import Link from "next/link";
 import Categories from "../components/categories";
 import Container from "../components/container";
+import Image from "next/image";
 
 
 export default function Index({ allPosts, allStories, preview }) {
@@ -45,10 +46,10 @@ export default function Index({ allPosts, allStories, preview }) {
 							excerpt={heroPost.excerpt}
 						/>
 					)}
-					<div className='bg-green-50 rounded-3xl py-8  '>
+					<div className='bg-green-50 rounded-3xl py-8 relative  '>
 
 					
-
+			
 
 						{morePosts.length > 0 ? (
 							<div className='mx-4 flex flex-col md:flex-row  justify-between  w-full mb-10'>
@@ -78,7 +79,20 @@ export default function Index({ allPosts, allStories, preview }) {
 					
 					</div>
 
-					<div className=' bg-yellow-50 rounded-3xl py-8 my-10 '>
+					<div className=' bg-yellow-50 rounded-3xl py-8 my-10 relative '>
+
+
+					<div className='absolute bottom-0 right-0   '>
+					<Image
+						width={795}
+						height={772}
+						alt={`Cover Image for passport`}
+						className='opacity-5  z-0  '
+						src='/passport.svg'
+					/>
+				</div>
+
+
 						{moreStories.length > 0 ? (
 							<div className='mx-4 flex flex-col md:flex-row  justify-between  w-full mb-10 '>
 								<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
