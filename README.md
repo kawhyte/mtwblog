@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Face" src="https://res.cloudinary.com/babyhulk/image/upload/w_48,h_48,f_auto/v1589318555/hero-image/avatar-01.png" width="60" />
+    <img alt="Face" src="https://res.cloudinary.com/babyhulk/image/upload/v1637166098/hero-image/avatar.webp" width="60" />
   </a>
 </p>
 <h1 align="center">
