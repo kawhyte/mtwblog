@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
+  <a href="https://www.kennywhyte.com">
     <img alt="Face" src="https://res.cloudinary.com/babyhulk/image/upload/v1637166098/hero-image/avatar.webp" width="150" />
   </a>
 </p>
