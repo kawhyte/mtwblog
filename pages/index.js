@@ -11,6 +11,7 @@ import Link from "next/link";
 import Categories from "../components/categories";
 import Container from "../components/container";
 
+
 export default function Index({ allPosts, allStories, preview }) {
 	const mergedArray = [...allPosts, ...allStories];
 
@@ -44,7 +45,11 @@ export default function Index({ allPosts, allStories, preview }) {
 							excerpt={heroPost.excerpt}
 						/>
 					)}
-					<div className='bg-green-50 rounded-3xl py-8'>
+					<div className='bg-green-50 rounded-3xl py-8  '>
+
+					
+
+
 						{morePosts.length > 0 ? (
 							<div className='mx-4 flex flex-col md:flex-row  justify-between  w-full mb-10'>
 								<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
@@ -68,8 +73,9 @@ export default function Index({ allPosts, allStories, preview }) {
 						) : (
 							""
 						)}
-						{morePosts.length > 0 && <Section posts={morePosts} />}
+						{morePosts.length > 0 && <Section  posts={morePosts} />}
 						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
+					
 					</div>
 
 					<div className=' bg-yellow-50 rounded-3xl py-8 my-10 '>

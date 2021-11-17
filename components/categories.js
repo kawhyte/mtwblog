@@ -38,7 +38,7 @@ const category = [
 		bgcolor :"bg-green-50 p-5"
 	},
 	{
-		name: "Stories and Guides",
+		name: "Stories/Guides",
 		href: "/story",
 		image:
 			"/tahoe.webp",
