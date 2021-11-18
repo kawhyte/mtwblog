@@ -6,8 +6,8 @@ import cn from "classnames";
 
 function Section(props) {
 	return (
-	<div className="flex justify-center px-4"> 
-		<div className=' grid grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 '>
+	<div className="flex justify-center px-4 "> 
+		<div className=' grid grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 z-50'>
 			{props.posts.map((item) => {
 				return (
 					<div key={item.slug}>

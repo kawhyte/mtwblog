@@ -74,15 +74,13 @@ export default function Index({ allPosts, allStories, preview }) {
 						) : (
 							""
 						)}
-						{morePosts.length > 0 && <Section  posts={morePosts} />}
+						{morePosts.length > 0 && <Section   posts={morePosts} />}
 						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 					
 					</div>
 
 					<div className=' bg-yellow-50 rounded-3xl py-8 my-10 relative '>
-
-
-					<div className='absolute bottom-0 right-0   '>
+					<div className='absolute bottom-0 right-0 z-0   '>
 					<Image
 						width={795}
 						height={772}
@@ -91,6 +89,8 @@ export default function Index({ allPosts, allStories, preview }) {
 						src='/passport.svg'
 					/>
 				</div>
+
+
 
 
 						{moreStories.length > 0 ? (
@@ -102,7 +102,7 @@ export default function Index({ allPosts, allStories, preview }) {
 									<div className='h-1 w-20 bg-pink-500 rounded'></div>
 								</div>
 
-								<div className='mx-24 md:mx-8'>
+								<div className='mx-24 md:mx-8 z-50'>
 									<Link href='/story' passHref>
 										<div
 											aria-label='Justify'
