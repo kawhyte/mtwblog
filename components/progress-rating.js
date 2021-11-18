@@ -7,11 +7,11 @@ function ProgressRating({ progress }) {
 
 	return (
 		<>
-			<div className='h-1 w-full bg-gray-300 '>
+			<div className='h-2 w-full bg-gray-300 '>
 				<div
 					style={{ width: `${progressPercentage}%` }}
 					className={`h-full  ${
-						progressPercentage < 50 ? "bg-red-600" : "bg-green-600"
+						progressPercentage < 65 ? "bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-lg " : "bg-gradient-to-r from-green-500 to-green-700 rounded-lg "
 					}`}></div>
 			</div>
 			<span className='text-sm ml-3 '>{progress} </span>
