@@ -16,9 +16,11 @@ import Image from "next/image";
 export default function Index({ allPosts, allStories, preview }) {
 	const mergedArray = [...allPosts, ...allStories];
 
+	// console.log(" ALL Posts ", allPosts)
+
 	// .sort(function(a,b){
 
-	// 	return new Date(b.date) - new Date(a.date);
+	// 	return new Date(b.date) - new Date(a.date);""
 	//   });
 	const heroPost = mergedArray[0];
 	const morePosts = allPosts.slice(1, 7);

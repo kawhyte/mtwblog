@@ -76,6 +76,7 @@ export default function Post({ post, morePosts, preview }) {
 								positives={post.positives}
 								negatives={post.negatives}
 								verdict={post.verdict}
+								verdict2={post.bodyVerdict}
 							/>
 							<BodySectionSeparator />
 
