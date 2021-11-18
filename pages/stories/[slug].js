@@ -56,7 +56,7 @@ export default function Post({ post, morePosts, preview }) {
 								//gallery={post.gallery.images}
 								gallery={post.mainImageGallery.images}
 							/>
-							<ShareButtons shareURL={shareURL}></ShareButtons>
+							
 							<BodySectionSeparator />
 							<PostBody content={post.body} />
 
