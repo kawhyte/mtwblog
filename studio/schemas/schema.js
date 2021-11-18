@@ -6,6 +6,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 // We import object and document schemas
 import blockContent from "./blockContent";
+import blockContentVerdict from "./blockContentVerdict";
 import category from "./category";
 import post from "./post";
 import story from "./story";
@@ -47,6 +48,7 @@ export default createSchema({
 		youtube,
 		youtube2,
 		blockContent,
+		blockContentVerdict,
 		comment,
 	]),
 });

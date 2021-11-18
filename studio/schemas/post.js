@@ -160,6 +160,12 @@ const Post = {
 	
 
 		{
+			name: "bodyVerdict",
+			title: "Body Verdict",
+			description: "Add your Rich content Verdict",
+			type: "blockContentVerdict",
+		},
+		{
 			name: "body",
 			title: "Body",
 			type: "blockContent",
