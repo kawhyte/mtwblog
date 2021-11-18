@@ -42,6 +42,9 @@
   @apply break-words
 }
 
-.markdown li {
-  @apply list-disc ml-10;
+.markdown ol {
+  @apply list-decimal pb-2 ml-6 leading-relaxed;
+}
+.markdown ul {
+  @apply list-disc  ml-10;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import PostBody from "../components/post-body";
 
 function ProConList({ positives, negatives, verdict, verdict2 }) {
-	console.log("Verdict ",verdict2)
+	//console.log("Verdict ",verdict2)
 	return (
 		<>
 			<section className='text-gray-800 body-font'>
@@ -118,8 +118,8 @@ function ProConList({ positives, negatives, verdict, verdict2 }) {
 										</svg>
 									</div>
 								</div>
-								<div className='flex-grow bg-white p-8 rounded-xl'>
-									<div className='flex flex-col sm:items-start sm:text-left leading-relaxed  items-center -mb-1 space-y-2.5'>
+								<div className='flex-grow bg-white p- rounded-xl'>
+									<div className='flex flex-col sm:items-start text-base lg:text-lg leading-relaxed '>
 										{/*<p className='font-sans text-base md:text-lg'>{verdict}</p>*/}
 										<PostBody content={verdict2} />
 									</div>

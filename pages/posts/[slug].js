@@ -25,7 +25,7 @@ export default function Post({ post, morePosts, preview }) {
 		return <ErrorPage statusCode={404} />;
 	}
 
-//console.log("post", post)
+//console.log("More post", post)
 
 	let ratingType = post?.hotelRating;
 	let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`;

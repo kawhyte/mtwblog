@@ -40,12 +40,13 @@ const Post = {
 			},
 		},
 
+
 		{
 			name: "blurb",
 			title: "Post Blurb",
 			description: "Add your Blurb/Summary (optional)",
 			//validation: (Rule) => Rule.required(),
-			type: "text",
+			type: "blockContent",
 		},
 		{
 			name: "mainImageGallery",
@@ -154,16 +155,18 @@ const Post = {
 			name: "verdict",
 			title: "Verdict",
 			description: "Add your Verdict",
-			validation: (Rule) => Rule.required(),
+			//validation: (Rule) => Rule.required(),
 			type: "text",
+			hidden:true
 		},
 	
 
 		{
 			name: "bodyVerdict",
-			title: "Body Verdict",
-			description: "Add your Rich content Verdict",
-			type: "blockContentVerdict",
+			title: "Verdict",
+			description: "Add your Verdict",
+			validation: (Rule) => Rule.required(),
+			type: "blockContent",
 		},
 		{
 			name: "body",

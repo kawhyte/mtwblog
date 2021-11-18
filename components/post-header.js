@@ -5,6 +5,7 @@ import { imageBuilder } from "../lib/sanity";
 import StarRating from "./star-rating";
 import ShareButtons from "../components/share-buttons";
 import BodySectionSeparator from "./body-section-separator";
+import PostBody from "../components/post-body";
 
 export default function PostHeader({
 	title,
@@ -197,7 +198,7 @@ export default function PostHeader({
 				<>
 					<div>
 						<p className='max-w-4xl text-justify lg:text-lg mx-4 my-8'>
-							{blurb}
+						<PostBody content={blurb} /> 	
 						</p>
 					</div>
 					<BodySectionSeparator />
