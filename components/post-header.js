@@ -42,7 +42,7 @@ export default function PostHeader({
 	return (
 		<>
 			<div className='flex md:flex-col flex-col'>
-				<div className='md:mb-4 -mx-5 sm:mx-0 z-50'>
+				<div className='md:mb-4 -mx-5 sm:mx-0'>
 					<PostTitle>{title}</PostTitle>
 
 					<div className='flex flex-col justify-start align-middle md:flex-row'>
