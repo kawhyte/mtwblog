@@ -31,7 +31,7 @@ export default function Footer() {
 						</Link>
 						
 					</div>
-					<p className='text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4'>
+					<p className='text-sm text-gray-900 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4'>
 						© 2021 MTW — Created by
 						<a
 							href='https://www.kennywhyte.com'
