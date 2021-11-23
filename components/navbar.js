@@ -43,19 +43,19 @@ function classNames(...classes) {
 
 export default function Nav({ color, bgColor }) {
 	let col = color ? " text-gray-900" : " text-white";
-	let bg = bgColor ? " bg-white  shadow-lg" : " ";
+	let bg = bgColor ? " bg-white  shadow-l" : " ";
 
 	return (
 		<Disclosure
 			as='nav'
 			className={
-				" top-0 z-30 mx-auto h-[72px] bg-transparent w-full absolute  mt-5 backdrop-blur-sm max-w-8xl xl:px-8 firefox:bg-opacity-90  " +
+				" top-0 sticky bg-white py-4  z-30 mx-auto h-[72px] bg-transparent w-full   mt-5 backdrop-blur-sm max-w-8xl xl:px-8 firefox:bg-opacity-90  " +
 				bg
 			}>
 			{({ open }) => (
 				<>
 					<div className='max-w-8xl  container mx-auto cursor-pointer'>
-						<div className='relative flex items-center justify-between h-16'>
+						<div className='relative flex items-center justify-between h-6'>
 							<div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
 								{/* Mobile menu button*/}
 								<Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-gray-200 bg-gray-700 ml-2  hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>

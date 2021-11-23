@@ -28,7 +28,7 @@ export default function Index({ allPosts, allStories, preview }) {
 
 	return (
 		<>
-			<Layout preview={preview} color={false} bgColor={false}>
+			<Layout preview={preview} color={true} bgColor={false}>
 				<Head>
 					<title>Travel and Food Reviews by {CMS_NAME}</title>
 				</Head>
