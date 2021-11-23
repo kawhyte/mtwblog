@@ -49,7 +49,7 @@ export default function Nav({ color, bgColor }) {
 		<Disclosure
 			as='nav'
 			className={
-				" top-0 sticky bg-white py-4  z-30 mx-auto h-[72px] bg-transparent w-full   mt-5 backdrop-blur-sm max-w-8xl xl:px-8 firefox:bg-opacity-90  " +
+				" top-0 sticky bg-white py-4  mx-auto h-[72px] bg-transparent w-full  z-50   mt-5 backdrop-blur-sm max-w-8xl xl:px-8 firefox:bg-opacity-90  " +
 				bg
 			}>
 			{({ open }) => (
