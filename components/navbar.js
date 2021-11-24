@@ -95,8 +95,9 @@ export default function Nav({ color, bgColor }) {
 															item.current
 																? "bg-gray-900 text-white"
 																: "text-white   " + col,
-															"px-2 py-2 rounded-md font-semibold text-base flex flex-row justify-center align-middle items-center"
+															"px-2 py-2 rounded-md hover:bg-gray-100 font-semibold text-base flex flex-row justify-center align-middle items-center"
 														)}>
+														<div className="hidden lg:block">
 														<Image
 															className=''
 															src={item.icon}
@@ -104,7 +105,7 @@ export default function Nav({ color, bgColor }) {
 															width={25}
 															height={25}
 														/>
-
+</div>
 														<span className='mx-1 ml-2  hover:text-pink-500'>
 															{item.name}
 														</span>
