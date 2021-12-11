@@ -24,6 +24,13 @@ const Post = {
 				maxLength: 96,
 			},
 		},
+		{
+			name: "similar",
+			title: "You may also Like",
+			description: "Added other post the reader may like (add up to 4 posts) ",
+			type: "array",
+			of: [{ type: "reference", to: { type: "post" } }],
+		},
 		// {
 		// 	name: "author",
 		// 	title: "Author",
@@ -40,7 +47,6 @@ const Post = {
 			},
 		},
 
-
 		{
 			name: "blurb",
 			title: "Post Blurb",
@@ -51,9 +57,9 @@ const Post = {
 		{
 			name: "mainImageGallery",
 			title: "Main image Gallery",
-			description:"These images will appear beside the main image (4 images suggested)",
+			description:
+				"These images will appear beside the main image (4 images suggested)",
 			type: "mainImageGallery",
-			
 		},
 
 		{
@@ -97,7 +103,7 @@ const Post = {
 			name: "roomType",
 			type: "string",
 			title: "Room Type",
-			description:"eg. 1 King Bed Lagoon Access (optional)",
+			description: "eg. 1 King Bed Lagoon Access (optional)",
 			hidden: ({ parent }) => parent?.linkType !== "hotel",
 			//validation: (Rule) => Rule.required(),
 		},
@@ -157,9 +163,8 @@ const Post = {
 			description: "Add your Verdict",
 			//validation: (Rule) => Rule.required(),
 			type: "text",
-			hidden:true
+			hidden: true,
 		},
-	
 
 		{
 			name: "bodyVerdict",
