@@ -24,13 +24,13 @@ const Post = {
 				maxLength: 96,
 			},
 		},
-		{
-			name: "similar",
-			title: "You may also Like",
-			description: "Added other post the reader may like (add up to 4 posts) ",
-			type: "array",
-			of: [{ type: "reference", to: { type: "post" } }],
-		},
+		// {
+		// 	name: "similar",
+		// 	title: "You may also Like",
+		// 	description: "Added other post the reader may like (add up to 4 posts) ",
+		// 	type: "array",
+		// 	of: [{ type: "reference", to: { type: "post" } }],
+		// },
 		// {
 		// 	name: "author",
 		// 	title: "Author",
