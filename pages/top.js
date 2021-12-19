@@ -1,55 +1,49 @@
-import React from 'react'
+import TopList from "../components/top-list-section";
+import Layout from "../components/layout";
+import { getAllPostsForTop } from "../lib/api";
+import Head from "next/head";
+import { CMS_NAME } from "../lib/constants";
+import Container from "../components/container";
+import Image from "next/image";
 
-function top() {
-    return (
-        <div>
-        <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-20">
-            <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
-              <div className="h-1 w-20 bg-pink-500 rounded"></div>
-            </div>
-            <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
-          </div>
-          <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
-                <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content" />
-                <h3 className="tracking-widest text-pink-500 text-xs font-medium title-font">SUBTITLE</h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
-                <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-              </div>
-            </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
-                <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content" />
-                <h3 className="tracking-widest text-pink-500 text-xs font-medium title-font">SUBTITLE</h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
-                <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-              </div>
-            </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
-                <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content" />
-                <h3 className="tracking-widest text-pink-500 text-xs font-medium title-font">SUBTITLE</h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
-                <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-              </div>
-            </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
-                <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content" />
-                <h3 className="tracking-widest text-pink-500 text-xs font-medium title-font">SUBTITLE</h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
-                <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-        </div>
-    )
+export default function Top({ allPosts, preview }) {
+	// console.log(" ALL Posts top ", allPosts);
+
+	const morePosts = allPosts.slice(0, 12);
+	return (
+		<>
+			<Layout preview={preview} color={true} bgColor={false}>
+				<Head>
+					<title>eeeeTravel and Food Reviews by {CMS_NAME}</title>
+				</Head>
+
+				<Container>
+					<div className='bg-green-50 rounded-3xl py-8 relative  '>
+						{morePosts.length > 0 && <TopList posts={morePosts} />}
+						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
+					</div>
+
+					<div className=' bg-yellow-50 rounded-3xl py-8 my-10 relative '>
+						<div className='absolute bottom-0 right-0 z-0   '>
+							<Image
+								width={795}
+								height={772}
+								alt={`Cover Image for passport`}
+								className='opacity-5  z-0  '
+								src='/passport.svg'
+							/>
+						</div>
+					</div>
+				</Container>
+			</Layout>
+		</>
+	);
 }
 
-export default top
+export async function getStaticProps({ preview = false }) {
+	const allPosts = await getAllPostsForTop(preview);
+	return {
+		props: { allPosts, preview },
+		revalidate: 100,
+	};
+}

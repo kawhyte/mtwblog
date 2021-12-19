@@ -15,6 +15,12 @@ const Post = {
 				Rule.required().max(100).warning("Shorter titles are usually better"),
 		},
 		{
+			name: "order",
+			title: "Order",
+			type: "number",
+			hidden: true,
+		  },
+		{
 			name: "slug",
 			title: "Slug",
 			type: "slug",

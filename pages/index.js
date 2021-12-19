@@ -16,7 +16,7 @@ import Image from "next/image";
 export default function Index({ allPosts, allStories, preview }) {
 	const mergedArray = [...allPosts, ...allStories];
 
-	 console.log(" ALL Posts ", allPosts)
+	//  console.log(" ALL Posts ", allPosts)
 
 	// .sort(function(a,b){
 
