@@ -14,7 +14,7 @@ export default function Top({ allPosts, preview }) {
 		<>
 			<Layout preview={preview} color={true} bgColor={false}>
 				<Head>
-					<title>Our top Picks by {CMS_NAME}</title>
+					<title>{CMS_NAME} Top Picks </title>
 				</Head>
 
 				<Container>
@@ -27,7 +27,7 @@ export default function Top({ allPosts, preview }) {
 
 							{/*<p className="mt-3 leading-relaxed text-gray-500"> Updated December 23, 2021</p>*/}
 						</div>
-						<p className='lg:w-1/2 w-full leading-relaxed text-gray-500'>
+						<p className='lg:w-1/2 w-full text-xl leading-relaxed text-gray-900'>
 							We visited over 50 hotels and restaurants over the past few years,
 							these are our top picks for the best service, location and value.
 						</p>
