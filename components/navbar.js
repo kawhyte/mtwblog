@@ -33,8 +33,7 @@ const navigation = [
 		icon: "/icon/crown.svg",
 		text: "Book icon",
 		current: false,
-	},
-
+	}
 
 ];
 
