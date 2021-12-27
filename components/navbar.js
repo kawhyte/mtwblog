@@ -28,12 +28,13 @@ const navigation = [
 		current: false,
 	},
 	{
-		name: "Stories/Guides",
-		href: "/story",
-		icon: "/icon/book.svg",
+		name: "Our Top Picks",
+		href: "/top_picks",
+		icon: "/icon/crown.svg",
 		text: "Book icon",
 		current: false,
 	},
+
 
 ];
 
@@ -70,7 +71,7 @@ export default function Nav({ color, bgColor }) {
 							<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start '>
 								<Link href='/' className='cursor-pointer' passHref>
 									<div className='flex-shrink-0 flex items-center'>
-										<div className='mx-4'>
+										<div className='mx-4 '>
 											<Image
 												className='rounded-xl '
 												src='/icon/icon.jpg'
@@ -143,3 +144,11 @@ export default function Nav({ color, bgColor }) {
 		</Disclosure>
 	);
 }
+
+	{/*
+		name: "Stories/Guides",
+		href: "/story",
+		icon: "/icon/book.svg",
+		text: "Book icon",
+		current: false,
+	*/}

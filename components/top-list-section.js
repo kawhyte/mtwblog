@@ -3,29 +3,17 @@ import { imageBuilder } from "../lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
 
-function top({ posts, header }) {
-	console.log(posts);
+function top({ posts, header, type }) {
+	//console.log(posts);
 	let count  = 1
 	return (
 		<div>
 			<section className='text-gray-600 body-font'>
-				<div className='container px-5 py-24 mx-auto'>
-					<div className='flex flex-wrap w-full mb-20'>
-						<div className='lg:w-1/2 w-full mb-6 lg:mb-0'>
-							<h1 className='sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
-								Our Top Picks
-							</h1>
-							<div className='h-1 w-20 bg-pink-500 rounded'></div>
-
-							{/*<p className="mt-3 leading-relaxed text-gray-500"> Updated December 23, 2021</p>*/}
-						</div>
-						<p className='lg:w-1/2 w-full leading-relaxed text-gray-500'>
-							We visited over 50 hotels and restaurants over the past few years, these are our top picks for the best service, location and value.
-						</p>
-					</div>
+				<div className='container px-5 pb-24 mx-auto'>
+			
 
 					<div className='lg:w-1/2 w-full mb-6 lg:mb-0'>
-					<h1 className='sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
+					<h1 className='sm:text-3xl text-2xl font-medium title-font mb-2 py-5 text-gray-900'>
 						{header}
 					</h1>
 					
@@ -35,7 +23,7 @@ function top({ posts, header }) {
 					<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12'>
 						{ posts.slice(0, 20).map((item,i) => (
 
-							item.linkType ==="hotel" && count <= 10 && (<div
+							item.linkType === type && count <= 10 && (<div
 								key={item._id}
 								className='overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto'>
 								

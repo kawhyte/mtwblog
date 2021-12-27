@@ -13,7 +13,7 @@ function Hero() {
 	return (
 		<div >
 			<div className='container mx-auto mt-10 rounded-none sm:rounded-2xl xl:rounded-none  bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 relative overflow-hidden  z-30'>
-				<div className='md:hidden '>
+				<div className='md:hidden  '>
 					<Image
 						//blurDataURL='https://res.cloudinary.com/babyhulk/image/upload/e_pixelate:200,q_30/v1627353251/hero-image/PXL_20210613_032035183.MP_1.webp'
 						// src='https://res.cloudinary.com/babyhulk/image/upload/f_auto,q_auto/v1627353251/hero-image/PXL_20210613_032035183.MP_1.webp'
