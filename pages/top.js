@@ -7,19 +7,23 @@ import Container from "../components/container";
 import Image from "next/image";
 
 export default function Top({ allPosts, preview }) {
-	// console.log(" ALL Posts top ", allPosts);
+	console.log(" ALL Posts top ", allPosts);
 
-	const morePosts = allPosts.slice(0, 12);
+	const morePosts = allPosts;
 	return (
 		<>
 			<Layout preview={preview} color={true} bgColor={false}>
 				<Head>
-					<title>eeeeTravel and Food Reviews by {CMS_NAME}</title>
+					<title>Our top Picks by {CMS_NAME}</title>
 				</Head>
 
 				<Container>
-					<div className='bg-green-50 rounded-3xl py-8 relative  '>
-						{morePosts.length > 0 && <TopList posts={morePosts} />}
+					<div className='bg-green-50 rounded-3xl py-8 relative z-10 '>
+						{morePosts.length > 0  && <TopList posts={morePosts} header={"Best Hotels"} />}
+						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
+					</div>
+					<div className='bg-yellow-50 rounded-3xl py-8 relative z-10 '>
+						{morePosts.length > 0  && <TopList posts={morePosts} header={"Best Restaurants"} />}
 						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 					</div>
 
