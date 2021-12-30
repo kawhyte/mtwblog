@@ -7,6 +7,13 @@ import Image from "next/image";
 
 const navigation = [
 	{
+		name: "Our Top Picks",
+		href: "/top_picks",
+		icon: "/icon/crown.svg",
+		text: "Book icon",
+		current: false,
+	},
+	{
 		name: "All Reviews",
 		href: "/allreviews",
 		icon: "/icon/walk.svg",
@@ -34,13 +41,7 @@ const navigation = [
 	text: "Book icon",
 	current: false,
 },
-	{
-		name: "Our Top Picks",
-		href: "/top_picks",
-		icon: "/icon/crown.svg",
-		text: "Book icon",
-		current: false,
-	}
+	
 
 ];
 

@@ -84,13 +84,13 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 							<h2 className='text-3xl font-extrabold text-black dark:text-white sm:text-4xl'>
 								<span className='block font-fancy'>
 									Check out our top{" "}
-									<span className='font-fancy text-pink-500'>
+									<span className='font-fancy text-yellow-500'>
 										Hotels and Restaurants
 									</span>{" "}
 									recommendations.
 								</span>
 							</h2>
-							<p className='text-xl mt-4 text-gray-400'>
+							<p className='text-xl mt-4 text-gray-600'>
 								Our very own curated list of places you should consider
 								visiting.
 							</p>
@@ -99,7 +99,7 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 									<Link href='/top_picks' passHref>
 										<button
 											type='button'
-											className='py-4 px-6  bg-pink-500 hover:bg-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
+											className='py-4 px-6  bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-500 focus:ring-offset-yellow-200 text-black w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
 											Top Picks
 										</button>
 									</Link>
