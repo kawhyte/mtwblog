@@ -28,6 +28,13 @@ const navigation = [
 		current: false,
 	},
 	{
+	name: "Stories/Guides",
+	href: "/story",
+	icon: "/icon/book.svg",
+	text: "Book icon",
+	current: false,
+},
+	{
 		name: "Our Top Picks",
 		href: "/top_picks",
 		icon: "/icon/crown.svg",
