@@ -24,7 +24,12 @@ function TopList({ posts, header, type }) {
 					<section className='text-gray-600 body-font mb-6 '>
 						<div className='container  mx-auto flex px-5 py-10 items-center justify-center flex-col'>
 							<div className=' border-8 bg-white border-yellow-300 md:p-6 mb-4 rounded-xl  '>
-								<p className='text-black   absolute text-xl md:text-2xl font-medium bg-yellow-300  rounded-xl z-10 px-2 m-2 '>
+								
+							<Link as={`/posts/${numberOne.slug}`} href='/posts/[slug]'>
+							<a
+							aria-label={numberOne.title}
+							className='w-full block h-full'>
+							<p className='text-black   absolute text-xl md:text-2xl font-medium bg-yellow-300  rounded-xl z-10 px-2 m-2 '>
 									1
 								</p>
 
@@ -39,14 +44,14 @@ function TopList({ posts, header, type }) {
 										.url()}
 									placeholder='blur'
 									alt={`Cover Image for ${numberOne.title}`}
-									className=' object-cover object-center block  relative '
+									className=' object-cover object-center block  relative md:rounded-xl  '
 									src={imageBuilder(numberOne.coverImage)
 										.width(1240)
 										.height(744)
 										.format("webp")
 										.url()}
-								/>
-
+								/> </a>
+</Link>
 								<div className=' px-2 w-full my-4 cursor-pointer text-left'>
 									<Link as={`/posts/${numberOne.slug}`} href='/posts/[slug]'>
 										<a

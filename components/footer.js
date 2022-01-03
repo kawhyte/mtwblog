@@ -4,6 +4,7 @@ import Image from "next/image";
 import { EXAMPLE_PATH } from "../lib/constants";
 
 export default function Footer() {
+	let year = new Date().getFullYear();
 	return (
 		<footer className=' mt-20 relative text-gray-600 body-font  bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100'>
 			<Container>
@@ -29,16 +30,18 @@ export default function Footer() {
 					</div>
 
 					<div className='flex  flex-row'>
-						<p className='text-sm text-gray-900 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4'>
-							© 2021 MTW — Created by
-							<a
-								href='https://www.kennywhyte.com'
-								className='text-blue-500 ml-1 '
-								rel='noopener noreferrer'
-								target='_blank'>
-								Kenny
-							</a>
-						</p>
+						<a
+							href='https://www.kennywhyte.com'
+							className='text-blue-500 ml-1 '
+							rel='noopener noreferrer'
+							target='_blank'>
+							{" "}
+							<p
+								id='copyright-year'
+								className='text-sm text-gray-900 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4'>
+								© {year} Created by Kenny
+							</p>
+						</a>
 					</div>
 
 					<span className='flex flex-row sm:ml-auto sm:mt-0 mt-4 justify-center  sm:justify-start cursor-pointer'>
