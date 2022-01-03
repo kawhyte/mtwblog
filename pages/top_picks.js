@@ -8,6 +8,14 @@ import Image from "next/image";
 
 export default function Top({ allPosts, preview }) {
 	//console.log(" ALL Posts top ", allPosts);
+	const filteredHotels = allPosts.filter(function (hotel) {
+		return hotel.linkType === "hotel";
+	});
+
+	const filteredFood = allPosts.filter(function (food) {
+		return food.linkType === "food";
+	});
+	console.log(" filteredHotels ", filteredFood);
 
 	const morePosts = allPosts;
 	return (
@@ -32,26 +40,26 @@ export default function Top({ allPosts, preview }) {
 							these are our top picks for the best service, location and value.
 						</p>
 					</div>
-			
+					{/* Top Hotels */}
 					<div className='bg-green-50 rounded-3xl py-8 relative z-10 mb-10 '>
-						{morePosts.length > 0 && (
+						{filteredHotels.length > 0 && (
 							<TopList
-								posts={morePosts}
+								posts={filteredHotels}
 								header={"Best Hotels"}
 								type={"hotel"}
 							/>
 						)}
-						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 					</div>
+
+					{/* Top Food */}
 					<div className='bg-yellow-50 rounded-3xl py-8 mb-20 relative z-10 '>
-						{morePosts.length > 0 && (
+						{filteredFood.length > 0 && (
 							<TopList
-								posts={morePosts}
+								posts={filteredFood}
 								header={"Best Restaurants"}
 								type={"food"}
 							/>
 						)}
-						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 					</div>
 				</Container>
 			</Layout>

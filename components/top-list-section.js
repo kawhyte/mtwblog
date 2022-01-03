@@ -7,8 +7,7 @@ import PostBody from "./post-body";
 function TopList({ posts, header, type }) {
 	let count = 2;
 	const numberOne = posts[0];
-	const topPicks = posts.slice(1, 9);
-	
+	const topPicks = posts.slice(1, 10);
 
 	return (
 		<div>
@@ -24,13 +23,11 @@ function TopList({ posts, header, type }) {
 
 					<section className='text-gray-600 body-font mb-6 '>
 						<div className='container  mx-auto flex px-5 py-10 items-center justify-center flex-col'>
-						<div className=' border-8 bg-white border-yellow-300 p-6 mb-4  '>
-						
+							<div className=' border-8 bg-white border-yellow-300 md:p-6 mb-4 rounded-xl  '>
+								<p className='text-black   absolute text-xl md:text-2xl font-medium bg-yellow-300  rounded-xl z-10 px-2 m-2 '>
+									1
+								</p>
 
-						<p className='text-black  absolute text-5xl font-medium bg-yellow-300  rounded-2xl z-10 px-4 m-2 '>
-							1
-						</p>
-						
 								<Image
 									width={940}
 									height={470}
@@ -50,23 +47,26 @@ function TopList({ posts, header, type }) {
 										.url()}
 								/>
 
-								<div className='text-center w-full mt-6 cursor-pointer'>
-								<Link as={`/posts/${numberOne.slug}`} href='/posts/[slug]'>
-
-									<h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>
-										
-									{numberOne.title}
-									</h1>
-</Link>
-									<PostBody content={numberOne.blurb} />
+								<div className=' px-2 w-full my-4 cursor-pointer text-left'>
+									<Link as={`/posts/${numberOne.slug}`} href='/posts/[slug]'>
+										<a
+											aria-label={numberOne.title}
+											className='w-full block h-full'>
+											<h1 className='title-font text-xl sm:text-4xl mb-4 font-medium text-gray-900'>
+												{numberOne.title}
+											</h1>
+											<p className='text-gray-400 dark:text-gray-300 font-light text-md truncate'>
+												{numberOne.address}
+											</p>
+										</a>
+									</Link>
+									{/*<PostBody className="line-clamp-3" content={numberOne.blurb} />*/}
 								</div>
-							
-								
 							</div>
 						</div>
 					</section>
 
-					<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12'>
+					<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12'>
 						{topPicks.slice(0, 20).map(
 							(item, i) =>
 								item.linkType === type &&
@@ -79,7 +79,7 @@ function TopList({ posts, header, type }) {
 												<a
 													aria-label={item.title}
 													className='w-full block h-full'>
-													<p className='text-black text-3xl font-medium bg-white absolute rounded-xl z-10 px-2 m-2'>
+													<p className='text-black text-xl md:text-xl font-medium bg-white absolute rounded-xl z-10 px-2 m-2'>
 														{count++}
 													</p>
 													<Image
