@@ -92,7 +92,7 @@ export default function Nav({ color, bgColor }) {
 
 									</div>
 								</Link>
-								<div className='hidden sm:block sm:ml-6'>
+								<div className='hidden md:block sm:ml-6'>
 									<div className='flex flex-row align-middle justify-center items-center  space-x-4'>
 										{navigation.map((item) => (
 											<Link href={item.href} key={item.name} passHref>
