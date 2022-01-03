@@ -87,8 +87,8 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 								src='/passport.svg'
 								width={496}
 								height={355}
-								alt='Photo Collage'
-								blurDataURL='/allposts.webp'
+								alt='Passport Image'
+								blurDataURL='/passport.svg'
 								placeholder='blur'
 							/>
 						</div>
