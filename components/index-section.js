@@ -2,7 +2,7 @@ import React from 'react'
 import Section from "./section";
 import Link from 'next/link'
 
-function IndexSection({morePosts, sectionBgColor}) {
+function IndexSection({morePosts, sectionBgColor, text}) {
     return (
         <div>
         <div className={`rounded-3xl  p-8 relative  ${ sectionBgColor}`}>
@@ -10,7 +10,7 @@ function IndexSection({morePosts, sectionBgColor}) {
             <div className='mx-4 flex  flex-col md:flex-row  justify-between  w-full mb-10'>
                 <div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
                     <h1 className='font-fancy  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
-                        Recent Reviews
+                        {text}
                     </h1>
                     <div className='h-1 w-20 bg-pink-500 rounded'></div>
                 </div>

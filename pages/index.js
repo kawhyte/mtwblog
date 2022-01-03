@@ -53,7 +53,7 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 						/>
 					)}
 
-					<IndexSection morePosts={morePosts} sectionBgColor='bg-green-50' />
+					<IndexSection morePosts={morePosts} sectionBgColor='bg-green-50' text="Recent Reviews" />
 
 					<div className='bg-white md:my-20 dark:bg-gray-800 overflow-hidden relative flex-col'>
 						<div className='text-start w-full lg:w-1/2  py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20'>
@@ -93,7 +93,7 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 							/>
 						</div>
 					</div>
-					<IndexSection morePosts={moreStories} sectionBgColor='bg-yellow-50' />
+					<IndexSection morePosts={moreStories} sectionBgColor='bg-yellow-50' text="Recent Stories/Guides" />
 
 				</Container>
 			</Layout>

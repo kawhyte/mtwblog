@@ -11,6 +11,7 @@ const navigation = [
 		href: "/top_picks",
 		icon: "/icon/crown.svg",
 		text: "Book icon",
+		bg: "  bg-indigo-50 ",
 		current: false,
 	},
 	{
@@ -103,7 +104,7 @@ export default function Nav({ color, bgColor }) {
 															item.current
 																? "bg-gray-900 text-white"
 																: "text-white   " + col,
-															"px-2 py-2 rounded-xl hover:bg-gray-100 font-semibold text-base flex flex-row justify-center align-middle items-center"
+															"px-2 py-2 rounded-xl hover:bg-gray-100 font-semibold text-base flex flex-row justify-center align-middle items-center " + item.bg
 														)}>
 														<div className="hidden lg:block">
 														<Image
