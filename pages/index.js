@@ -51,7 +51,7 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 							excerpt={heroPost.excerpt}
 						/>
 					)}
-					<div className='bg-green-50 rounded-3xl py-8 relative  '>
+					<div className='bg-green-50 rounded-3xl p-8 relative  '>
 						{morePosts.length > 0 ? (
 							<div className='mx-4 flex flex-col md:flex-row  justify-between  w-full mb-10'>
 								<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
@@ -106,6 +106,7 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 								</div>
 							</div>
 						</div>
+						</div>
 						<div className='absolute h-full max-w-1/2 hidden  lg:block right-0 top-0'>
 							<Image
 								src='/allposts.webp'
@@ -116,10 +117,9 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 								placeholder='blur'
 							/>
 						</div>
-					</div>
 
 					{moreStories.length > 0 && (
-						<div className=' bg-yellow-50 rounded-3xl py-8 my-10 relative '>
+						<div className=' bg-yellow-50 rounded-3xl p-8 my-10 relative '>
 							<div className='absolute bottom-0 right-0 z-0   '>
 								<Image
 									width={795}
