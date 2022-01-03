@@ -15,6 +15,7 @@ import Link from "next/link";
 import Categories from "../components/categories";
 import Container from "../components/container";
 import Image from "next/image";
+import IndexSection from "../components/index-section";
 
 export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 	const mergedArray = [...allPosts, ...allStories];
@@ -51,33 +52,8 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 							excerpt={heroPost.excerpt}
 						/>
 					)}
-					<div className='bg-green-50 rounded-3xl p-8 relative  '>
-						{morePosts.length > 0 ? (
-							<div className='mx-4 flex flex-col md:flex-row  justify-between  w-full mb-10'>
-								<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
-									<h1 className='font-fancy  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
-										Recent Reviews
-									</h1>
-									<div className='h-1 w-20 bg-pink-500 rounded'></div>
-								</div>
 
-								<div className='mx-24 md:mx-8'>
-									<Link href='/allreviews' passHref>
-										<button
-											aria-label='Justify'
-											type='button'
-											className='py-2 px-4 cursor-pointer bg-pink-500   hover:bg-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-white  md:w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
-											All Reviews
-										</button>
-									</Link>
-								</div>
-							</div>
-						) : (
-							""
-						)}
-						{morePosts.length > 0 && <Section posts={morePosts} />}
-						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
-					</div>
+					<IndexSection morePosts={morePosts} sectionBgColor='bg-green-50' />
 
 					<div className='bg-white md:my-20 dark:bg-gray-800 overflow-hidden relative flex-col'>
 						<div className='text-start w-full lg:w-1/2  py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20'>
@@ -106,10 +82,9 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 								</div>
 							</div>
 						</div>
-						</div>
 						<div className='absolute h-full max-w-1/2 hidden  lg:block right-0 top-0'>
 							<Image
-								src='/allposts.webp'
+								src='/passport.svg'
 								width={496}
 								height={355}
 								alt='Photo Collage'
@@ -117,48 +92,9 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 								placeholder='blur'
 							/>
 						</div>
+					</div>
+					<IndexSection morePosts={moreStories} sectionBgColor='bg-yellow-50' />
 
-					{moreStories.length > 0 && (
-						<div className=' bg-yellow-50 rounded-3xl p-8 my-10 relative '>
-							<div className='absolute bottom-0 right-0 z-0   '>
-								<Image
-									width={795}
-									height={772}
-									alt={`Cover Image for passport`}
-									className='opacity-5  z-0  '
-									src='/passport.svg'
-								/>
-							</div>
-
-							{moreStories.length > 0 ? (
-								<div className='mx-4 flex flex-col md:flex-row  justify-between  w-full mb-10 '>
-									<div className='lg:w-1/2 w-full mb-6 lg:mb-0 '>
-										<h1 className='font-fancy  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
-											Recent Stories & Guides
-										</h1>
-										<div className='h-1 w-20 bg-pink-500 rounded'></div>
-									</div>
-
-									<div className='mx-24 md:mx-8 z-50'>
-										<Link href='/story' passHref>
-											<button
-												aria-label='Justify'
-												type='button'
-												className='py-2 px-4 cursor-pointer bg-pink-500   hover:bg-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-white  md:w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
-												View All Stories & Guides
-											</button>
-										</Link>
-									</div>
-								</div>
-							) : (
-								""
-							)}
-							{moreStories.length > 0 && <StorySection stories={moreStories} />}
-							{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
-
-							
-						</div>
-					)}
 				</Container>
 			</Layout>
 		</>
