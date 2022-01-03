@@ -2,10 +2,14 @@ import React from "react";
 import { imageBuilder } from "../lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
+import PostBody from "./post-body";
 
-function top({ posts, header, type }) {
-	//console.log(posts);
-	let count = 1;
+function TopList({ posts, header, type }) {
+	let count = 2;
+	const numberOne = posts[0];
+	const topPicks = posts.slice(1, 9);
+	
+
 	return (
 		<div>
 			<section className='text-gray-600 body-font'>
@@ -17,8 +21,53 @@ function top({ posts, header, type }) {
 
 						{/*<p className="mt-3 leading-relaxed text-gray-500"> Updated December 23, 2021</p>*/}
 					</div>
+
+					<section className='text-gray-600 body-font mb-6 '>
+						<div className='container  mx-auto flex px-5 py-10 items-center justify-center flex-col'>
+						<div className=' border-8 bg-white border-yellow-300 p-6 mb-4  '>
+						
+
+						<p className='text-black  absolute text-5xl font-medium bg-yellow-300  rounded-2xl z-10 px-4 m-2 '>
+							1
+						</p>
+						
+								<Image
+									width={940}
+									height={470}
+									blurDataURL={imageBuilder(numberOne.coverImage)
+										.width(1240)
+										.height(744)
+										.quality(1)
+										.format("webp")
+										.url()}
+									placeholder='blur'
+									alt={`Cover Image for ${numberOne.title}`}
+									className=' object-cover object-center block  relative '
+									src={imageBuilder(numberOne.coverImage)
+										.width(1240)
+										.height(744)
+										.format("webp")
+										.url()}
+								/>
+
+								<div className='text-center w-full mt-6 cursor-pointer'>
+								<Link as={`/posts/${numberOne.slug}`} href='/posts/[slug]'>
+
+									<h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>
+										
+									{numberOne.title}
+									</h1>
+</Link>
+									<PostBody content={numberOne.blurb} />
+								</div>
+							
+								
+							</div>
+						</div>
+					</section>
+
 					<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12'>
-						{posts.slice(0, 20).map(
+						{topPicks.slice(0, 20).map(
 							(item, i) =>
 								item.linkType === type &&
 								count <= 10 && (
@@ -30,7 +79,7 @@ function top({ posts, header, type }) {
 												<a
 													aria-label={item.title}
 													className='w-full block h-full'>
-													<p className='text-black text-3xl font-medium bg-yellow-300 absolute rounded-xl z-10 px-2 m-2'>
+													<p className='text-black text-3xl font-medium bg-white absolute rounded-xl z-10 px-2 m-2'>
 														{count++}
 													</p>
 													<Image
@@ -73,7 +122,7 @@ function top({ posts, header, type }) {
 	);
 }
 
-export default top;
+export default TopList;
 
 // <img
 // 	className='h-40 rounded w-full object-cover object-center mb-6'

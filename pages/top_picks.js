@@ -32,7 +32,7 @@ export default function Top({ allPosts, preview }) {
 							these are our top picks for the best service, location and value.
 						</p>
 					</div>
-
+			
 					<div className='bg-green-50 rounded-3xl py-8 relative z-10 mb-10 '>
 						{morePosts.length > 0 && (
 							<TopList
