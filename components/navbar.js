@@ -65,7 +65,7 @@ export default function Nav({ color, bgColor }) {
 				<>
 					<div className='max-w-8xl  container mx-auto cursor-pointer'>
 						<div className='relative flex items-center justify-between h-6'>
-							<div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
+							<div className='absolute inset-y-0 left-0 flex items-center md:hidden'>
 								{/* Mobile menu button*/}
 								<Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-gray-200 bg-gray-700 ml-2  hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
 									<span className='sr-only'>Open main menu</span>
@@ -76,7 +76,7 @@ export default function Nav({ color, bgColor }) {
 									)}
 								</Disclosure.Button>
 							</div>
-							<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start '>
+							<div className='flex-1 flex items-center justify-center sm:items-stretch md:justify-start '>
 								<Link href='/' className='cursor-pointer' passHref>
 									<div className='flex-shrink-0 flex items-center'>
 										<div className='mx-4 '>
