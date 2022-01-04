@@ -23,6 +23,7 @@ function AllHotels({ allPosts, preview }) {
 					title={"Food Reviews"}
 					pattern={"foodpattern"}
 					summary={"Everything food, drink & restaurants"}
+					animation={'/food.mp4'}
 				/>
 				<Container>
 					{morePosts.length > 0 && <Section posts={morePosts} />}

@@ -22,6 +22,7 @@ function AllStories({ allStories, preview }) {
 					title={"Stories & Guides"}
 					pattern={"hotelpattern"}
 					summary={"Its all about the Adventure"}
+					animation={'/plane.mp4'}
 				/>
 
 				<Container>
