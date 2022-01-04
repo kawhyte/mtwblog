@@ -15,9 +15,8 @@ export default function Top({ allPosts, preview }) {
 	const filteredFood = allPosts.filter(function (food) {
 		return food.linkType === "food";
 	});
-	console.log(" filteredHotels ", filteredFood);
+	//console.log(" filteredHotels ", filteredFood);
 
-	const morePosts = allPosts;
 	return (
 		<>
 			<Layout preview={preview} color={true} bgColor={false}>
