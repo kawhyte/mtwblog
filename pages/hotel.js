@@ -18,7 +18,7 @@ function AllHotels({ allPosts, preview }) {
 					<title>Travel and Food Reviews by {CMS_NAME}</title>
 				</Head>
 				
-				<ReviewHeader title ={"Hotel Reviews"} pattern={'hotelpattern'} summary={"Rooms, Amenities, Service and Price"} animation={'/bath.mp4'}/>
+				<ReviewHeader title ={"Hotel Reviews"} pattern={'hotelpattern'} summary={"Rooms, Amenities, Service and Price"} animation={'/bath.json'}/>
 
 				<Container>
 				

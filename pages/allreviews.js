@@ -21,7 +21,7 @@ function AllReviews({ allPosts, preview }) {
 				title ={"All Reviews"} 
 				pattern={'pattern'} 
 				summary={"You want to get out and see the world, but you have so many questions. Check out our trips."} 
-				animation={'/all.mp4'} />
+				animation={'/all.json'} />
 				<Container>
 			
 				{morePosts.length > 0 &&

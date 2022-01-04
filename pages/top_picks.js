@@ -27,11 +27,12 @@ export default function Top({ allPosts, preview }) {
 
 				<Container>
 
+
 				<ReviewHeader
 				title={"Our Top Picks"}
 				pattern={"foodpattern"}
 				summary={"We visited over 50 hotels and restaurants over the past few years, these are our top picks for the best service, location and value."}
-				animation={'/top.mp4'}
+				animation={'/top.json'}
 			/>
 					
 					{/* Top Hotels */}
