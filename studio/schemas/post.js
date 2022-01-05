@@ -7,6 +7,21 @@ const Post = {
 	icon: FaPencilAlt,
 
 	fields: [
+
+		{
+			title: "Select the type of review (Hotel or Food)",
+			description: "",
+			name: "linkType",
+			type: "string",
+			validation: (Rule) => Rule.required(),
+			options: {
+				list: [
+					{ title: "Hotel", value: "hotel" },
+					{ title: "Food", value: "food" },
+				],
+				layout: "radio",
+			},
+		},
 		{
 			name: "title",
 			title: "Title",
@@ -29,6 +44,29 @@ const Post = {
 				source: "title",
 				maxLength: 96,
 			},
+		},
+		{
+			name: "publishedAt",
+			title: "Visited Date",
+			type: "datetime",
+			validation: (Rule) => Rule.required(),
+			options: {
+				calendarTodayLabel: "Today",
+			},
+		},
+		{
+			name: "address",
+			type: "string",
+			title: "Location",
+			validation: (Rule) => Rule.required(),
+		},
+		{
+			name: "roomType",
+			type: "string",
+			title: "Room Type",
+			description: "eg. 1 King Bed Lagoon Access (optional)",
+			hidden: ({ parent }) => parent?.linkType !== "hotel",
+			//validation: (Rule) => Rule.required(),
 		},
 		// {
 		// 	name: "similar",
@@ -68,20 +106,7 @@ const Post = {
 			type: "mainImageGallery",
 		},
 
-		{
-			title: "Select the type of review (Hotel or Food)",
-			description: "",
-			name: "linkType",
-			type: "string",
-			validation: (Rule) => Rule.required(),
-			options: {
-				list: [
-					{ title: "Hotel", value: "hotel" },
-					{ title: "Food", value: "food" },
-				],
-				layout: "radio",
-			},
-		},
+		
 		// {
 		// 	name: "categories",
 		// 	title: "Categories",
@@ -89,39 +114,14 @@ const Post = {
 		// 	validation: (Rule) => Rule.required(),
 		// 	of: [{ type: "reference", to: { type: "category" } }],
 		// },
-		{
-			name: "publishedAt",
-			title: "Visited Date",
-			type: "datetime",
-			validation: (Rule) => Rule.required(),
-			options: {
-				calendarTodayLabel: "Today",
-			},
-		},
+	
 
-		{
-			name: "address",
-			type: "string",
-			title: "Location",
-			validation: (Rule) => Rule.required(),
-		},
-		{
-			name: "roomType",
-			type: "string",
-			title: "Room Type",
-			description: "eg. 1 King Bed Lagoon Access (optional)",
-			hidden: ({ parent }) => parent?.linkType !== "hotel",
-			//validation: (Rule) => Rule.required(),
-		},
+	
 		{
 			name: "videoUrl",
 			type: "videoUrl",
 		},
-		{
-			name: "gallery",
-			type: "gallery",
-		},
-
+		
 		{
 			name: "hotelRating",
 			title: "Rating for Hotels",
@@ -184,6 +184,11 @@ const Post = {
 			title: "Body",
 			type: "blockContent",
 		},
+		{
+			name: "gallery",
+			type: "gallery",
+		},
+
 	],
 
 	preview: {

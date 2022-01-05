@@ -6,7 +6,7 @@ const Gallery = {
 		{
 			name: "images",
 			type: "array",
-			title: "Add 4 or more Images",
+			title: "Add additional Images (optional)",
 			of: [
 				{
 					//name: 'image',
