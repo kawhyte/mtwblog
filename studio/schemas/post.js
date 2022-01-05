@@ -30,7 +30,7 @@ const Post = {
 				Rule.required().max(100).warning("Shorter titles are usually better"),
 		},
 		{
-			name: "Internetspeed",
+			name: "internetSpeed",
 			title: "Internet Speed",
 			type: 'number',
 			description: "Must be a number ",
