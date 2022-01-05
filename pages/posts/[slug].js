@@ -18,6 +18,7 @@ import Form from "../../components/form";
 import ProConList from "../../components/pro-con-list";
 import Gallery from "../../components/gallery";
 import ReactPlayer from "react-player/youtube";
+import RoomTech from "../../components/room-tech";
 
 export default function Post({ post, morePosts, preview }) {
 	const router = useRouter();
@@ -51,7 +52,7 @@ export default function Post({ post, morePosts, preview }) {
 								<meta name='description' content={post.title} />
 								<meta property='og:title' content={post.title} key='title' />
 							</Head>
-
+<RoomTech />
 							<PostHeader
 								title={post.title}
 								blurb={post.blurb}
