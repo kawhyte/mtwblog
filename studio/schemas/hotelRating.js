@@ -123,7 +123,7 @@ const HotelRating = {
 			title: "Internet Speed",
 			name: "Internet_Speed",
 			type: "number",
-			hidden: true,
+			//hidden: true,
 
 			options: {
 				list: [
@@ -136,6 +136,8 @@ const HotelRating = {
 					{ title: "2 stars", value: 2 },
 					{ title: "1.5 stars", value: 1.5 },
 					{ title: "1 stars", value: 1 },
+					{ title: ".5 stars", value: .5 },
+					{ title: "No Pool", value: -1 },
 				],
 				layout: "radio",
 			},
