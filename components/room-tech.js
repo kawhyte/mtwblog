@@ -1,8 +1,10 @@
 import React from "react";
 
-function RoomTech({ speed }) {
+function RoomTech({ speed =10, techAvailable }) {
 	let speedResult = ["Web Browsing", "Email"];
 	let textResult = "OK";
+
+	console.log("techAvailable ", techAvailable)
 	
 	if (speed >= 0 && speed < 10) {
 		speedResult = ["Web Browsing", "Emails", "Streaming Music"];
@@ -124,38 +126,38 @@ function RoomTech({ speed }) {
 										<div className=' grid grid-cols-2 sm:grid-cols-2 gap-4 text-center'>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
-													Yes
+													{techAvailable.USB}
 												</h2>
 												<p className='leading-relaxed'>USB Ports</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
-													1.8K
+												{techAvailable.HDMI}
 												</h2>
 
 												<p className='leading-relaxed'>HDMI Ports</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
-													NO
+												{techAvailable.TV}
 												</h2>
 												<p className='leading-relaxed'>Smart TV</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
-													Yes
+												{techAvailable.Chromecast}
 												</h2>
 												<p className='leading-relaxed'>Chromecast</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900'>
-													4
+												{techAvailable.Wired}
 												</h2>
 												<p className='leading-relaxed'>Wired Internet</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900'>
-													4
+												{techAvailable.Bluetooth}
 												</h2>
 												<p className='leading-relaxed'>Bluetooth Speaker</p>
 											</div>

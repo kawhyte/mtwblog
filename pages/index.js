@@ -20,7 +20,7 @@ import IndexSection from "../components/index-section";
 export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 	const mergedArray = [...allPosts, ...allStories];
 
-	 // console.log(" ALL Posts ", allPosts)
+	  //console.log(" ALL Posts ", allPosts)
 
 	// .sort(function(a,b){
 

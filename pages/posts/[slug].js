@@ -26,18 +26,15 @@ export default function Post({ post, morePosts, preview }) {
 		return <ErrorPage statusCode={404} />;
 	}
 
-
-
-console.log(" post", post)
+	//console.log(" post", post)
 
 	let ratingType = post?.hotelRating;
 	let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`;
-	
-	
+
 	if (post?.linkType === "food") {
 		ratingType = post?.foodRating;
 	}
-
+	//console.log(" ratingType", ratingType)
 	return (
 		<Layout preview={preview} color={true} bgColor={true}>
 			<Container>
@@ -54,11 +51,11 @@ console.log(" post", post)
 								<meta name='description' content={post.title} />
 								<meta property='og:title' content={post.title} key='title' />
 							</Head>
-<RoomTech speed={post.internetSpeed} />
+
 							<PostHeader
 								title={post.title}
 								blurb={post.blurb}
-								shareURL = {shareURL}
+								shareURL={shareURL}
 								coverImage={post.coverImage}
 								date={post.date}
 								author={post.author}
@@ -73,18 +70,21 @@ console.log(" post", post)
 								//gallery={post.mainImageGallery.images}
 							/>
 
-							
-							
-								<ProConList
+							<ProConList
 								positives={post.positives}
 								negatives={post.negatives}
 								verdict={post.verdict}
 								verdict2={post.bodyVerdict}
 							/>
 							<BodySectionSeparator />
+							{post?.linkType === "hotel" && post.techRating && (
+								<RoomTech
+									speed={post.internetSpeed}
+									techAvailable={post.techRating}
+								/>
+							)}
 
 							<PostBody content={post.body} />
-						
 
 							{/* post.videoUrl && 	<div className=' aspect-w-16 aspect-h-9 mb-16'>
 						
