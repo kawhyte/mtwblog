@@ -23,25 +23,31 @@ const StarRating = ({ rating, linkType }) => {
 	propertyNames.pop();
 
 	const { average, textRating } = calculateRating(propertyNames);
-  //console.log("propertyNames",propertyNames)
+	//console.log("propertyNames",propertyNames)
 	return (
 		<>
-			<div className='flex  justify-start items-center align-top mb-4   '>
-				<svg
-					className='h-5 w-5 ml-1 fill-current text-pink-500'
-					xmlns='http://www.w3.org/2000/svg'
-					viewBox='3 3 18 18'
-					aria-hidden='true'
-					focusable='false'>
-					<path d='M20.83,9.15l-6-.52L12.46,3.08h-.92L9.18,8.63l-6,.52L2.89,10l4.55,4L6.08,19.85l.75.55L12,17.3l5.17,3.1.75-.55L16.56,14l4.55-4Z'></path>
-				</svg>
-
-				<h1 className='font-black mx-2 text-4xl md:text-6xl lg:text-6xl tracking-tighter leading-tight md:leading-none mb-2 md:text-left'>
-					{/*isFraction ? Math.floor(average) + ".5" : Math.floor(average)*/}
-					{average.toFixed(2)}
-				</h1>
-
-				<p className=' mx-1 text-xl font-black'>{textRating}</p>
+			<div className='flex  justify-start items-end align-top mb-6   '>
+				<div className='flex flex-col justify-center items-center bg-pink-500 p-3 rounded-2xl'>
+					<h1 className='font-black text-white mx-2 text-4xl md:text-6xl lg:text-6xl tracking-tighter leading-tight md:leading-none md:text-left'>
+						{/*isFraction ? Math.floor(average) + ".5" : Math.floor(average)*/}
+						{average.toFixed(2)}
+					</h1>
+					<div className="flex items-center">
+						<span className=' text-base uppercase text-white'>out of 5</span>
+						<span>
+							{" "}
+							<svg
+								className='h-3 w-3 ml-1 mb-1  fill-current text-white'
+								xmlns='http://www.w3.org/2000/svg'
+								viewBox='3 3 18 18'
+								aria-hidden='true'
+								focusable='false'>
+								<path d='M20.83,9.15l-6-.52L12.46,3.08h-.92L9.18,8.63l-6,.52L2.89,10l4.55,4L6.08,19.85l.75.55L12,17.3l5.17,3.1.75-.55L16.56,14l4.55-4Z'></path>
+							</svg>
+						</span>
+					</div>
+				</div>
+				<p className=' ml-4 text-3xl font-black'>{textRating}</p>
 			</div>
 
 			<p className=' font-Montserrat font-medium  my-3 mt-2  text-lg '>
@@ -66,15 +72,15 @@ const StarRating = ({ rating, linkType }) => {
 								<div className=' flex-1 flex flex-row align-middle items-center'>
 									<p className='mr-2 my-1 text-base font-medium md:text-lg '>
 										{/*item[0].replace(/_/g, " ")*/}
-										 { item[1] >= 0  ?  ratingItem[text].name:`No on-site ${ratingItem[text].name} availiable`}
+										{item[1] >= 0
+											? ratingItem[text].name
+											: `No on-site ${ratingItem[text].name} availiable`}
 									</p>
 									{item[1] > -1 && <ProgressRating progress={item[1]} />}
 								</div>
 							</div>
 						);
 					})}
-
-			
 				</div>
 			</div>
 		</>
