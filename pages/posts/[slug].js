@@ -26,7 +26,9 @@ export default function Post({ post, morePosts, preview }) {
 		return <ErrorPage statusCode={404} />;
 	}
 
-//console.log("More post", post)
+
+
+console.log(" post", post)
 
 	let ratingType = post?.hotelRating;
 	let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`;
@@ -52,7 +54,7 @@ export default function Post({ post, morePosts, preview }) {
 								<meta name='description' content={post.title} />
 								<meta property='og:title' content={post.title} key='title' />
 							</Head>
-<RoomTech />
+<RoomTech speed={post.internetSpeed} />
 							<PostHeader
 								title={post.title}
 								blurb={post.blurb}
