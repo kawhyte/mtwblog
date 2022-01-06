@@ -23,7 +23,8 @@ const StarRating = ({ rating, linkType }) => {
 	propertyNames.pop();
 
 	const { average, textRating } = calculateRating(propertyNames);
-	//console.log("propertyNames",propertyNames)
+	console.log("propertyNames",propertyNames)
+	//console.log("rating",rating)
 	return (
 		<>
 			<div className='flex  justify-start items-end align-top mb-6   '>
