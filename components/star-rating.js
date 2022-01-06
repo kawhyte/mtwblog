@@ -35,7 +35,7 @@ const StarRating = ({ rating, linkType }) => {
 					<div className="flex items-center">
 						<span className=' text-base uppercase text-white'>out of 5</span>
 						<span>
-							{" "}
+							
 							<svg
 								className='h-3 w-3 ml-1 mb-1  fill-current text-white'
 								xmlns='http://www.w3.org/2000/svg'
@@ -72,11 +72,11 @@ const StarRating = ({ rating, linkType }) => {
 								<div className=' flex-1 flex flex-row align-middle items-center'>
 									<p className='mr-2 my-1 text-base font-medium md:text-lg '>
 										{/*item[0].replace(/_/g, " ")*/}
-										{item[1] >= 0
+										{item[1] > 0
 											? ratingItem[text].name
 											: `No on-site ${ratingItem[text].name} availiable`}
 									</p>
-									{item[1] > -1 && <ProgressRating progress={item[1]} />}
+									{item[1] > 0 && <ProgressRating progress={item[1]} />}
 								</div>
 							</div>
 						);

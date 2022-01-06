@@ -66,7 +66,7 @@ function RoomTech({ speed =10, techAvailable }) {
 						<div className='p-4  w-full'>
 							{/*Internet Section */}
 							<div className='h-full p-6 rounded-lg border-2 border-green-500 flex flex-col relative overflow-hidden'>
-								<span className='bg-green-500 text-white px-3 py-1 tracking-widest text-base absolute right-0 top-0 rounded-bl uppercase'>
+								<span className='bg-green-500 text-white px-3 py-1 m-1 sm:hidden md:block tracking-widest text-base absolute right-0 top-0 uppercase'>
 									{textResult}
 								</span>
 								<h2 className='text-pink-500  text-base  tracking-widest title-font mb-1 font-medium uppercase'>
