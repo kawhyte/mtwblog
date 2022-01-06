@@ -161,7 +161,7 @@ const HotelRating = {
 
 			options: {
 				list: [
-					{ title: "5 stars", value: 10 },
+					{ title: "10 stars", value: 10 },
 					{ title: "4.5 stars", value: 4.5 },
 					{ title: "4 stars", value: 4 },
 					{ title: "3.5 stars", value: 3.5 },
