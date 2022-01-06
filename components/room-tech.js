@@ -3,7 +3,7 @@ import React from "react";
 function RoomTech({ speed }) {
 	let speedResult = ["Web Browsing", "Email"];
 	let textResult = "OK";
-	speed = 44;
+	
 	if (speed >= 0 && speed < 10) {
 		speedResult = ["Web Browsing", "Emails", "Streaming Music"];
 		textResult = "Slow";
@@ -63,8 +63,8 @@ function RoomTech({ speed }) {
 					<div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
 						<div className='p-4  w-full'>
 							{/*Internet Section */}
-							<div className='h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden'>
-								<span className='bg-indigo-500 text-white px-3 py-1 tracking-widest text-base absolute right-0 top-0 rounded-bl uppercase'>
+							<div className='h-full p-6 rounded-lg border-2 border-green-500 flex flex-col relative overflow-hidden'>
+								<span className='bg-green-500 text-white px-3 py-1 tracking-widest text-base absolute right-0 top-0 rounded-bl uppercase'>
 									{textResult}
 								</span>
 								<h2 className='text-pink-500  text-base  tracking-widest title-font mb-1 font-medium uppercase'>
@@ -78,7 +78,7 @@ function RoomTech({ speed }) {
 									</span>
 								</h1>
 
-								<p className='mb-3 text-base text-black pb-2'>
+								<p className='mb-3 text-gray-900 font-medium text-lg pb-2'>
 									This internet speed is great for:
 								</p>
 
@@ -86,8 +86,8 @@ function RoomTech({ speed }) {
 									{speedResult.map((item, i) => (
 										<p
 											key={i}
-											className='flex   items-center text-gray-600 mb-2'>
-											<span className='w-6 h-6 mb-2 mr-2 inline-flex items-center justify-center bg-green-400 text-white rounded-full flex-shrink-0'>
+											className='flex text-sm md:text-base  items-center text-gray-600 mb-2'>
+											<span className='w-4 h-4 mb-2 mr-2 inline-flex items-center justify-center bg-green-400 text-white rounded-full flex-shrink-0'>
 												<svg
 													fill='none'
 													stroke='currentColor'
@@ -110,53 +110,51 @@ function RoomTech({ speed }) {
 						{/*Ports, Plugs & TV */}
 
 						<div className='p-4  w-full'>
-							<div className='h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden'>
+							<div className='h-full p-6 rounded-lg border-2 border-pink-500 flex flex-col relative overflow-hidden'>
 								<h2 className='text-pink-500  text-base tracking-widest title-font mb-1 font-medium uppercase'>
 									Ports, Plugs & TV
 								</h2>
 								<h1 className='text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200'></h1>
-								<p className='mb-3 text-base text-black pb-2'>
+								<p className='mb-3 text-gray-900 font-medium text-lg pb-2'>
 									Availiable in the room
 								</p>
 
 								<section className='text-gray-600 body-font'>
 									<div className='container px-2 py-2 mx-auto'>
-										<div className=' grid grid-cols-1 sm:grid-cols-2 gap-4 text-center'>
+										<div className=' grid grid-cols-2 sm:grid-cols-2 gap-4 text-center'>
 											<div className=''>
-												<h2 className='title-font font-medium sm:text-4xl text-3xl text-gray-900 uppercase'>
+												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
 													Yes
 												</h2>
 												<p className='leading-relaxed'>USB Ports</p>
 											</div>
 											<div className=''>
-												<h2 className='title-font font-medium sm:text-4xl text-3xl text-gray-900 uppercase'>
+												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
 													1.8K
 												</h2>
-												
+
 												<p className='leading-relaxed'>HDMI Ports</p>
 											</div>
 											<div className=''>
-												<h2 className='title-font font-medium sm:text-4xl text-3xl text-gray-900 uppercase'>
+												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
 													NO
 												</h2>
 												<p className='leading-relaxed'>Smart TV</p>
 											</div>
 											<div className=''>
-												<h2 className='title-font font-medium sm:text-4xl text-3xl text-gray-900 uppercase'>
+												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
 													Yes
 												</h2>
-												<p className='leading-relaxed'>
-													Chromecast 
-												</p>
+												<p className='leading-relaxed'>Chromecast</p>
 											</div>
 											<div className=''>
-												<h2 className='title-font font-medium sm:text-4xl text-3xl text-gray-900'>
+												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900'>
 													4
 												</h2>
 												<p className='leading-relaxed'>Wired Internet</p>
 											</div>
 											<div className=''>
-												<h2 className='title-font font-medium sm:text-4xl text-3xl text-gray-900'>
+												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900'>
 													4
 												</h2>
 												<p className='leading-relaxed'>Bluetooth Speaker</p>
