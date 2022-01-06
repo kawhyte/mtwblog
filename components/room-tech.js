@@ -55,8 +55,8 @@ function RoomTech({ speed =10, techAvailable }) {
 	}
 	return (
 		<section className=''>
-			<section className='text-gray-600 body-font overflow-hidden'>
-				<div className='container px-5 py-20 mx-auto'>
+			<section className='text-gray-800 body-font overflow-hidden'>
+				<div className='container px-5 pb-20 mx-auto'>
 					<div className='flex flex-col text-center w-full mb-12'>
 						<h1 className='font-fancy text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
 							Hotel Room Techology
