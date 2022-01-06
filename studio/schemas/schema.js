@@ -16,6 +16,7 @@ import verdict from "./verdict";
 import blurb from "./blurb";
 import hotelRating from "./hotelRating";
 import foodRating from "./foodRating";
+import techRating from "./roomTechRatings";
 import amenities from "./amenities";
 import gallery from "./gallery";
 import mainImageGallery  from "./mainImageGallery"
@@ -43,6 +44,7 @@ export default createSchema({
 		blurb,
 		hotelRating,
 		foodRating,
+		techRating,
 		amenities,
 		gallery,
 		youtube,

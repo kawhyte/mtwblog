@@ -8,7 +8,7 @@ const HotelRating = {
 	options: {
 		collapsible: true, // Makes the whole fieldset collapsible
 		collapsed: false, // Defines if the fieldset should be collapsed by default or not
-		columns: 2, // Defines a grid for the fields and how many columns it should have
+		columns: 3, // Defines a grid for the fields and how many columns it should have
 	},
 	initialValue: {
 		Bed_Comfort: 1,
@@ -43,7 +43,7 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
+			
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
@@ -66,7 +66,7 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
+			
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
@@ -90,7 +90,7 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
+			
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
@@ -115,7 +115,7 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
+			
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
@@ -139,7 +139,7 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
+			
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
@@ -163,7 +163,7 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
+			
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
@@ -187,7 +187,7 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
+			
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
@@ -211,7 +211,7 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
+			
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
@@ -236,7 +236,7 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
+			
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
@@ -262,7 +262,7 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
+			
 
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},

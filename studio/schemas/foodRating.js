@@ -8,7 +8,7 @@ const FoodRating = {
 	options: {
 		collapsible: true, // Makes the whole fieldset collapsible
 		collapsed: false, // Defines if the fieldset should be collapsed by default or not
-		columns: 2, // Defines a grid for the fields and how many columns it should have
+		columns: 3, // Defines a grid for the fields and how many columns it should have
 	},
 	initialValue: {
 		Ambiance: 1,
@@ -43,9 +43,7 @@ const FoodRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
+			
 		},
 
 		{
@@ -68,8 +66,8 @@ const FoodRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
-			//validation: (Rule) => Rule.required().min(1).max(5),
+			
+		
 		},
 		{
 			title: "Presentation of food on Plate",
@@ -91,9 +89,7 @@ const FoodRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
+		
 		},
 		{
 			title: "Restaurant Service/Staff",
@@ -115,9 +111,6 @@ const FoodRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 
 		{
@@ -140,9 +133,7 @@ const FoodRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
+		
 		},
 		{
 			title: "Restaurant Cleanliness",
@@ -164,9 +155,7 @@ const FoodRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
+	
 		},
 		{
 			title: "Restaurant Bathroom Cleanliness",
@@ -188,9 +177,7 @@ const FoodRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
 
-			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 
 		{
@@ -213,9 +200,6 @@ const FoodRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 
 		{
@@ -238,9 +222,7 @@ const FoodRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
+		
 		},
 
 		{
@@ -264,9 +246,6 @@ const FoodRating = {
 				layout: "radio",
 			},
 
-			fieldset: "social",
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 	],
 };

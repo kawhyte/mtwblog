@@ -22,6 +22,8 @@ const Post = {
 				layout: "radio",
 			},
 		},
+		
+	
 		{
 			name: "title",
 			title: "Title",
@@ -29,12 +31,10 @@ const Post = {
 			validation: (Rule) =>
 				Rule.required().max(100).warning("Shorter titles are usually better"),
 		},
-		{
-			name: "internetSpeed",
-			title: "Internet Speed",
-			type: 'number',
-			description: "Must be a number ",
-		},
+		
+
+
+
 		{
 			name: "order",
 			title: "Order",
@@ -135,6 +135,7 @@ const Post = {
 			type: "hotelRating",
 			hidden: ({ parent }) => parent?.linkType !== "hotel",
 		},
+	
 		{
 			name: "foodRating",
 			title: "Rating for Food",
@@ -149,6 +150,20 @@ const Post = {
 		// 	type: "array",
 		// 	of: [{ type: "amenities" }],
 		// },
+		{
+			name: "internetSpeed",
+			title: "Internet Speed",
+			type: 'number',
+			description: "Must be a number ",
+			hidden: ({ parent }) => parent?.linkType !== "hotel",
+		},
+		{
+			name: "techRating",
+			title: "Was the item present in the Hotel room?",
+			description: "Say if the item was in the room",
+			type: "techRating",
+			hidden: ({ parent }) => parent?.linkType !== "hotel",
+		},
 
 		{
 			title: "Positives",
