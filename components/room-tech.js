@@ -4,7 +4,7 @@ function RoomTech({ speed =10, techAvailable }) {
 	let speedResult = ["Web Browsing", "Email"];
 	let textResult = "OK";
 
-	console.log("techAvailable ", techAvailable)
+	//console.log("techAvailable ", techAvailable)
 	
 	if (speed >= 0 && speed < 10) {
 		speedResult = ["Web Browsing", "Emails", "Streaming Music"];
