@@ -23,7 +23,7 @@ const StarRating = ({ rating, linkType }) => {
 	propertyNames.pop();
 
 	const { average, textRating } = calculateRating(propertyNames);
-
+  console.log("propertyNames",propertyNames)
 	return (
 		<>
 			<div className='flex  justify-start items-center align-top mb-4   '>
@@ -66,9 +66,9 @@ const StarRating = ({ rating, linkType }) => {
 								<div className=' flex-1 flex flex-row align-middle items-center'>
 									<p className='mr-2 my-1 text-base font-medium md:text-lg '>
 										{/*item[0].replace(/_/g, " ")*/}
-										{ratingItem[text].name}
+										 { item[1] >= 0  ?  ratingItem[text].name:`No ${ratingItem[text].name} Availiable`}
 									</p>
-									<ProgressRating progress={item[1]} />
+									{item[1] > -1 && <ProgressRating progress={item[1]} />}
 								</div>
 							</div>
 						);
