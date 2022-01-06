@@ -66,7 +66,7 @@ const StarRating = ({ rating, linkType }) => {
 								<div className=' flex-1 flex flex-row align-middle items-center'>
 									<p className='mr-2 my-1 text-base font-medium md:text-lg '>
 										{/*item[0].replace(/_/g, " ")*/}
-										 { item[1] >= 0  ?  ratingItem[text].name:`No ${ratingItem[text].name} Availiable`}
+										 { item[1] >= 0  ?  ratingItem[text].name:`No on-site ${ratingItem[text].name} availiable`}
 									</p>
 									{item[1] > -1 && <ProgressRating progress={item[1]} />}
 								</div>
