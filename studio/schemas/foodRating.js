@@ -121,6 +121,7 @@ const FoodRating = {
 			title: "Restaurant Ambiance",
 			name: "Ambiance",
 			type: "number",
+			hidden: true,
 
 			options: {
 				list: [
@@ -167,6 +168,7 @@ const FoodRating = {
 			title: "Restaurant Bathroom Cleanliness",
 			name: "Bathroom",
 			type: "number",
+			hidden: true,
 
 			options: {
 				list: [
