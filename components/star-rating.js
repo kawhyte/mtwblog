@@ -33,10 +33,9 @@ const StarRating = ({ rating, linkType }) => {
 						{/*isFraction ? Math.floor(average) + ".5" : Math.floor(average)*/}
 						{average.toFixed(2)}
 					</h1>
-					<div className="flex items-center">
+					<div className='flex items-center'>
 						<span className=' text-base uppercase text-white'>out of 5</span>
 						<span>
-							
 							<svg
 								className='h-3 w-3 ml-1 mb-1  fill-current text-white'
 								xmlns='http://www.w3.org/2000/svg'
@@ -54,32 +53,34 @@ const StarRating = ({ rating, linkType }) => {
 			<p className=' font-Montserrat font-medium  my-3 mt-2  text-lg '>
 				{linkType === "hotel" ? "Hotel" : "Restaurant/Food"} rating breakdown{" "}
 			</p>
-			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl'>
-				<div className='grid grid-cols-1  gap-x-8 gap-y-3 lg:gap-y-3  lg:gap-x-20 md:grid-cols-1 lg:grid-cols-3 '>
+			<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 max-w-8xl '>
+				<div className='grid grid-cols-1  gap-x-8 gap-y-5 lg:gap-y-4  md:gap-x-10  lg:gap-x-10 md:grid-cols-1 lg:grid-cols-3 mt-3 '>
 					{propertyNames.map((item) => {
 						let text = item[0];
 
 						return (
-							<div key={item[0]} className=' flex align-middle  items-center'>
-								<span className=' pr-4'>
-									<Image
-										className=''
-										src={ratingItem[text].icon}
-										alt={"icon"}
-										width={25}
-										height={25}
-									/>
-								</span>
-								<div className=' flex-1 flex flex-row align-middle items-center'>
+							<div key={item[0]} className=' border flex flex-col justify-center p-3 rounded-2xl '>
+								<div className='flex flex-row justify-start items-center'>
+									<span className=' pr-4'>
+										<Image
+											className=''
+											src={ratingItem[text].icon}
+											alt={"icon"}
+											width={25}
+											height={25}
+										/>
+									</span>
+
+									{item[1] > 0
+										? `${ratingItem[text].name}` 
+										: `No on-site ${ratingItem[text].name} availiable`} 
+								</div>
+								{item[1] > 0 && <div className=' flex-1 flex flex-row align-middle items-center'>
 									<p className='mr-2 my-1 text-base font-medium md:text-lg '>
 										{/*item[0].replace(/_/g, " ")*/}
-										{item[1] > 0 
-											? ratingItem[text].name
-											: `No on-site ${ratingItem[text].name} availiable`}
 									</p>
-									{item[1] > 0 && <ProgressRating progress={item[1]} />}
-								
-								</div>
+									 <ProgressRating progress={item[1]} />
+								</div>}
 							</div>
 						);
 					})}
