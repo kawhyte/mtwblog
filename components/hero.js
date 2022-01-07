@@ -22,7 +22,7 @@ function Hero() {
 						layout='fill'
 						sizes='50vw'
 						alt='poster photo'
-						quality={50}
+						quality={99}
 					/>
 				</div>
 

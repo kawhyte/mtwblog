@@ -58,7 +58,7 @@ export default function Nav({ color, bgColor }) {
 		<Disclosure
 			as='nav'
 			className={
-				" top-0 sticky bg-white py-4  mx-auto h-[72px] bg-transparent w-full  z-50   mt-5 backdrop-blur-sm max-w-8xl xl:px-8 firefox:bg-opacity-90  " +
+				" top-0 whitespace-nowrap pt-6 pb-4 sticky py-4 mx-auto h-[72px] bg-transparent w-full  z-50   mt-5 backdrop-blur-sm bg-white max-w-8xl xl:px-8 firefox:bg-opacity-90  " +
 				bg
 			}>
 			{({ open }) => (
@@ -78,7 +78,7 @@ export default function Nav({ color, bgColor }) {
 							</div>
 							<div className='flex-1 flex items-center justify-center sm:items-stretch md:justify-start '>
 								<Link href='/' className='cursor-pointer' passHref>
-									<div className='flex-shrink-0 flex items-center'>
+									<div className='flex-shrink-0 flex justify-center items-center mt-2'>
 										<div className='mx-4 '>
 											<Image
 												className='rounded-xl '
