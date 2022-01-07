@@ -24,7 +24,7 @@ const StarRating = ({ rating, linkType }) => {
 
 	const { average, textRating } = calculateRating(propertyNames);
 	console.log("propertyNames",propertyNames)
-	console.log("rating",rating)
+	//console.log("rating",rating)
 	return (
 		<>
 			<div className='flex  justify-start items-end align-top mb-6   '>

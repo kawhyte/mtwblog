@@ -70,9 +70,6 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
 			title: "Hotel Service",
@@ -96,9 +93,6 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 
 		{
@@ -123,9 +117,6 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
 			title: "Internet Speed",
@@ -196,9 +187,6 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
 			title: " Hotel Pool",
@@ -222,9 +210,6 @@ const HotelRating = {
 				layout: "radio",
 			},
 
-			
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 
 		{
@@ -248,10 +233,6 @@ const HotelRating = {
 				],
 				layout: "radio",
 			},
-
-			
-
-			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 
 		
