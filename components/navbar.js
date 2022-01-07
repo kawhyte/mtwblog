@@ -78,7 +78,7 @@ export default function Nav({ color, bgColor }) {
 							</div>
 							<div className='flex-1 flex items-center justify-center sm:items-stretch md:justify-start '>
 								<Link href='/' className='cursor-pointer' passHref>
-									<div className='flex-shrink-0 flex justify-center items-center mt-2'>
+									<div className='flex-shrink-0 flex justify-center items-center '>
 										<div className='mx-4 '>
 											<Image
 												className='rounded-xl '
