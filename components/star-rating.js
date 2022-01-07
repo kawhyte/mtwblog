@@ -23,7 +23,7 @@ const StarRating = ({ rating, linkType }) => {
 	propertyNames.pop();
 
 	const { average, textRating } = calculateRating(propertyNames);
-	//console.log("propertyNames",propertyNames)
+	console.log("propertyNames",propertyNames)
 	//console.log("rating",rating)
 	return (
 		<>

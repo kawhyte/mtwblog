@@ -25,7 +25,7 @@ const FoodRating = {
 	fields: [
 		{
 			title: "Restaurant Location",
-			name: "Location",
+			name: "Restaurant_Location",
 			type: "number",
 
 			options: {
@@ -96,7 +96,7 @@ const FoodRating = {
 		},
 		{
 			title: "Restaurant Service/Staff",
-			name: "Service",
+			name: "Restaurant_Service",
 			type: "number",
 
 			options: {
@@ -117,33 +117,10 @@ const FoodRating = {
 
 		},
 
-		{
-			title: "Restaurant Ambiance",
-			name: "Ambiance",
-			type: "number",
-			hidden: true,
-
-			options: {
-				list: [
-					{ title: "5 stars", value: 5 },
-					{ title: "4.5 stars", value: 4.5 },
-					{ title: "4 stars", value: 4 },
-					{ title: "3.5 stars", value: 3.5 },
-					{ title: "3 stars", value: 3 },
-					{ title: "2.5 stars", value: 2.5 },
-					{ title: "2 stars", value: 2 },
-					{ title: "1.5 stars", value: 1.5 },
-					{ title: "1 stars", value: 1 },
-					{ title: ".5 stars", value: .5 }
-				],
-				layout: "radio",
-			},
-
 		
-		},
 		{
 			title: "Restaurant Cleanliness",
-			name: "Cleanliness",
+			name: "Restaurant_Cleanliness",
 			type: "number",
 
 			options: {
@@ -164,31 +141,7 @@ const FoodRating = {
 
 	
 		},
-		{
-			title: "Restaurant Bathroom Cleanliness",
-			name: "Bathroom",
-			type: "number",
-			hidden: true,
-
-			options: {
-				list: [
-					{ title: "5 stars", value: 5 },
-					{ title: "4.5 stars", value: 4.5 },
-					{ title: "4 stars", value: 4 },
-					{ title: "3.5 stars", value: 3.5 },
-					{ title: "3 stars", value: 3 },
-					{ title: "2.5 stars", value: 2.5 },
-					{ title: "2 stars", value: 2 },
-					{ title: "1.5 stars", value: 1.5 },
-					{ title: "1 stars", value: 1 },
-					{ title: ".5 stars", value: .5 },
-					{ title: "No bathroom", value: 0 },
-				],
-				layout: "radio",
-			},
-
-
-		},
+		
 
 		{
 			title: "Would we return to this Restaurant?",
@@ -213,9 +166,10 @@ const FoodRating = {
 
 		},
 
+
 		{
 			title: "Food Value",
-			name: "Value",
+			name: "Food_Value",
 			type: "number",
 
 			options: {
@@ -236,8 +190,16 @@ const FoodRating = {
 
 		
 		},
+		
 
-		{
+		
+	],
+};
+
+export default FoodRating;
+
+
+{/*
 			title: "Overall",
 			name: "ratingOverall",
 			type: "number",
@@ -259,8 +221,53 @@ const FoodRating = {
 				layout: "radio",
 			},
 
-		},
-	],
-};
+		*/}
+		{/*
+			title: "Restaurant Bathroom Cleanliness",
+			name: "Bathroom",
+			type: "number",
+			hidden: true,
 
-export default FoodRating;
+			options: {
+				list: [
+					{ title: "5 stars", value: 5 },
+					{ title: "4.5 stars", value: 4.5 },
+					{ title: "4 stars", value: 4 },
+					{ title: "3.5 stars", value: 3.5 },
+					{ title: "3 stars", value: 3 },
+					{ title: "2.5 stars", value: 2.5 },
+					{ title: "2 stars", value: 2 },
+					{ title: "1.5 stars", value: 1.5 },
+					{ title: "1 stars", value: 1 },
+					{ title: ".5 stars", value: .5 },
+					{ title: "No bathroom", value: 0 },
+				],
+				layout: "radio",
+			},
+
+
+		*/}
+		{/*
+			title: "Restaurant Ambiance",
+			name: "Ambiance",
+			type: "number",
+			hidden: true,
+
+			options: {
+				list: [
+					{ title: "5 stars", value: 5 },
+					{ title: "4.5 stars", value: 4.5 },
+					{ title: "4 stars", value: 4 },
+					{ title: "3.5 stars", value: 3.5 },
+					{ title: "3 stars", value: 3 },
+					{ title: "2.5 stars", value: 2.5 },
+					{ title: "2 stars", value: 2 },
+					{ title: "1.5 stars", value: 1.5 },
+					{ title: "1 stars", value: 1 },
+					{ title: ".5 stars", value: .5 }
+				],
+				layout: "radio",
+			},
+
+		
+		*/}
