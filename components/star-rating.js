@@ -23,7 +23,7 @@ const StarRating = ({ rating, linkType }) => {
 	propertyNames.pop();
 
 	const { average, textRating } = calculateRating(propertyNames);
-	//console.log("propertyNames",propertyNames)
+	console.log("propertyNames",propertyNames)
 	console.log("rating",rating)
 	return (
 		<>
@@ -72,7 +72,7 @@ const StarRating = ({ rating, linkType }) => {
 									</span>
 
 									{item[1] > 0
-										? `${ratingItem[text].name}` 
+										? `${ratingItem[text]?.name}` 
 										: `No on-site ${ratingItem[text].name} availiable`} 
 								</div>
 								{item[1] > 0 && <div className=' flex-1 flex flex-row align-middle items-center'>
