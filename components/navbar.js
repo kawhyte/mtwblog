@@ -58,7 +58,7 @@ export default function Nav({ color, bgColor }) {
 		<Disclosure
 			as='nav'
 			className={
-				" top-0 whitespace-nowrap pt-6 pb-4 sticky py-4 mx-auto h-[72px] bg-transparent w-full  z-50   mt-5 backdrop-blur-sm bg-white max-w-8xl xl:px-8 firefox:bg-opacity-90  " +
+				" top-0 whitespace-nowrap pt-6 pb-4 sticky py-4 mx-auto h-[72px] bg-transparent w-full  z-50   mt-5 backdrop-blur-sm bg-opacity-80 bg-clip-padding backdrop-filter blur-backdrop-filter bg-white max-w-8xl xl:px-8 firefox:bg-opacity-90  " +
 				bg
 			}>
 			{({ open }) => (

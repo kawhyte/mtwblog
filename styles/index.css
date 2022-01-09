@@ -81,3 +81,9 @@ background-color: rgba(var(--bg-color));
     
     margin-bottom: 30px;
   }
+
+  .backdrop-filter{
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
