@@ -26,7 +26,10 @@ export default function Post({ post, morePosts, preview }) {
 		return <ErrorPage statusCode={404} />;
 	}
 
+	// console.log(" post?.mainImageGallery?.images", post?.mainImageGallery?.images)
+	// console.log(" post.gallery.images", post.gallery.images)
 	//console.log(" post", post)
+
 
 	let ratingType = post?.hotelRating;
 	let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`;
@@ -66,7 +69,7 @@ export default function Post({ post, morePosts, preview }) {
 								rating={ratingType}
 								roomType={post.roomType}
 								linkType={post.linkType}
-								gallery={post?.mainImageGallery?.images || post.gallery.images}
+								gallery={post?.mainImageGallery?.images}
 								//gallery={post.mainImageGallery.images}
 							/>
 

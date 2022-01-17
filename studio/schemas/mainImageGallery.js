@@ -7,6 +7,7 @@ const secondaryMainImages = {
 			name: "images",
 			type: "array",
 			title: "Add Images",
+			validation: (Rule) => Rule.required(),
 			of: [
 				{
 					//name: 'image',

@@ -39,14 +39,10 @@ const HotelRating = {
 					{ title: "2 stars", value: 2 },
 					{ title: "1.5 stars", value: 1.5 },
 					{ title: "1 stars", value: 1 },
-					{ title: ".5 stars", value: .5 },
-					
+					{ title: ".5 stars", value: 0.5 },
 				],
 				layout: "radio",
 			},
-
-			
-			
 		},
 		{
 			title: "Room Cleanliness",
@@ -64,12 +60,10 @@ const HotelRating = {
 					{ title: "2 stars", value: 2 },
 					{ title: "1.5 stars", value: 1.5 },
 					{ title: "1 stars", value: 1 },
-					{ title: ".5 stars", value: .5 },
-				
+					{ title: ".5 stars", value: 0.5 },
 				],
 				layout: "radio",
 			},
-
 		},
 		{
 			title: "Hotel Service",
@@ -87,12 +81,10 @@ const HotelRating = {
 					{ title: "2 stars", value: 2 },
 					{ title: "1.5 stars", value: 1.5 },
 					{ title: "1 stars", value: 1 },
-					{ title: ".5 stars", value: .5 },
-					
+					{ title: ".5 stars", value: 0.5 },
 				],
 				layout: "radio",
 			},
-
 		},
 
 		{
@@ -111,37 +103,34 @@ const HotelRating = {
 					{ title: "2 stars", value: 2 },
 					{ title: "1.5 stars", value: 1.5 },
 					{ title: "1 stars", value: 1 },
-					{ title: ".5 stars", value: .5 },
-					
+					{ title: ".5 stars", value: 0.5 },
 				],
 				layout: "radio",
 			},
-
 		},
 		{
 			title: "Internet Speed",
 			name: "Internet_Speed",
 			type: "number",
-			description:"Test",
+
 			//hidden: true,
 
 			options: {
 				list: [
-					{ title: "5 stars (Excellent)", value: 5 },
-					{ title: "4.5 stars (Near Excellent)", value: 4.5 },
-					{ title: "4 stars (Very Fast)", value: 4 },
-					{ title: "3.5 stars (Fast)", value: 3.5 },
-					{ title: "3 stars (Great)", value: 3 },
-					{ title: "2.5 stars (Good)", value: 2.5 },
-					{ title: "2 stars (Above Average)", value: 2 },
-					{ title: "1.5 stars(Average) ", value: 1.5 },
-					{ title: "1 stars  (Poor)", value: 1 },
-					{ title: ".5 stars (Horrible)", value: .5 },
+					{ title: "5 stars ( > 40)", value: 5 },
+					{ title: "4.5 stars (> 30 && < 40)", value: 4.5 },
+					{ title: "4 stars ( > 25 && < 30)", value: 4 },
+					{ title: "3.5 stars (> 14 && < 25)", value: 3.5 },
+					{ title: "3 stars (> 12 && < 14)", value: 3 },
+					{ title: "2.5 stars (> 10 && < 12)", value: 2.5 },
+					{ title: "2 stars (> 8 && < 10)", value: 2 },
+					{ title: "1.5 stars(> 3 && < 8) ", value: 1.5 },
+					{ title: "1 stars  (> 3 && < 5)", value: 1 },
+					{ title: ".5 stars (< 3)", value: 0.5 },
 					{ title: "No Internet", value: 0 },
 				],
 				layout: "radio",
 			},
-
 		},
 		{
 			title: "Room Amenities",
@@ -159,12 +148,10 @@ const HotelRating = {
 					{ title: "2 stars", value: 2 },
 					{ title: "1.5 stars", value: 1.5 },
 					{ title: "1 stars", value: 1 },
-					{ title: ".5 stars", value: .5 },
-					
+					{ title: ".5 stars", value: 0.5 },
 				],
 				layout: "radio",
 			},
-
 		},
 		{
 			title: "Hotel Gym",
@@ -182,12 +169,11 @@ const HotelRating = {
 					{ title: "2 stars", value: 2 },
 					{ title: "1.5 stars", value: 1.5 },
 					{ title: "1 stars", value: 1 },
-					{ title: ".5 stars", value: .5 },
+					{ title: ".5 stars", value: 0.5 },
 					{ title: "No Gym", value: 0 },
 				],
 				layout: "radio",
 			},
-
 		},
 		{
 			title: " Hotel Pool",
@@ -205,12 +191,11 @@ const HotelRating = {
 					{ title: "2 stars", value: 2 },
 					{ title: "1.5 stars", value: 1.5 },
 					{ title: "1 stars", value: 1 },
-					{ title: ".5 stars", value: .5 },
+					{ title: ".5 stars", value: 0.5 },
 					{ title: "No Pool", value: 0 },
 				],
 				layout: "radio",
 			},
-
 		},
 
 		{
@@ -229,21 +214,18 @@ const HotelRating = {
 					{ title: "2 stars", value: 2 },
 					{ title: "1.5 stars", value: 1.5 },
 					{ title: "1 stars", value: 1 },
-					{ title: ".5 stars", value: .5 },
-					
+					{ title: ".5 stars", value: 0.5 },
 				],
 				layout: "radio",
 			},
 		},
-
-		
 	],
 };
 
 export default HotelRating;
 
-
-{/*
+{
+	/*
 	title: "Overall",
 	name: "ratingOverall",
 	type: "number",
@@ -269,4 +251,5 @@ export default HotelRating;
 	
 
 	//validation: (Rule) => Rule.required().min(1).max(5),
-*/}
+*/
+}

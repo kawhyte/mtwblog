@@ -110,6 +110,10 @@ const Post = {
 			description:
 				"These images will appear beside the main image (4 images suggested)",
 			type: "mainImageGallery",
+			validation: (Rule) => Rule.required(),
+			options: {
+				hotspot: true,
+			},
 		},
 
 		

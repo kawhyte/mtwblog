@@ -1,15 +1,34 @@
 import React from "react";
 
-function RoomTech({ speed =10, techAvailable }) {
+function RoomTech({ speed = 10, techAvailable }) {
 	let speedResult = ["Web Browsing", "Email"];
 	let textResult = "OK";
 
 	//console.log("techAvailable ", techAvailable)
-	
-	if (speed > 0 && speed < 10) {
+
+	if (speed < 3) {
+		speedResult = ["Web Browsing", "Emails"];
+		textResult = "Poor";
+	} else if (speed >= 3 && speed < 7) {
 		speedResult = ["Web Browsing", "Emails", "Streaming Music"];
 		textResult = "Slow";
-	} else if (speed >= 10 && speed < 25) {
+	} else if (speed >= 7 && speed < 9) {
+		speedResult = [
+			"Web Browsing",
+			"Emails",
+			"Streaming Music",
+			"Streaming Youtube",
+		];
+		textResult = "Slow";
+	} else if (speed >= 9 && speed < 11) {
+		textResult = "Average";
+		speedResult = [
+			"Web Browsing",
+			"Emails",
+			"Streaming Music",
+			"Streaming Youtube",
+		];
+	} else if (speed >= 11 && speed < 13) {
 		textResult = "Average";
 		speedResult = [
 			"Web Browsing",
@@ -18,7 +37,7 @@ function RoomTech({ speed =10, techAvailable }) {
 			"Streaming Music",
 			"Streaming Youtube",
 		];
-	} else if (speed >= 25 && speed < 30) {
+	} else if (speed >= 13 && speed < 30) {
 		textResult = "Fast";
 		speedResult = [
 			"Web Browsing",
@@ -37,6 +56,7 @@ function RoomTech({ speed =10, techAvailable }) {
 			"Streaming Music",
 			"Streaming Youtube",
 			"Streaming HD Movies",
+			"Streaming 4k Movies",
 		];
 	} else if (speed >= 40) {
 		textResult = "Excellent";
@@ -47,6 +67,8 @@ function RoomTech({ speed =10, techAvailable }) {
 			"Streaming Music",
 			"Streaming Youtube",
 			"Streaming HD Movies",
+			"Streaming 4k Movies",
+			"Streaming Video Games",
 		];
 	} else {
 		textResult = "No Internet";
@@ -132,32 +154,32 @@ function RoomTech({ speed =10, techAvailable }) {
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
-												{techAvailable.HDMI}
+													{techAvailable.HDMI}
 												</h2>
 
 												<p className='leading-relaxed'>HDMI Ports</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
-												{techAvailable.TV}
+													{techAvailable.TV}
 												</h2>
 												<p className='leading-relaxed'>Smart TV</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
-												{techAvailable.Chromecast}
+													{techAvailable.Chromecast}
 												</h2>
 												<p className='leading-relaxed'>Chromecast</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900'>
-												{techAvailable.Wired}
+													{techAvailable.Wired}
 												</h2>
 												<p className='leading-relaxed'>Wired Internet</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900'>
-												{techAvailable.Bluetooth}
+													{techAvailable.Bluetooth}
 												</h2>
 												<p className='leading-relaxed'>Bluetooth Speaker</p>
 											</div>
