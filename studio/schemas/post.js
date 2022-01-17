@@ -108,7 +108,7 @@ const Post = {
 			name: "mainImageGallery",
 			title: "Main image Gallery",
 			description:
-				"These images will appear beside the main image (4 images suggested)",
+				"These images will appear beside the main image (4 images required)",
 			type: "mainImageGallery",
 			validation: (Rule) => Rule.required(),
 			options: {
