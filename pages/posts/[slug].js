@@ -69,7 +69,7 @@ export default function Post({ post, morePosts, preview }) {
 								rating={ratingType}
 								roomType={post.roomType}
 								linkType={post.linkType}
-								gallery={post?.mainImageGallery?.images}
+								gallery={post?.mainImageGallery?.images || post?.gallery?.images}
 								//gallery={post.mainImageGallery.images}
 							/>
 
