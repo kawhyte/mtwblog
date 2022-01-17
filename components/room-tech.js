@@ -6,7 +6,7 @@ function RoomTech({ speed =10, techAvailable }) {
 
 	//console.log("techAvailable ", techAvailable)
 	
-	if (speed >= 0 && speed < 10) {
+	if (speed > 0 && speed < 10) {
 		speedResult = ["Web Browsing", "Emails", "Streaming Music"];
 		textResult = "Slow";
 	} else if (speed >= 10 && speed < 25) {
@@ -49,8 +49,8 @@ function RoomTech({ speed =10, techAvailable }) {
 			"Streaming HD Movies",
 		];
 	} else {
-		textResult = "OK";
-		speedResult = ["Web Browsing", "Email"];
+		textResult = "No Internet";
+		speedResult = ["No Internet"];
 		// Fall through
 	}
 	return (
