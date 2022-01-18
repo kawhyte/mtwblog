@@ -6,13 +6,13 @@ function RoomTech({ speed = 10, techAvailable }) {
 
 	//console.log("techAvailable ", techAvailable)
 
-	if (speed < 3) {
+	if (speed < 2) {
 		speedResult = ["Web Browsing", "Emails"];
 		textResult = "Poor";
-	} else if (speed >= 3 && speed < 7) {
+	} else if (speed >= 3 && speed < 5) {
 		speedResult = ["Web Browsing", "Emails", "Streaming Music"];
 		textResult = "Slow";
-	} else if (speed >= 7 && speed < 9) {
+	} else if (speed >= 6 && speed < 8) {
 		speedResult = [
 			"Web Browsing",
 			"Emails",
@@ -20,7 +20,7 @@ function RoomTech({ speed = 10, techAvailable }) {
 			"Streaming Youtube",
 		];
 		textResult = "Slow";
-	} else if (speed >= 9 && speed < 11) {
+	} else if (speed >= 8 && speed < 13) {
 		textResult = "Average";
 		speedResult = [
 			"Web Browsing",
@@ -28,7 +28,7 @@ function RoomTech({ speed = 10, techAvailable }) {
 			"Streaming Music",
 			"Streaming Youtube",
 		];
-	} else if (speed >= 11 && speed < 13) {
+	} else if (speed >= 13 && speed < 22) {
 		textResult = "Average";
 		speedResult = [
 			"Web Browsing",
@@ -37,7 +37,7 @@ function RoomTech({ speed = 10, techAvailable }) {
 			"Streaming Music",
 			"Streaming Youtube",
 		];
-	} else if (speed >= 13 && speed < 30) {
+	} else if (speed >= 23 && speed < 30) {
 		textResult = "Fast";
 		speedResult = [
 			"Web Browsing",
