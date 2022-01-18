@@ -128,7 +128,7 @@ const HotelRating = {
 					{ title: ".5 stars (< 3)", value: 0.5 },
 					{ title: "No Internet", value: 0 },
 				],
-				layout: "radio",
+				layout: "radio", 
 			},
 		},
 		{
