@@ -112,20 +112,19 @@ const HotelRating = {
 			title: "Internet Speed",
 			name: "Internet_Speed",
 			type: "number",
-
 			//hidden: true,
 
 			options: {
 				list: [
 					{ title: "5 stars ( > 40)", value: 5 },
-					{ title: "4.5 stars (> 30 && < 40)", value: 4.5 },
+					{ title: "4.5 stars ( > 30 && < 40)", value: 4.5 },
 					{ title: "4 stars ( > 25 && < 30)", value: 4 },
-					{ title: "3.5 stars (> 14 && < 25)", value: 3.5 },
-					{ title: "3 stars (> 12 && < 14)", value: 3 },
-					{ title: "2.5 stars (> 10 && < 12)", value: 2.5 },
-					{ title: "2 stars (> 8 && < 10)", value: 2 },
-					{ title: "1.5 stars(> 3 && < 8) ", value: 1.5 },
-					{ title: "1 stars  (> 3 && < 5)", value: 1 },
+					{ title: "3.5 stars ( > 14 && < 25)", value: 3.5 },
+					{ title: "3 stars ( > 12 && < 14)", value: 3 },
+					{ title: "2.5 stars ( > 10 && < 12)", value: 2.5 },
+					{ title: "2 stars ( > 8 && < 10)", value: 2 },
+					{ title: "1.5 stars( > 3 && < 8) ", value: 1.5 },
+					{ title: "1 stars  ( > 3 && < 5)", value: 1 },
 					{ title: ".5 stars (< 3)", value: 0.5 },
 					{ title: "No Internet", value: 0 },
 				],
