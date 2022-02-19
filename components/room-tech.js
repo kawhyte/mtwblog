@@ -78,14 +78,14 @@ function RoomTech({ speed = 10, techAvailable }) {
 	return (
 		<section className=''>
 			<section className='text-gray-800 body-font overflow-hidden'>
-				<div className='container px-5 pb-20 mx-auto'>
+				<div className='container md:px-5 pb-20 mx-auto'>
 					<div className='flex flex-col text-center w-full mb-12'>
 						<h1 className='font-fancy text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
 							Hotel Room Techology
 						</h1>
 					</div>
 					<div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-						<div className='p-4  w-full'>
+						<div className='md:p-4  w-full'>
 							{/*Internet Section */}
 							<div className='h-full p-6 rounded-lg border-2 border-green-500 flex flex-col relative overflow-hidden'>
 								<span className='bg-green-500 text-white px-3 py-1 m-1 sm:hidden md:block tracking-widest text-base absolute right-0 top-0 uppercase'>
@@ -133,7 +133,7 @@ function RoomTech({ speed = 10, techAvailable }) {
 
 						{/*Ports, Plugs & TV */}
 
-						<div className='p-4  w-full'>
+						<div className='pt-4 md:p-4  w-full'>
 							<div className='h-full p-6 rounded-lg border-2 border-pink-500 flex flex-col relative overflow-hidden'>
 								<h2 className='text-pink-500  text-base tracking-widest title-font mb-1 font-medium uppercase'>
 									Ports, Plugs & TV
