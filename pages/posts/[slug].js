@@ -30,7 +30,6 @@ export default function Post({ post, morePosts, preview }) {
 	// console.log(" post.gallery.images", post.gallery.images)
 	//console.log(" post", post)
 
-
 	let ratingType = post?.hotelRating;
 	let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`;
 
@@ -69,7 +68,9 @@ export default function Post({ post, morePosts, preview }) {
 								rating={ratingType}
 								roomType={post.roomType}
 								linkType={post.linkType}
-								gallery={post?.mainImageGallery?.images || post?.gallery?.images}
+								gallery={
+									post?.mainImageGallery?.images || post?.gallery?.images
+								}
 								//gallery={post.mainImageGallery.images}
 							/>
 
@@ -111,8 +112,6 @@ export default function Post({ post, morePosts, preview }) {
 								</>
 							)}
 
-							
-
 							{/* post.videoUrl && 	<div className=' aspect-w-16 aspect-h-9 mb-16'>
 						
 						<h1 className="font-fancy mb-5 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left">
@@ -126,7 +125,7 @@ export default function Post({ post, morePosts, preview }) {
 								/>
 				</div>*/}
 
-				<BodySectionSeparator />
+							<BodySectionSeparator />
 
 							{post.gallery ? (
 								<Gallery posts={post} heading={"Birthday"} />

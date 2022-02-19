@@ -9,10 +9,10 @@ function ProConList({ positives, negatives, verdict, verdict2 }) {
 				<h1 className='font-fancy text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
 					Bottom Line
 				</h1>
-				<div className='container px-5 py-6 lg:py-12 mx-auto flex flex-wrap'>
+				<div className='container md:px-5 py-6 lg:py-12 mx-auto flex flex-wrap'>
 					<div className=' grid grid-cols-1  2xl:grid-cols-3'>
-						<div className='p-4  md:w-full'>
-							<div className='flex flex-col rounded-lg  bg-gradient-to-b from-gray-100 via-gray-200 to-green-100 border-opacity-50 p-5  '>
+						<div className='md:p-4  md:w-full'>
+							<div className='flex flex-col rounded-lg  bg-gradient-to-b from-gray-100 via-gray-200 to-green-100 border-opacity-50 p-2 md:p-5  '>
 								<div className='flex align-middle justify-start '>
 									<h2 className='font-fancy text-gray-900 text-lg md:text-2xl title-font font-bold mb-3 pr-3'>
 										What we loved
@@ -54,8 +54,8 @@ function ProConList({ positives, negatives, verdict, verdict2 }) {
 								</div>
 							</div>
 						</div>
-						<div className='p-4 md:w-full'>
-							<div className='flex flex-col rounded-lg  bg-gradient-to-b from-gray-100 via-gray-200 to-red-100 border-opacity-50 p-5  '>
+						<div className='pt-8 md:w-full'>
+							<div className='flex flex-col rounded-lg  bg-gradient-to-b from-gray-100 via-gray-200 to-red-100 border-opacity-50 p-2 md:p-5  '>
 								<div className='flex align-middle justify-start '>
 									<h2 className='font-fancy text-gray-900 text-lg md:text-2xl title-font font-bold mb-3 pr-3'>
 										What we did not like
@@ -96,8 +96,8 @@ function ProConList({ positives, negatives, verdict, verdict2 }) {
 								</div>
 							</div>
 						</div>
-						<div className='p-4 md:w-full'>
-							<div className='flex flex-col  rounded-lg  bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 border-opacity-50 p-5  '>
+						<div className='pt-8 md:w-full'>
+							<div className='flex flex-col  rounded-lg  bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 border-opacity-50 p-2 md:p-5  '>
 								<div className='flex align-middle justify-start '>
 									<h2 className='font-fancy text-gray-900 text-lg md:text-2xl title-font font-bold mb-3 pr-3'>
 										Verdict
