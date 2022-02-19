@@ -21,7 +21,7 @@ function Gallery({ posts, heading }) {
 				<div className='flex flex-col font-medium text-center w-full mb-10 lg:mb-12'>
 					<div className='flex '>
 						<p className='font-fancy text-5xl md:text-5xl lg:text-5xl font-semibold tracking-tighter leading-tight md:leading-none text-left'>
-							Gallery
+							Photo Gallery
 						</p>
 					</div>
 				</div>

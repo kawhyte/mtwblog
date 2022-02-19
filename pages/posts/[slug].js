@@ -87,21 +87,6 @@ export default function Post({ post, morePosts, preview }) {
 								/>
 							)}
 
-							<PostBody content={post.body} />
-
-							{/* post.videoUrl && 	<div className=' aspect-w-16 aspect-h-9 mb-16'>
-						
-						<h1 className="font-fancy mb-5 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left">
-						{post.videoUrl.title}
-	  </h1>
-								<ReactPlayer
-									url={post.videoUrl.url}
-									width={640}
-									height={390}
-									muted
-								/>
-				</div>*/}
-
 							{post.videoUrl?.url?.match(
 								/^(http(s)?:\/\/)?((w){3}.)?youtu(be|.be)?(\.com)?\/.+/gm
 							) && (
@@ -126,12 +111,31 @@ export default function Post({ post, morePosts, preview }) {
 								</>
 							)}
 
+							
+
+							{/* post.videoUrl && 	<div className=' aspect-w-16 aspect-h-9 mb-16'>
+						
+						<h1 className="font-fancy mb-5 text-4xl md:text-4xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left">
+						{post.videoUrl.title}
+	  </h1>
+								<ReactPlayer
+									url={post.videoUrl.url}
+									width={640}
+									height={390}
+									muted
+								/>
+				</div>*/}
+
+				<BodySectionSeparator />
+
 							{post.gallery ? (
 								<Gallery posts={post} heading={"Birthday"} />
 							) : (
 								" "
 							)}
 						</article>
+
+						<PostBody content={post.body} />
 						<SectionSeparator />
 
 						<Comments comments={post.comments} />
