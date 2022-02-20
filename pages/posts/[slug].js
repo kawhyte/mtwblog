@@ -2,6 +2,8 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
 import PostBody from "../../components/post-body";
+import Footer from '../../components/footer'
+import Nav from '../../components/navbar'
 import ShareButtons from "../../components/share-buttons";
 import MoreStories from "../../components/more-stories";
 import Header from "../../components/header";
@@ -38,8 +40,9 @@ export default function Post({ post, morePosts, preview }) {
 	}
 	//console.log(" ratingType", ratingType)
 	return (
-		<Layout preview={preview} color={true} bgColor={true}>
-			<Container>
+	<> 
+	<Nav />
+		<Container>
 				<Header />
 				{router.isFallback ? (
 					<PostTitle>Loading…</PostTitle>
@@ -135,17 +138,18 @@ export default function Post({ post, morePosts, preview }) {
 						</article>
 
 						<PostBody content={post.body} />
-						<SectionSeparator />
+						
 
 						<Comments comments={post.comments} />
 						<Form _id={post._id} />
 
-						<SectionSeparator />
+						
 						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 					</>
 				)}
-			</Container>
-		</Layout>
+				</Container>
+				<Footer />
+				</>	
 	);
 }
 

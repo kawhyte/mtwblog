@@ -41,7 +41,7 @@ export default function PostHeader({
 
 	return (
 		<>
-			<div className='flex md:flex-col flex-col'>
+			<div className='flex md:flex-col flex-col '>
 				<div className='md:mb-4 -mx-5 sm:mx-0'>
 					<PostTitle>{title}</PostTitle>
 

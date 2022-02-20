@@ -4,6 +4,8 @@ import Container from "../../components/container";
 import PostBody from "../../components/post-body";
 import ShareButtons from "../../components/share-buttons";
 import MoreStories from "../../components/more-stories";
+import Footer from '../../components/footer'
+import Nav from '../../components/navbar'
 import Header from "../../components/header";
 import PostHeader from "../../components/post-header";
 import Comments from "../../components/comments";
@@ -28,7 +30,8 @@ export default function Post({ post, morePosts, preview }) {
 	let shareURL = `https://www.meetthewhytes.com/stories/${post?.slug}`;
 
 	return (
-		<Layout preview={preview} color={true} bgColor={true}>
+		<> 
+		<Nav />
 			<Container>
 				<Header />
 				{router.isFallback ? (
@@ -112,7 +115,7 @@ export default function Post({ post, morePosts, preview }) {
 					</>
 				)}
 			</Container>
-		</Layout>
+		</>
 	);
 }
 
