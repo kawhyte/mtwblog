@@ -21,7 +21,7 @@ const TechRating = {
 
 	fields: [
 		{
-			title: "USB Ports",
+			title: "Key Card needed for Elevator",
 			name: "USB",
 			type: "string",
 
