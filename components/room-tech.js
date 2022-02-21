@@ -81,7 +81,7 @@ function RoomTech({ speed = 10, techAvailable }) {
 				<div className='container md:px-5 pb-20 mx-auto'>
 					<div className='flex flex-col text-center w-full mb-12'>
 						<h1 className='font-fancy text-6xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
-							Hotel Room Techology
+							Hotel Techology
 						</h1>
 					</div>
 					<div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
@@ -136,11 +136,11 @@ function RoomTech({ speed = 10, techAvailable }) {
 						<div className='pt-4 md:p-4  w-full'>
 							<div className='h-full p-6 rounded-lg border-2 border-pink-500 flex flex-col relative overflow-hidden'>
 								<h2 className='text-pink-500  text-base tracking-widest title-font mb-1 font-medium uppercase'>
-									Ports, Plugs & TV
+									TV Ports, Plugs   & other tech
 								</h2>
 								<h1 className='text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200'></h1>
 								<p className='mb-3 text-gray-900 font-medium text-lg pb-2'>
-									Availiable in the room
+									Availiable in the room/hotel
 								</p>
 
 								<section className='text-gray-600 body-font'>
@@ -150,7 +150,7 @@ function RoomTech({ speed = 10, techAvailable }) {
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
 													{techAvailable.USB}
 												</h2>
-												<p className='leading-relaxed'>USB Ports</p>
+												<p className='leading-relaxed'>Key Card needed for Elevator</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>

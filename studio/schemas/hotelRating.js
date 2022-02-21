@@ -45,7 +45,7 @@ const HotelRating = {
 			},
 		},
 		{
-			title: "Room Cleanliness",
+			title: "Room Cleanliness/Covid Protocols",
 			name: "Room_Cleanliness",
 			type: "number",
 
@@ -132,7 +132,7 @@ const HotelRating = {
 			},
 		},
 		{
-			title: "Room Amenities",
+			title: "Room Amenities (TV, Coffee machine etc.)",
 			name: "Room_Amenities",
 			type: "number",
 
