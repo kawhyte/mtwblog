@@ -83,7 +83,7 @@ export default function Post({ post, morePosts, preview }) {
 								verdict={post.verdict}
 								verdict2={post.bodyVerdict}
 							/>
-							<BodySectionSeparator />
+							
 							{post?.linkType === "hotel" && post.techRating && (
 								<RoomTech
 									speed={post.internetSpeed}
@@ -128,7 +128,7 @@ export default function Post({ post, morePosts, preview }) {
 								/>
 				</div>*/}
 
-							<BodySectionSeparator />
+							
 
 							{post.gallery ? (
 								<Gallery posts={post} heading={"Birthday"} />

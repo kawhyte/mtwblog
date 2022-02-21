@@ -31,7 +31,7 @@ export default function Post({ post, morePosts, preview }) {
 
 	return (
 		<> 
-		<Nav />
+		<Nav  />
 			<Container>
 				<Header />
 				{router.isFallback ? (
@@ -57,7 +57,7 @@ export default function Post({ post, morePosts, preview }) {
 								//videoUrl={post.videoUrl}
 								address={post.address}
 								//gallery={post.gallery.images}
-								gallery={post.mainImageGallery.images}
+								gallery={post?.mainImageGallery?.images || post?.gallery?.images}
 							/>
 							
 							<BodySectionSeparator />
@@ -106,15 +106,16 @@ export default function Post({ post, morePosts, preview }) {
 								" "
 							)}
 						</article>
-						<SectionSeparator />
+					
 						<Comments comments={post.comments} />
 						<Form _id={post._id} />
 
-						<SectionSeparator />
+					
 						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
 					</>
 				)}
 			</Container>
+			<Footer />
 		</>
 	);
 }
