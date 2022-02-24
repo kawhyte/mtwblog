@@ -93,7 +93,7 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 							/>
 						</div>
 					</div>
-					<IndexSection morePosts={moreStories} sectionBgColor='bg-yellow-50' text="Recent Stories/Guides" />
+					<IndexSection morePosts={moreStories} sectionBgColor='bg-yellow-50' text="Recent Stories/Guides" PostType="stories" />
 
 				</Container>
 			</Layout>

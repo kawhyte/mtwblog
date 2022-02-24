@@ -2,7 +2,7 @@ import React from 'react'
 import Section from "./section";
 import Link from 'next/link'
 
-function IndexSection({morePosts, sectionBgColor, text}) {
+function IndexSection({morePosts, sectionBgColor, text, PostType="posts"}) {
     return (
         <div>
         <div className={`rounded-3xl  p-8 relative  ${ sectionBgColor}`}>
@@ -29,7 +29,7 @@ function IndexSection({morePosts, sectionBgColor, text}) {
         ) : (
             ""
         )}
-        {morePosts.length > 0 && <Section posts={morePosts} />}
+        {morePosts.length > 0 && <Section posts={morePosts} PostType={PostType} />}
         {/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
     </div>
         </div>
