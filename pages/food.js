@@ -40,7 +40,7 @@ export async function getStaticProps({ preview = false }) {
 	const allPosts = await getAllPostsForNewCategory(preview, "food");
 	return {
 		props: { allPosts, preview },
-		revalidate: 1,
+		revalidate: 10,
 	};
 }
 

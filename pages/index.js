@@ -107,6 +107,6 @@ export async function getStaticProps({ preview = false }) {
 	const allTopPosts = await getAllPostsForTop(preview);
 	return {
 		props: { allPosts, allStories, allTopPosts, preview },
-		revalidate: 100,
+		revalidate: 10,
 	};
 }

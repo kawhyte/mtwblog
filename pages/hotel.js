@@ -51,7 +51,7 @@ export async function getStaticProps({ preview = false }) {
 // 	const allPosts = await getAllPostsForCategory(preview, HOTEL);
 // 	return {
 // 		props: { allPosts, preview },
-// 		revalidate: 1,
+// 		revalidate: 10,
 // 	};
 // }
 
