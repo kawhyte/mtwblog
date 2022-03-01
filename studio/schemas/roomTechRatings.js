@@ -39,7 +39,7 @@ const TechRating = {
 		},
 
 		{
-			title: "HDMI Ports",
+			title: "Guest In-Room Tablet",
 			name: "HDMI",
 			type: "string",
 
@@ -55,7 +55,7 @@ const TechRating = {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Smart TV",
+			title: "Mobile Key Access",
 			name: "TV",
 			type: "string",
 
@@ -72,7 +72,7 @@ const TechRating = {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Chromecast",
+			title: "Chromecast/Smart TV",
 			name: "Chromecast",
 			type: "string",
 
@@ -107,7 +107,7 @@ const TechRating = {
 			//validation: (Rule) => Rule.required().min(1).max(5),
 		},
 		{
-			title: "Bluetooth Speaker",
+			title: "Hospitality App/Texting",
 			name: "Bluetooth",
 			type: "string",
 

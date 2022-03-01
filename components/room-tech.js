@@ -157,19 +157,19 @@ function RoomTech({ speed = 10, techAvailable }) {
 													{techAvailable.HDMI}
 												</h2>
 
-												<p className='leading-relaxed'>HDMI Ports</p>
+												<p className='leading-relaxed'>Guest In-Room Tablet</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
 													{techAvailable.TV}
 												</h2>
-												<p className='leading-relaxed'>Smart TV</p>
+												<p className='leading-relaxed'>Mobile Key Access</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
 													{techAvailable.Chromecast}
 												</h2>
-												<p className='leading-relaxed'>Chromecast</p>
+												<p className='leading-relaxed'>Chromecast/Smart TV</p>
 											</div>
 											<div className=''>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900'>
@@ -181,7 +181,7 @@ function RoomTech({ speed = 10, techAvailable }) {
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900'>
 													{techAvailable.Bluetooth}
 												</h2>
-												<p className='leading-relaxed'>Bluetooth Speaker</p>
+												<p className='leading-relaxed'>Hospitality App/Texting Available</p>
 											</div>
 										</div>
 									</div>
