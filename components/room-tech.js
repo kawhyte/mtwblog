@@ -146,7 +146,7 @@ function RoomTech({ speed = 10, techAvailable }) {
 								<section className='text-gray-600 body-font'>
 									<div className='container px-2 py-2 mx-auto'>
 										<div className=' grid grid-cols-2 sm:grid-cols-2 gap-4 text-center'>
-											<div className=''>
+											<div className=' '>
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900 uppercase'>
 													{techAvailable.USB}
 												</h2>
