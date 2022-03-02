@@ -28,7 +28,7 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 	//   });
 	const heroPost = mergedArray[0];
 	const morePosts = allPosts.slice(1, 7);
-	const moreStories = allStories.slice(0, 7);
+	const moreStories = allStories.slice(0, 6);
 
 	return (
 		<>
@@ -53,7 +53,7 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 						/>
 					)}
 
-					<IndexSection morePosts={morePosts} sectionBgColor='bg-green-50' text="Recent Reviews" />
+					<IndexSection morePosts={morePosts} sectionBgColor='bg-green-50' text="Recent Reviews" typeText=" Reviews" />
 
 					<div className='bg-white md:my-20 dark:bg-gray-800 overflow-hidden relative flex-col'>
 						<div className='text-start w-full lg:w-1/2  py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20'>
@@ -93,7 +93,7 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 							/>
 						</div>
 					</div>
-					<IndexSection morePosts={moreStories} sectionBgColor='bg-yellow-50' text="Recent Stories/Guides" PostType="stories" />
+					<IndexSection morePosts={moreStories} sectionBgColor='bg-yellow-50' text="Recent Stories/Guides" PostType="stories" typeText=" Guides" />
 
 				</Container>
 			</Layout>

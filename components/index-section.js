@@ -2,7 +2,7 @@ import React from 'react'
 import Section from "./section";
 import Link from 'next/link'
 
-function IndexSection({morePosts, sectionBgColor, text, PostType="posts"}) {
+function IndexSection({morePosts, sectionBgColor, text, typeText, PostType="posts"}) {
     return (
         <div>
         <div className={`rounded-3xl  p-8 relative  ${ sectionBgColor}`}>
@@ -21,7 +21,7 @@ function IndexSection({morePosts, sectionBgColor, text, PostType="posts"}) {
                             aria-label='Justify'
                             type='button'
                             className='py-2 px-4 cursor-pointer bg-pink-500   hover:bg-pink-600 focus:ring-pink-500 focus:ring-offset-pink-200 text-white  md:w-full transition ease-in duration-200 text-center text-base font-semibold  focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg '>
-                            All Reviews
+                            All {typeText}
                         </button>
                     </Link>
                 </div>
