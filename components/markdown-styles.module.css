@@ -26,6 +26,12 @@
 
 }
 
+.markdown strong {
+
+  @apply font-extrabold;
+ 
+}
+
 .markdown figure {
 
   @apply p-2 inline-block

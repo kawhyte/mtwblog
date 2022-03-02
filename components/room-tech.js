@@ -181,7 +181,7 @@ function RoomTech({ speed = 10, techAvailable }) {
 												<h2 className='title-font font-medium sm:text-3xl text-3xl text-gray-900'>
 													{techAvailable.Bluetooth}
 												</h2>
-												<p className='leading-relaxed'>Hospitality App/Texting Available</p>
+												<p className='leading-relaxed '>Hospitality App/Texting Available</p>
 											</div>
 										</div>
 									</div>
