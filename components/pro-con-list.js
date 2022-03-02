@@ -27,7 +27,7 @@ function ProConList({ positives, negatives, verdict, verdict2 }) {
 										</svg>
 									</div>
 								</div>
-								<div className='flex-grow bg-white p-8 rounded-xl'>
+								<div className='grow bg-white p-8 rounded-xl'>
 									<div className='flex flex-col sm:items-start sm:text-left   items-center -mb-1 space-y-2.5'>
 										<ul>
 											{positives?.map((positive, index) => (
@@ -70,7 +70,7 @@ function ProConList({ positives, negatives, verdict, verdict2 }) {
 										</svg>
 									</div>
 								</div>
-								<div className='flex-grow bg-white p-8 rounded-xl'>
+								<div className='grow bg-white p-8 rounded-xl'>
 									<div className='flex flex-col sm:items-start sm:text-left   items-center -mb-1 space-y-2.5'>
 										<ul>
 											{negatives?.map((negative, index) => (
@@ -118,7 +118,7 @@ function ProConList({ positives, negatives, verdict, verdict2 }) {
 										</svg>
 									</div>
 								</div>
-								<div className='flex-grow bg-white p- rounded-xl'>
+								<div className='grow bg-white p- rounded-xl'>
 									<div className='flex flex-col sm:items-start text-base lg:text-lg leading-relaxed '>
 										{/*<p className='font-sans text-base md:text-lg'>{verdict}</p>*/}
 										<PostBody content={verdict2} />

@@ -1,14 +1,15 @@
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
 
 article a {
     color: rgb(49, 49, 182);
     text-decoration: underline;
 }
 
-/* purgecss end ignore */
-@tailwind utilities;
+
 
 :root{
     --primary: rgba(141, 252, 202, 0.3);;

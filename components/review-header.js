@@ -38,7 +38,7 @@ function ReviewHeader({ title, pattern, summary, animation }) {
 							/>
 						</video>*/}
 					</div>
-					<div className='lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center'>
+					<div className='lg:grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center'>
 						<h1 className='font-fancy mb-1 py-1 text-6xl md:text-7xl font-bold tracking-tighter leading-tight bg-white text-pink-500'>
 							{title}
 						</h1>

@@ -55,9 +55,9 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 
 					<IndexSection morePosts={morePosts} sectionBgColor='bg-green-50' text="Recent Reviews" typeText=" Reviews" />
 
-					<div className='bg-white md:my-20 dark:bg-gray-800 overflow-hidden relative flex-col'>
+					<div className=' md:my-20 overflow-hidden relative flex-col'>
 						<div className='text-start w-full lg:w-1/2  py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20'>
-							<h2 className='text-3xl font-extrabold text-black dark:text-white sm:text-4xl'>
+							<h2 className='text-3xl font-extrabold text-black  sm:text-4xl'>
 								<span className='block font-fancy'>
 									Check out our top{" "}
 									<span className='font-fancy text-yellow-500'>

@@ -1,9 +1,15 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-	purge: [
-		"./pages/**/*.js",
-		"./components/**/*.js",
+	// purge: [
+	// 	"./pages/**/*.js",
+	// 	"./components/**/*.js",
+	// 	"./layout/**/*.{js,ts,jsx,tsx}",
+	// 	"./helpers/**/*.{js,ts,jsx,tsx}",
+	// ],
+	content: [
+		"./pages/**/*.{js,ts,jsx,tsx}",
+		"./components/**/*.{js,ts,jsx,tsx}",
 		"./layout/**/*.{js,ts,jsx,tsx}",
 		"./helpers/**/*.{js,ts,jsx,tsx}",
 	],
@@ -17,16 +23,16 @@ module.exports = {
 				//sans: [ 'Source Sans Pro', ...defaultTheme.fontFamily.sans],
 			},
 
-			colors: {
-				"accent-1": "#FAFAFA",
-				"accent-2": "#EAEAEA",
-				"accent-7": "#333",
-				success: "#0070f3",
-				cyan: "#79FFE1",
-				rootBG: "#FAFAB",
-				accent: "#FB6E3B",
-				darkblue: "#05073C",
-			},
+			//colors: {
+				//"accent-1": "#FAFAFA",
+				//"gray-200": "#EAEAEA",
+				//"accent-7": "#333",
+				//success: "#0070f3",
+				//cyan: "#79FFE1",
+				//rootBG: "#FAFAB",
+				//accent: "#FB6E3B",
+				//darkblue: "#05073C",
+			//},
 			spacing: {
 				28: "7rem",
 			},
@@ -48,5 +54,8 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [require("@tailwindcss/aspect-ratio"), require('@tailwindcss/line-clamp'),],
+	plugins: [
+		require("@tailwindcss/aspect-ratio"),
+		require("@tailwindcss/line-clamp"),
+	],
 };
