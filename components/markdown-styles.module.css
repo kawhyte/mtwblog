@@ -27,7 +27,7 @@
 }
 
 .markdown strong {
-@apply font-black underline decoration-pink-500;
+@apply font-black bg-yellow-200 py-1.5 px-2 rounded-xl
 
  
 }
