@@ -29,7 +29,7 @@
 .markdown strong {
 
   @apply font-extrabold;
- 
+  @apply bg-red-400;
 }
 
 .markdown figure {
