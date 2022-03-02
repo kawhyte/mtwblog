@@ -11,7 +11,7 @@ const navigation = [
 		href: "/top_picks",
 		icon: "/icon/crown.svg",
 		text: "Book icon",
-		bg: "  bg-indigo-50 ",
+		bg: "  border-dashed border-2 border-yellow-500 bg-yellow-50  hover:decoration-yellow-500/50 focus:decoration-yellow-500/50 hover:bg-yellow-100 ",
 		current: false,
 	},
 	{
@@ -19,6 +19,7 @@ const navigation = [
 		href: "/allreviews",
 		icon: "/icon/walk.svg",
 		text: "Man walking",
+		bg: " underline decoration-pink-500 hover:decoration-pink-500/50 focus:decoration-pink-500/50",
 		current: false,
 	},
 	{
@@ -26,6 +27,7 @@ const navigation = [
 		href: "/hotel",
 		icon: "/icon/hotel.svg",
 		text: "Hotel icon",
+		bg: "   underline decoration-pink-500 hover:decoration-pink-500/50 focus:decoration-pink-500/50",
 		current: false,
 	},
 	{
@@ -33,6 +35,7 @@ const navigation = [
 		href: "/food",
 		icon: "/icon/food2.svg",
 		text: "Food icon",
+		bg: "   underline decoration-pink-500 hover:decoration-pink-500/50 focus:decoration-pink-500/50",
 		current: false,
 	},
 	{
@@ -40,6 +43,7 @@ const navigation = [
 	href: "/story",
 	icon: "/icon/book.svg",
 	text: "Book icon",
+	bg: "   underline decoration-pink-500 hover:decoration-pink-500/50 focus:decoration-pink-500/50",
 	current: false,
 },
 	
@@ -104,7 +108,8 @@ export default function Nav({ color="bg-black", bgColor }) {
 															item.current
 																? "bg-gray-900 text-white"
 																: "text-white   " + col,
-															"px-2 py-2 rounded-xl hover:bg-gray-100 font-semibold text-base flex flex-row justify-center align-middle items-center " + item.bg
+															
+																" px-2 py-2 rounded-xl flex flex-row justify-center align-middle items-center  decoration-[0.25rem] motion-safe:transition-all motion-safe:duration-200 hover:decoration-[0.5rem] focus:decoration-[0.5rem] " + item.bg
 														)}>
 														<div className="hidden lg:block">
 														<Image
@@ -115,7 +120,7 @@ export default function Nav({ color="bg-black", bgColor }) {
 															height={25}
 														/>
 </div>
-														<span className='mx-1 ml-2  hover:text-pink-500'>
+														<span className='mx-1 ml-2  '>
 															{item.name}
 														</span>
 													</button>
