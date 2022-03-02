@@ -31,7 +31,7 @@ export default function Top({ allPosts, preview }) {
 				<ReviewHeader
 				title={"Our Top Picks"}
 				pattern={"foodpattern"}
-				summary={"We visited over 50 hotels and restaurants over the past few years, these are our top picks for the best service, location and value."}
+				summary={"We visited over 60 hotels and restaurants over the past few years, these are our top picks for the best service, location and value."}
 				animation={'/top.json'}
 			/>
 					

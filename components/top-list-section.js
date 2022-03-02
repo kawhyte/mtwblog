@@ -60,7 +60,7 @@ function TopList({ posts, header, type }) {
 											<h1 className='title-font text-xl sm:text-4xl mb-4 font-medium text-gray-900'>
 												{numberOne.title}
 											</h1>
-											<p className='text-gray-400 dark:text-gray-300 font-light text-md truncate'>
+											<p className='text-gray-500  font-light text-md truncate'>
 												{numberOne.address}
 											</p>
 										</a>
@@ -106,11 +106,11 @@ function TopList({ posts, header, type }) {
 															.url()}
 													/>
 
-													<div className='bg-white dark:bg-gray-800 w-full   p-4'>
-														<p className='text-gray-800 dark:text-white text-xl font-medium mb-2 truncate'>
+													<div className='bg-white w-full   p-4'>
+														<p className='text-gray-800  text-xl font-medium mb-2 truncate'>
 															{item.title}
 														</p>
-														<p className='text-gray-400 dark:text-gray-300 font-light text-md truncate'>
+														<p className='text-gray-500  font-light text-md truncate'>
 															{item.address}
 														</p>
 													</div>
