@@ -128,7 +128,7 @@ export default function Post({ post, morePosts, preview }) {
 								/>
 				</div>*/}
 
-							
+							<PostBody content={post.body} />
 
 							{post.gallery ? (
 								<Gallery posts={post} heading={"Birthday"} />
@@ -137,7 +137,7 @@ export default function Post({ post, morePosts, preview }) {
 							)}
 						</article>
 
-						<PostBody content={post.body} />
+						
 						
 
 						<Comments comments={post.comments} />
