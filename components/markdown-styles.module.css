@@ -19,7 +19,7 @@
 .markdown img {
 
 
-  @apply rounded-2xl py-2;
+  @apply  py-2 pr-24;
   @apply object-contain;
 
 
