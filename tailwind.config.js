@@ -16,7 +16,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["Roboto", ...defaultTheme.fontFamily.sans],
+				sans: ["Proxima Nova", ...defaultTheme.fontFamily.sans],
 				fancy: ["Playfair Display"],
 				//'Montserrat': ['Montserrat', ...defaultTheme.fontFamily.sans],
 				// 'playfair-display': ['Playfair Display', ...defaultTheme.fontFamily.sans],
