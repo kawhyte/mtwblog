@@ -56,5 +56,5 @@
 }
 
 .markdown p {
-  @apply  text-red-300 font-light;
+  @apply   font-extralight;
 }
