@@ -54,3 +54,7 @@
 .markdown ul {
   @apply list-disc  ml-10;
 }
+
+.markdown p {
+  @apply  text-red-300 font-light;
+}
