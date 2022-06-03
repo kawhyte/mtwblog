@@ -21,7 +21,7 @@ function AllStories({ allStories, preview }) {
 				<ReviewHeader
 					title={"Stories & Guides"}
 					pattern={"hotelpattern"}
-					summary={"Its all about the Adventure"}
+					summary={"It's all about the adventure"}
 					animation={'/plane.json'}
 				/>
 
