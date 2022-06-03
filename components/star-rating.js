@@ -29,7 +29,7 @@ const StarRating = ({ rating, linkType }) => {
 		<>
 			<div className='flex  justify-start items-end align-top mb-6   '>
 				<div className='flex flex-col justify-center items-center bg-pink-500 p-3 rounded-2xl'>
-					<h1 className='font-black text-white mx-2 text-4xl md:text-6xl lg:text-6xl tracking-tighter leading-tight md:leading-none md:text-left'>
+					<h1 className=' font-semibold text-white mx-2 text-4xl md:text-6xl lg:text-6xl tracking-tighter leading-tight md:leading-none md:text-left'>
 						{/*isFraction ? Math.floor(average) + ".5" : Math.floor(average)*/}
 						{average.toFixed(2)}
 					</h1>
@@ -47,7 +47,7 @@ const StarRating = ({ rating, linkType }) => {
 						</span>
 					</div>
 				</div>
-				<p className=' ml-4 text-3xl font-black'>{textRating}</p>
+				<p className=' ml-4 text-3xl font-black '>{textRating}</p>
 			</div>
 
 			<p className=' font-Montserrat font-medium  my-3 mt-2  text-lg '>
