@@ -53,7 +53,7 @@ export default function PostHeader({
 								</span>
 								|{" "}
 								<span className='ml-1 text-gray-900 font-medium text-lg'>
-									Visited <Date dateString={date} />
+								{linkType === "hotel" || linkType==="food"?	"Visited ": "Published on "} <Date dateString={date} />
 								</span>
 							</p>
 							{roomType && (
