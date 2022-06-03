@@ -33,7 +33,7 @@ function ProConList({ positives, negatives, verdict, verdict2 }) {
 											{positives?.map((positive, index) => (
 												<li
 													key={index}
-													className='my-3 leading-relaxed text-base md:text-lg'>
+													className='my-3 leading-relaxed text-base md:text-lg font-extralight'>
 													<span className='bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
 														<svg
 															fill='none'
@@ -55,7 +55,7 @@ function ProConList({ positives, negatives, verdict, verdict2 }) {
 							</div>
 						</div>
 						<div className='pt-8 md:w-full'>
-							<div className='flex flex-col rounded-lg  bg-gradient-to-b from-gray-100 via-gray-200 to-red-100 border-opacity-50 p-2 md:p-5  '>
+							<div className='flex flex-col rounded-lg  bg-gradient-to-b from-gray-100 via-gray-200 to-red-100 border-opacity-50 p-2 md:mr-4 mr-0 md:p-5  '>
 								<div className='flex align-middle justify-start '>
 									<h2 className='font-fancy text-gray-900 text-lg md:text-2xl title-font font-bold mb-3 pr-3'>
 										What we did not like
@@ -76,7 +76,7 @@ function ProConList({ positives, negatives, verdict, verdict2 }) {
 											{negatives?.map((negative, index) => (
 												<li
 													key={index}
-													className='my-3 leading-relaxed text-base md:text-lg'>
+													className='my-3 leading-relaxed text-base md:text-lg font-extralight'>
 													<span className='bg-gray-100 text-red-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center'>
 														<svg
 															xmlns='http://www.w3.org/2000/svg'
