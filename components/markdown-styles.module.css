@@ -27,7 +27,7 @@
 }
 
 .markdown strong {
-@apply font-black bg-yellow-200 py-1.5 px-2 rounded-xl
+@apply font-black  py-1.5 px-2 rounded-xl
 
  
 }
@@ -52,7 +52,7 @@
   @apply list-decimal pb-2 ml-6 leading-relaxed;
 }
 .markdown ul {
-  @apply list-disc  ml-10;
+  @apply list-disc font-extralight ml-10;
 }
 
 .markdown p {
