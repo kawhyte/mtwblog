@@ -15,7 +15,7 @@ function IndexSection({morePosts, sectionBgColor, text, typeText, PostType="post
                     <div className='h-1 w-20 bg-pink-500 rounded'></div>
                 </div>
 
-                <div className='mx-24 md:mx-8'>
+                <div className=' md:mx-8'>
                     <Link href='/allreviews' passHref>
                         <button
                             aria-label='Justify'
