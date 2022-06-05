@@ -7,7 +7,6 @@ import ReactPlayer from "react-player/youtube";
 const serializers = {
 	types: {
 		youtube2: ({ node }) => {
-			
 			return (
 				<div className='mb-12 md:mb-24 -mx-5 sm:mx-0  bg-indigo-300'>
 					<div className='player-wrapper'>
@@ -18,7 +17,7 @@ const serializers = {
 							height={"100%"}
 							controls={false}
 							loop
-              playing={true}
+							playing={true}
 							muted
 						/>
 					</div>
@@ -26,10 +25,15 @@ const serializers = {
 			);
 		},
 	},
+	marks: {
+		highlight: ({ children }) => {
+			return <span className=' bg-yellow-200 p-1'>{children}</span>;
+		},
+	},
 };
 
 export default function PostBody({ content }) {
-    //console.log("CONTENT ",  content)
+	console.log("CONTENT ", content);
 	return (
 		<div className='max-w-4xl  text-justify mx-4 my-10'>
 			<BlockContent
@@ -43,3 +47,4 @@ export default function PostBody({ content }) {
 	);
 }
 serializers.types.youtube2.displayName = "serializers";
+serializers.marks.highlight.displayName = "highlight";

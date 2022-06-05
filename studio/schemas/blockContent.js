@@ -6,8 +6,22 @@
  *    name: 'someName',
  *    title: 'Some title',
  *    type: 'blockContent'
- *  }
+ *  }const highlightRender = (props) => (
+	<span style={{ backgroundColor: "yellow" }}>{props.children}</span>
+  );
+  { "title": "Underline", "value": "underline" },
+					{ "title": "Strike", "value": "strike-through" },
  */
+  import React from 'react'
+ 
+  const highlightIcon = () => (
+	<span style={{fontWeight: 'bold'}}>H</span>
+	)
+
+	const highlightRender = props => (
+		<span style={{ backgroundColor: 'yellow' }}>{props.children}</span>
+	  )
+
 const BlockContent = {
 	title: "Block Content",
 	name: "blockContent",
@@ -40,7 +54,18 @@ const BlockContent = {
 				decorators: [
 					{ title: "Strong", value: "strong" },
 					{ title: "Emphasis", value: "em" },
-				],
+					{ "title": "Underline", "value": "underline" },
+					{ "title": "Strike", "value": "strike-through" },
+					
+					{ 
+						title: 'Highlight',
+						value: 'highlight',
+						blockEditor: {
+						  icon: highlightIcon,
+						  render: highlightRender
+
+						}
+					  }				],
 				// Annotations can be any object structure – e.g. a link or a footnote.
 				annotations: [
 					{

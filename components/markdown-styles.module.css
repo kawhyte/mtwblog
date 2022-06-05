@@ -58,3 +58,6 @@
 .markdown p {
   @apply   font-extralight;
 }
+.markdown ol {
+  @apply   text-black bg-yellow-200 p-1;
+}
