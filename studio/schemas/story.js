@@ -56,15 +56,15 @@ const Story = {
 		},
 		{
 			name: "mainImageGallery",
-			title: "Main image Gallery",
-			description:"These images will appear beside the main image (4 images suggested)",
+			title: "Main image Gallery (4 images REQUIRED)",
+			description:"These images will appear beside the main image (4 images REQUIRED)",
 			type: "mainImageGallery",
 			
 		},
 
 		{
 			name: "publishedAt",
-			title: "Story Date",
+			title: "Story/Guide Date",
 			type: "datetime",
 			validation: (Rule) => Rule.required(),
 			options: {
@@ -75,7 +75,7 @@ const Story = {
 			name: "address",
 			type: "string",
 			title: "Category or Type (Story/Guide)",
-			validation: (Rule) => Rule.required(),
+			hidden: true,
 		},
 		{
 			name: "body",
