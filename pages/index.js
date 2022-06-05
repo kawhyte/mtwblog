@@ -23,7 +23,7 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 		 	return new Date(b.date) - new Date(a.date);""
 		   });;
 
-	  console.log(" MergedArray ", mergedArray)
+	  //console.log(" MergedArray ", mergedArray)
 
 	// mergedArray.sort(function(a,b){
 
@@ -49,6 +49,7 @@ export default function Index({ allPosts, allStories, allTopPosts, preview }) {
 							title={heroPost.title}
 							coverImage={heroPost.coverImage}
 							date={heroPost.date}
+							linkType={heroPost.linkType}
 							//author={heroPost.author}
 							address={heroPost.address}
 							slug={heroPost.slug}

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { imageBuilder } from '../lib/sanity'
 import Image from "next/image";
 
-export default function CoverImage({ title, url, imageObject, slug }) {
+export default function CoverImage({ title, url, imageObject, slug, linkType }) {
   const image = (
     <Image
       width={1240}
@@ -21,12 +21,12 @@ export default function CoverImage({ title, url, imageObject, slug }) {
     />
   )
 
-
+  const slugType= linkType==="hotel" || linkType==="food" ? "posts": "stories"
   return (
     <div className="mx-2 sm:mx-0 ">
       {slug ? (
         
-        <Link as={`/stories/${slug}`} href="/stories/[slug]">
+        <Link as={`/${slugType}/${slug}`} href={`/${slugType}/[slug]`}>
           <a aria-label={title}>{image}</a>
         </Link>
       ) : (

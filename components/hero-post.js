@@ -9,8 +9,15 @@ export default function HeroPost({
 	address,
 	excerpt,
 	author,
+	linkType,
 	slug,
 }) {
+
+	//console.log("LinkTypee",linkType)
+
+	const slugType= linkType==="hotel" || linkType==="food" ? "posts": "stories"
+
+//console.log("slugType",slugType	)
 	
 	return (
 		<section className='mt-20  '>
@@ -29,8 +36,8 @@ export default function HeroPost({
 
 					<div className='absolute bottom-0 right-0  mx-6 -my-8 flex flex-col justify-start items-start align-middle '>
 						<p className='mb-2 z-20 md:mb-6 text-lg sm:text-xl md:text-4xl font-bold tracking-tighter leading-tight bg-white px-3 py-2 mx-3 md:mx-0 rounded-lg'>
-							{/*<Link as={`/posts/${slug}`} href='/posts/[slug]'>*/}
-							<Link as={`/stories/${slug}`} href='/stories/[slug]'>
+						
+							<Link as={`/${slugType}/${slug}`} href={`/${slugType}/[slug]`}>
 								<a className='hover:underline break-words'>
 									{title}
 								</a>
@@ -42,6 +49,7 @@ export default function HeroPost({
 						imageObject={coverImage}
 						title={title}
 						url={coverImage}
+						linkType={linkType}
 					/>
 				</div>
 				<div className='md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-16 md:mb-12 '>
