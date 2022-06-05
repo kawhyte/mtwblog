@@ -55,7 +55,7 @@ export default function Post({ post, morePosts, preview }) {
 								//categories={post.categories}
 								//amenities={post.amenities}
 								//videoUrl={post.videoUrl}
-								address={post.address}
+								address={post.linkType}
 								//gallery={post.gallery.images}
 								gallery={post?.mainImageGallery?.images || post?.gallery?.images}
 							/>

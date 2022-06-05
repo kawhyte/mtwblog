@@ -48,7 +48,7 @@ export default function PostHeader({
 					<div className='flex flex-col justify-start align-middle md:flex-row'>
 						<div>
 							<p className='text-gray-900 font-medium md:text-sm p-1 text-center md:text-left '>
-								<span className='text-lg'>
+								<span className='text-lg capitalize'>
 									{address ? address : "No address provided"}{" "}
 								</span>
 								|{" "}

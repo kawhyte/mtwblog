@@ -7,6 +7,25 @@ const Story = {
 	icon: FaBook,
 
 	fields: [
+
+
+		{
+			title: "Select the type of post (Story or Guide)",
+			description: "",
+			name: "linkType",
+			type: "string",
+			validation: (Rule) => Rule.required(),
+			options: {
+				list: [
+					{ title: "Story", value: "Story" },
+					{ title: "Guide", value: "Guide" },
+				],
+				layout: "radio",
+			},
+		},
+		
+
+
 		{
 			name: "title",
 			title: "Title",
