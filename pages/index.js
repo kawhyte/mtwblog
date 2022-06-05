@@ -18,11 +18,14 @@ import Image from "next/image";
 import IndexSection from "../components/index-section";
 
 export default function Index({ allPosts, allStories, allTopPosts, preview }) {
-	const mergedArray = [...allPosts, ...allStories];
+	const mergedArray = [...allPosts, ...allStories].sort(function(a,b){
 
-	  //console.log(" ALL Posts ", allPosts)
+		 	return new Date(b.date) - new Date(a.date);""
+		   });;
 
-	// .sort(function(a,b){
+	  //console.log(" MergedArray ", mergedArray)
+
+	// mergedArray.sort(function(a,b){
 
 	// 	return new Date(b.date) - new Date(a.date);""
 	//   });
