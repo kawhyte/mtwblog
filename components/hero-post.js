@@ -29,7 +29,8 @@ export default function HeroPost({
 
 					<div className='absolute bottom-0 right-0  mx-6 -my-8 flex flex-col justify-start items-start align-middle '>
 						<p className='mb-2 z-20 md:mb-6 text-lg sm:text-xl md:text-4xl font-bold tracking-tighter leading-tight bg-white px-3 py-2 mx-3 md:mx-0 rounded-lg'>
-							<Link as={`/posts/${slug}`} href='/posts/[slug]'>
+							{/*<Link as={`/posts/${slug}`} href='/posts/[slug]'>*/}
+							<Link as={`/stories/${slug}`} href='/stories/[slug]'>
 								<a className='hover:underline break-words'>
 									{title}
 								</a>
