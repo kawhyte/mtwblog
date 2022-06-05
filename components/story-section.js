@@ -5,6 +5,8 @@ import { imageBuilder } from "../lib/sanity";
 import cn from "classnames";
 
 function StorySection(props) {
+
+	console.log(props)
 	return (
 		<div className='flex justify-center px-4 '>
 			<div className='grid grid-cols-1 gap-4 lg:gap-8  sm:grid-cols-2 grid-rows-1 md:grid-cols-2  lg:grid-cols-3 z-50  '>
@@ -41,8 +43,8 @@ function StorySection(props) {
 												<p className='text-base leading-relaxed mt-2'>
 													{item.excerpt}
 												</p>
-												<div className=' text-pink-500 block   mb-2  text-lg'>
-													{item.address ? item.address : "No category provided"}{" "}
+												<div className=' text-pink-500 block   mb-2  text-lg capitalize'>
+													{item.linkType ? item.linkType : "No category provided"}{" "}
 												</div>
 											</a>
 										</Link>
