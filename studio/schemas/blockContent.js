@@ -18,6 +18,7 @@ const highlightIcon = () => <span style={{ fontWeight: "bold" }}>H</span>;
 
 const centerTextIcon = () => <span style={{ fontWeight: "bold" }}>C</span>;
 const rightAlignTextIcon = () => <span style={{ fontWeight: "bold" }}>R</span>;
+const leftAlignTextIcon = () => <span style={{ fontWeight: "bold" }}>L</span>;
 
 const highlightRender = (props) => (
 	<span style={{ backgroundColor: "yellow" }}>{props.children}</span>
@@ -36,6 +37,15 @@ const rightAlignTextStyle = (props) => (
 	<div
 		style={{
 			textAlign: 'right',
+			
+		}}>
+		{props.children}
+	</div>
+);
+const leftAlignTextStyle = (props) => (
+	<div
+		style={{
+			textAlign: 'left',
 			
 		}}>
 		{props.children}
@@ -100,6 +110,14 @@ const BlockContent = {
 						blockEditor: {
 							icon: rightAlignTextIcon,
 							render: rightAlignTextStyle,
+						},
+					},
+					{
+						title: "Left align text",
+						value: "leftAlignText",
+						blockEditor: {
+							icon: leftAlignTextIcon,
+							render: leftAlignTextStyle,
 						},
 					},
 				],

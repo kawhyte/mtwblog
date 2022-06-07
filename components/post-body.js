@@ -24,45 +24,21 @@ const serializers = {
 				</div>
 			);
 		},
-
-		
-		
 	},
 	marks: {
 		highlight: ({ children }) => {
 			return <span className=' bg-yellow-200 p-1'>{children}</span>;
 		},
 		centerText: ({ children }) => {
-			return (
-				
-				
-				
-				<div className='  text-black text-center '> 
-				
-				{children}
-				
-				
-			
-				</div>);
+			return <div className='   text-center '>{children}</div>;
 		},
 		rightAlignText: ({ children }) => {
-			return (
-				
-				
-				
-				<div className='  text-black text-right '> 
-				
-				{children}
-				
-				
-				</div>
-				);
+			return <div className='   text-right '>{children}</div>;
 		},
-	},	
-	
-
-	
-
+		leftAlignText: ({ children }) => {
+			return <div className='   text-left '>{children}</div>;
+		},
+	},
 };
 
 export default function PostBody({ content }) {
@@ -82,5 +58,5 @@ export default function PostBody({ content }) {
 serializers.types.youtube2.displayName = "serializers";
 serializers.marks.highlight.displayName = "highlight";
 serializers.marks.centerText.displayName = "centerText";
-serializers.marks.rightAlignText.displayName = "centerText";
-
+serializers.marks.rightAlignText.displayName = "rightAlignText";
+serializers.marks.leftAlignText.displayName = "leftAlignText";
