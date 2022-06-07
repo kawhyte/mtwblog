@@ -16,19 +16,17 @@ import React from "react";
 
 const highlightIcon = () => <span style={{ fontWeight: "bold" }}>H</span>;
 
-const convoTextIcon = () => <span style={{ fontWeight: "bold" }}>C</span>;
+const centerTextIcon = () => <span style={{ fontWeight: "bold" }}>C</span>;
 
 const highlightRender = (props) => (
 	<span style={{ backgroundColor: "yellow" }}>{props.children}</span>
 );
 
-const ConvoTitleStyle = (props) => (
+const centerTextStyle = (props) => (
 	<div
 		style={{
-			backgroundColor: "#F0F0F0",
-			marginLeft: "30px",
-			padding: "5px",
-			lineHeight: "1.2",
+			textAlign: 'center',
+			
 		}}>
 		{props.children}
 	</div>
@@ -79,11 +77,11 @@ const BlockContent = {
 						},
 					},
 					{
-						title: "Conversation Text",
-						value: "convoText",
+						title: "Center text",
+						value: "centerText",
 						blockEditor: {
-							icon: convoTextIcon,
-							render: ConvoTitleStyle,
+							icon: centerTextIcon,
+							render: centerTextStyle,
 						},
 					},
 				],

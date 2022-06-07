@@ -32,12 +32,12 @@ const serializers = {
 		highlight: ({ children }) => {
 			return <span className=' bg-yellow-200 p-1'>{children}</span>;
 		},
-		convoText: ({ children }) => {
+		centerText: ({ children }) => {
 			return (
 				
 				<div className="my-16"> 
 				
-				<div className='  text-black font-extralight  text-left pl-10 -mt-12 -mb-10'> 
+				<div className='  text-black text-center '> 
 				
 				{children}
 				
@@ -68,5 +68,5 @@ export default function PostBody({ content }) {
 }
 serializers.types.youtube2.displayName = "serializers";
 serializers.marks.highlight.displayName = "highlight";
-serializers.marks.convoText.displayName = "convoText";
+serializers.marks.centerText.displayName = "centerText";
 
