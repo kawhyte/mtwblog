@@ -38,14 +38,11 @@
 }
 
 .markdown blockquote {
-  @apply -m-10;
-  @apply px-4;
-  @apply mx-4;
-  @apply text-white;
+ 
+  @apply text-black -mt-2 pl-9 font-light text-sm italic;
 
-  @apply absolute;
 
-  @apply break-words
+
 }
 
 .markdown ol {
