@@ -17,6 +17,7 @@ import React from "react";
 const highlightIcon = () => <span style={{ fontWeight: "bold" }}>H</span>;
 
 const centerTextIcon = () => <span style={{ fontWeight: "bold" }}>C</span>;
+const rightAlignTextIcon = () => <span style={{ fontWeight: "bold" }}>R</span>;
 
 const highlightRender = (props) => (
 	<span style={{ backgroundColor: "yellow" }}>{props.children}</span>
@@ -26,6 +27,15 @@ const centerTextStyle = (props) => (
 	<div
 		style={{
 			textAlign: 'center',
+			
+		}}>
+		{props.children}
+	</div>
+);
+const rightAlignTextStyle = (props) => (
+	<div
+		style={{
+			textAlign: 'right',
 			
 		}}>
 		{props.children}
@@ -82,6 +92,14 @@ const BlockContent = {
 						blockEditor: {
 							icon: centerTextIcon,
 							render: centerTextStyle,
+						},
+					},
+					{
+						title: "Right align text",
+						value: "rightAlignText",
+						blockEditor: {
+							icon: rightAlignTextIcon,
+							render: rightAlignTextStyle,
 						},
 					},
 				],

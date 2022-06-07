@@ -35,15 +35,28 @@ const serializers = {
 		centerText: ({ children }) => {
 			return (
 				
-				<div className="my-16"> 
+				
 				
 				<div className='  text-black text-center '> 
 				
 				{children}
 				
 				
-				</div>
+			
 				</div>);
+		},
+		rightAlignText: ({ children }) => {
+			return (
+				
+				
+				
+				<div className='  text-black text-right '> 
+				
+				{children}
+				
+				
+				</div>
+				);
 		},
 	},	
 	
@@ -69,4 +82,5 @@ export default function PostBody({ content }) {
 serializers.types.youtube2.displayName = "serializers";
 serializers.marks.highlight.displayName = "highlight";
 serializers.marks.centerText.displayName = "centerText";
+serializers.marks.rightAlignText.displayName = "centerText";
 
