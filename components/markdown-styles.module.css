@@ -39,7 +39,7 @@
 
 .markdown blockquote {
  
-  @apply text-black -mt-7 text-center  font-light text-sm italic;
+  @apply text-black font-extralight bg-gray-100 text-left py-0.5 p-5 pl-14;
 
 
 
@@ -58,3 +58,6 @@
 .markdown ol {
   @apply font-light  p-1;
 }
+
+
+

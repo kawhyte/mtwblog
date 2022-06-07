@@ -12,15 +12,27 @@
   { "title": "Underline", "value": "underline" },
 					{ "title": "Strike", "value": "strike-through" },
  */
-  import React from 'react'
- 
-  const highlightIcon = () => (
-	<span style={{fontWeight: 'bold'}}>H</span>
-	)
+import React from "react";
 
-	const highlightRender = props => (
-		<span style={{ backgroundColor: 'yellow' }}>{props.children}</span>
-	  )
+const highlightIcon = () => <span style={{ fontWeight: "bold" }}>H</span>;
+
+const convoTextIcon = () => <span style={{ fontWeight: "bold" }}>C</span>;
+
+const highlightRender = (props) => (
+	<span style={{ backgroundColor: "yellow" }}>{props.children}</span>
+);
+
+const ConvoTitleStyle = (props) => (
+	<div
+		style={{
+			backgroundColor: "#F0F0F0",
+			marginLeft: "30px",
+			padding: "5px",
+			lineHeight: "1.2",
+		}}>
+		{props.children}
+	</div>
+);
 
 const BlockContent = {
 	title: "Block Content",
@@ -36,6 +48,7 @@ const BlockContent = {
 			// use your content.
 			styles: [
 				{ title: "Normal", value: "normal" },
+				// { title: "Normal+right", value: "normal" },
 				{ title: "H1", value: "h1" },
 				{ title: "H2", value: "h2" },
 				{ title: "H3", value: "h3" },
@@ -54,18 +67,26 @@ const BlockContent = {
 				decorators: [
 					{ title: "Strong", value: "strong" },
 					{ title: "Emphasis", value: "em" },
-					{ "title": "Underline", "value": "underline" },
-					{ "title": "Strike", "value": "strike-through" },
-					
-					{ 
-						title: 'Highlight',
-						value: 'highlight',
-						blockEditor: {
-						  icon: highlightIcon,
-						  render: highlightRender
+					{ title: "Underline", value: "underline" },
+					{ title: "Strike", value: "strike-through" },
 
-						}
-					  }				],
+					{
+						title: "Highlight",
+						value: "highlight",
+						blockEditor: {
+							icon: highlightIcon,
+							render: highlightRender,
+						},
+					},
+					{
+						title: "Conversation Text",
+						value: "convoText",
+						blockEditor: {
+							icon: convoTextIcon,
+							render: ConvoTitleStyle,
+						},
+					},
+				],
 				// Annotations can be any object structure – e.g. a link or a footnote.
 				annotations: [
 					{
@@ -90,6 +111,7 @@ const BlockContent = {
 			type: "image",
 			options: { hotspot: true },
 		},
+
 		{
 			type: "youtube2",
 		},

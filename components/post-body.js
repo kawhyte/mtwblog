@@ -24,16 +24,36 @@ const serializers = {
 				</div>
 			);
 		},
+
+		
+		
 	},
 	marks: {
 		highlight: ({ children }) => {
 			return <span className=' bg-yellow-200 p-1'>{children}</span>;
 		},
-	},
+		convoText: ({ children }) => {
+			return (
+				
+				<div className="my-16"> 
+				
+				<div className='  text-black font-extralight  text-left pl-10 -mt-12 -mb-10'> 
+				
+				{children}
+				
+				
+				</div>
+				</div>);
+		},
+	},	
+	
+
+	
+
 };
 
 export default function PostBody({ content }) {
-	//console.log("CONTENT ", content);
+	console.log("CONTENT ", content);
 	return (
 		<div className='max-w-4xl  text-justify mx-4 my-10'>
 			<BlockContent
@@ -48,3 +68,5 @@ export default function PostBody({ content }) {
 }
 serializers.types.youtube2.displayName = "serializers";
 serializers.marks.highlight.displayName = "highlight";
+serializers.marks.convoText.displayName = "convoText";
+

@@ -23,7 +23,7 @@ import mainImageGallery  from "./mainImageGallery"
 import youtube from "./youtube";
 import youtube2 from "./youtube2";
 import galaryImage from "./img";
-import imgcaptions from "./imageCaptions";
+
 
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -39,7 +39,6 @@ export default createSchema({
 		story,
 		author,
 		galaryImage,
-		imgcaptions,
 		mainImageGallery,
 		category,
 		verdict,
