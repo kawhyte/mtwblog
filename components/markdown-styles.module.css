@@ -19,7 +19,7 @@
 .markdown img {
 
 
-  @apply  py-2 pr-24;
+  @apply  py-2 lg:max-w-4xl  ;
   @apply object-contain;
 
 
@@ -39,7 +39,7 @@
 
 .markdown blockquote {
  
-  @apply text-black -mt-2 pl-9 font-light text-sm italic;
+  @apply text-black -mt-7 text-center  font-light text-sm italic;
 
 
 
