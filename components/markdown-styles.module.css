@@ -31,8 +31,8 @@
 
 .markdown img {
 
-  @apply  py-2 lg:max-w-4xl  ;
-  @apply object-contain;
+  @apply  py-2 lg:max-w-3xl  ;
+  
 }
 
 .markdown strong {
