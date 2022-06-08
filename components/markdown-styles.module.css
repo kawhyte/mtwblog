@@ -8,28 +8,35 @@
   @apply my-2;
 }
 
+.markdown h1 {
+  @apply text-3xl my-3 leading-snug;
+}
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-2xl my-3  leading-snug;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-xl my-2 leading-snug;
+}
+.markdown h4 {
+  @apply text-lg my-2 leading-snug;
+}
+
+.markdown h5 {
+  @apply text-base my-2  leading-snug;
+}
+.markdown h6 {
+  @apply text-sm my-2 leading-snug;
 }
 
 .markdown img {
 
-
   @apply  py-2 lg:max-w-4xl  ;
   @apply object-contain;
-
-
-
 }
 
 .markdown strong {
-@apply font-black  py-1.5 px-2 rounded-xl
-
- 
+@apply font-semibold  py-1.5 px-2 rounded-xl
 }
 
 .markdown figure {
@@ -39,10 +46,7 @@
 
 .markdown blockquote {
  
-  @apply text-black font-extralight bg-gray-100 text-left py-0.5 p-5 pl-14;
-
-
-
+  @apply text-black  font-extralight bg-indigo-50 text-left py-2 p-5 pl-14;
 }
 
 .markdown ol {

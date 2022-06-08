@@ -71,6 +71,8 @@ const BlockContent = {
 				{ title: "H2", value: "h2" },
 				{ title: "H3", value: "h3" },
 				{ title: "H4", value: "h4" },
+				{ title: "H5", value: "h5" },
+				{ title: "H6", value: "h6" },
 				{ title: "Quote", value: "blockquote" },
 			],
 			lists: [
@@ -78,6 +80,7 @@ const BlockContent = {
 
 				{ title: "Number", value: "number" },
 			],
+	
 			// Marks let you mark up inline text in the block editor.
 			marks: {
 				// Decorators usually describe a single property – e.g. a typographic
