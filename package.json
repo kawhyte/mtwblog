@@ -31,8 +31,8 @@
     "react-medium-image-zoom": "^5.1.6",
     "react-player": "^2.9.0",
     "react-share": "^4.4.1",
-    "react-youtube": "^7.13.1",
-    "swr": "^0.5.5"
+    "react-youtube": "^7.13.1"
+    
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
