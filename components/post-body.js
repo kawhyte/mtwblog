@@ -42,7 +42,7 @@ const serializers = {
 };
 
 export default function PostBody({ content }) {
-	console.log("CONTENT ", content);
+	//console.log("CONTENT ", content);
 	return (
 		<div className='max-w-4xl  text-justify mx-4 my-10'>
 			<BlockContent
