@@ -20,7 +20,7 @@ export default function HeroPost({
 //console.log("slugType",slugType	)
 	
 	return (
-		<section className='mt-20  '>
+        <section className='mt-20  '>
 			<div className=' container mx-auto flex flex-wrap w-full mb-10'>
 				<div className='lg:w-1/2 w-full mb-6 lg:mb-0 mx-4 '>
 					<h1 className='font-fancy  sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'>
@@ -37,11 +37,14 @@ export default function HeroPost({
 					<div className='absolute bottom-0 right-0  mx-6 -my-8 flex flex-col justify-start items-start align-middle '>
 						<p className='mb-2 z-20 md:mb-6 text-lg sm:text-xl md:text-4xl font-bold tracking-tighter leading-tight bg-white px-3 py-2 mx-3 md:mx-0 rounded-lg'>
 						
-							<Link as={`/${slugType}/${slug}`} href={`/${slugType}/[slug]`}>
-								<a className='hover:underline break-words'>
-									{title}
-								</a>
-							</Link>
+							<Link
+                                as={`/${slugType}/${slug}`}
+                                href={`/${slugType}/[slug]`}
+                                className='hover:underline break-words'>
+
+                                {title}
+
+                            </Link>
 						</p>
 					</div>
 					<CoverImage
@@ -59,5 +62,5 @@ export default function HeroPost({
 				</div>
 			</div>
 		</section>
-	);
+    );
 }

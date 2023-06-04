@@ -39,8 +39,7 @@ export default function Post({ post, morePosts, preview }) {
 		ratingType = post?.foodRating;
 	}
 	//console.log(" ratingType", ratingType)
-	return (
-	<> 
+	return <> 
 	<Nav />
 		<Container>
 				<Header />
@@ -149,8 +148,7 @@ export default function Post({ post, morePosts, preview }) {
 				)}
 				</Container>
 				<Footer />
-				</>	
-	);
+				</>;
 }
 
 export async function getStaticProps({ params, preview = false }) {

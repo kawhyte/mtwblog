@@ -64,7 +64,7 @@ const StarRating = ({ rating, linkType }) => {
 									<span className=' pr-4'>
 										<Image
 											className=''
-											src={ratingItem[text].icon}
+											src={ratingItem[text]?.icon}
 											alt={"icon"}
 											width={25}
 											height={25}
@@ -73,7 +73,7 @@ const StarRating = ({ rating, linkType }) => {
 
 									{item[1] > 0
 										? `${ratingItem[text]?.name}` 
-										: `No on-site ${ratingItem[text].name} availiable`} 
+										: `No on-site ${ratingItem[text]?.name} availiable`} 
 								</div>
 								{item[1] > 0 && <div className=' flex-1 flex flex-row align-middle items-center'>
 									<p className='mr-2 my-1 text-base font-medium md:text-lg '>

@@ -6,11 +6,11 @@ import { EXAMPLE_PATH } from "../lib/constants";
 export default function Footer() {
 	let year = new Date().getFullYear();
 	return (
-		<footer className=' mt-20 relative text-gray-600 body-font  bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100'>
+        <footer className=' mt-20 relative text-gray-600 body-font  bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100'>
 			<Container>
 				<div className='container px-5 py-8 mx-auto flex items-center sm:flex-row '>
 					<div className='flex title-font font-medium items-center md:justify-start justify-center text-gray-900'>
-						<Link href='/' passHref>
+						<Link href='/' passHref legacyBehavior>
 							<div className='flex flex-row justify-center align-middle items-center'>
 								<div className=' hidden mx-4 sm:inline-block'>
 									<Image
@@ -82,5 +82,5 @@ export default function Footer() {
 				</div>
 			</Container>
 		</footer>
-	);
+    );
 }

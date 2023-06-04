@@ -10,7 +10,7 @@ function TopList({ posts, header, type }) {
 	const topPicks = posts.slice(1, 10);
 
 	return (
-		<div>
+        <div>
 			<section className='text-gray-600 body-font'>
 				<div className='container px-5 pb-24 mx-auto'>
 					<div className='lg:w-1/2 w-full mb-6 lg:mb-0'>
@@ -25,15 +25,16 @@ function TopList({ posts, header, type }) {
 						<div className='container  mx-auto flex px-5 py-10 items-center justify-center flex-col'>
 							<div className=' border-8 bg-white border-yellow-300 md:p-6 mb-4 rounded-xl  '>
 								
-							<Link as={`/posts/${numberOne.slug}`} href='/posts/[slug]'>
-							<a
-							aria-label={numberOne.title}
-							className='w-full block h-full'>
-							<p className='text-black   absolute text-xl md:text-2xl font-medium bg-yellow-300  rounded-xl z-10 px-2 m-2 '>
-									1
-								</p>
+							<Link
+                                as={`/posts/${numberOne.slug}`}
+                                href='/posts/[slug]'
+                                aria-label={numberOne.title}
+                                className='w-full block h-full'>
 
-								<Image
+                                <p className='text-black   absolute text-xl md:text-2xl font-medium bg-yellow-300  rounded-xl z-10 px-2 m-2 '>
+                                        1
+                                    </p>
+                                <Image
 									width={940}
 									height={470}
 									blurDataURL={imageBuilder(numberOne.coverImage)
@@ -50,21 +51,23 @@ function TopList({ posts, header, type }) {
 										.height(744)
 										.format("webp")
 										.url()}
-								/> </a>
-</Link>
+								/> 
+                            </Link>
 								<div className=' px-2 w-full my-4 cursor-pointer text-left'>
-									<Link as={`/posts/${numberOne.slug}`} href='/posts/[slug]'>
-										<a
-											aria-label={numberOne.title}
-											className='w-full block h-full'>
-											<h1 className='title-font text-xl sm:text-4xl mb-4 font-medium text-gray-900'>
-												{numberOne.title}
-											</h1>
-											<p className='text-gray-500  font-light text-md truncate'>
-												{numberOne.address}
-											</p>
-										</a>
-									</Link>
+									<Link
+                                        as={`/posts/${numberOne.slug}`}
+                                        href='/posts/[slug]'
+                                        aria-label={numberOne.title}
+                                        className='w-full block h-full'>
+
+                                        <h1 className='title-font text-xl sm:text-4xl mb-4 font-medium text-gray-900'>
+                                            {numberOne.title}
+                                        </h1>
+                                        <p className='text-gray-500  font-light text-md truncate'>
+                                            {numberOne.address}
+                                        </p>
+
+                                    </Link>
 									{/*<PostBody className="line-clamp-3" content={numberOne.blurb} />*/}
 								</div>
 							</div>
@@ -80,42 +83,43 @@ function TopList({ posts, header, type }) {
 										key={item._id}
 										className='overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto'>
 										<div className='relative'>
-											<Link as={`/posts/${item.slug}`} href='/posts/[slug]'>
-												<a
-													aria-label={item.title}
-													className='w-full block h-full'>
-													<p className='text-black text-xl md:text-xl font-medium bg-white absolute rounded-xl z-10 px-2 m-2'>
-														{count++}
-													</p>
-													<Image
-														width={1240}
-														height={770}
-														blurDataURL={imageBuilder(item.coverImage)
-															.width(1240)
-															.height(744)
-															.quality(1)
-															.format("webp")
-															.url()}
-														placeholder='blur'
-														alt={`Cover Image for ${item.title}`}
-														className=' object-cover object-center block  '
-														src={imageBuilder(item.coverImage)
-															.width(1240)
-															.height(744)
-															.format("webp")
-															.url()}
-													/>
+											<Link
+                                                as={`/posts/${item.slug}`}
+                                                href='/posts/[slug]'
+                                                aria-label={item.title}
+                                                className='w-full block h-full'>
 
-													<div className='bg-white w-full   p-4'>
-														<p className='text-gray-800  text-xl font-medium mb-2 truncate'>
-															{item.title}
-														</p>
-														<p className='text-gray-500  font-light text-md truncate'>
-															{item.address}
-														</p>
-													</div>
-												</a>
-											</Link>
+                                                <p className='text-black text-xl md:text-xl font-medium bg-white absolute rounded-xl z-10 px-2 m-2'>
+                                                    {count++}
+                                                </p>
+                                                <Image
+                                                    width={1240}
+                                                    height={770}
+                                                    blurDataURL={imageBuilder(item.coverImage)
+                                                        .width(1240)
+                                                        .height(744)
+                                                        .quality(1)
+                                                        .format("webp")
+                                                        .url()}
+                                                    placeholder='blur'
+                                                    alt={`Cover Image for ${item.title}`}
+                                                    className=' object-cover object-center block  '
+                                                    src={imageBuilder(item.coverImage)
+                                                        .width(1240)
+                                                        .height(744)
+                                                        .format("webp")
+                                                        .url()}
+                                                />
+                                                <div className='bg-white w-full   p-4'>
+                                                    <p className='text-gray-800  text-xl font-medium mb-2 truncate'>
+                                                        {item.title}
+                                                    </p>
+                                                    <p className='text-gray-500  font-light text-md truncate'>
+                                                        {item.address}
+                                                    </p>
+                                                </div>
+
+                                            </Link>
 										</div>
 									</div>
 								)
@@ -124,7 +128,7 @@ function TopList({ posts, header, type }) {
 				</div>
 			</section>
 		</div>
-	);
+    );
 }
 
 export default TopList;

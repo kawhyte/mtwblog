@@ -197,9 +197,9 @@ export default function PostHeader({
 			{blurb && (
 				<>
 					<div>
-						<p className='max-w-4xl text-justify lg:text-lg mx-4 my-8 '>
+						<div className='max-w-4xl text-justify lg:text-lg mx-4 my-8 '>
 						<PostBody content={blurb} /> 	
-						</p>
+						</div>
 					</div>
 					<BodySectionSeparator />
 				</>

@@ -16,7 +16,7 @@ function IndexSection({morePosts, sectionBgColor, text, typeText, PostType="post
                 </div>
 
                 <div className=' md:mx-8'>
-                    <Link href='/allreviews' passHref>
+                    <Link href='/allreviews' passHref legacyBehavior>
                         <button
                             aria-label='Justify'
                             type='button'
@@ -33,7 +33,7 @@ function IndexSection({morePosts, sectionBgColor, text, typeText, PostType="post
         {/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
     </div>
         </div>
-    )
+    );
 }
 
 export default IndexSection

@@ -59,7 +59,7 @@ export default function Nav({ color="bg-black", bgColor }) {
 	let bg = bgColor ? " bg-white  shadow-l" : " ";
 
 	return (
-		<Disclosure
+        <Disclosure
 			as='nav'
 			className={
 				" top-0 whitespace-nowrap pt-6  sticky py-4 mx-auto h-[72px] bg-transparent w-full  z-50   mt- backdrop-blur-sm bg-opacity-80  bg-clip-padding backdrop-filter blur-backdrop-filter bg-white max-w-8xl xl:px-8 firefox:bg-opacity-90  " +
@@ -81,7 +81,7 @@ export default function Nav({ color="bg-black", bgColor }) {
 								</Disclosure.Button>
 							</div>
 							<div className='flex-1 flex items-center justify-center sm:items-stretch md:justify-start '>
-								<Link href='/' className='cursor-pointer' passHref>
+								<Link href='/' className='cursor-pointer' passHref legacyBehavior>
 									<div className='flex-shrink-0 flex justify-center items-center '>
 										<div className='mx-4 '>
 											<Image
@@ -99,7 +99,7 @@ export default function Nav({ color="bg-black", bgColor }) {
 								<div className='hidden md:block sm:ml-6'>
 									<div className='flex flex-row align-middle justify-center items-center  space-x-4'>
 										{navigation.map((item) => (
-											<Link href={item.href} key={item.name} passHref>
+											<Link href={item.href} key={item.name} passHref legacyBehavior>
 												<div className='flex flex-row justify-center align-middle items-center'>
 													<button
 														key={item.name}
@@ -155,7 +155,7 @@ export default function Nav({ color="bg-black", bgColor }) {
 				</>
 			)}
 		</Disclosure>
-	);
+    );
 }
 
 	{/*
