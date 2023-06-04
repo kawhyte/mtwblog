@@ -16,7 +16,7 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import Head from "next/head";
 import { CMS_NAME } from "../../lib/constants";
-import Form from "../../components/form";
+// import Form from "../../components/form";
 import ProConList from "../../components/pro-con-list";
 import Gallery from "../../components/gallery";
 import ReactPlayer from "react-player/youtube";
@@ -30,7 +30,7 @@ export default function Post({ post, morePosts, preview }) {
 
 	// console.log(" post?.mainImageGallery?.images", post?.mainImageGallery?.images)
 	// console.log(" post.gallery.images", post.gallery.images)
-	//console.log(" post", post)
+	console.log("Kenny post", post)
 
 	let ratingType = post?.hotelRating;
 	let shareURL = `https://www.meetthewhytes.com/posts/${post?.slug}`;
@@ -139,8 +139,8 @@ export default function Post({ post, morePosts, preview }) {
 						
 						
 
-						<Comments comments={post.comments} />
-						<Form _id={post._id} />
+						{/* <Comments comments={post.comments} />
+						 <Form _id={post._id} /> */}
 
 						
 						{/*morePosts.length > 0 && <MoreStories posts={morePosts} />*/}
