@@ -23,15 +23,15 @@
 }
 
 .markdown h5 {
-  @apply text-base mb-2  leading-snug;
+  @apply text-base my-2  leading-snug;
 }
 .markdown h6 {
-  @apply text-sm mb-2 font-light leading-snug;
+  @apply text-sm my-2 leading-snug;
 }
 
 .markdown img {
 
-  @apply  pt-2 lg:max-w-4xl  ;
+  @apply  py-2 lg:max-w-3xl  ;
   
 }
 
